@@ -17,7 +17,7 @@ module.exports = {
     method: 'POST',
     data({ channel, date }) {
       return {
-        allowPastEvents: true
+        allowPastEvents: true,
         channelid: channel.site_id,
         date: date.format('YYYYMMDDHHmm'),
       }
