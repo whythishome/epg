@@ -12,14 +12,14 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'dishtv.in',
   days: 2,
-  url: 'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
+  url: 'https://epg.mysmartstick.com/dishtv/api/v1/epg/entities/programs',
   request: {
     method: 'POST',
     data({ channel, date }) {
       return {
-        Channelarr: channel.site_id,
-        fromdate: date.format('YYYYMMDDHHmm'),
-        todate: date.add(1, 'd').format('YYYYMMDDHHmm')
+        allowPastEvents: true
+        channelid: channel.site_id,
+        date: date.format('YYYYMMDDHHmm'),
       }
     }
   },
@@ -49,7 +49,7 @@ module.exports = {
     for (let page of pages) {
       const data = await axios
         .post(
-          'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
+          'https://www.dishtv.in/services/epg/channels',
           page,
           { timeout: 30000 }
         )
@@ -89,7 +89,7 @@ module.exports = {
 
 async function loadPageList() {
   const data = await axios
-    .get('https://www.dishtv.in/channelguide/')
+    .get('https://www.dishtv.in/channel-guide.html')
     .then(r => r.data)
     .catch(console.log)
 
@@ -97,11 +97,11 @@ async function loadPageList() {
   const $ = cheerio.load(data)
   $('#MainContent_recordPagging li').each((i, el) => {
     const onclick = $(el).find('a').attr('onclick')
-    const [, Channelarr, fromdate, todate] = onclick.match(
-      /ShowNextPageResult\('([^']+)','([^']+)','([^']+)'/
-    ) || [null, '', '', '']
+    const [, channelid, date] = onclick.match(
+      /ShowNextPageResult\('([^']+)','([^']+)'/
+    ) || [null, '', '']
 
-    pages.push({ Channelarr, fromdate, todate })
+    pages.push({ channelid, date })
   })
 
   return pages
@@ -110,7 +110,7 @@ async function loadPageList() {
 async function loadChannelNames() {
   const names = {}
   const data = await axios
-    .post('https://www.dishtv.in/WebServiceMethod.aspx/GetChannelListFromMobileAPI', {
+    .post('https://www.dishtv.in/services/epg/channels', {
       strChannel: ''
     })
     .then(r => r.data)
