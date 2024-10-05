@@ -26,7 +26,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=dishtv.in --output=guide.xml
+          npm run grab -- --site=tvguide.myjcom.jp --output=guide.xml
           
     - name: Commit changes
       run: |
