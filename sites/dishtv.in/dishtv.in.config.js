@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'dishtv.in',
   days: 2,
-  url: 'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
+  url: 'https://www.dishtv.in/services/epg/channels',
   request: {
     method: 'POST',
     data({ channel, date }) {
@@ -45,11 +45,11 @@ module.exports = {
   async channels() {
     let channels = []
     const token = await getAuthentication()
-    const pages = await loadPageList()
+    const pages = await loadPageList(token)
     for (let page of pages) {
       const data = await axios
         .post(
-          'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
+          'https://www.dishtv.in/services/epg/channels',
           page,
           { timeout: 30000 },
           { headers: { 'Authorization-Token': token }  }
@@ -88,9 +88,9 @@ module.exports = {
   }
 }
 
-async function loadPageList() {
+async function loadPageList(token) {
   const data = await axios
-    .get('https://www.dishtv.in/channelguide/')
+    .get('https://www.dishtv.in/channel-guide.html')
     .then(r => r.data)
     .catch(console.log)
 
@@ -108,12 +108,13 @@ async function loadPageList() {
   return pages
 }
 
-async function loadChannelNames() {
+async function loadChannelNames(token) {
   const names = {}
   const data = await axios
-    .post('https://www.dishtv.in/WebServiceMethod.aspx/GetChannelListFromMobileAPI', {
+    .post('https://www.dishtv.in/services/epg/channels', {
       strChannel: ''
-    })
+    },
+          { 'Authorization-token': token })
     .then(r => r.data)
     .catch(console.log)
 
@@ -132,7 +133,8 @@ async function loadChannelNames() {
 
 async function getAuthentication() {
   const data = await axios
-    .post('https://www.dishtv.in/services/epg/signin')
+    .post('https://www.dishtv.in/services/epg/signin',
+          { 'Authorization-token': token } )
     .then(r => r.data)
     .catch(console.log)
   const token = data.token
