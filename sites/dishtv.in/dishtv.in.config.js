@@ -88,26 +88,6 @@ module.exports = {
   }
 }
 
-async function loadPageList(token) {
-  const data = await axios
-    .get('https://www.dishtv.in/channel-guide.html')
-    .then(r => r.data)
-    .catch(console.log)
-
-  let pages = []
-  const $ = cheerio.load(data)
-  $('#MainContent_recordPagging li').each((i, el) => {
-    const onclick = $(el).find('a').attr('onclick')
-    const [, Channelarr, fromdate, todate] = onclick.match(
-      /ShowNextPageResult\('([^']+)','([^']+)','([^']+)'/
-    ) || [null, '', '', '']
-
-    pages.push({ Channelarr, fromdate, todate })
-  })
-
-  return pages
-}
-
 async function loadChannelNames(token) {
   const names = {}
   const data = await axios
@@ -147,29 +127,30 @@ function parseTitle(item) {
   return $('a').text()
 }
 
-function parseStart(item) {
-  const $ = cheerio.load(item)
-  const onclick = $('i.fa-circle').attr('onclick')
-  const [, time] = onclick.match(/RecordingEnteryOpen\('.*','.*','(.*)','.*',.*\)/)
+// function parseStart(item) {
+//   const $ = cheerio.load(item)
+//   const onclick = $('i.fa-circle').attr('onclick')
+//   const [, time] = onclick.match(/RecordingEnteryOpen\('.*','.*','(.*)','.*',.*\)/)
 
-  return dayjs.tz(time, 'YYYYMMDDHHmm', 'Asia/Kolkata')
+//   return dayjs.tz(time, 'YYYYMMDDHHmm', 'Asia/Kolkata')
+// }
+
+// function parseStop(item, start) {
+//   const $ = cheerio.load(item)
+//   const duration = $('*').data('time')
+
+//   return start.add(duration, 'm')
+// }
+
+function parseStart(item) {
+  return dayjs.tz(item.programstart.toString(), 'YYYY-MM-DDTHH:mm:ss', 'Asia/Kolkata')
 }
 
-function parseStop(item, start) {
-  const $ = cheerio.load(item)
-  const duration = $('*').data('time')
-
-  return start.add(duration, 'm')
+function parseStop(item) {
+  return dayjs.tz(item.programstop.toString(), 'YYYY-MM-DDTHH:mm:ss', 'Asia/Kolkata')
 }
 
 function parseContent(content) {
   const data = JSON.parse(content)
-
-  return data.d
-}
-
-function parseItems(data) {
-  const $ = cheerio.load(data)
-
-  return $('.datatime').toArray()
+  return data.programDetailsByChannel
 }
