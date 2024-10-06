@@ -12,14 +12,14 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'dishtv.in',
   days: 2,
-  url: 'https://epg.mysmartstick.com/dishtv/api/v1/epg/entities/programs',
+  url: 'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
   request: {
     method: 'POST',
     data({ channel, date }) {
       return {
-        allowPastEvents: true,
-        channelid: channel.site_id,
-        date: date.format('YYYYMMDDHHmm'),
+        Channelarr: channel.site_id,
+        fromdate: date.format('YYYYMMDDHHmm'),
+        todate: date.add(1, 'd').format('YYYYMMDDHHmm')
       }
     }
   },
@@ -44,14 +44,15 @@ module.exports = {
   },
   async channels() {
     let channels = []
-
+    const token = await getAuthentication()
     const pages = await loadPageList()
     for (let page of pages) {
       const data = await axios
         .post(
-          'https://www.dishtv.in/services/epg/channels',
+          'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
           page,
-          { timeout: 30000 }
+          { timeout: 30000 },
+          { headers: { 'Authorization-Token': token }  }
         )
         .then(r => r.data)
         .catch(console.log)
@@ -89,7 +90,7 @@ module.exports = {
 
 async function loadPageList() {
   const data = await axios
-    .get('https://www.dishtv.in/channel-guide.html')
+    .get('https://www.dishtv.in/channelguide/')
     .then(r => r.data)
     .catch(console.log)
 
@@ -97,11 +98,11 @@ async function loadPageList() {
   const $ = cheerio.load(data)
   $('#MainContent_recordPagging li').each((i, el) => {
     const onclick = $(el).find('a').attr('onclick')
-    const [, channelid, date] = onclick.match(
-      /ShowNextPageResult\('([^']+)','([^']+)'/
-    ) || [null, '', '']
+    const [, Channelarr, fromdate, todate] = onclick.match(
+      /ShowNextPageResult\('([^']+)','([^']+)','([^']+)'/
+    ) || [null, '', '', '']
 
-    pages.push({ channelid, date })
+    pages.push({ Channelarr, fromdate, todate })
   })
 
   return pages
@@ -110,7 +111,7 @@ async function loadPageList() {
 async function loadChannelNames() {
   const names = {}
   const data = await axios
-    .post('https://www.dishtv.in/services/epg/channels', {
+    .post('https://www.dishtv.in/WebServiceMethod.aspx/GetChannelListFromMobileAPI', {
       strChannel: ''
     })
     .then(r => r.data)
@@ -127,6 +128,15 @@ async function loadChannelNames() {
   })
 
   return names
+}
+
+async function getAuthentication() {
+  const data = await axios
+    .post('https://www.dishtv.in/services/epg/signin')
+    .then(r => r.data)
+    .catch(console.log)
+  const token = data.token
+  return token
 }
 
 function parseTitle(item) {
