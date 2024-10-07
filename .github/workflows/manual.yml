@@ -26,7 +26,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=content.astro.com.my --output=guide.xml
+          npm run grab -- --site=dishtv.in --output=guide.xml
           
     - name: Commit changes
       run: |
