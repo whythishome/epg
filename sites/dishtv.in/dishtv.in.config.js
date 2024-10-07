@@ -40,42 +40,34 @@ module.exports = {
     })
     return programs
   }
-  // async channels() {
-  //   const url = 'https://www.dishtv.in/services/epg/channels'
-  //   const body = {
-  //     channelNamespace: 2,
-  //     filterlist: [
-  //       {
-  //         key: 'IsHide',
-  //         value: '-1'
-  //       }
-  //     ],
-  //     metaDataVer: 'Channel/1.1',
-  //     properties: [
-  //       {
-  //         include: '/channellist/logicalChannel/contentId,/channellist/logicalChannel/name',
-  //         name: 'logicalChannel'
-  //       }
-  //     ],
-  //     returnSatChannel: 0
-  //   }
-  //   const params = {
-  //     headers: await setHeaders()
-  //   }
+async function channels() {
+  let channels = []
+  const url = 'https://www.dishtv.in/services/epg/channels'
+  const params = {
+    headers: await setHeaders()
+  }
+  const pages = await fetchPages()
 
-  //   const data = await axios
-  //     .post(url, body, params)
-  //     .then(r => r.data)
-  //     .catch(console.log)
+  for (let i = 0; i < Number(pages); i++) {
+    const body = {
+      pageNum: i + 1
+    }
+    const data = await axios
+      .post(url, body, params)
+      .then(r => r.data)
+      .catch(console.log)
 
-  //   return data.channellist.map(item => {
-  //     return {
-  //       lang: 'de',
-  //       site_id: item.contentId,
-  //       name: item.name
-  //     }
-    // })
-  // }
+    data.programDetailsByChannel.forEach(channel => {
+      if (channel.channelname === '.') return
+      channels.push({
+        lang: 'en',
+        site_id: channel.channelid,
+        name: channel.channelname
+      })
+    })
+  }
+
+  return channels
 }
 
 function parseStart(item) {
@@ -93,7 +85,23 @@ function parseItems(content) {
   return data
 }
 
-// Function to try to fetch COOKIE and X_CSRFTOKEN
+async function fetchPages() {
+    const url = 'https://www.dishtv.in/services/epg/channels'
+    const body = {
+      pageNum: 1,
+    }
+    const params = {
+      headers: await setHeaders()
+    }
+    const data = await axios
+      .post(url, body, params)
+      .then(r => r.data)
+      .catch(console.log)
+
+  return data.pageNum
+}
+
+// Function to try to fetch TOKEN
 function fetchToken() {
   return fetch(
     'https://www.dishtv.in/services/epg/signin',
