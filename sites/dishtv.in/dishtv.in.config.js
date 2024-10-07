@@ -142,10 +142,18 @@ function fetchToken() {
 }
 
 function setHeaders() {
-  return fetchToken().then(() => {
+  if (!TOKEN) {
+    return fetchToken().then(() => {
+      return {
+        'Content-Type': 'application/json',
+        'Authorization': TOKEN
+      }
+    })
+  } else {
     return {
       'Content-Type': 'application/json',
       'Authorization': TOKEN
     }
-  })
+  }
 }
+
