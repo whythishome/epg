@@ -90,7 +90,7 @@ function parseItems(content) {
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.playbilllist)) return []
 
-  return data.playbilllist
+  return data
 }
 
 // Function to try to fetch COOKIE and X_CSRFTOKEN
@@ -104,7 +104,7 @@ function fetchToken() {
         'sec-fetch-mode': 'cors',
         'sec-fetch-site': 'same-origin',
         'x-requested-with': 'XMLHttpRequest',
-        Referer: 'https://www.dishtv.in/channel-guide.html',
+        Referer: 'https://www.dishtv.in/channel-guide.html'
       },
       method: 'POST'
     }
@@ -132,7 +132,7 @@ function setHeaders() {
   return fetchToken().then(() => {
     return {
       'Content-Type': 'application/json',
-      'Authorization': TOKEN,
+      'Authorization': TOKEN
     }
   })
 }
