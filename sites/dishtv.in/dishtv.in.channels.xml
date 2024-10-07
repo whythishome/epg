@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000059360000">&flix HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000017540000">& Pictures</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000024300000">& Pictures HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053720000">&prive HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028000000">&TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028050000">&TV HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000059350000">&flix</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000059360000">&amp;flix HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000017540000">&amp; Pictures</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000024300000">&amp; Pictures HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053720000">&amp;prive HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028000000">&amp;TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028050000">&amp;TV HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000059350000">&amp;flix</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002490000">Zee 24 Ghanta</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007500000">9X Jhakaas</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007300000">9X Tashan</channel>
