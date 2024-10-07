@@ -44,36 +44,36 @@ module.exports = {
       })
     })
     return programs
-  },
-  async channels() {
-    let channels = []
-    const url = 'https://www.dishtv.in/services/epg/channels'
-    const params = {
-      headers: await setHeaders()
-    }
-    const pages = await fetchPages()
-
-    for (let i = 0; i < Number(pages); i++) {
-      const body = {
-        pageNum: i + 1
-      }
-      const data = await axios
-        .post(url, body, params)
-        .then(r => r.data)
-        .catch(console.log)
-
-      data.programDetailsByChannel.forEach(channel => {
-        if (channel.channelname === '.') return
-        channels.push({
-          lang: 'en',
-          site_id: channel.channelid,
-          name: channel.channelname
-        })
-      })
-    }
-
-    return channels
   }
+  // async channels() {
+  //   let channels = []
+  //   const url = 'https://www.dishtv.in/services/epg/channels'
+  //   const params = {
+  //     headers: await setHeaders()
+  //   }
+  //   const pages = await fetchPages()
+
+  //   for (let i = 0; i < Number(pages); i++) {
+  //     const body = {
+  //       pageNum: i + 1
+  //     }
+  //     const data = await axios
+  //       .post(url, body, params)
+  //       .then(r => r.data)
+  //       .catch(console.log)
+
+  //     data.programDetailsByChannel.forEach(channel => {
+  //       if (channel.channelname === '.') return
+  //       channels.push({
+  //         lang: 'en',
+  //         site_id: channel.channelid,
+  //         name: channel.channelname
+  //       })
+  //     })
+  //   }
+
+  //   return channels
+  // }
 }
 
 function parseStart(item) {
