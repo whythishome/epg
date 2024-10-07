@@ -77,16 +77,16 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs.utc(item.starttime, 'YYYY-MM-DDTHH:mm:ss')
+  return dayjs.utc(item.start, 'YYYY-MM-DDTHH:mm:ss')
 }
 
 function parseStop(item) {
-  return dayjs.utc(item.stoptime, 'YYYY-MM-DDTHH:mm:ss')
+  return dayjs.utc(item.stop, 'YYYY-MM-DDTHH:mm:ss')
 }
 
 function parseItems(content) {
   const data = JSON.parse(content)
-  if (!data || !Array.isArray(data.playbilllist)) return []
+  if (!data || !Array.isArray(data)) return []
 
   return data
 }
