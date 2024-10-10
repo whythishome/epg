@@ -8,7 +8,7 @@
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028050000">&amp;TV HD</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000059350000">&amp;flix</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007500000">9X Jhakaas</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007300000">9X Tashan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007300000" icon="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/IZr5tqGE.png">9X Tashan</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000720000">Aaj Tak</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001210000">Aakash Aath</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992210">Active Services</channel>
