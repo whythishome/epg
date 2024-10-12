@@ -39,7 +39,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.desc,
-        image: item.image.landscape.744x558 ? item.image.landscape.744x558 : null
+        image: item.image.landscape.744x558 ? item.image.landscape.744x558 : null,
         start: parseStart(item),
         stop: parseStop(item)
       })
