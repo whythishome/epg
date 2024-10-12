@@ -39,7 +39,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.desc,
-        image: item.image,
+        image: item.programmeurl,
         start: parseStart(item),
         stop: parseStop(item)
       })
