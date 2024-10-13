@@ -13,24 +13,20 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'dishtv.in',
   days: 1,
-  url({ date, channel }) {
-    const [region] = channel.site_id.split('#')
-
-    return `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule${region}_${date.format('YYYY-MM-DD')}.json`
+  url({ date }) {
+    return `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=${date.format('DD-MM-YYYY')}`
   },
-  request: {
+  request({ channel }): {
     method: 'GET',
-    headers: function() {
-      return setHeaders()
-    },
+    // headers: function() {
+    //   return setHeaders()
+    // },
     data({
       channel,
       date
     }) {
       return {
-        allowPastEvents: true,
-        channelid: channel.site_id,
-        date: date.format('DD/MM/YYYY')
+        id: channel.site_id
       }
     }
   },
