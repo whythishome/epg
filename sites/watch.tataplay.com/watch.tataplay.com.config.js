@@ -16,15 +16,15 @@ module.exports = {
   url({ date }) {
     return `https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=${date.format('DD-MM-YYYY')}`
   },
-  request({ channel }): {
+  request({ channel }) {
     method: 'POST',
     headers: function() {
       return setHeaders()
-    },
-    data({ channel, date }) {
-      return {
-        id: channel.site_id
-      }
+    }
+  },
+  data({ channel, date }) {
+    return {
+      id: channel.site_id
     }
   },
   parser: function({
