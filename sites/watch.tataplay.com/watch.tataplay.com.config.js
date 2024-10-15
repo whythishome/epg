@@ -11,9 +11,9 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  site: 'dishtv.in',
+  site: 'watch.tataplay.com',
   days: 1,
-  url({ date }) {
+  url: function ({ date }) {
     return `https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=${date.format('DD-MM-YYYY')}`
   },
   request({ channel }) {
