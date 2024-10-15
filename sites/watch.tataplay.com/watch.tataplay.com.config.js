@@ -33,11 +33,11 @@ module.exports = {
     console.log(content)
     items.forEach(item => {
       programs.push({
-        title: item.message,
-        description: item.message,
-        image: item.message,
-        start: item.message,
-        stop: item.message
+        title: item.title,
+        description: item.desc,
+        image: item.boxCoverImage,
+        start: parseStart(item),
+        stop: parseStop(item)
       })
     })
     return programs
