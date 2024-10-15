@@ -26,7 +26,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=watch.tataplay.com --output=tp.guide.xml
+          npm run grab -- --site=watchyour.tv --output=tp.guide.xml
           
     - name: Commit changes
       run: |
