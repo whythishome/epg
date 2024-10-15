@@ -14,17 +14,14 @@ module.exports = {
   site: 'dishtv.in',
   days: 1,
   url({ date }) {
-    return `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=${date.format('DD-MM-YYYY')}`
+    return `https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=${date.format('DD-MM-YYYY')}`
   },
   request({ channel }): {
-    method: 'GET',
-    // headers: function() {
-    //   return setHeaders()
-    // },
-    data({
-      channel,
-      date
-    }) {
+    method: 'POST',
+    headers: function() {
+      return setHeaders()
+    },
+    data({ channel, date }) {
       return {
         id: channel.site_id
       }
@@ -34,12 +31,13 @@ module.exports = {
     content
   }) {
     let programs = []
-    const items = parseItems(content)
+    const data = parseItems(content)
+    const items = data.epg
     items.forEach(item => {
       programs.push({
         title: item.title,
         description: item.desc,
-        image: item.programmeurl,
+        image: item.boxCoverImage,
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -78,11 +76,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs.tz(item.start, 'YYYY-MM-DDTHH:mm:ss', 'Asia/Kolkata')
+  return dayjs.tz(item.startTime, 'YYYY-MM-DDTHH:mm:ss', 'Asia/Kolkata')
 }
 
 function parseStop(item) {
-  return dayjs.tz(item.stop, 'YYYY-MM-DDTHH:mm:ss', 'Asia/Kolkata')
+  return dayjs.tz(item.endTime, 'YYYY-MM-DDTHH:mm:ss', 'Asia/Kolkata')
 }
 
 function parseItems(content) {
@@ -143,17 +141,8 @@ function fetchToken() {
 }
 
 function setHeaders() {
-  if (!TOKEN) {
-    return fetchToken().then(() => {
-      return {
-        'Content-Type': 'application/json',
-        'Authorization': TOKEN
-      }
-    })
-  } else {
-    return {
-      'Content-Type': 'application/json',
-      'Authorization': TOKEN
-    }
+  return {
+    'Content-Type': 'application/json',
+    'Device_details': '{"pl":"web","os":"WINDOWS","lo":"en-us","app":"1.44.7","dn":"PC","bv":129,"bn":"CHROME","device_id":"6365f38557f4d6a21522cf320080d5e6","device_type":"WEB","device_platform":"PC","device_category":"open","manufacturer":"WINDOWS_CHROME_129","model":"PC","sname":""}'
   }
 }
