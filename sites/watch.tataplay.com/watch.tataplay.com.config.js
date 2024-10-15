@@ -29,15 +29,14 @@ module.exports = {
   },
   parser: function({ content }) {
     let programs = []
-    const data = parseItems(content)
-    const items = data.data.epg
+    const items = parseItems(content)
     items.forEach(item => {
       programs.push({
-        title: item.title,
-        description: item.desc,
-        image: item.boxCoverImage,
-        start: parseStart(item),
-        stop: parseStop(item)
+        title: item.message,
+        description: item.message,
+        image: item.message,
+        start: item.message,
+        stop: item.message
       })
     })
     return programs
