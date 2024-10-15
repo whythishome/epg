@@ -73,11 +73,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs.tz(item.startTime, 'Asia/Kolkata')
+  return dayjs.utc(item.startTime, 'Asia/Kolkata')
 }
 
 function parseStop(item) {
-  return dayjs.tz(item.endTime, 'Asia/Kolkata')
+  return dayjs.utc(item.endTime, 'Asia/Kolkata')
 }
 
 function parseItems(content) {
