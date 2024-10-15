@@ -82,10 +82,14 @@ function parseStop(item) {
 }
 
 function parseItems(content) {
-  const data = JSON.parse(content)
-  if (!data || !Array.isArray(data)) return []
+  try {
+    const data = JSON.parse(content)
+    const epg = data.data.epg
 
-  return data
+    return epg
+  } catch (e) {
+    return []
+  }
 }
 
 async function fetchPages() {
