@@ -30,6 +30,7 @@ module.exports = {
   parser: function({ content }) {
     let programs = []
     const items = parseItems(content)
+    console.log(items)
     items.forEach(item => {
       programs.push({
         title: item.message,
