@@ -27,6 +27,12 @@ jobs:
       run: |
           npm install
           npm run grab -- --site=dishtv.in --output=guide.xml
+
+    - name: npm grab epg
+      run: |
+          npm install
+          npm run grab -- --site=watch.tataplay.com --output=tp.guide.xml
+          python epgmerge.py
           
     - name: Commit changes
       run: |
