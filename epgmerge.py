@@ -14,13 +14,22 @@ def merge_xml(file1, file2, output_file):
         if child.tag == 'channel':
             root1.append(child)
 
+    # Separate the programme elements from the first file
+    programme_elements_1 = [child for child in root1 if child.tag == 'programme']
+    for child in programme_elements_1:
+        root1.remove(child)
+
     # Merge the programme elements
     for child in root2:
         if child.tag == 'programme':
             root1.append(child)
 
+    # Add the separated programme elements from the first file back to the root
+    for child in programme_elements_1:
+        root1.append(child)
+
     # Write the merged XML to a new file
-    tree1.write(output_file)
+    tree1.write(output_file, xml_declaration=True, encoding='UTF-8')
 
 # Use the function
 merge_xml('guide.xml', 'tp.guide.xml', 'epg.xml')
