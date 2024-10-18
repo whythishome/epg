@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'watch.tataplay.com',
-  days: 3,
+  days: 1,
   url: function ({ date }) {
     return `https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=${date.format('DD-MM-YYYY')}`
   },
