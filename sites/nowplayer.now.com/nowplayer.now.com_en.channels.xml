@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="nowplayer.now.com" lang="de" xmltv_id="DWDeutsch.de" site_id="765">DW Deutsch</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="102">Viu channel</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="168">MOOV Concert/MV</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="217">Love Nature</channel>
@@ -8,6 +7,7 @@
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="222">Crime + Investigation</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="330">CGTN</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="400">Watch N Learn</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="448">Moonbug</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="535">Netflix</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="545">CCTV-13</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="552">OneTV General Channel</channel>
@@ -17,11 +17,12 @@
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="627">Now Sports Premier League 7</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="641">Now Sports 641</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="646">beIN SPORTS 6</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="650">beIN SPORTS RUGBY</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="650">Now Sports 650</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="651">Now Sports 651</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="670">SPOTV</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="671">SPOTV2</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="681">Now Sports 681</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="688">Lucky 688</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="772">Sony MAX</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="900">Adult Promotional Channel</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="ABCAustralia.au" site_id="561">ABC Australia</channel>
@@ -40,7 +41,6 @@
   <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSportsMax2.qa" site_id="644">beIN SPORTS 4</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSportsMax3.qa" site_id="645">beIN SPORTS 5</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="BloombergTVAsia.hk" site_id="321">Bloomberg Television</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="BoomerangSoutheastAsia.us" site_id="445">Cartoonito</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="CartoonNetworkAsia.sg" site_id="443">Cartoon Network</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="CBeebiesAsia.uk" site_id="447">CBeebies</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="CCTV1.cn" site_id="541">CCTV-1</channel>
@@ -138,7 +138,6 @@
   <channel site="nowplayer.now.com" lang="en" xmltv_id="TVS2SouthernTV.cn" site_id="543">GBA Satellite TV</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="ViuTV.hk" site_id="099">ViuTV</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="ViuTVsix.hk" site_id="096">ViuTVsix</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="WarnerTVAsia.us" site_id="510">WarnerTV</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="YicaiTV.cn" site_id="338">Yicai TV</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="ZeeCinemaAsia.in" site_id="781">Zee Cinema International</channel>
   <channel site="nowplayer.now.com" lang="en" xmltv_id="ZeeNews.in" site_id="785">Zee News</channel>
