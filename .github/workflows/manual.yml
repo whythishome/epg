@@ -26,12 +26,18 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
+          npm run grab -- --site=dishtv.in --output=guides/dishtv.xml
+
+    - name: npm grab epg
+      run: |
+          npm install
           npm run grab -- --site=watch.tataplay.com --output=guides/tataplay.xml
           
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
+        git add -f guides/dishtv.xml
         git add -f guides/tataplay.xml
         git commit -m "Update xml"
         git push
