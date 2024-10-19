@@ -37,11 +37,6 @@ jobs:
       run: |
           npm install
           npm run grab -- --site=nowplayer.now.com --lang=en --gzip --output=guides/nowtv.xml.gz
-
-    - name: npm grab epg
-      run: |
-          npm install
-          npm run grab -- --site=starhubtvplus.com --gzip --output=guides/starhubtv.xml.gz
           
     - name: Commit changes
       run: |
@@ -50,6 +45,5 @@ jobs:
         git add -f guides/dishtv.xml.gz
         git add -f guides/tataplay.xml.gz
         git add -f guides/nowtv.xml.gz
-        git add -f guides/starhubtv.xml.gz
         git commit -m "Update xml"
         git push
