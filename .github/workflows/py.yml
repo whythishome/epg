@@ -26,7 +26,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=nowplayer.now.com --output=guides/nowplayer.xml
+          npm run grab -- --site=nowplayer.now.com --lang=en --output=guides/nowplayer.xml
           
     - name: Commit changes
       run: |
