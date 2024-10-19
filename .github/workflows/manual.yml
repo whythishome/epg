@@ -23,27 +23,17 @@ jobs:
       with:
            node-version: 18
 
-    - name: npm grab epg
-      run: |
-          npm install
-          npm run grab -- --site=dishtv.in --gzip --output=guides/dishtv.xml.gz
+
 
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=watch.tataplay.com --gzip --output=guides/tataplay.xml.gz
-
-    - name: npm grab epg
-      run: |
-          npm install
-          npm run grab -- --site=nowplayer.now.com --lang=en --gzip --output=guides/nowtv.xml.gz
+          npm run grab -- --site=nowplayer.now.com --lang=en --gzip --output=guides/nowtv.xml
           
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/dishtv.xml.gz
-        git add -f guides/tataplay.xml.gz
         git add -f guides/nowtv.xml.gz
         git commit -m "Update xml"
         git push
