@@ -26,12 +26,12 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=nowplayer.now.com --lang=en --output=guides/nowplayer.xml
+          npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_en.channels.xml --set=lang:en
           
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/nowplayer.xml
-        git commit -m "EPG testing"
+        git add -f ./sites/nowplayer.now.com/nowplayer.now.com_en.channels.xml
+        git commit -m "Channel update"
         git push
