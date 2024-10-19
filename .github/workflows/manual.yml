@@ -1,4 +1,4 @@
-name: EPG update
+name: EPG Update
 
 on:
   schedule:
@@ -26,18 +26,30 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=dishtv.in --output=guides/dishtv.xml
+          npm run grab -- --site=dishtv.in --gzip=true --output=guides/dishtv.xml.gz
 
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=watch.tataplay.com --output=guides/tataplay.xml
+          npm run grab -- --site=watch.tataplay.com --gzip=true --output=guides/tataplay.xml.gz
+
+    - name: npm grab epg
+      run: |
+          npm install
+          npm run grab -- --site=nowplayer.now.com --lang=en --gzip=true --output=guides/nowtv.xml.gz
+
+    - name: npm grab epg
+      run: |
+          npm install
+          npm run grab -- --site=starhubtvplus.com --gzip=true --output=guides/starhubtv.xml.gz
           
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/dishtv.xml
-        git add -f guides/tataplay.xml
+        git add -f guides/dishtv.xml.gz
+        git add -f guides/tataplay.xml.gz
+        git add -f guides/nowtv.xml.gz
+        git add -f guides/starhubtv.xml.gz
         git commit -m "Update xml"
         git push
