@@ -8,7 +8,7 @@ const API_ENDPOINT = 'https://contenthub-api.eco.astro.com.my'
 
 module.exports = {
   site: 'content.astro.com.my',
-  days: 2,
+  days: 1,
   url: function ({ channel }) {
     return `${API_ENDPOINT}/channel/${channel.site_id}.json`
   },
