@@ -32,6 +32,6 @@ jobs:
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f ./sites/nowplayer.now.com/nowplayer.now.com_en.channels.xml
+        git add -f ./sites/content.astro.com.my/content.astro.com.my.channels.xml
         git commit -m "Channel update"
         git push
