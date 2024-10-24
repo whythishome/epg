@@ -24,12 +24,14 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=content.astro.com.my --gzip --output=guides/astro.xml
+          npm run grab -- --site=nowplayer.now.com --lang=en --gzip --output=guides/nowplayer.now.com.xml
+          npm run grab -- --site=foxtel.com.au --gzip --output=guides/foxtel.com.au.xml
           
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/astro.xml.gz
+        git add -f guides/nowplayer.now.com.xml.gz
+        git add -f guides/foxtel.com.au.xml.gz
         git commit -m "Update xml"
         git push
