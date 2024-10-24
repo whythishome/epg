@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
+  <channel site="foxsports.com.au" lang="en" xmltv_id="" site_id="21">UHD EVENTS 1</channel>
+  <channel site="foxsports.com.au" lang="en" xmltv_id="" site_id="22">UHD EVENTS 2</channel>
   <channel site="foxsports.com.au" lang="en" xmltv_id="FoxCricket.au" site_id="14">FOX Cricket</channel>
   <channel site="foxsports.com.au" lang="en" xmltv_id="FoxFooty.au" site_id="10">FOX Footy</channel>
   <channel site="foxsports.com.au" lang="en" xmltv_id="FoxLeague.au" site_id="2">FOX League</channel>
