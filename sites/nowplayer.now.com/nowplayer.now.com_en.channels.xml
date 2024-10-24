@@ -1,146 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="102">Viu channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="168">MOOV Concert/MV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="217">Love Nature</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="218">Love Nature 4K</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="222">Crime + Investigation</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="330">CGTN</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="400">Watch N Learn</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="448">Moonbug</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="535">Netflix</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="545">CCTV-13</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="552">OneTV General Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="600">Sports Schedule Highlights</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="612">Now Sports 4K 2</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="613">Now Sports 4K 3</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="627">Now Sports Premier League 7</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="641">Now Sports 641</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="646">beIN SPORTS 6</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="650">Now Sports 650</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="651">Now Sports 651</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="670">SPOTV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="671">SPOTV2</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="681">Now Sports 681</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="688">Lucky 688</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="772">Sony MAX</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="900">Adult Promotional Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ABCAustralia.au" site_id="561">ABC Australia</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="325">Al Jazeera English</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="AnimalPlanetSoutheastAsia.sg" site_id="210">Animal Planet</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="AnimaxAsia.sg" site_id="150">Animax</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="AsianFoodNetwork.sg" site_id="527">Asian Food Network</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="AstroCricket.my" site_id="674">Astro Cricket</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="AXN.hk" site_id="512">AXN</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="BBCEarthAsia.uk" site_id="220">BBC Earth</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="BBCLifestyleAsia.uk" site_id="502">BBC Lifestyle</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="BBCNewsAsiaPacific.uk" site_id="320">BBC News</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSports1.hk" site_id="638">beIN SPORTS 1</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSports2.hk" site_id="639">beIN SPORTS 2</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSportsMax1.qa" site_id="643">beIN SPORTS 3</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSportsMax2.qa" site_id="644">beIN SPORTS 4</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSportsMax3.qa" site_id="645">beIN SPORTS 5</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="BloombergTVAsia.hk" site_id="321">Bloomberg Television</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="CartoonNetworkAsia.sg" site_id="443">Cartoon Network</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="CBeebiesAsia.uk" site_id="447">CBeebies</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="CCTV1.cn" site_id="541">CCTV-1</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="CCTV4Asia.cn" site_id="542">CCTV-4</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ChannelAdult.hk" site_id="903">Channel Adult</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="CinemaxAsia.sg" site_id="113">CINEMAX</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="CNA.sg" site_id="322">Channel NewsAsia</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="CNBCAsia.sg" site_id="319">CNBC</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="CNNInternationalAsiaPacific.hk" site_id="316">CNN International</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ColorsAsiaPacific.in" site_id="780">COLORS</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="CTiAsia.tw" site_id="538">CTI Asia Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="DaVinciAsia.de" site_id="460">Da Vinci</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="DiscoveryAsia.sg" site_id="208">Discovery Asia</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="DiscoveryChannelSoutheastAsia.sg" site_id="209">Discovery Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="DiscoveryScienceSoutheastAsia.sg" site_id="211">Discovery Science</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="DMAXSoutheastAsia.sg" site_id="212">DMAX</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="DreamWorksChannelAsia.us" site_id="440">DreamWorks</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="DWEnglish.de" site_id="324">DW (English)</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="EBCNewsAsia.tw" site_id="371">ETTV Asia News</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ETTVAsiaNews.tw" site_id="162">ETTV Asia Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="326">euronews</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="FightSports.us" site_id="642">NBA TV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="FoodNetworkAsia.sg" site_id="526">Food Network</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="France24English.fr" site_id="327">France 24</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="France24French.fr" site_id="715">France 24 (French)</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="GMALifeTV.ph" site_id="721">GMA Life TV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="GMANewsTV.ph" site_id="722">GMA News TV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="GMAPinoyTVAsiaPacific.ph" site_id="720">GMA Pinoy TV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="HBOAsia.sg" site_id="115">HBO</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="HBOFamilyAsia.sg" site_id="112">HBO Family</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="HBOHitsAsia.sg" site_id="111">HBO Hits</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="HBOSignatureAsia.sg" site_id="114">HBO Signature</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="HGTVAsia.us" site_id="529">HGTV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="HistoryAsia.us" site_id="223">HISTORY</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="IceFire.hk" site_id="901">Ice Fire</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="KBSWorld.kr" site_id="156">KBS World</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="LifetimeAsia.us" site_id="525">Lifetime</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="MovieMovie.hk" site_id="116">MOVIE MOVIE</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="MTV.in" site_id="779">MTV India</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="MUTV.uk" site_id="640">MUTV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="NHKWorldJapan.jp" site_id="328">NHK WORLD-JAPAN</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="NHKWorldPremium.jp" site_id="711">NHK World Premium</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="NickelodeonAsia.sg" site_id="444">Nickelodeon</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="NickJrAsia.sg" site_id="449">Nick Jr.</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="now668.hk" site_id="668">Now668</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowBaoguMovies.hk" site_id="133">Now Baogu Movies</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowBaoguSuperstars.hk" site_id="138">Now Baogu Superstars</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowBusinessNewsChannel.hk" site_id="333">Now Business News Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowChineseDramaChannel.hk" site_id="105">Now Chinese Drama Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowData.hk" site_id="336">Now Data</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowDirect.hk" site_id="331">Now Direct</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowGolf2.hk" site_id="683">Now Golf 2</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowGolf3.hk" site_id="684">Now Golf 3</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowJelli.hk" site_id="108">NowJelli</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowNews.hk" site_id="332">Now NEWS</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports1.hk" site_id="631">Now Sports 1</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports2.hk" site_id="632">Now Sports 2</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports3.hk" site_id="633">Now Sports 3</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports4.hk" site_id="634">Now Sports 4</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports4K1.hk" site_id="611">Now Sports 4K 1</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports5.hk" site_id="635">Now Sports 5</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports6.hk" site_id="636">Now Sports 6</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports7.hk" site_id="637">Now Sports 7</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPlus.hk" site_id="680">Now Sports Plus</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague1.hk" site_id="621">Now Sports Premier League 1</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague2.hk" site_id="622">Now Sports Premier League 2</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague3.hk" site_id="623">Now Sports Premier League 3</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague4.hk" site_id="624">Now Sports Premier League 4</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague5.hk" site_id="625">Now Sports Premier League 5</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague6.hk" site_id="626">Now Sports Premier League 6</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeagueTV.hk" site_id="620">Now Sports Premier League TV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPrime.hk" site_id="630">Now Sports Prime</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowVideoExpress.hk" site_id="106">Now Video Express</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="OutdoorChannelInternational.us" site_id="221">Outdoor Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="PhoenixChineseChannel.hk" site_id="548">Phoenix Chinese Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="PhoenixHongKongChannel.hk" site_id="367">Phoenix Hong Kong Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="PhoenixInfoNewsChannel.hk" site_id="366">Phoenix InfoNews Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ROCKEntertainment.sg" site_id="517">ROCK Entertainment</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="RT.ru" site_id="329">RT</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="RugbyPassTV.uk" site_id="679">Premier Sports</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="SanshaTV.cn" site_id="553">Sansha TV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ShenzhenSatelliteTV.cn" site_id="540">Shenzhen TV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="SkyNews.uk" site_id="323">Sky News</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="SonyEntertainmentTelevision.in" site_id="771">Sony TV (India)</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="SonySABAsia.in" site_id="774">Sony SAB</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="StarBharat.in" site_id="797">Star Bharat</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="StarGold.in" site_id="793">Star Gold</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="StarPlus.in" site_id="794">STAR PLUS</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="TheFilipinoChannelAsia.us" site_id="725">TFC</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="TLCSoutheastAsia.sg" site_id="213">TLC</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="TravelChannelSoutheastAsia.sg" site_id="528">Travel Channel</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="TV5MondeAsia.fr" site_id="714">TV5MONDE ASIE</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="TV5MondeStyle.fr" site_id="713">TV5MONDE Style</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="tvNAsia.hk" site_id="155">tvN</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="TVS2SouthernTV.cn" site_id="543">GBA Satellite TV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ViuTV.hk" site_id="099">ViuTV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ViuTVsix.hk" site_id="096">ViuTVsix</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="YicaiTV.cn" site_id="338">Yicai TV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ZeeCinemaAsia.in" site_id="781">Zee Cinema International</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ZeeNews.in" site_id="785">Zee News</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ZeeTVAsiaPacific.sg" site_id="782">Zee TV</channel>
-  <channel site="nowplayer.now.com" lang="en" xmltv_id="ZhejiangSatelliteTV.cn" site_id="555">Zhejiang Satellite TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="102" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch102_160_115">Viu channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="168" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch168_160_115">MOOV Concert/MV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="217" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch217_160_115">Love Nature</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="218" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch218_160_115">Love Nature 4K</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="222" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch222_160_115">Crime + Investigation</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="330" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch330_160_115">CGTN</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="400" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch400_160_115">Watch N Learn</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="448" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch448_160_115">Moonbug</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="535" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch535_160_115">Netflix</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="545" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch545_160_115">CCTV-13</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="552" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch552_160_115">OneTV General Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="600" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch600_160_115">Sports Schedule Highlights</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="612" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch612_160_115">Now Sports 4K 2</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="613" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch613_160_115">Now Sports 4K 3</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="627" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch627_160_115">Now Sports Premier League 7</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="641" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch641_160_115">Now Sports 641</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="646" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch646_160_115">beIN SPORTS 6</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="650" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch650_160_115">Now Sports 650</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="651" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch651_160_115">Now Sports 651</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="670" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch670_160_115">SPOTV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="671" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch671_160_115">SPOTV2</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="681" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch681_160_115">Now Sports 681</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="688" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch688_160_115">Lucky 688</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="772" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch772_160_115">Sony MAX</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="" site_id="900" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch900_160_115">Adult Promotional Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ABCAustralia.au" site_id="561" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch561_160_115">ABC Australia</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="325" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch325_160_115">Al Jazeera English</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="AnimalPlanetSoutheastAsia.sg" site_id="210" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch210_160_115">Animal Planet</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="AnimaxAsia.sg" site_id="150" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch150_160_115">Animax</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="AsianFoodNetwork.sg" site_id="527" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch527_160_115">Asian Food Network</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="AstroCricket.my" site_id="674" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch674_160_115">Astro Cricket</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="AXN.hk" site_id="512" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch512_160_115">AXN</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="BBCEarthAsia.uk" site_id="220" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch220_160_115">BBC Earth</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="BBCLifestyleAsia.uk" site_id="502" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch502_160_115">BBC Lifestyle</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="BBCNewsAsiaPacific.uk" site_id="320" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch320_160_115">BBC News</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSports1.hk" site_id="638" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch638_160_115">beIN SPORTS 1</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSports2.hk" site_id="639" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch639_160_115">beIN SPORTS 2</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSportsMax1.qa" site_id="643" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch643_160_115">beIN SPORTS 3</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSportsMax2.qa" site_id="644" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch644_160_115">beIN SPORTS 4</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="beINSportsMax3.qa" site_id="645" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch645_160_115">beIN SPORTS 5</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="BloombergTVAsia.hk" site_id="321" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch321_160_115">Bloomberg Television</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="CartoonNetworkAsia.sg" site_id="443" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch443_160_115">Cartoon Network</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="CBeebiesAsia.uk" site_id="447" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch447_160_115">CBeebies</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="CCTV1.cn" site_id="541" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch541_160_115">CCTV-1</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="CCTV4Asia.cn" site_id="542" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch542_160_115">CCTV-4</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ChannelAdult.hk" site_id="903" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch903_160_115">Channel Adult</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="CinemaxAsia.sg" site_id="113" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch113_160_115">CINEMAX</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="CNA.sg" site_id="322" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch322_160_115">Channel NewsAsia</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="CNBCAsia.sg" site_id="319" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch319_160_115">CNBC</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="CNNInternationalAsiaPacific.hk" site_id="316" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch316_160_115">CNN International</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ColorsAsiaPacific.in" site_id="780" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch780_160_115">COLORS</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="CTiAsia.tw" site_id="538" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch538_160_115">CTI Asia Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="DaVinciAsia.de" site_id="460" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch460_160_115">Da Vinci</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="DiscoveryAsia.sg" site_id="208" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch208_160_115">Discovery Asia</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="DiscoveryChannelSoutheastAsia.sg" site_id="209" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch209_160_115">Discovery Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="DiscoveryScienceSoutheastAsia.sg" site_id="211" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch211_160_115">Discovery Science</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="DMAXSoutheastAsia.sg" site_id="212" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch212_160_115">DMAX</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="DreamWorksChannelAsia.us" site_id="440" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch440_160_115">DreamWorks</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="DWEnglish.de" site_id="324" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch324_160_115">DW (English)</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="EBCNewsAsia.tw" site_id="371" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch371_160_115">ETTV Asia News</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ETTVAsiaNews.tw" site_id="162" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch162_160_115">ETTV Asia Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="326" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch326_160_115">euronews</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="FightSports.us" site_id="642" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch642_160_115">NBA TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="FoodNetworkAsia.sg" site_id="526" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch526_160_115">Food Network</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="France24English.fr" site_id="327" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch327_160_115">France 24</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="France24French.fr" site_id="715" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch715_160_115">France 24 (French)</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="GMALifeTV.ph" site_id="721" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch721_160_115">GMA Life TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="GMANewsTV.ph" site_id="722" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch722_160_115">GMA News TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="GMAPinoyTVAsiaPacific.ph" site_id="720" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch720_160_115">GMA Pinoy TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="HBOAsia.sg" site_id="115" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch115_160_115">HBO</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="HBOFamilyAsia.sg" site_id="112" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch112_160_115">HBO Family</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="HBOHitsAsia.sg" site_id="111" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch111_160_115">HBO Hits</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="HBOSignatureAsia.sg" site_id="114" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch114_160_115">HBO Signature</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="HGTVAsia.us" site_id="529" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch529_160_115">HGTV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="HistoryAsia.us" site_id="223" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch223_160_115">HISTORY</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="IceFire.hk" site_id="901" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch901_160_115">Ice Fire</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="KBSWorld.kr" site_id="156" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch156_160_115">KBS World</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="LifetimeAsia.us" site_id="525" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch525_160_115">Lifetime</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="MovieMovie.hk" site_id="116" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch116_160_115">MOVIE MOVIE</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="MTV.in" site_id="779" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch779_160_115">MTV India</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="MUTV.uk" site_id="640" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch640_160_115">MUTV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="NHKWorldJapan.jp" site_id="328" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch328_160_115">NHK WORLD-JAPAN</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="NHKWorldPremium.jp" site_id="711" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch711_160_115">NHK World Premium</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="NickelodeonAsia.sg" site_id="444" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch444_160_115">Nickelodeon</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="NickJrAsia.sg" site_id="449" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch449_160_115">Nick Jr.</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="now668.hk" site_id="668" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch668_160_115">Now668</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowBaoguMovies.hk" site_id="133" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch133_160_115">Now Baogu Movies</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowBaoguSuperstars.hk" site_id="138" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch138_160_115">Now Baogu Superstars</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowBusinessNewsChannel.hk" site_id="333" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch333_160_115">Now Business News Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowChineseDramaChannel.hk" site_id="105" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch105_160_115">Now Chinese Drama Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowData.hk" site_id="336" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch336_160_115">Now Data</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowDirect.hk" site_id="331" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch331_160_115">Now Direct</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowGolf2.hk" site_id="683" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch683_160_115">Now Golf 2</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowGolf3.hk" site_id="684" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch684_160_115">Now Golf 3</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowJelli.hk" site_id="108" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch108_160_115">NowJelli</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowNews.hk" site_id="332" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch332_160_115">Now NEWS</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports1.hk" site_id="631" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch631_160_115">Now Sports 1</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports2.hk" site_id="632" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch632_160_115">Now Sports 2</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports3.hk" site_id="633" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch633_160_115">Now Sports 3</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports4.hk" site_id="634" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch634_160_115">Now Sports 4</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports4K1.hk" site_id="611" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch611_160_115">Now Sports 4K 1</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports5.hk" site_id="635" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch635_160_115">Now Sports 5</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports6.hk" site_id="636" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch636_160_115">Now Sports 6</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSports7.hk" site_id="637" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch637_160_115">Now Sports 7</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPlus.hk" site_id="680" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch680_160_115">Now Sports Plus</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague1.hk" site_id="621" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch621_160_115">Now Sports Premier League 1</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague2.hk" site_id="622" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch622_160_115">Now Sports Premier League 2</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague3.hk" site_id="623" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch623_160_115">Now Sports Premier League 3</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague4.hk" site_id="624" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch624_160_115">Now Sports Premier League 4</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague5.hk" site_id="625" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch625_160_115">Now Sports Premier League 5</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeague6.hk" site_id="626" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch626_160_115">Now Sports Premier League 6</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPremierLeagueTV.hk" site_id="620" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch620_160_115">Now Sports Premier League TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowSportsPrime.hk" site_id="630" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch630_160_115">Now Sports Prime</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="nowVideoExpress.hk" site_id="106" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch106_160_115">Now Video Express</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="OutdoorChannelInternational.us" site_id="221" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch221_160_115">Outdoor Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="PhoenixChineseChannel.hk" site_id="548" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch548_160_115">Phoenix Chinese Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="PhoenixHongKongChannel.hk" site_id="367" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch367_160_115">Phoenix Hong Kong Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="PhoenixInfoNewsChannel.hk" site_id="366" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch366_160_115">Phoenix InfoNews Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ROCKEntertainment.sg" site_id="517" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch517_160_115">ROCK Entertainment</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="RT.ru" site_id="329" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch329_160_115">RT</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="RugbyPassTV.uk" site_id="679" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch679_160_115">Premier Sports</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="SanshaTV.cn" site_id="553" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch553_160_115">Sansha TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ShenzhenSatelliteTV.cn" site_id="540" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch540_160_115">Shenzhen TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="SkyNews.uk" site_id="323" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch323_160_115">Sky News</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="SonyEntertainmentTelevision.in" site_id="771" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch771_160_115">Sony TV (India)</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="SonySABAsia.in" site_id="774" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch774_160_115">Sony SAB</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="StarBharat.in" site_id="797" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch797_160_115">Star Bharat</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="StarGold.in" site_id="793" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch793_160_115">Star Gold</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="StarPlus.in" site_id="794" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch794_160_115">STAR PLUS</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="TheFilipinoChannelAsia.us" site_id="725" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch725_160_115">TFC</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="TLCSoutheastAsia.sg" site_id="213" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch213_160_115">TLC</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="TravelChannelSoutheastAsia.sg" site_id="528" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch528_160_115">Travel Channel</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="TV5MondeAsia.fr" site_id="714" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch714_160_115">TV5MONDE ASIE</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="TV5MondeStyle.fr" site_id="713" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch713_160_115">TV5MONDE Style</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="tvNAsia.hk" site_id="155" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch155_160_115">tvN</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="TVS2SouthernTV.cn" site_id="543" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch543_160_115">GBA Satellite TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ViuTV.hk" site_id="099" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch99_160_115">ViuTV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ViuTVsix.hk" site_id="096" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch96_160_115">ViuTVsix</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="YicaiTV.cn" site_id="338" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch338_160_115">Yicai TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ZeeCinemaAsia.in" site_id="781" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch781_160_115">Zee Cinema International</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ZeeNews.in" site_id="785" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch785_160_115">Zee News</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ZeeTVAsiaPacific.sg" site_id="782" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch782_160_115">Zee TV</channel>
+  <channel site="nowplayer.now.com" lang="en" xmltv_id="ZhejiangSatelliteTV.cn" site_id="555" logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch555_160_115">Zhejiang Satellite TV</channel>
 </channels>
