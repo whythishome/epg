@@ -74,7 +74,7 @@ async function main() {
     (channel: Channel) => channel.lang || '_',
     (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '0'),
     (channel: Channel) => channel.site_id,
-    (channel: Channel) => channel.icon
+    (channel: Channel) => channel.icon || 'A'
   ])
 
   const xml = new XML(output)
