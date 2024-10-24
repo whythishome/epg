@@ -3,6 +3,8 @@
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Arena-2/AR2">Arena +2</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Arena/ARN">Arena</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Bloomberg-Television/BLM">Bloomberg Television</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="British-2/FS2">British +2</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="British/FSU">British</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="CGTN/CCC">CGTN</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="CGTNDocumentary/CCD">CGTN-Documentary</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Daystar/DAS">Daystar</channel>
