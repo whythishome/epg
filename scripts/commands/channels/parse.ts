@@ -64,6 +64,7 @@ async function main() {
     if (found) {
       channel.xmltv_id = found.xmltv_id
       channel.lang = found.lang
+      channel.icon = found.icon
     }
 
     output.add(channel)
@@ -72,7 +73,8 @@ async function main() {
   output = output.orderBy([
     (channel: Channel) => channel.lang || '_',
     (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '0'),
-    (channel: Channel) => channel.site_id
+    (channel: Channel) => channel.site_id,
+    (channel: Channel) => channel.icon,
   ])
 
   const xml = new XML(output)
