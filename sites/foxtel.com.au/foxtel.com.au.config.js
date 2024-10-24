@@ -33,7 +33,6 @@ module.exports = {
       const stop = start.add(30, 'm')
       programs.push({
         title: parseTitle($item),
-        sub_title: parseSubTitle($item),
         image: parseImage($item),
         rating: parseRating($item),
         season: parseSeason($item),
