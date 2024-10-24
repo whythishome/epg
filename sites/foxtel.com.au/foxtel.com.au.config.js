@@ -65,7 +65,8 @@ module.exports = {
       return {
         lang: 'en',
         name: item.name,
-        site_id: `${slug}/${item.channelTag}`
+        site_id: `${slug}/${item.channelTag}`,
+        icon: item.channelImages.medium
       }
     })
   }
