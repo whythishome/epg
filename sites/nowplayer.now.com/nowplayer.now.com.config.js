@@ -46,7 +46,8 @@ module.exports = {
       channels.push({
         lang,
         site_id: $(el).find('.guide-g-play > p.channel').text().replace('CH', ''),
-        name: $(el).find('.thumbnail > a > span.image > p').text()
+        name: $(el).find('.thumbnail > a > span.image > p').text(),
+        logo: $(el).find('.thumbnail > a > span.image > img').attr('src')
       })
     })
 
