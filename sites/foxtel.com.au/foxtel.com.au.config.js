@@ -34,9 +34,6 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         image: parseImage($item),
-        rating: parseRating($item),
-        season: parseSeason($item),
-        episode: parseEpisode($item),
         start,
         stop
       })
