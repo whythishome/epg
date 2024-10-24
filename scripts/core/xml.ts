@@ -12,7 +12,7 @@ export class XML {
     let output = '<?xml version="1.0" encoding="UTF-8"?>\r\n<channels>\r\n'
 
     this.items.forEach((channel: Channel) => {
-      const logo = channel.logo ? ` logo="${channel.logo}"` : ''
+      const logo = channel.logo ? ` logo="${channel.logo}"` : ' logo=""'
       const xmltv_id = channel.xmltv_id || ''
       const lang = channel.lang || ''
       const site_id = channel.site_id || ''
