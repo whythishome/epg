@@ -1,136 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="131">SONY MAX</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="135">Vijay TV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="205">Hub Sports 5 HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="235">MOLA Sports</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="236">MOLA Golf</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="241">FIGHT SPORTS HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="437">HGTV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="709">Bloomberg Quicktake</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="724">France24</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="820">ETTV ASIA HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="823">ONE HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="825">Hub E City HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="921">TestChannel921</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="922">TestChannel922</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="923">TestChannel923</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="924">TestChannel924</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="988">Test channel 988</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="989">Test channel 989</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="993">TestChannel 993</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="994">TestChannel1</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="995">TestChannel995</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="996">TestChannel996</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="997">TestChannel2</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="998">Channel_Test</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ABCAustralia.au" site_id="447">ABC Australia</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="AdithyaTV.in" site_id="158">ADITHYA TV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ANC.ph" site_id="143">ANC</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="AnimaxAsia.sg" site_id="532">Animax HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ArirangTV.kr" site_id="817">Arirang TV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="Asianet.in" site_id="139">Asianet</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="AsianetMovies.in" site_id="140">Asianet Movies</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="AstroSensasi.sg" site_id="123">Hub Sensasi HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="AstroWarna.my" site_id="118">Astro Warna</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="AXN.sg" site_id="511">AXN HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="BBCEarthAsia.uk" site_id="407">BBC Earth HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="BBCLifestyleAsia.uk" site_id="432">BBC Lifestyle HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="BBCNewsAsiaPacific.uk" site_id="701">BBC World News HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="beINSports2.qa" site_id="211">beIN SPORTS 2 HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="beINSports3.qa" site_id="214">beIN Sports 3</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="beINSports4.qa" site_id="215">beIN Sports 4 HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="beINSports5.qa" site_id="216">beIN Sports 5 HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="beINSports.qa" site_id="213">beIN SPORTS HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="BloombergTVAsia.hk" site_id="708">Bloomberg Television HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="BoomerangAsia.sg" site_id="317">Boomerang HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CartoonNetworkAsia.sg" site_id="316">Cartoon Network</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CBeebiesAsia.uk" site_id="303">Cbeebies HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CCM.hk" site_id="869">CCM</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CCTV4Asia.cn" site_id="801">CCTV-4</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CelestialMovies.hk" site_id="868">Celestial Movies HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CGTN.cn" site_id="722">CGTN</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="Channel5.sg" site_id="102">Channel 5 HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="Channel8.sg" site_id="103">Channel 8 HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ChannelU.sg" site_id="107">Channel U HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CinemaOneGlobal.ph" site_id="145">Cinema One Global</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CinemaxAsia.sg" site_id="611">Cinemax HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CitraEntertainment.id" site_id="115">Citra Entertainment</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CNA.sg" site_id="106">Channel NewsAsia HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CNBCAsia.sg" site_id="707">CNBC HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CNNInternationalAsiaPacific.hk" site_id="711">CNN HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="Colors.in" site_id="128">COLORS</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ColorsTamil.in" site_id="132">COLORS Tamil HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CrimePlusInvestigationAsia.sg" site_id="403">Crime + Investigation HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CTiTV.tw" site_id="827">CTI TV HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="CuriosityChannel.us" site_id="422">Discovery Channel HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="DragonTVInternational.cn" site_id="832">Dragon TV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="DreamWorksChannelAsia.us" site_id="307">DreamWorks Channel HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="DWEnglish.de" site_id="153">DW (Deutsch)</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="704">Euronews HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="FashionTVAsia.fr" site_id="443">FashionTV HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="FoxNewsChannel.us" site_id="702">Fox News Channel HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="GEM.sg" site_id="814">GEM HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HBOAsia.sg" site_id="601">HBO HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HBOFamilyAsia.sg" site_id="604">HBO Family HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HBOHitsAsia.sg" site_id="605">HBO Hits HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HBOSignatureAsia.sg" site_id="603">HBO Signature HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HistoryAsia.us" site_id="401">HISTORY HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HITS.sg" site_id="519">Hits HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HITSMovies.sg" site_id="512">HITS MOVIES HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubECity.sg" site_id="111">Hub E City HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier1.sg" site_id="221">HubPremier 1</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier2.sg" site_id="222">Hub Premier 2 (HD)</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier3.sg" site_id="223">Hub Premier 3</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier4.sg" site_id="224">Hub Premier 4</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier5.sg" site_id="225">Hub Premier 5</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier6.sg" site_id="226">Hub Premier 6</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier7.sg" site_id="227">Hub Premier 7</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier8.sg" site_id="228">Hub Premier 8</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier9.sg" site_id="229">Hub Premier 9</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier10.sg" site_id="230">Hub Premier 10</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubPremier11.sg" site_id="231">Hub Premier 11</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubSports1.sg" site_id="201">Hub Sports 1 HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubSports2.sg" site_id="202">Hub Sports 2 HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubSports3.sg" site_id="203">Hub Sports 3 HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubSports4.sg" site_id="204">Hub Sports 4 HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="HubVVDrama.sg" site_id="855">Hub VVDrama HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="Jade.hk" site_id="838">TVB Jade HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="KalaignarTV.in" site_id="141">Kalaignar TV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="Karisma.id" site_id="116">Karisma</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="KBSWorld.kr" site_id="815">KBS World HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="KTV.in" site_id="159">KTV HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="LifetimeAsia.us" site_id="514">Lifetime HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="NHKWorldJapan.jp" site_id="812">NHK WORLD - JAPAN</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="NHKWorldPremium.jp" site_id="811">NHK World Premium HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="NickelodeonAsia.sg" site_id="314">Nickelodeon HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="NickJrAsia.sg" site_id="304">Nick Jr HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ONE.sg" site_id="124">ONE (Malay)</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ParamountNetwork.sg" site_id="620">Paramount Network</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="PhoenixChineseChannel.hk" site_id="805">Phoenix Chinese Channel HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="PhoenixInfoNewsChannel.hk" site_id="806">Phoenix InfoNews Channel HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="PremierSports1Asia.ie" site_id="207">Premier Sports TV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="PreviewChannel.sg" site_id="101">Preview Channel</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ROCKEntertainment.sg" site_id="509">Blue Ant Entertainment HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="SEAToday.id" site_id="720">SEA Today</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="SkyNewsAustralia.au" site_id="703">Sky News HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="SonyEntertainmentTelevision.in" site_id="127">Sony Entertainment Television</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="SPOTV2.kr" site_id="210">SPOTV2</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="SPOTV.kr" site_id="209">SPOTV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="SunMusic.in" site_id="134">Sun Music</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="SunTV.in" site_id="133">Sun TV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="Suria.sg" site_id="104">Suria HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="TheFilipinoChannelAsia.us" site_id="144">The Filipino Channel</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="Travelxp.in" site_id="427">Travelxp HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="TV5MondeAsia.fr" site_id="152">TV5MONDE HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="TVBSAsia.tw" site_id="828">TVBS Asia</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="TVBSNews.tw" site_id="808">TVBS-NEWS</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="TVBXingHe.hk" site_id="859">TVB Xing He HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="tvNAsia.hk" site_id="824">tvN HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="Vannathirai.sg" site_id="136">Vannathirai</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="Vasantham.sg" site_id="105">Vasantham HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ZeeCinema.in" site_id="130">Zee Cinema</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ZeeTamil.in" site_id="138">Zee Tamil HD</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ZeeThirai.in" site_id="137">Zee Thirai</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ZeeTV.in" site_id="125">Zee TV</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="0ec5072f-b6dc-4676-a683-c32c5db2c3a1" logo="https://poster.starhubgo.com/Linear_Channels2/247_1920x1080_HTV.png?w=272">Premier Sports</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="1b8e6f65-e3f0-4369-bf33-c56212eb269e" logo="https://poster.starhubgo.com/Linear_channels2/704_1920x1080_HTV.png?w=272">Euronews HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="1ed77994-5ab6-4d38-88f2-d662f3cfe5b0" logo="https://poster.starhubgo.com/Linear_channels2/127_1920x1080_HTV.png?w=272">Sony Entertainment Television</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="2cd14827-0816-400d-b868-62985ec8b627" logo="https://poster.starhubgo.com/Linear_channels2/437_1920x1080_HTV.png?w=272">HGTV</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="2cea0112-a03d-4fa1-a4c2-276da4d3c908" logo="https://poster.starhubgo.com/Linear_channels2/152_1920x1080_HTV.png?w=272">TV5MONDE HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="2d16335e-aea6-47ab-b688-b3c694a27cf6" logo="https://poster.starhubgo.com/Linear_Channels2/223_1920x1080_HTV.png?w=272">Hub Premier 3</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="3c3228b3-3388-4aa1-8535-6f2ed17432af" logo="https://poster.starhubgo.com/Linear_channels2/447_1920x1080_HTV.png?w=272">ABC Australia HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="3c292157-4cf2-48bf-9608-c0ef8ab79cc5" logo="https://poster.starhubgo.com/Linear_Channels2/202_1920x1080_HTV.png?w=272">Hub Sports 2 HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="4c646df4-59ab-4e03-9de8-d36a95127266" logo="https://poster.starhubgo.com/Linear_channels2/153_1920x1080_HTV.png?w=272">DW English HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="4db9b282-0e8d-456e-ba83-89b4eaf173d7" logo="https://poster.starhubgo.com/Linear_channels2/304_1920x1080_HTV.png?w=272">Nick Jr</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="5b36348e-1669-4883-9821-6b336cff0d58" logo="https://poster.starhubgo.com/Linear_channels2/401_1920x1080_HTV.png?w=272">HISTORY HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="5bc5b18c-b12c-462f-b49a-8056b74d72a3" logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png?w=272">TVB Jade HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="5f50648a-3b0f-4d13-b0ac-056e722a647a" logo="https://poster.starhubgo.com/Linear_channels2/859_1920x1080_HTV.png?w=272">TVB Xing He</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="6a59cb8b-182d-4038-b315-cf35cf7c5ac7" logo="https://poster.starhubgo.com/Linear_channels2/115_1920x1080_HTV.png?w=272">Citra Entertainment</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="6c1be2bc-47c4-45b5-b027-fce49322f34c" logo="https://poster.starhubgo.com/Linear_channels2/215_1920x1080_HTV.png?w=272">beIN Sports 4</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="6f6c5d20-18b3-4023-b505-726b9c36b6e9" logo="https://poster.starhubgo.com/Linear_channels2/139_1920x1080_HTV.png?w=272">Asianet</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="7c0ee1eb-5f74-4f5a-a338-69eb125badb4" logo="https://poster.starhubgo.com/Linear_channels2/820_1920x1080_HTV.png?w=272">ETTV ASIA HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="7cad02e2-086a-49c8-bf6a-737d1f30c680" logo="https://poster.starhubgo.com/Linear_channels2/827_1920x1080_HTV.png?w=272">CTI TV HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="8a28afbc-74bb-4c02-9bba-eb623358a9b8" logo="https://poster.starhubgo.com/Linear_channels2/701_1920x1080_HTV.png?w=272">BBC World News HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="8ade3211-6836-4e95-80f7-5aca573b8b75" logo="https://poster.starhubgo.com/Linear_channels2/125_1920x1080_HTV.png?w=272">Zee TV</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9abfbba5-24c8-4e3f-8e00-f75902c7675b" logo="https://poster.starhubgo.com/Linear_channels2/724_1920x1080_HTV.png?w=272">France24</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9b01c864-5bcc-46e6-ba8e-3ba6c33ca8fb" logo="https://poster.starhubgo.com/Linear_Channels2/227_1920x1080_HTV.png?w=272">Hub Premier 7</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9bf114df-42db-4815-9b73-efa05d0b9f94" logo="https://poster.starhubgo.com/Linear_channels2/118_1920x1080_HTV.png?w=272">Astro Warna HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9c7414bb-cd6c-4cdf-b019-1c85b7511d32" logo="https://poster.starhubgo.com/Linear_channels2/101_1920x1080_HTV.png?w=272">Preview Channel</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9fc55c89-3eb4-4516-a5c4-c6193eb71f57" logo="https://poster.starhubgo.com/Linear_channels2/317_1920x1080_HTV.png?w=272">Cartoonito HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="12efa598-4bae-4d64-afc0-a4e7340de74e" logo="https://poster.starhubgo.com/Linear_channels2/213_1920x1080_HTV.png?w=272">beIN Sports HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="14a563d5-d406-4094-907e-ec452c658de9" logo="https://poster.starhubgo.com/Linear_channels2/427_1920x1080_HTV.png?w=272">Travelxp HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="21bf30fb-2800-4761-aee8-452bdb68aff6" logo="https://poster.starhubgo.com/Linear_channels2/422_1920x1080_HTV.png?w=272">Discovery HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="30a6b23c-0657-4e8f-b26b-de9273e394d7" logo="https://poster.starhubgo.com/Linear_channels2/303_1920x1080_HTV.png?w=272">Cbeebies HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="36dae5f2-147d-4aab-a7bd-e9b7d9501734" logo="https://poster.starhubgo.com/Linear_channels2/159_1920x1080_HTV.png?w=272">KTV HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="54f4de25-3575-44c4-92dd-b4a1c3c5b088" logo="https://poster.starhubgo.com/Linear_channels2/316_1920x1080_HTV.png?w=272">Cartoon Network</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="57f9281b-3c13-456c-aa52-a1e410706933" logo="https://poster.starhubgo.com/Linear_channels2/832_1920x1080_HTV.png?w=272">Dragon TV</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="61fcfb0b-514a-47a0-8400-ed8b9221188c" logo="https://poster.starhubgo.com/Linear_channels2/132_1920x1080_HTV.png?w=272">COLORS Tamil HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="64ddc417-c35c-4b95-84ca-67b0d6c77265" logo="https://poster.starhubgo.com/Linear_channels2/145_1920x1080_HTV.png?w=272">Cinema One Global</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="68bbd5d8-379d-4646-a1e3-e204cc9c2f54" logo="https://poster.starhubgo.com/Linear_channels2/123_1920x1080_HTV.png?w=272">Astro Sensasi HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="68c4d3c4-93d9-4cb3-ba14-8918142bfbdc" logo="https://poster.starhubgo.com/Linear_channels2/130_1920x1080_HTV.png?w=272">Zee Cinema</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="71da87e9-5d3f-4544-8b6f-e9a374e05bc7" logo="https://poster.starhubgo.com/Linear_channels2/241_1920x1080_HTV.png?w=272">FIGHT SPORTS HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="072f2bcf-99f1-48fe-8806-7a217e4bb372" logo="https://poster.starhubgo.com/Linear_channels2/158_1920x1080_HTV.png?w=272">ADITHYA TV</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="73d6b697-f5f1-4a04-a788-ece67c31ed1c" logo="https://poster.starhubgo.com/Linear_channels2/817_1920x1080_HTV.png?w=272">Arirang TV HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="77da4ed7-09ed-455a-9c09-8d75000fe942" logo="https://poster.starhubgo.com/Linear_channels2/722_1920x1080_HTV.png?w=272">CGTN</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="94ec2a65-eae1-4cdc-95a6-1ed67b17f4e4" logo="https://poster.starhubgo.com/Linear_channels2/137_1920x1080_HTV.png?w=272">Zee Thirai</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="99ee7b2d-1a7d-4fb1-8fbe-7903e028a87b" logo="https://poster.starhubgo.com/Linear_Channels2/221_1920x1080_HTV.png?w=272">Hub Premier 1</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="206f755c-f417-4eb4-9631-ed21ae11f2e8" logo="https://poster.starhubgo.com/Linear_channels2/703_1920x1080_HTV.png?w=272">Sky News HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="207a516d-2dbc-49f9-8d98-32d31bd89d3a" logo="https://poster.starhubgo.com/Linear_channels2/136_1920x1080_HTV.png?w=272">Vannathirai</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="210ba103-0d19-4b26-bb9f-36d531d7471f" logo="https://poster.starhubgo.com/Linear_channnes/falseNE?w=272">TestChannel 996</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="263c311c-4b74-4fc0-bb7b-7762cce99a8a" logo="https://poster.starhubgo.com/Linear_channels2/812_1920x1080_HTV.png?w=272">NHK WORLD - JAPAN HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="265c0f76-c798-496d-aca1-f540a70952ec" logo="https://poster.starhubgo.com/Linear_channels2/144_1920x1080_HTV.png?w=272">The Filipino Channel HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="354def1b-701e-4703-a279-5ef4204847a1" logo="https://poster.starhubgo.com/Linear_channels2/216_1920x1080_HTV.png?w=272">beIN Sports 5</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="423b8ffd-1e3a-4589-8c0c-d9ab1c0869e9" logo="https://poster.starhubgo.com/Linear_Channels2/236_1920x1080_HTV.png?w=272">MOLA Golf</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="578cfccf-634d-4beb-a167-741cb91a068e" logo="https://poster.starhubgo.com/Linear_Channels2/228_1920x1080_HTV.png?w=272">Hub Premier 8</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="0610cb3d-8521-44a1-8d90-7029ac428e8c" logo="https://poster.starhubgo.com/Linear_channels2/403_1920x1080_HTV.png?w=272">Crime + Investigation HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="628ba4e0-4239-46c3-a5a2-b15273c82009" logo="https://poster.starhubgo.com/Linear_channels2/702_1920x1080_HTV.png?w=272">Fox News Channel</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="740ad097-ae3d-4a16-9e67-69e308509b9a" logo="https://poster.starhubgo.com/Linear_channels2/124_1920x1080_HTV.png?w=272">ONE (Malay)</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="895ebe38-5cfe-43da-9847-a7088cc3aca7" logo="https://poster.starhubgo.com/Linear_channels2/128_1920x1080_HTV.png?w=272">COLORS</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9e2f39ab-95ba-4031-bfeb-6b9b41491b08" logo="https://poster.starhubgo.com/Linear_channels2/443_1920x1080_HTV.png?w=272">FashionTV HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="1944dfe8-b8e6-46c2-a700-78d5b680e2ac" logo="https://poster.starhubgo.com/Linear_Channels2/204_1920x1080_HTV.png?w=272">Hub Sports 4 HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="3651c456-10a4-4391-96a0-f0a4d08b2f26" logo="https://poster.starhubgo.com/Linear_Channels2/235_1920x1080_HTV.png?w=272">MOLA Sport</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="4431c255-e2a9-45db-b43b-27cc19c14cb9" logo="https://poster.starhubgo.com/Linear_channels2/823_1920x1080_HTV.png?w=272">ONE HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="05384f9f-6241-4712-80ab-2c3f2d8ac7d5" logo="https://poster.starhubgo.com/Linear_channels2/519_1920x1080_HTV.png?w=272">Hits HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="6269ba33-cee1-4dc9-8728-2b82dc73e252" logo="https://poster.starhubgo.com/Linear_channels2/407_1920x1080_HTV.png?w=272">BBC Earth HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="06830f4b-1684-42d1-a29a-616b2e34b0ae" logo="https://poster.starhubgo.com/Linear_channels2/709_1920x1080_HTV.png?w=272">Bloomberg Originals</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9511afb0-2af8-4a1a-9d54-1395924edf91" logo="https://poster.starhubgo.com/Linear_Channels2/203_1920x1080_HTV.png?w=272">Hub Sports 3 HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="30970c17-8498-4c05-9174-a49c0fc33fad" logo="https://poster.starhubgo.com/Linear_channels2/140_1920x1080_HTV.png?w=272">Asianet Movies</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="62954bd1-435e-4929-a78a-90c12c99e3eb" logo="https://poster.starhubgo.com/Linear_channels2/209_1920x1080_HTV.png?w=272">SPOTV</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="64178eae-3ca3-4048-99e4-fce9556b2812" logo="https://poster.starhubgo.com/Linear_channels2/811_1920x1080_HTV.png?w=272">NHK World Premium HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="082041a8-9ba1-41ab-9e01-6741f01f4e34" logo="https://poster.starhubgo.com/Linear_channels2/134_1920x1080_HTV.png?w=272">Sun Music</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="93114f35-0f46-4404-98c1-07019a2d2c15" logo="https://poster.starhubgo.com/Linear_channels2/711_1920x1080_HTV.png?w=272">CNN HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="6e5e72ef-9fa6-4007-9537-74e7d08f51c4" logo="https://poster.starhubgo.com/Linear_Channels2/201_1920x1080_HTV.png?w=272">Hub Sports 1 HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="21184422-bbcd-4641-aeb6-fef337b5cc7a" logo="https://poster.starhubgo.com/Linear_channels2/603_1920x1080_HTV.png?w=272">HBO Signature HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="85611254-47a9-4f7c-9469-a4ee8b9f65b1" logo="https://poster.starhubgo.com/Linear_channels2/432_1920x1080_HTV.png?w=272">BBC Lifestyle</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9e7d5a33-39dd-4e66-809f-c6099dc81d26" logo="https://poster.starhubgo.com/Linear_channels2/828_1920x1080_HTV.png?w=272">TVBS Asia</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="705e08d5-dec6-4da2-858a-fd29e6b884d2" logo="https://poster.starhubgo.com/Linear_channels2/868_1920x1080_HTV.png?w=272">Celestial Movies HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="71278e7f-bdd5-43ac-b3ca-01d6fad180f5" logo="https://poster.starhubgo.com/Linear_channels2/532_1920x1080_HTV.png?w=272">Animax HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="37e180c8-9f91-41b2-80fe-237b8eba0d8b" logo="https://poster.starhubgo.com/Linear_Channels2/225_1920x1080_HTV.png?w=272">Hub Premier 5</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="a162afe8-8990-4d43-8c9a-c29d844ba2fb" logo="https://poster.starhubgo.com/Linear_channels2/604_1920x1080_HTV.png?w=272">HBO Family HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="aab336e8-ef09-4e27-91d4-81c35b802a0a" logo="https://poster.starhubgo.com/Linear_Channels2/224_1920x1080_HTV.png?w=272">Hub Premier 4</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="ac52e93d-814b-40cb-9a3f-688765341bda" logo="https://poster.starhubgo.com/Linear_channnes/falseNE?w=272">Test 998</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="ace578ac-0996-4941-877c-58abe2ff3851" logo="">TestChannel2</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="ae1685eb-3ef0-4d14-9c89-8955bcc2bc02" logo="https://poster.starhubgo.com/Linear_channels2/210_1920x1080_HTV.png?w=272">SPOTV2</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="b4cdf669-f16c-4f74-ad4c-accde9fc77d3" logo="https://poster.starhubgo.com/Linear_channels2/808_1920x1080_HTV.png?w=272">TVBS-NEWS</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="b4ff91f4-7aa6-4e06-ab58-d3932bcbb496" logo="https://poster.starhubgo.com/Linear_channels2/207_1920x1080_HTV.png?w=272">Hub Sports 7</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="b8953e43-4fea-4a1a-833c-06de1fcb5db7" logo="https://poster.starhubgo.com/Linear_channels2/824_1920x1080_HTV.png?w=272">tvN HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="baa219e7-6b9a-4b1c-aba3-c77f26b7cf49" logo="">TestChannel 993</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="c2c8034f-2897-4944-afb6-bdfcb6e9a536" logo="https://poster.starhubgo.com/Linear_channels2/708_1920x1080_HTV.png?w=272">Bloomberg Television HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="c25a38ab-772d-41e7-b0eb-83021f1d309c" logo="https://poster.starhubgo.com/Linear_channels2/314_1920x1080_HTV.png?w=272">Nickelodeon Asia HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="c290bc2f-bff6-485e-ad81-cba439754d16" logo="">TestChannel1</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="c691a121-f6a9-450d-bd1c-cb41107b65b6" logo="https://poster.starhubgo.com/Linear_channels2/206_1920x1080_HTV.png?w=272">Hub Sports 6</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="c993aa99-5dd3-446e-9e55-62393353058a" logo="https://poster.starhubgo.com/Linear_channels2/815_1920x1080_HTV.png?w=272">KBS World HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="c4162998-26a4-4296-ae78-34d56086e604" logo="https://poster.starhubgo.com/Linear_Channels2/135_1920x1080_HTV.png?w=272">Vijay TV HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="c5693796-e108-4a13-9319-eb793bb408c3" logo="https://poster.starhubgo.com/Linear_channels2/116_1920x1080_HTV.png?w=272">Karisma</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="ce5ca9b4-9dca-412f-ac30-252144c124e3" logo="https://poster.starhubgo.com/Linear_channels2/855_1920x1080_HTV.png?w=272">Hub VVDrama</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="cef88e25-64c6-402e-a6d5-36688708c40f" logo="https://poster.starhubgo.com/Linear_channels2/512_1920x1080_HTV.png?w=272">HITS MOVIES HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="d27cd0f4-85c1-4c08-91cd-808643e7cec9" logo="https://poster.starhubgo.com/Linear_channels2/605_1920x1080_HTV.png?w=272">HBO Hits HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="d99214cd-fcdf-4613-8106-55e248d3b608" logo="https://poster.starhubgo.com/Linear_channels2/141_1920x1080_HTV.png?w=272">Kalaignar TV</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="d258444e-b66b-4cbe-88db-e09f31ab8a1f" logo="https://poster.starhubgo.com/Linear_channels2/511_1920x1080_HTV.png?w=272">AXN HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="dc1af464-7877-46dd-95f0-f81ecd1e3677" logo="https://poster.starhubgo.com/Linear_channels2/111_1920x1080_HTV.png?w=272">Hub E City HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="dca44244-ee28-4372-b502-888c8795624b" logo="https://poster.starhubgo.com/Linear_channels2/806_1920x1080_HTV.png?w=272">Phoenix InfoNews Channel HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="dceea37a-621c-4ba5-a818-68ec6154e538" logo="https://poster.starhubgo.com/Linear_channels2/211_1920x1080_HTV.png?w=272">beIN Sports 2 HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="dd211710-85e9-45f6-b3c8-482dbda2d261" logo="https://poster.starhubgo.com/Linear_channels2/133_1920x1080_HTV.png?w=272">Sun TV</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="df762cf1-6b2b-4e0c-9e23-427efde82020" logo="https://poster.starhubgo.com/Linear_channels2/720_1920x1080_HTV.png?w=272">SEA Today</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="df4507d8-292d-4036-b14e-b8343360dcaa" logo="https://poster.starhubgo.com/Linear_channels2/214_1920x1080_HTV.png?w=272">beIN Sports 3</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="dfb315cf-fbda-479a-87f0-ab35e65dd7aa" logo="https://poster.starhubgo.com/Linear_channels2/825_1920x1080_HTV.png?w=272">Hub E City HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="dff489d0-abee-4b61-a684-e283ba799ce6" logo="https://poster.starhubgo.com/Linear_channels2/131_1920x1080_HTV.png?w=272">SONY MAX</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="e2cf7307-0e1d-4dba-a94f-5a0fac85b262" logo="https://poster.starhubgo.com/Linear_channels2/514_1920x1080_HTV.png?w=272">Lifetime HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="e21e78cb-6be3-4ec6-888f-39d3d365710c" logo="https://poster.starhubgo.com/Linear_channnes/falseNE?w=272">TestChannel 995</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="e070be44-cd6f-4fab-b34d-948a979d5564" logo="https://poster.starhubgo.com/Linear_channels2/143_1920x1080_HTV.png?w=272">ANC</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="e3141ae3-758b-4393-bd9c-9260babbca00" logo="https://poster.starhubgo.com/Linear_channels2/805_1920x1080_HTV.png?w=272">Phoenix Chinese Channel HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="e774692b-b038-4615-9148-d9cbbdbebb5b" logo="https://poster.starhubgo.com/Linear_channels2/801_1920x1080_HTV.png?w=272">CCTV-4</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="eac9d5cf-9291-4900-adbd-b81551cbeeb3" logo="https://poster.starhubgo.com/Linear_channels2/205_1920x1080_HTV.png?w=272">Hub Sports 5 HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="ee7f8151-6ddb-4f5a-b651-aa19597ab57b" logo="https://poster.starhubgo.com/Linear_Channels2/226_1920x1080_HTV.png?w=272">Hub Premier 6</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="ef624c07-6e36-4619-87fd-138a443aac1a" logo="https://poster.starhubgo.com/Linear_channels2/869_1920x1080_HTV.png?w=272">CCM</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="f0de7c83-f946-492e-b02b-960b65928ec9" logo="https://poster.starhubgo.com/Linear_channels2/707_1920x1080_HTV.png?w=272">CNBC HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="f1e89c2d-232c-4204-8cf1-e3107ad6b8e8" logo="https://poster.starhubgo.com/Linear_channels2/601_1920x1080_HTV.png?w=272">HBO HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="f8ae363f-51f1-4063-808b-406947018b51" logo="https://poster.starhubgo.com/Linear_channels2/138_1920x1080_HTV.png?w=272">Zee Tamil</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="f9f14a80-9556-4ef8-af7c-5f13279dd83c" logo="https://poster.starhubgo.com/Linear_channels2/606_1920x1080_HTV.png?w=272">DreamWorks Channel HD</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="f83d356b-7169-48c9-a411-b5e05511a462" logo="https://poster.starhubgo.com/Linear_channels2/509_1920x1080_HTV.png?w=272">ROCK Entertainment</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="fbb0e7b8-649b-4c98-9bbe-713971282d8c" logo="https://poster.starhubgo.com/Linear_Channels2/222_1920x1080_HTV.png?w=272">Hub Premier 2 (HD)</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="fd510962-c830-490f-be97-0ecadf2bcc11" logo="https://poster.starhubgo.com/Linear_channels2/611_1920x1080_HTV.png?w=272">Cinemax HD</channel>
 </channels>
