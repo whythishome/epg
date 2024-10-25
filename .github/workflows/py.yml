@@ -24,12 +24,12 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run channels:parse -- --config=.sites/starhubtvplus.com/starhubtvplus.com.config.js --output=.sites/starhubtvplus.com/starhubtvplus.com.channels.xml
+          npm run channels:parse -- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com.channels.xml
           
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f .sites/starhubtvplus.com/starhubtvplus.com.channels.xml
+        git add -f sites/starhubtvplus.com/starhubtvplus.com.channels.xml
         git commit -a -m "Channel update"
         git push
