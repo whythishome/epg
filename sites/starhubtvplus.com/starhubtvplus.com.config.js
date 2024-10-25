@@ -47,11 +47,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs(item.startTime)
+  return dayjs(item.start)
 }
 
 function parseStop(item) {
-  return dayjs(item.endTime)
+  return dayjs(item.end)
 }
 
 function parseItems(content, channel) {
