@@ -24,11 +24,12 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_en.channels.xml --set=lang:en
+          npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_en-au.channels.xml --set=region:au --set=lang:en
+          
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f ./sites/nowplayer.now.com/nowplayer.now.com_en.channels.xml
+        git add -f ./sites/nowplayer.now.com/beinsports.com_en-au.channels.xml
         git commit -a -m "Channel update"
         git push
