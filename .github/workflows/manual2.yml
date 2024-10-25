@@ -24,12 +24,12 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --channels=sites/beinsports.com/beinsports.com_au-en.channels.xml --gzip --output=guides/beinsports.com_en-au.xml          
+          npm run grab -- --site=sky.com --gzip --output=guides/sky.com.xml          
     
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/beinsports.com_en-au.xml.gz
+        git add -f guides/sky.com.xml.gz
         git commit -m "Update xml"
         git push
