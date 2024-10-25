@@ -56,9 +56,6 @@ function parseStop(item) {
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
-  if (!data || !data.data || !data.data.nagraEpg || !Array.isArray(data.data.nagraEpg.items))
-    return []
-  const ch = data.data.nagraEpg.items.find(ch => ch.id == channel.site_id)
 
-  return ch && Array.isArray(ch.programs) ? ch.programs : []
+  return data && data.resources ? data.resources : []
 }
