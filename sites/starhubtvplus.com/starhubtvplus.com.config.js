@@ -49,21 +49,16 @@ module.exports = {
   async channels() {
     const items = await axios
       .get(
-        'https://api.starhubtvplus.com/epg?operationName=webFilteredEpg&variables=%7B%22category%22%3A%22%22,%22dateFrom%22%3A%222022-05-10%22,%22dateTo%22%3A%222022-05-11%22%7D&query=query%20webFilteredEpg(%24category%3A%20String)%20%7B%20nagraEpg(category%3A%20%24category)%20%7B%20items%20%7B%20id%3A%20tvChannel%20image%20name%3A%20longName%20%7D%7D%7D',
-        {
-          headers: {
-            'x-application-key': APP_KEY,
-            'x-application-session': SESSION_KEY
-          }
-        }
+        'https://waf-starhub-metadata-api-p001.ifs.vubiquity.com/v3.1/epg/channels?locale=en_US&locale_default=en_US&device=1&limit=200&page=1',
       )
-      .then(r => r.data.data.nagraEpg.items)
+      .then(r => r.data.resources)
       .catch(console.log)
 
     return items.map(item => ({
       lang: 'en',
       site_id: item.id,
-      name: item.name.replace('_DASH', '')
+      name: item.title.replace('_DASH', ''),
+      logo: item.pictures[0].url
     }))
   }
 }
