@@ -8,28 +8,12 @@ module.exports = {
   site: 'starhubtvplus.com',
   days: 2,
   request: {
-    headers: {
-      'x-application-key': APP_KEY,
-      'x-application-session': SESSION_KEY
-    },
     cache: {
       ttl: 60 * 60 * 1000 // 1h
     }
   },
-  url: function ({ date }) {
-    const variables = JSON.stringify({
-      category: '',
-      dateFrom: date.format('YYYY-MM-DD'),
-      dateTo: date.add(1, 'd').format('YYYY-MM-DD')
-    })
-    const query =
-      'query webFilteredEpg($category: String, $dateFrom: DateWithoutTime, $dateTo: DateWithoutTime!) { nagraEpg(category: $category) { items { id: tvChannel image name: longName programs: programsByDate(dateFrom: $dateFrom, dateTo: $dateTo) { id title description Categories startTime endTime }}}}'
-
-    const params = `operationName=webFilteredEpg&variables=${encodeURIComponent(
-      variables
-    )}&query=${encodeURIComponent(query)}`
-
-    return `https://api.starhubtvplus.com/epg?${params}`
+  url: function ({ date, channel }) {
+    return `https://waf-starhub-metadata-api-p001.ifs.vubiquity.com/v3.1/epg/schedules?locale=en_US&locale_default=en_US&device=1&in_channel_id=${channel.site_id}&lte_start=${date.unix()}&gt_end=${date.unix()}`
   },
   parser: function ({ content, channel }) {
     let programs = []
@@ -38,7 +22,6 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.description,
-        category: item.Categories,
         start: parseStart(item),
         stop: parseStop(item)
       })
