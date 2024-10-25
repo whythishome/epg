@@ -56,5 +56,5 @@ function parseStop(item) {
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
-  return data.resources
+  return data.resources ? data.resources : []
 }
