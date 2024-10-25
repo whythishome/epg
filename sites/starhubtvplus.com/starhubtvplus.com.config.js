@@ -13,7 +13,7 @@ module.exports = {
     }
   },
   url: function ({ date, channel }) {
-    return `https://waf-starhub-metadata-api-p001.ifs.vubiquity.com/v3.1/epg/schedules?locale=en_US&locale_default=en_US&device=1&in_channel_id=${channel.site_id}&lte_start=${date.unix()}&gt_end=${date.unix()}`
+    return `https://waf-starhub-metadata-api-p001.ifs.vubiquity.com/v3.1/epg/schedules?locale=en_US&locale_default=en_US&device=1&in_channel_id=${channel.site_id}&gt_end=${date.unix()}&lt_start=${date.add(1, 'd').unix()}&limit=100&page=1`
   },
   parser: function ({ content, channel }) {
     let programs = []
