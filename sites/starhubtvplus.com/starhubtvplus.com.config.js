@@ -58,7 +58,7 @@ module.exports = {
       lang: 'en',
       site_id: item.id,
       name: item.title.replace('_DASH', ''),
-      logo: item.pictures[0].url
+      logo: item.pictures[0] ? item.pictures[0].url : null
     }))
   }
 }
