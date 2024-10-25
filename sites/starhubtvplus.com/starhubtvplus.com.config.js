@@ -42,11 +42,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs(item.start)
+  return dayjs.unix(item.start)
 }
 
 function parseStop(item) {
-  return dayjs(item.end)
+  return dayjs.unix(item.end)
 }
 
 function parseItems(content, channel) {
