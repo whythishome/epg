@@ -7,11 +7,6 @@ const SESSION_KEY = '01G2QG0N3RWDNCBA1S5MK1MD2K17CE4431A2'
 module.exports = {
   site: 'starhubtvplus.com',
   days: 2,
-  request: {
-    cache: {
-      ttl: 60 * 60 * 1000 // 1h
-    }
-  },
   url: function ({ date, channel }) {
     return `https://waf-starhub-metadata-api-p001.ifs.vubiquity.com/v3.1/epg/schedules?locale=en_US&locale_default=en_US&device=1&in_channel_id=${channel.site_id}&gt_end=${date.unix()}&lt_start=${date.add(1, 'd').unix()}&limit=100&page=1`
   },
