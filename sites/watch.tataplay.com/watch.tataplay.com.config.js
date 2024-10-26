@@ -35,6 +35,7 @@ module.exports = {
         title: item.title,
         description: item.desc,
         image: item.boxCoverImage,
+        catchup: item.id,
         start: parseStart(item),
         stop: parseStop(item)
       })
