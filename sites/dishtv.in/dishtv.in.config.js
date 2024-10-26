@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'dishtv.in',
-  days: 1,
+  days: 2,
   url: 'https://epg.mysmartstick.com/dishtv/api/v1/epg/entities/programs',
   request: {
     method: 'POST',
