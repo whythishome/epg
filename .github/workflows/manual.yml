@@ -26,12 +26,12 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=dishtv.in --gzip --output=guides/dishtv.in.xml
-          npm run grab -- --site=watch.tataplay.com --gzip --output=guides/watch.tataplay.com.xml
+          npm run grab -- --site=dishtv.in --maxConnections=10 --gzip --output=guides/dishtv.in.xml
+          npm run grab -- --site=watch.tataplay.com --maxConnections=10 --gzip --output=guides/watch.tataplay.com.xml
           npm run grab -- --site=nowplayer.now.com --lang=en --gzip --output=guides/nowplayer.now.com.xml
           npm run grab -- --site=foxtel.com.au --gzip --output=guides/foxtel.com.au.xml
           npm run grab -- --site=starhubtvplus.com --gzip --output=guides/starhubtvplus.com.xml
-          npm run grab -- --site=sky.com --gzip --output=guides/sky.com.xml
+          npm run grab -- --site=sky.com --maxConnections=10 --gzip --output=guides/sky.com.xml
           npm run grab -- --channels=sites/beinsports.com/beinsports.com_au-en.channels.xml --gzip --output=guides/beinsports.com_au-en.xml
     
     - name: Commit changes
