@@ -49,7 +49,8 @@ module.exports = {
       return {
         lang: 'ms',
         site_id: item.id,
-        name: item.title
+        name: item.title,
+        logo: item.imageUrl
       }
     })
   }
