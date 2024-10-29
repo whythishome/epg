@@ -4,7 +4,7 @@ const cheerio = require('cheerio')
 
 module.exports = {
   site: 'foxtel.com.au',
-  days: 1,
+  days: 2,
   url({ channel, date }) {
     return `https://www.foxtel.com.au/tv-guide/channel/${channel.site_id}/${date.format(
       'YYYY/MM/DD'
