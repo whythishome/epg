@@ -50,7 +50,7 @@ module.exports = {
         lang: 'ms',
         site_id: item.id,
         name: item.title,
-        logo: item.imageUrl
+        logo: item.originalImage
       }
     })
   }
