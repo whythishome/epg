@@ -438,9 +438,9 @@
 <programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="FOX82/FO2"><title lang="en">The Ark</title><desc lang="en">Fortunate</desc></programme>
 <programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="FOX82/FO2"><title lang="en">More Power</title><desc lang="en">Power Under Pressure</desc></programme>
 <programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="FOX82/FO2"><title lang="en">More Power</title><desc lang="en">Blades</desc></programme>
-<programme start="20241029071000 +0000" stop="20241029083500 +0000" channel="FOX-CRICKET/FS1"><title lang="en"><Font color='red'>LIVE</Font> WBBL: Sixers v Strikers IN1</title><desc lang="en">Sixers v Strikers IN1</desc></programme>
-<programme start="20241029083500 +0000" stop="20241029085000 +0000" channel="FOX-CRICKET/FS1"><title lang="en"><Font color='red'>LIVE</Font> The Big Break</title><desc lang="en">Sixers v Strikers</desc></programme>
-<programme start="20241029085000 +0000" stop="20241029101500 +0000" channel="FOX-CRICKET/FS1"><title lang="en"><Font color='red'>LIVE</Font> WBBL: Sixers v Strikers IN2</title><desc lang="en">Sixers v Strikers IN2</desc></programme>
+<programme start="20241029071000 +0000" stop="20241029083500 +0000" channel="FOX-CRICKET/FS1"><title lang="en"><Font color='red' size='5' face='Arial'>LIVE</Font> WBBL: Sixers v Strikers IN1</title><desc lang="en">Sixers v Strikers IN1</desc></programme>
+<programme start="20241029083500 +0000" stop="20241029085000 +0000" channel="FOX-CRICKET/FS1"><title lang="en"><Font color='red' face='Arial'>LIVE</Font> The Big Break</title><desc lang="en">Sixers v Strikers</desc></programme>
+<programme start="20241029085000 +0000" stop="20241029101500 +0000" channel="FOX-CRICKET/FS1"><title lang="en"><Font Color=red size=5 Face=Arial>LIVE</Font> WBBL: Sixers v Strikers IN2</title><desc lang="en">Sixers v Strikers IN2</desc></programme>
 <programme start="20241029101500 +0000" stop="20241029103000 +0000" channel="FOX-CRICKET/FS1"><title lang="en"><Font color='red'>LIVE</Font> WBBL Post Game</title><desc lang="en">Sixers v Strikers</desc></programme>
 <programme start="20241029103000 +0000" stop="20241029105000 +0000" channel="FOX-CRICKET/FS1"><title lang="en">WBBL Mini: REN v SIX</title><desc lang="en">REN v SIX</desc></programme>
 <programme start="20241029105000 +0000" stop="20241029111000 +0000" channel="FOX-CRICKET/FS1"><title lang="en">WBBL Mini: SIX v STR</title><desc lang="en">SIX v STR</desc></programme>
