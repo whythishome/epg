@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8" ?><tv date="20241029">
+<channel id="Al-Jazeera/AJE"><display-name>Al Jazeera</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/AJE/AJE_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Animal-Planet/ANI"><display-name>Animal Planet</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ANI/ANI_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Antenna-Pacific/ANT"><display-name>Antenna Pacific</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ANT/ANT_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Arena-2/AR2"><display-name>Arena +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ARN/AR2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Arena/ARN"><display-name>Arena</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ARN/ARN_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Aurora/AUR"><display-name>Aurora</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/AUR/AUR_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Bloomberg-Television/BLM"><display-name>Bloomberg Television</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/BLM/BLM_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Boomerang/BOO"><display-name>Boomerang</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/BOO/BOO_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="BoxSets/BXS"><display-name>BoxSets</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/BXS/BXS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="British-2/FS2"><display-name>British +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FS2/FS2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="British/FSU"><display-name>British</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSU/FSU_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Cartoon-Network/CNE"><display-name>Cartoon Network</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/CNE/CNE_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="CGTN/CCC"><display-name>CGTN</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/CCC/CCC_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="CGTNDocumentary/CCD"><display-name>CGTN-Documentary</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/CCD/CCD_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Classics-2/CL2"><display-name>Classics +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FKC/CL2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Classics/FKC"><display-name>Classics</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FKC/FKC_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Club-MTV/VH1"><display-name>Club MTV</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/VH1/VH1_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="CMT/CMT"><display-name>CMT</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/CMT/CMT_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="CNBC/CNB"><display-name>CNBC</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/CNB/CNB_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="CNN/CNN"><display-name>CNN</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/CNN/CNN_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Comedy-2/HI2"><display-name>Comedy +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/HIT/HI2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Comedy/HIT"><display-name>Comedy</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/HIT/HIT_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Crime-2/IO2"><display-name>Crime +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/IOI/IO2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Crime/IOI"><display-name>Crime</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/IOI/IOI_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Daystar/DAS"><display-name>Daystar</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DAS/DAS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Discovery-2/DS2"><display-name>Discovery +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DIS/DS2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Discovery-Channel/DIS"><display-name>Discovery Channel</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DIS/DIS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Discovery-Turbo-2/DI2"><display-name>Discovery Turbo +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DIT/DI2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Discovery-Turbo/DIT"><display-name>Discovery Turbo</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DIT/DIT_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="DocPlay/DPS"><display-name>DocPlay</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DPS/DPS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="DreamWorks/DRM"><display-name>DreamWorks</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DRM/DRM_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="ESPN2/ES2"><display-name>ESPN2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ES2/ES2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="ESPN/ESP"><display-name>ESPN</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ESP/ESP_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="EXPO/EXP"><display-name>EXPO</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/EXP/EXP_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Famous/SAR"><display-name>Famous</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SAR/SAR_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Fashion-TV/FHT"><display-name>Fashion TV</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FHT/FHT_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="FOX8/FOX"><display-name>FOX8</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FOX/FOX_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="FOX82/FO2"><display-name>FOX8+2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FOX/FO2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="FOX-CRICKET/FS1"><display-name>FOX CRICKET</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FS1/FS1_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Fox-Footy/FAF"><display-name>Fox Footy</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FAF/FAF_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="FOX-LEAGUE/SP2"><display-name>FOX LEAGUE</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SP2/SP2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="FOX-News/FNC"><display-name>FOX News</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FNC/FNC_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="FOX-SPORTS-503/FS3"><display-name>FOX SPORTS 503</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FS3/FS3_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="FOX-SPORTS-505/FSP"><display-name>FOX SPORTS 505</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSP/FSP_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="FOX-SPORTS-506/SPS"><display-name>FOX SPORTS 506</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SPS/SPS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Fox-Sports-More/FSS"><display-name>Fox Sports More</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSS/FSS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Fox-Sports-News/FSN"><display-name>Fox Sports News</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSN/FSN_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Foxtel-One-2/F12"><display-name>Foxtel One +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/F12/F12_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Foxtel-One/F1S"><display-name>Foxtel One</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/F1S/F1S_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="GOOD/ACC"><display-name>GOOD</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ACC/ACC_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Investigation-Discovery/DID"><display-name>Investigation Discovery</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DID/DID_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="LifeStyle-2/LS2"><display-name>LifeStyle +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/LST/LS2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="LifeStyle-Food-2/LF2"><display-name>LifeStyle Food +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FOD/LF2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="LifeStyle-Food/FOD"><display-name>LifeStyle Food</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FOD/FOD_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="LifeStyle-Home/LHO"><display-name>LifeStyle Home</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/LHO/LHO_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="LifeStyle/LST"><display-name>LifeStyle</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/LST/LST_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Lifetime-Movie-Network/LMS"><display-name>Lifetime Movie Network</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/LMS/LMS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-4K-Ultra-HD/K02"><display-name>Movies 4K Ultra HD</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/K02/K02_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Action-2/MTA"><display-name>Movies Action +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SHA/MTA_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Action/SHA"><display-name>Movies Action</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SHA/SHA_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Comedy/SHY"><display-name>Movies Comedy</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SHY/SHY_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Drama/MO6"><display-name>Movies Drama</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/MO6/MO6_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Family-2/MTF"><display-name>Movies Family +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SHF/MTF_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Family/SHF"><display-name>Movies Family</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SHF/SHF_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Greats/GRR"><display-name>Movies Greats</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/GRR/GRR_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Hits/MVS"><display-name>Movies Hits</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/MVS/MVS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Premiere-2/SH2"><display-name>Movies Premiere +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SHO/SH2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Premiere/SHO"><display-name>Movies Premiere</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SHO/SHO_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Movies-Romance/SHD"><display-name>Movies Romance</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SHD/SHD_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="MSNBC/MSN"><display-name>MSNBC</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/MSN/MSN_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="MTV-80s/MTC"><display-name>MTV 80s</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/MTC/MTC_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="MTV-Hits/TMF"><display-name>MTV Hits</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/TMF/TMF_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="NHK-WorldJapan/NHK"><display-name>NHK World-Japan</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FTA/NHK_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Nick-Music/NMU"><display-name>Nick Music</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/NMU/NMU_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Racingcom-HD/RTD"><display-name>Racing.com HD</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/RTV/RTD_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="RACINGCOM/RTV"><display-name>RACING.COM</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/RTV/RTV_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="RAI-ITALIA/RAI"><display-name>RAI ITALIA</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/RAI/RAI_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Real-Crime/CIN"><display-name>Real Crime</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/CIN/CIN_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Real-History/HST"><display-name>Real History</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/HST/HST_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Real-Life-2/RL2"><display-name>Real Life +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/RLS/RL2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Real-Life/RLS"><display-name>Real Life</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/RLS/RLS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="SBS-Viceland/SBN"><display-name>SBS Viceland</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FTA/SBN_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="SBS-World-Movies-SD/S4B"><display-name>SBS World Movies SD</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FTA/S4B_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="SBS-Worldwatch/SWW"><display-name>SBS Worldwatch</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FTA/SWW_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Showcase-2/SW2"><display-name>Showcase +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SHC/SW2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Showcase/SHC"><display-name>Showcase</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SHC/SHC_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Sky-News-Election/ASP"><display-name>Sky News Election</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ASP/ASP_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Sky-News-UK/SUK"><display-name>Sky News UK</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SKY/SUK_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="SKY-News/SKY"><display-name>SKY News</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SKY/SKY_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="SKY-Racing-2/SR2"><display-name>SKY Racing 2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SR2/SR2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="SKY-Racing/SRA"><display-name>SKY Racing</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SRA/SRA_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="SKY-Tbred-Cent/SRW"><display-name>SKY Tbred Cent</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SRW/SRW_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="SKY-Weather/FXW"><display-name>SKY Weather</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FXW/FXW_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="SonLife/SLT"><display-name>SonLife</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SLT/SLT_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="TLC-2/DT2"><display-name>TLC +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DTA/DT2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="TLC/DTA"><display-name>TLC</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DTA/DTA_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Travel/TRS"><display-name>Travel</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/TRS/TRS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="TVSN/TVS"><display-name>TVSN</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/TVS/TVS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="UKTV2/UK2"><display-name>UKTV+2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/UKT/UK2_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="UKTV/UKT"><display-name>UKTV</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/UKT/UKT_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Universal-TV/HAL"><display-name>Universal TV</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/HAL/HAL_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="WWE/WWS"><display-name>WWE</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/WWS/WWS_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<programme start="20241029070000 +0000" stop="20241029080000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Witness</title><desc lang="en">For The Love of Gaza</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="Al-Jazeera/AJE"><title lang="en">The Listening Post</title></programme>
+<programme start="20241029100000 +0000" stop="20241029110000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Inside Story</title></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Al Jazeera World</title><desc lang="en">Bacha Khan - Defying An Empire</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Animal-Planet/ANI"><title lang="en">Alaska: The Last Frontier</title><desc lang="en">Loaded For Bear</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Animal-Planet/ANI"><title lang="en">Alaska Off the Grid</title><desc lang="en">Tom Shankster&apos;s Guest Cabin</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Animal-Planet/ANI"><title lang="en">Alaska Off the Grid</title><desc lang="en">Tony Malone&apos;s Getaway Cabin</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Animal-Planet/ANI"><title lang="en">Alaska: The Last Frontier</title><desc lang="en">Greener Pastures</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Animal-Planet/ANI"><title lang="en">Finding Bigfoot</title><desc lang="en">Swamp Ape</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Animal-Planet/ANI"><title lang="en">Monsters Inside Me</title><desc lang="en">Worms Are Eating My Lungs</desc></programme>
+<programme start="20241029034500 +0000" stop="20241029074500 +0000" channel="Antenna-Pacific/ANT"><title lang="en">Kalimera Ellada</title></programme>
+<programme start="20241029074500 +0000" stop="20241029084500 +0000" channel="Antenna-Pacific/ANT"><title lang="en">5x5</title></programme>
+<programme start="20241029084500 +0000" stop="20241029100000 +0000" channel="Antenna-Pacific/ANT"><title lang="en">H magissa</title></programme>
+<programme start="20241029100000 +0000" stop="20241029111500 +0000" channel="Antenna-Pacific/ANT"><title lang="en">Grand Hotel</title></programme>
+<programme start="20241029111500 +0000" stop="20241029120000 +0000" channel="Antenna-Pacific/ANT"><title lang="en">Poios thelei na ginei ekatommyriouchos</title></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="Antenna-Pacific/ANT"><title lang="en">Ant1 News</title><desc lang="en">1300</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Antenna-Pacific/ANT"><title lang="en">Kypello Elladas</title><desc lang="en">Kifisia Vs Panachaiki</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Arena-2/AR2"><title lang="en">Jeopardy!</title><desc lang="en">Episode 73</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Arena-2/AR2"><title lang="en">Jeopardy!</title><desc lang="en">Episode 74</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Arena-2/AR2"><title lang="en">Celebrity Family Feud</title><desc lang="en">Jennie Garth Vs Kyle Massey</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="Arena-2/AR2"><title lang="en">Wheel of Fortune</title><desc lang="en">Winter Wonderland</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="Arena-2/AR2"><title lang="en">Wheel of Fortune</title><desc lang="en">Winter Wonderland</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Arena-2/AR2"><title lang="en">Celebrity Wheel of Fortune</title><desc lang="en">And Caroline Rhea</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Arena-2/AR2"><title lang="en">Embarrassing Bodies</title><desc lang="en">Stockton</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Arena-2/AR2"><title lang="en">Million Dollar Listing NY</title><desc lang="en">Walkups And Meltdowns</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Arena/ARN"><title lang="en">Wheel of Fortune</title><desc lang="en">Winter Wonderland</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Arena/ARN"><title lang="en">Wheel of Fortune</title><desc lang="en">Winter Wonderland</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Arena/ARN"><title lang="en">Celebrity Wheel of Fortune</title><desc lang="en">And Caroline Rhea</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Arena/ARN"><title lang="en">Embarrassing Bodies</title><desc lang="en">Stockton</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Arena/ARN"><title lang="en">Million Dollar Listing NY</title><desc lang="en">Walkups And Meltdowns</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Arena/ARN"><title lang="en">Naked Attraction</title><desc lang="en">Zoe &amp; Derry</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Arena/ARN"><title lang="en">Botched</title><desc lang="en">Surgical Secrets Revealed</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Aurora/AUR"><title lang="en">Skills One TV</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Aurora/AUR"><title lang="en">OzAfrican TV</title></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Aurora/AUR"><title lang="en">Tough Times Never Last</title></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="Aurora/AUR"><title lang="en">Industry Leaders with Janine Allis</title></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="Aurora/AUR"><title lang="en">Copper Chef Titan Pan</title></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="Aurora/AUR"><title lang="en">BreadSmart by Tupperware</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="Aurora/AUR"><title lang="en">Skills One TV</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Aurora/AUR"><title lang="en">OzIndian</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Aurora/AUR"><title lang="en">Eat Play and Stay</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="Aurora/AUR"><title lang="en">Super Slim Power Vac Cordless Vacuum</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Aurora/AUR"><title lang="en">Hello Darlink!</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Aurora/AUR"><title lang="en">Mass for You at Home</title></programme>
+<programme start="20241029070000 +0000" stop="20241029090000 +0000" channel="Bloomberg-Television/BLM"><title lang="en">Bloomberg: The Opening Trade</title></programme>
+<programme start="20241029090000 +0000" stop="20241029100000 +0000" channel="Bloomberg-Television/BLM"><title lang="en">Bloomberg Brief</title></programme>
+<programme start="20241029100000 +0000" stop="20241029130000 +0000" channel="Bloomberg-Television/BLM"><title lang="en">Bloomberg Surveillance</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Bloomberg-Television/BLM"><title lang="en">Bloomberg Open Interest</title></programme>
+<programme start="20241029073000 +0000" stop="20241029074500 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Batwheels</title><desc lang="en">When You&apos;re A Jet</desc></programme>
+<programme start="20241029074500 +0000" stop="20241029080000 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Batwheels</title><desc lang="en">Stop That Ducky!</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029081500 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Baby Looney Tunes</title><desc lang="en">Act Your Age</desc></programme>
+<programme start="20241029081500 +0000" stop="20241029083000 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Baby Looney Tunes</title><desc lang="en">Bend It Like Petunia</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029083700 +0000" channel="Boomerang/BOO"><title lang="en">Mittens and Pants</title><desc lang="en">Blueberry&apos;S Journey</desc></programme>
+<programme start="20241029083700 +0000" stop="20241029084400 +0000" channel="Boomerang/BOO"><title lang="en">Mittens and Pants</title><desc lang="en">Pants&apos; Talent</desc></programme>
+<programme start="20241029084400 +0000" stop="20241029085100 +0000" channel="Boomerang/BOO"><title lang="en">Mittens and Pants</title><desc lang="en">Hopping Day</desc></programme>
+<programme start="20241029085100 +0000" stop="20241029090000 +0000" channel="Boomerang/BOO"><title lang="en">Mittens and Pants</title><desc lang="en">Baby Chick Sitting</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029091500 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Bugs Bunny Builders</title><desc lang="en">Outer Space</desc></programme>
+<programme start="20241029091500 +0000" stop="20241029093000 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Bugs Bunny Builders</title><desc lang="en">Underwater Star</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029094500 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Tangranimals</title><desc lang="en">Ball Rain</desc></programme>
+<programme start="20241029094500 +0000" stop="20241029100000 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Tangranimals</title><desc lang="en">Tangrafiesta</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="Boomerang/BOO"><title lang="en">Mecha Builders</title><desc lang="en">Cross That Bridge/ Knock Knock! Who&apos;s There?</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="Boomerang/BOO"><title lang="en">Mecha Builders</title><desc lang="en">Pinecone Palooza/The Big Footed Cave Bird</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029111200 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Bugs Bunny Builders</title><desc lang="en">Skate Park</desc></programme>
+<programme start="20241029111200 +0000" stop="20241029112400 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Bugs Bunny Builders</title><desc lang="en">Catwalk</desc></programme>
+<programme start="20241029112400 +0000" stop="20241029113600 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Bugs Bunny Builders</title><desc lang="en">Ice Creamed</desc></programme>
+<programme start="20241029113600 +0000" stop="20241029114800 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Bugs Bunny Builders</title><desc lang="en">Snow Cap</desc></programme>
+<programme start="20241029114800 +0000" stop="20241029120000 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Bugs Bunny Builders</title><desc lang="en">Rock On</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029121200 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Baby Looney Tunes</title><desc lang="en">Flush Hour</desc></programme>
+<programme start="20241029121200 +0000" stop="20241029122400 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Baby Looney Tunes</title><desc lang="en">War of the Weirds</desc></programme>
+<programme start="20241029122400 +0000" stop="20241029123600 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Baby Looney Tunes</title><desc lang="en">Magic of Spring</desc></programme>
+<programme start="20241029123600 +0000" stop="20241029124800 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Baby Looney Tunes</title><desc lang="en">Take Us Out to the Ballgame</desc></programme>
+<programme start="20241029124800 +0000" stop="20241029130000 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Baby Looney Tunes</title><desc lang="en">A Mid-Autumn Night&apos;s Scream</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Boomerang/BOO"><title lang="en">Cartoonito: Mush Mush And The Mushables</title><desc lang="en">A Day With Starmush</desc></programme>
+<programme start="20241029070000 +0000" stop="20241029075500 +0000" channel="BoxSets/BXS"><title lang="en">The Outsider</title><desc lang="en">Tigers And Bears</desc></programme>
+<programme start="20241029075500 +0000" stop="20241029085000 +0000" channel="BoxSets/BXS"><title lang="en">The Outsider</title><desc lang="en">Must/ Can&apos;t</desc></programme>
+<programme start="20241029085000 +0000" stop="20241029095500 +0000" channel="BoxSets/BXS"><title lang="en">The Outsider</title><desc lang="en">Fish In A Barrel</desc></programme>
+<programme start="20241029095500 +0000" stop="20241029105500 +0000" channel="BoxSets/BXS"><title lang="en">The Outsider</title><desc lang="en">Roanoke</desc></programme>
+<programme start="20241029105500 +0000" stop="20241029120000 +0000" channel="BoxSets/BXS"><title lang="en">The Outsider</title><desc lang="en">Dark Uncle</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="BoxSets/BXS"><title lang="en">The Outsider</title><desc lang="en">Que Viene El Coco</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="BoxSets/BXS"><title lang="en">The Outsider</title><desc lang="en">Tear-Drinker</desc></programme>
+<programme start="20241029065500 +0000" stop="20241029075500 +0000" channel="British-2/FS2"><title lang="en">The Royal</title><desc lang="en">Against All Odds</desc></programme>
+<programme start="20241029075500 +0000" stop="20241029095500 +0000" channel="British-2/FS2"><title lang="en">Agatha Christie&apos;s Marple</title><desc lang="en">The Secret Of Chimneys</desc></programme>
+<programme start="20241029095500 +0000" stop="20241029103000 +0000" channel="British-2/FS2"><title lang="en">Bad Education</title><desc lang="en">Xmas Special</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="British-2/FS2"><title lang="en">Rosemary &amp; Thyme</title><desc lang="en">The Language Of Flowers</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="British-2/FS2"><title lang="en">Vera</title><desc lang="en">Cuckoo</desc></programme>
+<programme start="20241029055500 +0000" stop="20241029075500 +0000" channel="British/FSU"><title lang="en">Agatha Christie&apos;s Marple</title><desc lang="en">The Secret Of Chimneys</desc></programme>
+<programme start="20241029075500 +0000" stop="20241029083000 +0000" channel="British/FSU"><title lang="en">Bad Education</title><desc lang="en">Xmas Special</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="British/FSU"><title lang="en">Rosemary &amp; Thyme</title><desc lang="en">The Language Of Flowers</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029113000 +0000" channel="British/FSU"><title lang="en">Vera</title><desc lang="en">Cuckoo</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="British/FSU"><title lang="en">Downton Abbey</title><desc lang="en">Episode 4</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="British/FSU"><title lang="en">The Royal</title><desc lang="en">Against All Odds</desc></programme>
+<programme start="20241029071500 +0000" stop="20241029074500 +0000" channel="Cartoon-Network/CNE"><title lang="en">Scooby-Doo! Mystery Incorporated</title><desc lang="en">Aliens Among Us</desc></programme>
+<programme start="20241029074500 +0000" stop="20241029080000 +0000" channel="Cartoon-Network/CNE"><title lang="en">The Amazing World of Gumball</title><desc lang="en">The Stories</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029081500 +0000" channel="Cartoon-Network/CNE"><title lang="en">The Amazing World of Gumball</title><desc lang="en">The Sucker</desc></programme>
+<programme start="20241029081500 +0000" stop="20241029082700 +0000" channel="Cartoon-Network/CNE"><title lang="en">The Powerpuff Girls</title><desc lang="en">The Stayover</desc></programme>
+<programme start="20241029082700 +0000" stop="20241029083900 +0000" channel="Cartoon-Network/CNE"><title lang="en">The Powerpuff Girls</title><desc lang="en">Mini Golf Madness</desc></programme>
+<programme start="20241029083900 +0000" stop="20241029085100 +0000" channel="Cartoon-Network/CNE"><title lang="en">The Powerpuff Girls</title><desc lang="en">Save The Date</desc></programme>
+<programme start="20241029085100 +0000" stop="20241029090300 +0000" channel="Cartoon-Network/CNE"><title lang="en">The Powerpuff Girls</title><desc lang="en">Fashion Forward</desc></programme>
+<programme start="20241029090300 +0000" stop="20241029091500 +0000" channel="Cartoon-Network/CNE"><title lang="en">The Powerpuff Girls</title><desc lang="en">The Trouble With Bubbles</desc></programme>
+<programme start="20241029091500 +0000" stop="20241029092700 +0000" channel="Cartoon-Network/CNE"><title lang="en">Teen Titans Go!</title><desc lang="en">Christmas Crusaders</desc></programme>
+<programme start="20241029092700 +0000" stop="20241029093900 +0000" channel="Cartoon-Network/CNE"><title lang="en">Teen Titans Go!</title><desc lang="en">Jump City Rock</desc></programme>
+<programme start="20241029093900 +0000" stop="20241029095100 +0000" channel="Cartoon-Network/CNE"><title lang="en">Teen Titans Go!</title><desc lang="en">Business Ethics Wink Wink</desc></programme>
+<programme start="20241029095100 +0000" stop="20241029100300 +0000" channel="Cartoon-Network/CNE"><title lang="en">Teen Titans Go!</title><desc lang="en">The Avogodo</desc></programme>
+<programme start="20241029100300 +0000" stop="20241029101500 +0000" channel="Cartoon-Network/CNE"><title lang="en">Teen Titans Go!</title><desc lang="en">Coconut Cream Pie</desc></programme>
+<programme start="20241029101500 +0000" stop="20241029104500 +0000" channel="Cartoon-Network/CNE"><title lang="en">Tiny Toons Looniversity</title><desc lang="en">Give Pizza A Chance</desc></programme>
+<programme start="20241029104500 +0000" stop="20241029110000 +0000" channel="Cartoon-Network/CNE"><title lang="en">Ben 10</title><desc lang="en">Moor Fogg</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029111500 +0000" channel="Cartoon-Network/CNE"><title lang="en">Ben 10</title><desc lang="en">Rath Of Con</desc></programme>
+<programme start="20241029111500 +0000" stop="20241029112700 +0000" channel="Cartoon-Network/CNE"><title lang="en">Adventure Time</title><desc lang="en">Stakes Part 8: The Dark Cloud</desc></programme>
+<programme start="20241029112700 +0000" stop="20241029115100 +0000" channel="Cartoon-Network/CNE"><title lang="en">Adventure Time</title><desc lang="en">the Moe You Know</desc></programme>
+<programme start="20241029115100 +0000" stop="20241029120300 +0000" channel="Cartoon-Network/CNE"><title lang="en">Adventure Time</title><desc lang="en">Summer Showers</desc></programme>
+<programme start="20241029120300 +0000" stop="20241029121500 +0000" channel="Cartoon-Network/CNE"><title lang="en">Adventure Time</title><desc lang="en">Angel Face</desc></programme>
+<programme start="20241029121500 +0000" stop="20241029122600 +0000" channel="Cartoon-Network/CNE"><title lang="en">Steven Universe</title><desc lang="en">Lion 3: Straight to Video</desc></programme>
+<programme start="20241029122600 +0000" stop="20241029123700 +0000" channel="Cartoon-Network/CNE"><title lang="en">Steven Universe</title><desc lang="en">Island Adventure</desc></programme>
+<programme start="20241029123700 +0000" stop="20241029124800 +0000" channel="Cartoon-Network/CNE"><title lang="en">Steven Universe</title><desc lang="en">Back to the Moon</desc></programme>
+<programme start="20241029124800 +0000" stop="20241029130000 +0000" channel="Cartoon-Network/CNE"><title lang="en">Steven Universe</title><desc lang="en">Bubbled</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Cartoon-Network/CNE"><title lang="en">Regular Show</title><desc lang="en">Grilled Cheese Deluxe</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="CGTN/CCC"><title lang="en">Sports Scene</title></programme>
+<programme start="20241029080000 +0000" stop="20241029081500 +0000" channel="CGTN/CCC"><title lang="en">The World Today</title></programme>
+<programme start="20241029081500 +0000" stop="20241029090000 +0000" channel="CGTN/CCC"><title lang="en">Global Business</title></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="CGTN/CCC"><title lang="en">The World Today</title></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="CGTN/CCC"><title lang="en">The Vibe</title></programme>
+<programme start="20241029100000 +0000" stop="20241029101500 +0000" channel="CGTN/CCC"><title lang="en">The World Today</title></programme>
+<programme start="20241029101500 +0000" stop="20241029110000 +0000" channel="CGTN/CCC"><title lang="en">Africa Live</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="CGTN/CCC"><title lang="en">Asia Today</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="CGTN/CCC"><title lang="en">Dialogue</title></programme>
+<programme start="20241029120000 +0000" stop="20241029121500 +0000" channel="CGTN/CCC"><title lang="en">The World Today</title></programme>
+<programme start="20241029121500 +0000" stop="20241029130000 +0000" channel="CGTN/CCC"><title lang="en">China 24</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="CGTN/CCC"><title lang="en">Global Business</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="CGTNDocumentary/CCD"><title lang="en">Pixel Collage</title><desc lang="en">Rediscovering Home Truths VII Suzhou 2</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029090000 +0000" channel="CGTNDocumentary/CCD"><title lang="en">Today&apos;s Top Pick</title><desc lang="en">The Wisdom of Traditional Chinese Architecture 8</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="CGTNDocumentary/CCD"><title lang="en">Humanities and Geography</title><desc lang="en">Enos Mafokate over the Hurdle</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="CGTNDocumentary/CCD"><title lang="en">Living China</title><desc lang="en">Beneath the Sails 2</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029110000 +0000" channel="CGTNDocumentary/CCD"><title lang="en">Special Edition</title><desc lang="en">Secrets of the Rainforest 1</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="CGTNDocumentary/CCD"><title lang="en">Journeys and Discoveries</title><desc lang="en">The Story of Petroleum 5</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="CGTNDocumentary/CCD"><title lang="en">History in the Frame</title><desc lang="en">L. E. Hudec 2</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="CGTNDocumentary/CCD"><title lang="en">Best Eats</title><desc lang="en">Sweet Planet 1/2</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="CGTNDocumentary/CCD"><title lang="en">Youthful China</title><desc lang="en">The New Youth XI 3</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Classics-2/CL2"><title lang="en">Get Smart</title><desc lang="en">The Last One In Is A Rotten Spy</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Classics-2/CL2"><title lang="en">Happy Days</title><desc lang="en">Home Movies (Pt 2)</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Classics-2/CL2"><title lang="en">McHale&apos;s Navy</title><desc lang="en">A Medal For Parker</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="Classics-2/CL2"><title lang="en">Hogan&apos;s Heroes</title><desc lang="en">Casanova Klink</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="Classics-2/CL2"><title lang="en">Hogan&apos;s Heroes</title><desc lang="en">How To Win Friends And Influence Nazis</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029102500 +0000" channel="Classics-2/CL2"><title lang="en">Jeopardy!</title></programme>
+<programme start="20241029102500 +0000" stop="20241029110000 +0000" channel="Classics-2/CL2"><title lang="en">Dad&apos;s Army</title><desc lang="en">Everybody&apos;s Trucking</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113500 +0000" channel="Classics-2/CL2"><title lang="en">Keeping Up Appearances</title><desc lang="en">A Picnic For Daddy</desc></programme>
+<programme start="20241029113500 +0000" stop="20241029120500 +0000" channel="Classics-2/CL2"><title lang="en">The Treasure of Sierra Madre</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Classics/FKC"><title lang="en">Hogan&apos;s Heroes</title><desc lang="en">How To Win Friends And Influence Nazis</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029082500 +0000" channel="Classics/FKC"><title lang="en">Jeopardy!</title></programme>
+<programme start="20241029082500 +0000" stop="20241029090000 +0000" channel="Classics/FKC"><title lang="en">Dad&apos;s Army</title><desc lang="en">Everybody&apos;s Trucking</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093500 +0000" channel="Classics/FKC"><title lang="en">Keeping Up Appearances</title><desc lang="en">A Picnic For Daddy</desc></programme>
+<programme start="20241029093500 +0000" stop="20241029114500 +0000" channel="Classics/FKC"><title lang="en">The Treasure of Sierra Madre</title></programme>
+<programme start="20241029114500 +0000" stop="20241029122000 +0000" channel="Classics/FKC"><title lang="en">The Royle Family</title><desc lang="en">Another Woman</desc></programme>
+<programme start="20241029122000 +0000" stop="20241029125000 +0000" channel="Classics/FKC"><title lang="en">Rawhide</title><desc lang="en">The Retreat</desc></programme>
+<programme start="20241029070000 +0000" stop="20241029110100 +0000" channel="Club-MTV/VH1"><title lang="en">100% Party Tunes!</title></programme>
+<programme start="20241029110100 +0000" stop="20241029120000 +0000" channel="Club-MTV/VH1"><title lang="en">Reload! Club Classics</title></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="Club-MTV/VH1"><title lang="en">Ultimate Rap &amp; RnB</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Club-MTV/VH1"><title lang="en">Big Tunes!</title></programme>
+<programme start="20241029073400 +0000" stop="20241029075800 +0000" channel="CMT/CMT"><title lang="en">Country #1 Hits</title></programme>
+<programme start="20241029075800 +0000" stop="20241029085700 +0000" channel="CMT/CMT"><title lang="en">Fresh in the US &amp; Canada</title></programme>
+<programme start="20241029085700 +0000" stop="20241029100100 +0000" channel="CMT/CMT"><title lang="en">CMT Hour: LeAnn Rimes</title><desc lang="en">LeAnn Rimes</desc></programme>
+<programme start="20241029100100 +0000" stop="20241029110000 +0000" channel="CMT/CMT"><title lang="en">Fresh From Locals</title></programme>
+<programme start="20241029110000 +0000" stop="20241029120100 +0000" channel="CMT/CMT"><title lang="en">Superstars of Country</title></programme>
+<programme start="20241029120100 +0000" stop="20241029125900 +0000" channel="CMT/CMT"><title lang="en">Locals Only</title></programme>
+<programme start="20241029125900 +0000" stop="20241029132900 +0000" channel="CMT/CMT"><title lang="en">Nothin&apos; But Country</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="CNBC/CNB"><title lang="en">Europe Squawk Box</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="CNBC/CNB"><title lang="en">Europe Squawk Box</title></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="CNBC/CNB"><title lang="en">Europe Squawk Box</title></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="CNBC/CNB"><title lang="en">Worldwide Exchange</title></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="CNBC/CNB"><title lang="en">Worldwide Exchange</title></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="CNBC/CNB"><title lang="en">US Squawk Box</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="CNBC/CNB"><title lang="en">US Squawk Box</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="CNBC/CNB"><title lang="en">US Squawk Box</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="CNBC/CNB"><title lang="en">US Squawk Box</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="CNBC/CNB"><title lang="en">US Squawk Box</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="CNBC/CNB"><title lang="en">US Squawk Box</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="CNBC/CNB"><title lang="en">US Squawk on the Street</title></programme>
+<programme start="20241029070000 +0000" stop="20241029080000 +0000" channel="CNN/CNN"><title lang="en">CNN Newsroom</title><desc lang="en">2024 3am ET</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029090000 +0000" channel="CNN/CNN"><title lang="en">CNN Newsroom</title><desc lang="en">2024 4am ET</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029100000 +0000" channel="CNN/CNN"><title lang="en">CNN This Morning</title><desc lang="en">2024 5AM</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029110000 +0000" channel="CNN/CNN"><title lang="en">CNN This Morning</title><desc lang="en">2024 6AM</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="CNN/CNN"><title lang="en">CNN News Central</title><desc lang="en">2024 7AM</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="CNN/CNN"><title lang="en">World Sport</title><desc lang="en">2024 730am ET</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="CNN/CNN"><title lang="en">CNN Newsroom</title><desc lang="en">2024 8am ET</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="CNN/CNN"><title lang="en">Connect the World</title><desc lang="en">2024 9am ET</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Comedy-2/HI2"><title lang="en">Cheers</title><desc lang="en">Dog Bites Cliff</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Comedy-2/HI2"><title lang="en">Cheers</title><desc lang="en">Dinner At Eight-Ish</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Comedy-2/HI2"><title lang="en">Frasier</title><desc lang="en">Coots And Ladders</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="Comedy-2/HI2"><title lang="en">Frasier</title><desc lang="en">Match Game</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="Comedy-2/HI2"><title lang="en">Night Court</title><desc lang="en">A Guy Named Phantom Part 2</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="Comedy-2/HI2"><title lang="en">Night Court</title><desc lang="en">My Life As A Dog Lawyer</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="Comedy-2/HI2"><title lang="en">Young Sheldon</title><desc lang="en">German For Beginners And A Crazy Old Man With A Bat</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Comedy-2/HI2"><title lang="en">Young Sheldon</title><desc lang="en">A Romantic Getaway And A Germanic Meat-Based Diet</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Comedy-2/HI2"><title lang="en">Seinfeld</title><desc lang="en">The Secretary</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="Comedy-2/HI2"><title lang="en">Seinfeld</title><desc lang="en">The Race</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Comedy-2/HI2"><title lang="en">The King of Queens</title><desc lang="en">Golden Moldy</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Comedy-2/HI2"><title lang="en">The King of Queens</title><desc lang="en">S&apos;poor House</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Comedy/HIT"><title lang="en">Night Court</title><desc lang="en">A Guy Named Phantom Part 2</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Comedy/HIT"><title lang="en">Night Court</title><desc lang="en">My Life As A Dog Lawyer</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Comedy/HIT"><title lang="en">Young Sheldon</title><desc lang="en">German For Beginners And A Crazy Old Man With A Bat</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="Comedy/HIT"><title lang="en">Young Sheldon</title><desc lang="en">A Romantic Getaway And A Germanic Meat-Based Diet</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="Comedy/HIT"><title lang="en">Seinfeld</title><desc lang="en">The Secretary</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="Comedy/HIT"><title lang="en">Seinfeld</title><desc lang="en">The Race</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="Comedy/HIT"><title lang="en">The King of Queens</title><desc lang="en">Golden Moldy</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Comedy/HIT"><title lang="en">The King of Queens</title><desc lang="en">S&apos;poor House</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Comedy/HIT"><title lang="en">Cheers</title><desc lang="en">Dog Bites Cliff</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="Comedy/HIT"><title lang="en">Cheers</title><desc lang="en">Dinner At Eight-Ish</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Comedy/HIT"><title lang="en">Frasier</title><desc lang="en">Coots And Ladders</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Comedy/HIT"><title lang="en">Frasier</title><desc lang="en">Match Game</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Crime-2/IO2"><title lang="en">CSI: NY</title><desc lang="en">The Fall</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Crime-2/IO2"><title lang="en">CSI: Miami</title><desc lang="en">Under Suspicion</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Crime-2/IO2"><title lang="en">FBI: Most Wanted</title><desc lang="en">Dopesick</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Crime-2/IO2"><title lang="en">NCIS</title><desc lang="en">All Or Nothing</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Crime-2/IO2"><title lang="en">NCIS</title><desc lang="en">Birds of a Feather</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Crime-2/IO2"><title lang="en">NCIS: Los Angeles</title><desc lang="en">Part 2</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Crime/IOI"><title lang="en">FBI: Most Wanted</title><desc lang="en">Dopesick</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Crime/IOI"><title lang="en">NCIS</title><desc lang="en">All Or Nothing</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Crime/IOI"><title lang="en">NCIS</title><desc lang="en">Birds of a Feather</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Crime/IOI"><title lang="en">NCIS: Los Angeles</title><desc lang="en">Part 2</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Crime/IOI"><title lang="en">Major Crimes</title><desc lang="en">Sanctuary City: Part 4</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Crime/IOI"><title lang="en">The Closer</title><desc lang="en">To Protect and to Serve</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Daystar/DAS"><title lang="en">Ron Carpenter</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Daystar/DAS"><title lang="en">Rhema Praise with Kenneth Hagin</title></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Daystar/DAS"><title lang="en">Believer&apos;s Voice of Victory</title><desc lang="en">Command Authority Is Delegated Authority</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="Daystar/DAS"><title lang="en">Life Today</title><desc lang="en">The Foundation Of A Nation</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="Daystar/DAS"><title lang="en">Joyce Meyer</title><desc lang="en">Make a Fresh Start Part 1</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029110000 +0000" channel="Daystar/DAS"><title lang="en">Inaugural National Faith Summit 2024</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Daystar/DAS"><title lang="en">Joni Table Talk</title><desc lang="en">Faith &amp; Politics</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Daystar/DAS"><title lang="en">Reflections</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="Daystar/DAS"><title lang="en">Sid Roth&apos;s It&apos;s Supernatural!</title><desc lang="en">Tammie Southerland</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Daystar/DAS"><title lang="en">Reflections</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Daystar/DAS"><title lang="en">Reflections</title></programme>
+<programme start="20241029055000 +0000" stop="20241029074000 +0000" channel="Discovery-2/DS2"><title lang="en">Gold Rush</title><desc lang="en">Promised Land</desc></programme>
+<programme start="20241029074000 +0000" stop="20241029083500 +0000" channel="Discovery-2/DS2"><title lang="en">Ed Stafford: First Man Out</title><desc lang="en">India</desc></programme>
+<programme start="20241029083500 +0000" stop="20241029093500 +0000" channel="Discovery-2/DS2"><title lang="en">Aussie Gold Hunters</title><desc lang="en">Episode 12</desc></programme>
+<programme start="20241029093500 +0000" stop="20241029103000 +0000" channel="Discovery-2/DS2"><title lang="en">Gold Rush</title><desc lang="en">Ring Of Fire</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Discovery-2/DS2"><title lang="en">Opal Hunters: Red Dirt Road Trip</title><desc lang="en">Kimberley Diamonds</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Discovery-2/DS2"><title lang="en">Alien Encounters: Fact Or Fiction</title><desc lang="en">Proof From Area 51</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Discovery-2/DS2"><title lang="en">Alien Highway</title><desc lang="en">UFO Terror</desc></programme>
+<programme start="20241029073500 +0000" stop="20241029083000 +0000" channel="Discovery-Channel/DIS"><title lang="en">Gold Rush</title><desc lang="en">Ring Of Fire</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Discovery-Channel/DIS"><title lang="en">Opal Hunters: Red Dirt Road Trip</title><desc lang="en">Kimberley Diamonds</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Discovery-Channel/DIS"><title lang="en">Alien Encounters: Fact Or Fiction</title><desc lang="en">Proof From Area 51</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029112500 +0000" channel="Discovery-Channel/DIS"><title lang="en">Alien Highway</title><desc lang="en">UFO Terror</desc></programme>
+<programme start="20241029112500 +0000" stop="20241029122000 +0000" channel="Discovery-Channel/DIS"><title lang="en">Tut&apos;s Lost City Revealed</title></programme>
+<programme start="20241029122000 +0000" stop="20241029125000 +0000" channel="Discovery-Channel/DIS"><title lang="en">Naked and Afraid</title><desc lang="en">Love Thy Neighbour... Or Not</desc></programme>
+<programme start="20241029064500 +0000" stop="20241029074000 +0000" channel="Discovery-Turbo-2/DI2"><title lang="en">Kindig Customs</title><desc lang="en">Veruca Violet</desc></programme>
+<programme start="20241029074000 +0000" stop="20241029083500 +0000" channel="Discovery-Turbo-2/DI2"><title lang="en">Diesel Brothers</title><desc lang="en">Double Trouble</desc></programme>
+<programme start="20241029083500 +0000" stop="20241029093500 +0000" channel="Discovery-Turbo-2/DI2"><title lang="en">American Chopper</title><desc lang="en">Mikey&apos;s Favorite Moments</desc></programme>
+<programme start="20241029093500 +0000" stop="20241029100000 +0000" channel="Discovery-Turbo-2/DI2"><title lang="en">Burgers, Brew and &apos;Que</title><desc lang="en">Sweet Treats &amp; Savoury Meats</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="Discovery-Turbo-2/DI2"><title lang="en">Diners, Drive-Ins and Dives</title><desc lang="en">Ocean Coasts And Great Lakes</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029123000 +0000" channel="Discovery-Turbo-2/DI2"><title lang="en">Street Outlaws Vs The World</title><desc lang="en">You Better Run</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Discovery-Turbo-2/DI2"><title lang="en">Street Outlaws: Gone Girl</title><desc lang="en">Cali Confusion</desc></programme>
+<programme start="20241029073500 +0000" stop="20241029080000 +0000" channel="Discovery-Turbo/DIT"><title lang="en">Burgers, Brew and &apos;Que</title><desc lang="en">Sweet Treats &amp; Savoury Meats</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Discovery-Turbo/DIT"><title lang="en">Diners, Drive-Ins and Dives</title><desc lang="en">Ocean Coasts And Great Lakes</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029103000 +0000" channel="Discovery-Turbo/DIT"><title lang="en">Street Outlaws Vs The World</title><desc lang="en">You Better Run</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029112500 +0000" channel="Discovery-Turbo/DIT"><title lang="en">Street Outlaws: Gone Girl</title><desc lang="en">Cali Confusion</desc></programme>
+<programme start="20241029112500 +0000" stop="20241029122000 +0000" channel="Discovery-Turbo/DIT"><title lang="en">Holden Bros. Restos</title><desc lang="en">Haulin&apos; The Mail</desc></programme>
+<programme start="20241029122000 +0000" stop="20241029125000 +0000" channel="Discovery-Turbo/DIT"><title lang="en">American Chopper</title><desc lang="en">Mikey&apos;s Favorite Moments</desc></programme>
+<programme start="20241029070000 +0000" stop="20241029083000 +0000" channel="DocPlay/DPS"><title lang="en">Charles Bradley: Soul of America</title></programme>
+<programme start="20241029083000 +0000" stop="20241029101500 +0000" channel="DocPlay/DPS"><title lang="en">Frontmen</title><desc lang="en">Jon Bon Jovi</desc></programme>
+<programme start="20241029101500 +0000" stop="20241029120000 +0000" channel="DocPlay/DPS"><title lang="en">Searching for Sugar Man</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="DocPlay/DPS"><title lang="en">Patti Smith: Dream of Life</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="DreamWorks/DRM"><title lang="en">The Croods: Family Tree</title><desc lang="en">Cave New World</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="DreamWorks/DRM"><title lang="en">Boss Baby: Back In The Crib</title><desc lang="en">The Business Boss: Back in Baby</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="DreamWorks/DRM"><title lang="en">Jurassic World: Camp Cretaceous</title><desc lang="en">Things Fall Apart</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="DreamWorks/DRM"><title lang="en">Jurassic World: Camp Cretaceous</title><desc lang="en">Eddie!</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="DreamWorks/DRM"><title lang="en">Jurassic World: Camp Cretaceous</title><desc lang="en">Welcome To Jurassic World</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="DreamWorks/DRM"><title lang="en">Kung Fu Panda: The Dragon Knight</title><desc lang="en">The Lost City</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="DreamWorks/DRM"><title lang="en">Kung Fu Panda: The Dragon Knight</title><desc lang="en">The Last Guardian</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="DreamWorks/DRM"><title lang="en">The Croods: Family Tree</title><desc lang="en">Ball in Cup</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="DreamWorks/DRM"><title lang="en">The Croods: Family Tree</title><desc lang="en">Growing Paints</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="DreamWorks/DRM"><title lang="en">The Croods: Family Tree</title><desc lang="en">Cave New World</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="DreamWorks/DRM"><title lang="en">Boss Baby: Back In The Crib</title><desc lang="en">The Business Boss: Back in Baby</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="DreamWorks/DRM"><title lang="en">Boss Baby: Back In The Crib</title><desc lang="en">The Stroll</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="ESPN2/ES2"><title lang="en">UFC Fight Camp</title></programme>
+<programme start="20241029080000 +0000" stop="20241029110000 +0000" channel="ESPN2/ES2"><title lang="en">MLB World Series Yankees v Dodgers</title><desc lang="en">Yankees v Dodgers</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029120000 +0000" channel="ESPN2/ES2"><title lang="en">2024 WSOP Bracelets</title><desc lang="en">Part 1</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="ESPN2/ES2"><title lang="en">UFC Fight Camp</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="ESPN2/ES2"><title lang="en">NFL Mini</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="ESPN2/ES2"><title lang="en">MLB World Series Yankees v Dodgers</title><desc lang="en">Yankees v Dodgers</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="ESPN/ESP"><title lang="en">ESPN FC</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="ESPN/ESP"><title lang="en">NBL Slam</title></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="ESPN/ESP"><title lang="en">NBL: Overtime</title></programme>
+<programme start="20241029093000 +0000" stop="20241029120000 +0000" channel="ESPN/ESP"><title lang="en">NFL: Steelers v Giants</title><desc lang="en">Steelers v Giants</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="ESPN/ESP"><title lang="en">Live: Get Up</title></programme>
+<programme start="20241029070000 +0000" stop="20241029080000 +0000" channel="EXPO/EXP"><title lang="en">Active Superblends</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="EXPO/EXP"><title lang="en">PowerXL Grill Airfryer Combo</title></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="EXPO/EXP"><title lang="en">Jet Hawk</title></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="EXPO/EXP"><title lang="en">Power AirFryer Oven</title></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="EXPO/EXP"><title lang="en">Maestro Air Purifier</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="EXPO/EXP"><title lang="en">Pocket Hose Copper Bullet</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="EXPO/EXP"><title lang="en">Legxercise</title></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="EXPO/EXP"><title lang="en">iRobot Robotic Vacuum</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="EXPO/EXP"><title lang="en">CruiseAway</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="EXPO/EXP"><title lang="en">BreadSmart by Tupperware</title></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Famous/SAR"><title lang="en">Portrait Artist of the Year</title><desc lang="en">Vicky McClure</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Famous/SAR"><title lang="en">Portrait Artist of the Year</title><desc lang="en">P. Walker</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Famous/SAR"><title lang="en">Elizabeth: The Invincible Queen</title></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Famous/SAR"><title lang="en">The Royals Revealed</title><desc lang="en">Royal Weddings: Then And Now</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Famous/SAR"><title lang="en">Royal Britain</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Famous/SAR"><title lang="en">Cursed Treasures</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion from Brazil</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion Destination: Indonesia</title></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion Destination: Indonesia</title></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion News</title></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion News</title></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion Destination: Oceania</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion Destination: Oceania</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion Magazines</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion Magazines</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion Films</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Fashion-TV/FHT"><title lang="en">Fashion Films</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Fashion-TV/FHT"><title lang="en">Lingerie</title></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="FOX8/FOX"><title lang="en">American Pickers</title><desc lang="en">Raiders Of The Lost Pick</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="FOX8/FOX"><title lang="en">Storage Wars</title><desc lang="en">The Thrill Of A Kitty And The Agony Of Smoked Meat</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="FOX8/FOX"><title lang="en">Storage Wars</title><desc lang="en">There Will Be Blood Money</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="FOX8/FOX"><title lang="en">The Ark</title><desc lang="en">Fortunate</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="FOX8/FOX"><title lang="en">More Power</title><desc lang="en">Power Under Pressure</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="FOX8/FOX"><title lang="en">More Power</title><desc lang="en">Blades</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="FOX8/FOX"><title lang="en">Two and a Half Men</title><desc lang="en">Just Once With Aunt Sophie</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="FOX8/FOX"><title lang="en">Two and a Half Men</title><desc lang="en">Arguments For The Quickie</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="FOX8/FOX"><title lang="en">American Pickers</title><desc lang="en">Raiders Of The Lost Pick</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="FOX82/FO2"><title lang="en">Two and a Half Men</title><desc lang="en">Just Once With Aunt Sophie</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="FOX82/FO2"><title lang="en">Two and a Half Men</title><desc lang="en">Arguments For The Quickie</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="FOX82/FO2"><title lang="en">Whose Line Is It Anyway?</title><desc lang="en">Episode 11</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="FOX82/FO2"><title lang="en">Whose Line Is It Anyway?</title><desc lang="en">Episode 12</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="FOX82/FO2"><title lang="en">American Pickers</title><desc lang="en">Raiders Of The Lost Pick</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="FOX82/FO2"><title lang="en">Storage Wars</title><desc lang="en">The Thrill Of A Kitty And The Agony Of Smoked Meat</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="FOX82/FO2"><title lang="en">Storage Wars</title><desc lang="en">There Will Be Blood Money</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="FOX82/FO2"><title lang="en">The Ark</title><desc lang="en">Fortunate</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="FOX82/FO2"><title lang="en">More Power</title><desc lang="en">Power Under Pressure</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="FOX82/FO2"><title lang="en">More Power</title><desc lang="en">Blades</desc></programme>
+<programme start="20241029071000 +0000" stop="20241029083500 +0000" channel="FOX-CRICKET/FS1"><title lang="en">Live: WBBL: Sixers v Strikers IN1</title><desc lang="en">Sixers v Strikers IN1</desc></programme>
+<programme start="20241029083500 +0000" stop="20241029085000 +0000" channel="FOX-CRICKET/FS1"><title lang="en">Live: The Big Break</title><desc lang="en">Sixers v Strikers</desc></programme>
+<programme start="20241029085000 +0000" stop="20241029101500 +0000" channel="FOX-CRICKET/FS1"><title lang="en">Live: WBBL: Sixers v Strikers IN2</title><desc lang="en">Sixers v Strikers IN2</desc></programme>
+<programme start="20241029101500 +0000" stop="20241029103000 +0000" channel="FOX-CRICKET/FS1"><title lang="en">Live: WBBL Post Game</title><desc lang="en">Sixers v Strikers</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029105000 +0000" channel="FOX-CRICKET/FS1"><title lang="en">WBBL Mini: REN v SIX</title><desc lang="en">REN v SIX</desc></programme>
+<programme start="20241029105000 +0000" stop="20241029111000 +0000" channel="FOX-CRICKET/FS1"><title lang="en">WBBL Mini: SIX v STR</title><desc lang="en">SIX v STR</desc></programme>
+<programme start="20241029111000 +0000" stop="20241029113000 +0000" channel="FOX-CRICKET/FS1"><title lang="en">Test Mini IND v NZL: 2nd Test Day 3</title><desc lang="en">2nd Test Day 3</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029115700 +0000" channel="FOX-CRICKET/FS1"><title lang="en">WBBL Mini: SIX v STR</title><desc lang="en">SIX v STR</desc></programme>
+<programme start="20241029115700 +0000" stop="20241029122700 +0000" channel="FOX-CRICKET/FS1"><title lang="en">Live: Women&apos;s ODI IND v NZL: G3</title><desc lang="en">G3</desc></programme>
+<programme start="20241029072000 +0000" stop="20241029074000 +0000" channel="Fox-Footy/FAF"><title lang="en">AFL Mini: RND5 WC v RIC</title><desc lang="en">RND5 WC v RIC</desc></programme>
+<programme start="20241029074000 +0000" stop="20241029080000 +0000" channel="Fox-Footy/FAF"><title lang="en">AFL Mini: RND6 STK v WB</title><desc lang="en">RND6 STK v WB</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029081500 +0000" channel="Fox-Footy/FAF"><title lang="en">AFLW Mini: RND9 HAW V MEL</title><desc lang="en">RND9 HAW V MEL</desc></programme>
+<programme start="20241029081500 +0000" stop="20241029083000 +0000" channel="Fox-Footy/FAF"><title lang="en">AFLW Mini: RND9 ADE V NMT</title><desc lang="en">RND9 ADE V NMT</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029084500 +0000" channel="Fox-Footy/FAF"><title lang="en">AFLW Mini: RND9 GWS V FRE</title><desc lang="en">RND9 GWS V FRE</desc></programme>
+<programme start="20241029084500 +0000" stop="20241029090000 +0000" channel="Fox-Footy/FAF"><title lang="en">AFLW Mini: RND9 GC V PA</title><desc lang="en">RND9 GC V PA</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029110000 +0000" channel="Fox-Footy/FAF"><title lang="en">Best Games Ever: 2004 R11 ESS v HAW</title><desc lang="en">2004 R11 ESS v HAW</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029130000 +0000" channel="Fox-Footy/FAF"><title lang="en">Best Games Ever: 2015 EF WB v ADL</title><desc lang="en">2015 EF WB v ADL</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Fox-Footy/FAF"><title lang="en">AFLW: Gold Coast v Port Adelaide</title><desc lang="en">Gold Coast v Port Adelaide</desc></programme>
+<programme start="20241029063000 +0000" stop="20241029080000 +0000" channel="FOX-LEAGUE/SP2"><title lang="en">Greatest Tests: 2003 GB v AUS 1st Test</title><desc lang="en">2003 GB v AUS 1st Test</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029090000 +0000" channel="FOX-LEAGUE/SP2"><title lang="en">Pacific C&apos;ships Women: NZL v AUS</title><desc lang="en">NZL v AUS</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029100000 +0000" channel="FOX-LEAGUE/SP2"><title lang="en">Pacific C&apos;ships: New Zealand v Australia</title><desc lang="en">New Zealand v Australia</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029110000 +0000" channel="FOX-LEAGUE/SP2"><title lang="en">Men&apos;s Internationals: ENG v SAM G1</title><desc lang="en">ENG v SAM G1</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029120000 +0000" channel="FOX-LEAGUE/SP2"><title lang="en">Pacific C&apos;ships: Fiji v Cook Islands</title><desc lang="en">Fiji v Cook Islands</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="FOX-LEAGUE/SP2"><title lang="en">Men&apos;s Internationals: ENG v SAM G1</title><desc lang="en">ENG v SAM G1</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="FOX-LEAGUE/SP2"><title lang="en">NRL: Sea Eagles v Storm</title><desc lang="en">Sea Eagles v Storm</desc></programme>
+<programme start="20241029070000 +0000" stop="20241029080000 +0000" channel="FOX-News/FNC"><title lang="en">Gutfeld!</title><desc lang="en">29-10-2024</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029090000 +0000" channel="FOX-News/FNC"><title lang="en">The Ingraham Angle</title><desc lang="en">29-10-2024</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029100000 +0000" channel="FOX-News/FNC"><title lang="en">FOX &amp; Friends First</title><desc lang="en">29-10-2024</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029110000 +0000" channel="FOX-News/FNC"><title lang="en">FOX &amp; Friends</title><desc lang="en">29-10-2024</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029120000 +0000" channel="FOX-News/FNC"><title lang="en">FOX &amp; Friends</title><desc lang="en">29-10-2024</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="FOX-News/FNC"><title lang="en">FOX &amp; Friends</title><desc lang="en">29-10-2024</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="FOX-News/FNC"><title lang="en">America&apos;s Newsroom</title><desc lang="en">30-10-2024</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="FOX-SPORTS-503/FS3"><title lang="en">TPS South Australia: Final Round</title><desc lang="en">Final Round</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="FOX-SPORTS-503/FS3"><title lang="en">Live: The Back Page</title><desc lang="en">Episode 36</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="FOX-SPORTS-503/FS3"><title lang="en">How Good is Golf</title><desc lang="en">Episode 9</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029110000 +0000" channel="FOX-SPORTS-503/FS3"><title lang="en">The Back Page</title><desc lang="en">Episode 36</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="FOX-SPORTS-503/FS3"><title lang="en">How Good is Golf</title><desc lang="en">Episode 9</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="FOX-SPORTS-503/FS3"><title lang="en">The Back Page</title><desc lang="en">Episode 36</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="FOX-SPORTS-503/FS3"><title lang="en">How Good is Golf</title><desc lang="en">Episode 9</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="FOX-SPORTS-503/FS3"><title lang="en">Golf: Dubai Invitational Final Round</title><desc lang="en">Dubai Invitational Final Round</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029075000 +0000" channel="FOX-SPORTS-505/FSP"><title lang="en">Test Mini IND v NZL: 2nd Test Day 3</title><desc lang="en">2nd Test Day 3</desc></programme>
+<programme start="20241029075000 +0000" stop="20241029113500 +0000" channel="FOX-SPORTS-505/FSP"><title lang="en">Live: Cricket: Women&apos;s ODI IND v NZL: G3</title><desc lang="en">G3</desc></programme>
+<programme start="20241029113500 +0000" stop="20241029120000 +0000" channel="FOX-SPORTS-505/FSP"><title lang="en">MotoGP Mini: Thailand</title><desc lang="en">Thailand</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="FOX-SPORTS-505/FSP"><title lang="en">Motorsport: NASCAR Highlights</title><desc lang="en">Playoffs Miami</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="FOX-SPORTS-505/FSP"><title lang="en">Golf: USLPGA: Arkansas Championship FR</title><desc lang="en">Arkansas Championship FR</desc></programme>
+<programme start="20241029070000 +0000" stop="20241029080000 +0000" channel="FOX-SPORTS-506/SPS"><title lang="en">MotoGP: Thailand Race</title><desc lang="en">Thailand Race</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="FOX-SPORTS-506/SPS"><title lang="en">F1 Mini: Mexico</title><desc lang="en">Mexico</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="FOX-SPORTS-506/SPS"><title lang="en">TPS South Australia: Final Round</title><desc lang="en">Final Round</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="FOX-SPORTS-506/SPS"><title lang="en">MotoGP: Thailand Race</title><desc lang="en">Thailand Race</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="FOX-SPORTS-506/SPS"><title lang="en">Rodeo: PBR Team Series</title><desc lang="en">Las Vegas</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="FOX-SPORTS-506/SPS"><title lang="en">Golf: USPGA: ZOZO Championship</title><desc lang="en">ZOZO Championship</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="FOX-SPORTS-506/SPS"><title lang="en">The Back Page</title><desc lang="en">Episode 36</desc></programme>
+<programme start="20241029070000 +0000" stop="20241029080000 +0000" channel="Fox-Sports-More/FSS"><title lang="en">Motorsport: NASCAR Highlights</title><desc lang="en">Playoffs Miami</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029090000 +0000" channel="Fox-Sports-More/FSS"><title lang="en">Netball: Constellation Cup Game 1</title><desc lang="en">Game 1</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029100000 +0000" channel="Fox-Sports-More/FSS"><title lang="en">Netball: Constellation Cup Game 2</title><desc lang="en">Game 2</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029110000 +0000" channel="Fox-Sports-More/FSS"><title lang="en">Netball: Constellation Cup Game 3</title><desc lang="en">Game 3</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029130000 +0000" channel="Fox-Sports-More/FSS"><title lang="en">F1: Mexico Race</title><desc lang="en">Mexico Race</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Fox-Sports-More/FSS"><title lang="en">MotoGP: Thailand Race</title><desc lang="en">Thailand Race</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">Live: FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">Live: FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">Live: FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">Live: FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">Live: FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Fox-Sports-News/FSN"><title lang="en">FOX SPORTS News</title><desc lang="en">29/10/24</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Foxtel-One-2/F12"><title lang="en">Rizzoli &amp; Isles</title><desc lang="en">For Richer Or Poorer</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Foxtel-One-2/F12"><title lang="en">Lethal Weapon</title><desc lang="en">There Goes The Neighborhood</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Foxtel-One-2/F12"><title lang="en">Blue Bloods</title><desc lang="en">On The Arm</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Foxtel-One-2/F12"><title lang="en">Blue Bloods</title><desc lang="en">The Reagan Way</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Foxtel-One-2/F12"><title lang="en">Rescue: HI-Surf</title><desc lang="en">Mauka To Makai</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Foxtel-One-2/F12"><title lang="en">Law &amp; Order</title><desc lang="en">The Meaning Of Life</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Foxtel-One/F1S"><title lang="en">Blue Bloods</title><desc lang="en">On The Arm</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Foxtel-One/F1S"><title lang="en">Blue Bloods</title><desc lang="en">The Reagan Way</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Foxtel-One/F1S"><title lang="en">Rescue: HI-Surf</title><desc lang="en">Mauka To Makai</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Foxtel-One/F1S"><title lang="en">Law &amp; Order</title><desc lang="en">The Meaning Of Life</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Foxtel-One/F1S"><title lang="en">Blue Bloods</title><desc lang="en">On The Arm</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Foxtel-One/F1S"><title lang="en">Blue Bloods</title><desc lang="en">The Reagan Way</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="GOOD/ACC"><title lang="en">Be That</title><desc lang="en">The Uncompromising Journey</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="GOOD/ACC"><title lang="en">Bringing Up Bates</title><desc lang="en">I Love You Part 2</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="GOOD/ACC"><title lang="en">Drive Thru History</title><desc lang="en">The Gospel Shared at Pentecost</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029103000 +0000" channel="GOOD/ACC"><title lang="en">The Unseen Realm</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="GOOD/ACC"><title lang="en">Bible Land Passages</title><desc lang="en">The Southern Steps - Coming into the Presence of the Lord</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="GOOD/ACC"><title lang="en">The Incredible Journey</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="GOOD/ACC"><title lang="en">New Creation Church</title><desc lang="en">Inside-Out Transformation Pt 2 of 4</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="GOOD/ACC"><title lang="en">Joel Osteen</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="GOOD/ACC"><title lang="en">The Way of the Master</title><desc lang="en">Does Baptism Save You?</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="GOOD/ACC"><title lang="en">Joyce Meyer: Enjoying Everyday Life</title><desc lang="en">Make a Fresh Start - Part 2</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Investigation-Discovery/DID"><title lang="en">No One Can Hear You Scream</title><desc lang="en">Sojourn To Hell</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Investigation-Discovery/DID"><title lang="en">People Magazine Investigates</title><desc lang="en">Valley Of Death</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Investigation-Discovery/DID"><title lang="en">People Magazine Investigates</title><desc lang="en">Murder On Newberry St.</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Investigation-Discovery/DID"><title lang="en">The Black Widower</title><desc lang="en">Luckiest Son Of A Gun</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029122500 +0000" channel="Investigation-Discovery/DID"><title lang="en">Nick and Aaron Carter: Fallen Idols</title><desc lang="en">Into The Darkness</desc></programme>
+<programme start="20241029122500 +0000" stop="20241029125500 +0000" channel="Investigation-Discovery/DID"><title lang="en">Nightmare Next Door</title><desc lang="en">Into The Woods</desc></programme>
+<programme start="20241029071000 +0000" stop="20241029083000 +0000" channel="LifeStyle-2/LS2"><title lang="en">Better Homes &amp; Gardens</title><desc lang="en">Episode 5</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="LifeStyle-2/LS2"><title lang="en">Escape to the Chateau</title><desc lang="en">Glamping</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="LifeStyle-2/LS2"><title lang="en">Location, Location, Location</title><desc lang="en">Hertfordshire</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="LifeStyle-2/LS2"><title lang="en">Selling Houses Australia</title><desc lang="en">NSW</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="LifeStyle-2/LS2"><title lang="en">The Repair Shop UK</title><desc lang="en">Drum Kit</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="LifeStyle-2/LS2"><title lang="en">Buckingham Palace With Alexander</title><desc lang="en">Into The Future</desc></programme>
+<programme start="20241029063500 +0000" stop="20241029074500 +0000" channel="LifeStyle-Food-2/LF2"><title lang="en">The Great British Bake Off Masterclass</title><desc lang="en">Episode 4</desc></programme>
+<programme start="20241029074500 +0000" stop="20241029081500 +0000" channel="LifeStyle-Food-2/LF2"><title lang="en">Donal&apos;s Irish Adventure</title><desc lang="en">Cork</desc></programme>
+<programme start="20241029081500 +0000" stop="20241029084500 +0000" channel="LifeStyle-Food-2/LF2"><title lang="en">Jamie&apos;s 30 Minute Meals</title><desc lang="en">Crispy Salmon</desc></programme>
+<programme start="20241029084500 +0000" stop="20241029092000 +0000" channel="LifeStyle-Food-2/LF2"><title lang="en">Mary Berry&apos;s Simple Comforts</title><desc lang="en">Woodland</desc></programme>
+<programme start="20241029092000 +0000" stop="20241029103000 +0000" channel="LifeStyle-Food-2/LF2"><title lang="en">Eat Well For Less</title><desc lang="en">Episode 3</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="LifeStyle-Food-2/LF2"><title lang="en">Great British Menu</title><desc lang="en">London And South East England: Starters And Fish</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029124000 +0000" channel="LifeStyle-Food-2/LF2"><title lang="en">The Great Australian Bake Off</title><desc lang="en">Cheese Week</desc></programme>
+<programme start="20241029124000 +0000" stop="20241029131000 +0000" channel="LifeStyle-Food-2/LF2"><title lang="en">The Great British Bake Off</title><desc lang="en">Patisserie Week</desc></programme>
+<programme start="20241029072000 +0000" stop="20241029083000 +0000" channel="LifeStyle-Food/FOD"><title lang="en">Eat Well For Less</title><desc lang="en">Episode 3</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="LifeStyle-Food/FOD"><title lang="en">Great British Menu</title><desc lang="en">London And South East England: Starters And Fish</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029104000 +0000" channel="LifeStyle-Food/FOD"><title lang="en">The Great Australian Bake Off</title><desc lang="en">Cheese Week</desc></programme>
+<programme start="20241029104000 +0000" stop="20241029115000 +0000" channel="LifeStyle-Food/FOD"><title lang="en">The Great British Bake Off</title><desc lang="en">Patisserie Week</desc></programme>
+<programme start="20241029115000 +0000" stop="20241029124500 +0000" channel="LifeStyle-Food/FOD"><title lang="en">Roux Down the River: The Thames</title><desc lang="en">Cookham To Bray</desc></programme>
+<programme start="20241029124500 +0000" stop="20241029131500 +0000" channel="LifeStyle-Food/FOD"><title lang="en">The Great Australian Bake Off</title><desc lang="en">Cheese Week</desc></programme>
+<programme start="20241029073500 +0000" stop="20241029083000 +0000" channel="LifeStyle-Home/LHO"><title lang="en">Love It or List It Vancouver</title><desc lang="en">Siva And Sinna</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="LifeStyle-Home/LHO"><title lang="en">My Lottery Dream Home</title><desc lang="en">Beginner&apos;s Luck</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="LifeStyle-Home/LHO"><title lang="en">My Lottery Dream Home</title><desc lang="en">Luck Of The Irish</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103500 +0000" channel="LifeStyle-Home/LHO"><title lang="en">Grand Designs Australia</title><desc lang="en">QLD</desc></programme>
+<programme start="20241029103500 +0000" stop="20241029114000 +0000" channel="LifeStyle-Home/LHO"><title lang="en">Grand Designs Australia</title><desc lang="en">VIC</desc></programme>
+<programme start="20241029114000 +0000" stop="20241029123500 +0000" channel="LifeStyle-Home/LHO"><title lang="en">Property Brothers: Forever Home</title><desc lang="en">Michelle And Ghopi</desc></programme>
+<programme start="20241029123500 +0000" stop="20241029130500 +0000" channel="LifeStyle-Home/LHO"><title lang="en">A Place in the Sun</title><desc lang="en">Vale De Lobo</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="LifeStyle/LST"><title lang="en">Location, Location, Location</title><desc lang="en">Hertfordshire</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="LifeStyle/LST"><title lang="en">Selling Houses Australia</title><desc lang="en">NSW</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="LifeStyle/LST"><title lang="en">The Repair Shop UK</title><desc lang="en">Drum Kit</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029112500 +0000" channel="LifeStyle/LST"><title lang="en">Buckingham Palace With Alexander</title><desc lang="en">Into The Future</desc></programme>
+<programme start="20241029112500 +0000" stop="20241029122500 +0000" channel="LifeStyle/LST"><title lang="en">Escape to the Country</title><desc lang="en">Perth And Kinross</desc></programme>
+<programme start="20241029122500 +0000" stop="20241029125500 +0000" channel="LifeStyle/LST"><title lang="en">The Great Pottery Throw Down</title><desc lang="en">Handmade Tiles &amp; A Chimney</desc></programme>
+<programme start="20241029062500 +0000" stop="20241029075500 +0000" channel="Lifetime-Movie-Network/LMS"><title lang="en">Ice Road Killer</title></programme>
+<programme start="20241029075500 +0000" stop="20241029093000 +0000" channel="Lifetime-Movie-Network/LMS"><title lang="en">A Model Murder</title></programme>
+<programme start="20241029093000 +0000" stop="20241029110000 +0000" channel="Lifetime-Movie-Network/LMS"><title lang="en">Girl in the Basement</title></programme>
+<programme start="20241029110000 +0000" stop="20241029123500 +0000" channel="Lifetime-Movie-Network/LMS"><title lang="en">Britney Ever After</title></programme>
+<programme start="20241029123500 +0000" stop="20241029130500 +0000" channel="Lifetime-Movie-Network/LMS"><title lang="en">Road Trip Hostage</title></programme>
+<programme start="20241029073500 +0000" stop="20241029093000 +0000" channel="Movies-4K-Ultra-HD/K02"><title lang="en">Ted</title></programme>
+<programme start="20241029093000 +0000" stop="20241029113000 +0000" channel="Movies-4K-Ultra-HD/K02"><title lang="en">xXx 3: Return of Xander Cage</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Movies-4K-Ultra-HD/K02"><title lang="en">The Big Lebowski</title></programme>
+<programme start="20241029052000 +0000" stop="20241029074000 +0000" channel="Movies-Action-2/MTA"><title lang="en">The Bourne Legacy</title></programme>
+<programme start="20241029074000 +0000" stop="20241029095500 +0000" channel="Movies-Action-2/MTA"><title lang="en">John Wick: Chapter 3 - Parabellum</title></programme>
+<programme start="20241029095500 +0000" stop="20241029113000 +0000" channel="Movies-Action-2/MTA"><title lang="en">Nobody</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Movies-Action-2/MTA"><title lang="en">xXx 3: Return of Xander Cage</title></programme>
+<programme start="20241029054000 +0000" stop="20241029075500 +0000" channel="Movies-Action/SHA"><title lang="en">John Wick: Chapter 3 - Parabellum</title></programme>
+<programme start="20241029075500 +0000" stop="20241029093000 +0000" channel="Movies-Action/SHA"><title lang="en">Nobody</title></programme>
+<programme start="20241029093000 +0000" stop="20241029112000 +0000" channel="Movies-Action/SHA"><title lang="en">xXx 3: Return of Xander Cage</title></programme>
+<programme start="20241029112000 +0000" stop="20241029130000 +0000" channel="Movies-Action/SHA"><title lang="en">The Strangers: Chapter 1</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Movies-Action/SHA"><title lang="en">The Mummy (1999)</title></programme>
+<programme start="20241029054500 +0000" stop="20241029074000 +0000" channel="Movies-Comedy/SHY"><title lang="en">The Dilemma</title></programme>
+<programme start="20241029074000 +0000" stop="20241029093000 +0000" channel="Movies-Comedy/SHY"><title lang="en">Ted</title></programme>
+<programme start="20241029093000 +0000" stop="20241029113000 +0000" channel="Movies-Comedy/SHY"><title lang="en">Ted 2</title></programme>
+<programme start="20241029113000 +0000" stop="20241029130000 +0000" channel="Movies-Comedy/SHY"><title lang="en">The Campaign</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Movies-Comedy/SHY"><title lang="en">Pitch Perfect 3</title></programme>
+<programme start="20241029054500 +0000" stop="20241029074500 +0000" channel="Movies-Drama/MO6"><title lang="en">Boy Erased</title></programme>
+<programme start="20241029074500 +0000" stop="20241029093000 +0000" channel="Movies-Drama/MO6"><title lang="en">Storm Boy (2018)</title></programme>
+<programme start="20241029093000 +0000" stop="20241029112500 +0000" channel="Movies-Drama/MO6"><title lang="en">A Beautiful Day In The Neighborhood</title></programme>
+<programme start="20241029112500 +0000" stop="20241029115500 +0000" channel="Movies-Drama/MO6"><title lang="en">Milk</title></programme>
+<programme start="20241029073000 +0000" stop="20241029090000 +0000" channel="Movies-Family-2/MTF"><title lang="en">Antz</title></programme>
+<programme start="20241029090000 +0000" stop="20241029103000 +0000" channel="Movies-Family-2/MTF"><title lang="en">Open Season: Scared Silly</title></programme>
+<programme start="20241029103000 +0000" stop="20241029121000 +0000" channel="Movies-Family-2/MTF"><title lang="en">Kung Fu Panda 3</title></programme>
+<programme start="20241029121000 +0000" stop="20241029124000 +0000" channel="Movies-Family-2/MTF"><title lang="en">The Croods: A New Age</title></programme>
+<programme start="20241029070000 +0000" stop="20241029083000 +0000" channel="Movies-Family/SHF"><title lang="en">Open Season: Scared Silly</title></programme>
+<programme start="20241029083000 +0000" stop="20241029101000 +0000" channel="Movies-Family/SHF"><title lang="en">Kung Fu Panda 3</title></programme>
+<programme start="20241029101000 +0000" stop="20241029115000 +0000" channel="Movies-Family/SHF"><title lang="en">The Croods: A New Age</title></programme>
+<programme start="20241029115000 +0000" stop="20241029122000 +0000" channel="Movies-Family/SHF"><title lang="en">Sinbad: Legend of the Seven Seas</title></programme>
+<programme start="20241029061500 +0000" stop="20241029075000 +0000" channel="Movies-Greats/GRR"><title lang="en">The Money Pit</title></programme>
+<programme start="20241029075000 +0000" stop="20241029093000 +0000" channel="Movies-Greats/GRR"><title lang="en">National Lampoon&apos;s Christmas Vacation</title></programme>
+<programme start="20241029093000 +0000" stop="20241029115000 +0000" channel="Movies-Greats/GRR"><title lang="en">A Few Good Men</title></programme>
+<programme start="20241029115000 +0000" stop="20241029122000 +0000" channel="Movies-Greats/GRR"><title lang="en">The Big Lebowski</title></programme>
+<programme start="20241029060000 +0000" stop="20241029075000 +0000" channel="Movies-Hits/MVS"><title lang="en">The Black Demon</title></programme>
+<programme start="20241029075000 +0000" stop="20241029093000 +0000" channel="Movies-Hits/MVS"><title lang="en">Renfield</title></programme>
+<programme start="20241029093000 +0000" stop="20241029110500 +0000" channel="Movies-Hits/MVS"><title lang="en">Immaculate</title></programme>
+<programme start="20241029110500 +0000" stop="20241029125500 +0000" channel="Movies-Hits/MVS"><title lang="en">Get Out</title></programme>
+<programme start="20241029125500 +0000" stop="20241029132500 +0000" channel="Movies-Hits/MVS"><title lang="en">Us</title></programme>
+<programme start="20241029064500 +0000" stop="20241029082500 +0000" channel="Movies-Premiere-2/SH2"><title lang="en">Hypnotic</title></programme>
+<programme start="20241029082500 +0000" stop="20241029102500 +0000" channel="Movies-Premiere-2/SH2"><title lang="en">One Life</title></programme>
+<programme start="20241029102500 +0000" stop="20241029113000 +0000" channel="Movies-Premiere-2/SH2"><title lang="en">Oprah and the Color Purple Journey</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Movies-Premiere-2/SH2"><title lang="en">John Farnham: Finding the Voice</title></programme>
+<programme start="20241029062500 +0000" stop="20241029082500 +0000" channel="Movies-Premiere/SHO"><title lang="en">One Life</title></programme>
+<programme start="20241029082500 +0000" stop="20241029093000 +0000" channel="Movies-Premiere/SHO"><title lang="en">Oprah and the Color Purple Journey</title></programme>
+<programme start="20241029093000 +0000" stop="20241029111000 +0000" channel="Movies-Premiere/SHO"><title lang="en">John Farnham: Finding the Voice</title></programme>
+<programme start="20241029111000 +0000" stop="20241029114000 +0000" channel="Movies-Premiere/SHO"><title lang="en">High &amp; Low - John Galliano</title></programme>
+<programme start="20241029061000 +0000" stop="20241029075000 +0000" channel="Movies-Romance/SHD"><title lang="en">The Wedding Singer</title></programme>
+<programme start="20241029075000 +0000" stop="20241029093000 +0000" channel="Movies-Romance/SHD"><title lang="en">Suddenly 30</title></programme>
+<programme start="20241029093000 +0000" stop="20241029112000 +0000" channel="Movies-Romance/SHD"><title lang="en">No Hard Feelings</title></programme>
+<programme start="20241029112000 +0000" stop="20241029115000 +0000" channel="Movies-Romance/SHD"><title lang="en">The Break-Up</title></programme>
+<programme start="20241029070000 +0000" stop="20241029080000 +0000" channel="MSNBC/MSN"><title lang="en">Inside with Jen Psaki</title></programme>
+<programme start="20241029080000 +0000" stop="20241029090000 +0000" channel="MSNBC/MSN"><title lang="en">The Rachel Maddow Show</title></programme>
+<programme start="20241029090000 +0000" stop="20241029100000 +0000" channel="MSNBC/MSN"><title lang="en">Way Too Early</title></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="MSNBC/MSN"><title lang="en">Morning Joe</title></programme>
+<programme start="20241029060000 +0000" stop="20241029090000 +0000" channel="MTV-80s/MTC"><title lang="en">I Want My MTV 80s!</title></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="MTV-80s/MTC"><title lang="en">80s Rock: Wrapped!</title></programme>
+<programme start="20241029061500 +0000" stop="20241029080200 +0000" channel="MTV-Hits/TMF"><title lang="en">Hottest Dance Hits!</title></programme>
+<programme start="20241029080200 +0000" stop="20241029084600 +0000" channel="MTV-Hits/TMF"><title lang="en">Fresh Out</title></programme>
+<programme start="20241029084600 +0000" stop="20241029090100 +0000" channel="MTV-Hits/TMF"><title lang="en">Gracie Abrams: On Repeat!</title></programme>
+<programme start="20241029090100 +0000" stop="20241029100200 +0000" channel="MTV-Hits/TMF"><title lang="en">Bruno Mars x Harry Styles!</title></programme>
+<programme start="20241029100200 +0000" stop="20241029111100 +0000" channel="MTV-Hits/TMF"><title lang="en">MTV Top 20</title></programme>
+<programme start="20241029111100 +0000" stop="20241029120200 +0000" channel="MTV-Hits/TMF"><title lang="en">Worldwide Hits</title></programme>
+<programme start="20241029120200 +0000" stop="20241029123200 +0000" channel="MTV-Hits/TMF"><title lang="en">Guess The Year</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Document 72 Hours</title></programme>
+<programme start="20241029080000 +0000" stop="20241029081500 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">NHK Newsline</title></programme>
+<programme start="20241029081500 +0000" stop="20241029082300 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Newsline Biz</title></programme>
+<programme start="20241029082300 +0000" stop="20241029083000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Japan from Above</title></programme>
+<programme start="20241029083000 +0000" stop="20241029084500 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Deeper Look from NY</title></programme>
+<programme start="20241029084500 +0000" stop="20241029090000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">BOSAI</title><desc lang="en">Landslides</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029091500 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">NHK Newsline</title></programme>
+<programme start="20241029091500 +0000" stop="20241029093000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Direct Talk</title></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Medical Frontiers</title></programme>
+<programme start="20241029100000 +0000" stop="20241029101800 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">NHK Newsline</title></programme>
+<programme start="20241029101800 +0000" stop="20241029103000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Newsline Biz</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Journeys in Japan</title></programme>
+<programme start="20241029110000 +0000" stop="20241029112700 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Newsroom Tokyo</title></programme>
+<programme start="20241029112700 +0000" stop="20241029114000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Newsline in Depth</title></programme>
+<programme start="20241029114000 +0000" stop="20241029115500 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Direct Talk</title></programme>
+<programme start="20241029115500 +0000" stop="20241029120000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">no art, no life</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Newsroom Tokyo</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">Dining With The Chef</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="NHK-WorldJapan/NHK"><title lang="en">NHK Newsline</title></programme>
+<programme start="20241029050000 +0000" stop="20241029110000 +0000" channel="Nick-Music/NMU"><title lang="en">Nick Music</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Nick-Music/NMU"><title lang="en">Nick Music</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Racingcom-HD/RTD"><title lang="en">Racing: Through the Lens</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Racingcom-HD/RTD"><title lang="en">The Trial Show</title></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Racingcom-HD/RTD"><title lang="en">Rewind</title></programme>
+<programme start="20241029090000 +0000" stop="20241029100000 +0000" channel="Racingcom-HD/RTD"><title lang="en">Flashback - Bendigo Cup</title></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="Racingcom-HD/RTD"><title lang="en">From the Trainers&apos; Tower</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="Racingcom-HD/RTD"><title lang="en">Rewind</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Racingcom-HD/RTD"><title lang="en">The Trial Show</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Racingcom-HD/RTD"><title lang="en">From the Trainers&apos; Tower</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="Racingcom-HD/RTD"><title lang="en">Rewind</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Racingcom-HD/RTD"><title lang="en">Racing: Through the Lens</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Racingcom-HD/RTD"><title lang="en">Raceday Review: Swan Hill</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="RACINGCOM/RTV"><title lang="en">Racing: Through the Lens</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="RACINGCOM/RTV"><title lang="en">The Trial Show</title></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="RACINGCOM/RTV"><title lang="en">Rewind</title></programme>
+<programme start="20241029090000 +0000" stop="20241029100000 +0000" channel="RACINGCOM/RTV"><title lang="en">Flashback - Bendigo Cup</title></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="RACINGCOM/RTV"><title lang="en">From the Trainers&apos; Tower</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="RACINGCOM/RTV"><title lang="en">Rewind</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="RACINGCOM/RTV"><title lang="en">The Trial Show</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="RACINGCOM/RTV"><title lang="en">From the Trainers&apos; Tower</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="RACINGCOM/RTV"><title lang="en">Rewind</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="RACINGCOM/RTV"><title lang="en">Racing: Through the Lens</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="RACINGCOM/RTV"><title lang="en">Raceday Review: Swan Hill</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="RAI-ITALIA/RAI"><title lang="en">Un Posto Al Sole</title></programme>
+<programme start="20241029080000 +0000" stop="20241029100000 +0000" channel="RAI-ITALIA/RAI"><title lang="en">Casa Italia</title></programme>
+<programme start="20241029100000 +0000" stop="20241029104500 +0000" channel="RAI-ITALIA/RAI"><title lang="en">Affari Tuoi</title></programme>
+<programme start="20241029104500 +0000" stop="20241029111500 +0000" channel="RAI-ITALIA/RAI"><title lang="en">Splendida cornice</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Real-Crime/CIN"><title lang="en">Cops</title><desc lang="en">Take A Ride With Me</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Real-Crime/CIN"><title lang="en">Cops Reloaded</title><desc lang="en">Speed Racer</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Real-Crime/CIN"><title lang="en">Sleeping With My Murderer</title><desc lang="en">George Worgan</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Real-Crime/CIN"><title lang="en">The Mysterious Murder of Ann Heron</title><desc lang="en">Episode 2</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="Real-Crime/CIN"><title lang="en">Expert Witness</title><desc lang="en">Car Killer And Shot On The Sofa</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Real-Crime/CIN"><title lang="en">Expert Witness</title><desc lang="en">Invisible Evidence And The Chocolate Box Conmen</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Real-Crime/CIN"><title lang="en">Cold Blood</title><desc lang="en">What Happened To Melissa Love?</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Real-Crime/CIN"><title lang="en">Sleeping With My Murderer</title><desc lang="en">George Worgan</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Real-History/HST"><title lang="en">Secrets of the London Underground</title><desc lang="en">Greenwich And Notting Hill</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Real-History/HST"><title lang="en">Fortress Britain with Alice Roberts</title><desc lang="en">Halting Hitler</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Real-History/HST"><title lang="en">Treasures with Bettany Hughes</title><desc lang="en">Mediterranean Islands</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Real-History/HST"><title lang="en">Lewis and Clark</title><desc lang="en">Episode 4</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Real-History/HST"><title lang="en">WWII: The Price Of Empire</title><desc lang="en">Overlord</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Real-History/HST"><title lang="en">Secrets of the London Underground</title><desc lang="en">Greenwich And Notting Hill</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Real-Life-2/RL2"><title lang="en">The Cruise: Welcome Aboard</title><desc lang="en">Episode 5</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Real-Life-2/RL2"><title lang="en">Judge Judy</title><desc lang="en">Episode 174</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="Real-Life-2/RL2"><title lang="en">Judge Judy</title><desc lang="en">Episode 175</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="Real-Life-2/RL2"><title lang="en">Border Security: America&apos;s Front Line</title><desc lang="en">Episode 19</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="Real-Life-2/RL2"><title lang="en">Border Security: Australia&apos;s Front Line</title><desc lang="en">Episode 6</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="Real-Life-2/RL2"><title lang="en">Police Ten 7</title><desc lang="en">Episode 9</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="Real-Life-2/RL2"><title lang="en">Highway Patrol</title><desc lang="en">Mutinous Mother</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Real-Life-2/RL2"><title lang="en">999: Emergency Call Out</title><desc lang="en">Episode 4</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Real-Life-2/RL2"><title lang="en">Coastguard: Search &amp; Rescue SOS</title><desc lang="en">Episode 5</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="Real-Life/RLS"><title lang="en">Border Security: America&apos;s Front Line</title><desc lang="en">Episode 19</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="Real-Life/RLS"><title lang="en">Border Security: Australia&apos;s Front Line</title><desc lang="en">Episode 6</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="Real-Life/RLS"><title lang="en">Police Ten 7</title><desc lang="en">Episode 9</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="Real-Life/RLS"><title lang="en">Highway Patrol</title><desc lang="en">Mutinous Mother</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Real-Life/RLS"><title lang="en">999: Emergency Call Out</title><desc lang="en">Episode 4</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Real-Life/RLS"><title lang="en">Coastguard: Search &amp; Rescue SOS</title><desc lang="en">Episode 5</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="Real-Life/RLS"><title lang="en">Cops</title><desc lang="en">On The Fence</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="Real-Life/RLS"><title lang="en">Highway Patrol</title><desc lang="en">Mutinous Mother</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Real-Life/RLS"><title lang="en">Border Security: Australia&apos;s Front Line</title><desc lang="en">Episode 6</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Real-Life/RLS"><title lang="en">Judge Judy</title><desc lang="en">Episode 174</desc></programme>
+<programme start="20241029070000 +0000" stop="20241029080500 +0000" channel="SBS-Viceland/SBN"><title lang="en">Kim Yo Jong: The Red Princess</title></programme>
+<programme start="20241029080500 +0000" stop="20241029083000 +0000" channel="SBS-Viceland/SBN"><title lang="en">Jeopardy!</title></programme>
+<programme start="20241029083000 +0000" stop="20241029083500 +0000" channel="SBS-Viceland/SBN"><title lang="en">NITV News Update</title></programme>
+<programme start="20241029083500 +0000" stop="20241029093000 +0000" channel="SBS-Viceland/SBN"><title lang="en">8 Out of 10 Cats Does Countdown</title></programme>
+<programme start="20241029093000 +0000" stop="20241029102500 +0000" channel="SBS-Viceland/SBN"><title lang="en">Dark Side of the 90s</title><desc lang="en">Agassi &amp; 90&apos;s Tennis Prodigies</desc></programme>
+<programme start="20241029102500 +0000" stop="20241029112000 +0000" channel="SBS-Viceland/SBN"><title lang="en">Dark Side of the 90s</title><desc lang="en">Infomercials: Shams And Scams</desc></programme>
+<programme start="20241029112000 +0000" stop="20241029121500 +0000" channel="SBS-Viceland/SBN"><title lang="en">Have I Got News For You USA</title></programme>
+<programme start="20241029121500 +0000" stop="20241029124500 +0000" channel="SBS-Viceland/SBN"><title lang="en">Bloodlands</title></programme>
+<programme start="20241029061500 +0000" stop="20241029083000 +0000" channel="SBS-World-Movies-SD/S4B"><title lang="en">Bright Star</title></programme>
+<programme start="20241029083000 +0000" stop="20241029102000 +0000" channel="SBS-World-Movies-SD/S4B"><title lang="en">The Father</title></programme>
+<programme start="20241029102000 +0000" stop="20241029122500 +0000" channel="SBS-World-Movies-SD/S4B"><title lang="en">Strangerland</title></programme>
+<programme start="20241029122500 +0000" stop="20241029125500 +0000" channel="SBS-World-Movies-SD/S4B"><title lang="en">Rabbit Hole</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">Nepali News</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">Urdu News</title></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">Korean News</title></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">Arabic News France 24</title></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">France 24 French News</title></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">Ukrainian News</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">Tamil News</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">Malayalam News</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">Turkish News</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123500 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">NHK Japanese News</title></programme>
+<programme start="20241029123500 +0000" stop="20241029130500 +0000" channel="SBS-Worldwatch/SWW"><title lang="en">Telugu News DD Yadagiri</title></programme>
+<programme start="20241029071500 +0000" stop="20241029081500 +0000" channel="Showcase-2/SW2"><title lang="en">Teacup</title><desc lang="en">I&apos;m A Witness To The Sickness</desc></programme>
+<programme start="20241029081500 +0000" stop="20241029085500 +0000" channel="Showcase-2/SW2"><title lang="en">Teacup</title><desc lang="en">You Don&apos;t Know What It Means To Win</desc></programme>
+<programme start="20241029085500 +0000" stop="20241029093000 +0000" channel="Showcase-2/SW2"><title lang="en">Rap Sh!t</title><desc lang="en">Detour</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Showcase-2/SW2"><title lang="en">The Sopranos</title><desc lang="en">Christopher</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Showcase-2/SW2"><title lang="en">The White Lotus</title><desc lang="en">Arrivals</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123500 +0000" channel="Showcase-2/SW2"><title lang="en">C.B Strike</title><desc lang="en">The Cuckoo&apos;s Calling: Part I</desc></programme>
+<programme start="20241029123500 +0000" stop="20241029130500 +0000" channel="Showcase-2/SW2"><title lang="en">The Penguin</title><desc lang="en">Gold Summit</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Showcase/SHC"><title lang="en">The Sopranos</title><desc lang="en">Christopher</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Showcase/SHC"><title lang="en">The White Lotus</title><desc lang="en">Arrivals</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103500 +0000" channel="Showcase/SHC"><title lang="en">C.B Strike</title><desc lang="en">The Cuckoo&apos;s Calling: Part I</desc></programme>
+<programme start="20241029103500 +0000" stop="20241029113500 +0000" channel="Showcase/SHC"><title lang="en">The Penguin</title><desc lang="en">Gold Summit</desc></programme>
+<programme start="20241029113500 +0000" stop="20241029123500 +0000" channel="Showcase/SHC"><title lang="en">The Sopranos</title><desc lang="en">Christopher</desc></programme>
+<programme start="20241029123500 +0000" stop="20241029130500 +0000" channel="Showcase/SHC"><title lang="en">C.B Strike</title><desc lang="en">The Cuckoo&apos;s Calling: Part I</desc></programme>
+<programme start="20241029050000 +0000" stop="20241029081700 +0000" channel="Sky-News-Election/ASP"><title lang="en">Sky News Election Channel</title></programme>
+<programme start="20241029081700 +0000" stop="20241029093500 +0000" channel="Sky-News-Election/ASP"><title lang="en">US Politics</title></programme>
+<programme start="20241029093500 +0000" stop="20241029101000 +0000" channel="Sky-News-Election/ASP"><title lang="en">US Politics</title></programme>
+<programme start="20241029101000 +0000" stop="20241029110600 +0000" channel="Sky-News-Election/ASP"><title lang="en">US Politics</title></programme>
+<programme start="20241029110600 +0000" stop="20241029122400 +0000" channel="Sky-News-Election/ASP"><title lang="en">US Politics</title></programme>
+<programme start="20241029122400 +0000" stop="20241029130000 +0000" channel="Sky-News-Election/ASP"><title lang="en">US Politics</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Sky-News-Election/ASP"><title lang="en">The Kenny Report</title></programme>
+<programme start="20241029070000 +0000" stop="20241029080000 +0000" channel="Sky-News-UK/SUK"><title lang="en">Sky News</title></programme>
+<programme start="20241029080000 +0000" stop="20241029090000 +0000" channel="Sky-News-UK/SUK"><title lang="en">Sky News</title></programme>
+<programme start="20241029090000 +0000" stop="20241029100000 +0000" channel="Sky-News-UK/SUK"><title lang="en">Sky News</title></programme>
+<programme start="20241029100000 +0000" stop="20241029110000 +0000" channel="Sky-News-UK/SUK"><title lang="en">Sky News</title></programme>
+<programme start="20241029110000 +0000" stop="20241029120000 +0000" channel="Sky-News-UK/SUK"><title lang="en">Sky News</title></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="Sky-News-UK/SUK"><title lang="en">Sky News</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="Sky-News-UK/SUK"><title lang="en">Sky News</title></programme>
+<programme start="20241029070000 +0000" stop="20241029080000 +0000" channel="SKY-News/SKY"><title lang="en">Credlin</title><desc lang="en">29/10/2024</desc></programme>
+<programme start="20241029080000 +0000" stop="20241029090000 +0000" channel="SKY-News/SKY"><title lang="en">The Bolt Report</title><desc lang="en">29/10/2024</desc></programme>
+<programme start="20241029090000 +0000" stop="20241029100000 +0000" channel="SKY-News/SKY"><title lang="en">Sharri</title><desc lang="en">29/10/2024</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029110000 +0000" channel="SKY-News/SKY"><title lang="en">Paul Murray Live</title><desc lang="en">29/10/2024</desc></programme>
+<programme start="20241029110000 +0000" stop="20241029120000 +0000" channel="SKY-News/SKY"><title lang="en">The Late Debate</title><desc lang="en">29/10/2024</desc></programme>
+<programme start="20241029120000 +0000" stop="20241029130000 +0000" channel="SKY-News/SKY"><title lang="en">The Rita Panahi Show</title><desc lang="en">29/10/2024</desc></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="SKY-News/SKY"><title lang="en">Newsnight</title></programme>
+<programme start="20241029070000 +0000" stop="20241029130000 +0000" channel="SKY-Racing-2/SR2"><title lang="en">Live: Sky Racing 2 Racenight</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="SKY-Racing-2/SR2"><title lang="en">Live: Sky Racing 2 Latenight</title></programme>
+<programme start="20241029070000 +0000" stop="20241029110000 +0000" channel="SKY-Racing/SRA"><title lang="en">Live: Sky Racing 1 Racenight</title></programme>
+<programme start="20241029110000 +0000" stop="20241029130000 +0000" channel="SKY-Racing/SRA"><title lang="en">Live: Sky Racing 1 Latenight</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="SKY-Racing/SRA"><title lang="en">Live: Sky Racing 1 Latenight</title></programme>
+<programme start="20241029065000 +0000" stop="20241029080000 +0000" channel="SKY-Tbred-Cent/SRW"><title lang="en">Live: Formline Extra</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="SKY-Tbred-Cent/SRW"><title lang="en">Punter&apos;s Intelligence</title></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="SKY-Tbred-Cent/SRW"><title lang="en">Live: Flying Like An Eagle</title></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="SKY-Tbred-Cent/SRW"><title lang="en">Racing Replay: Grafton Thoroughbreds</title><desc lang="en">Grafton (R)</desc></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="SKY-Tbred-Cent/SRW"><title lang="en">Racing Replay: Rockhampton Thoroughbreds</title><desc lang="en">Rockhampton (R)</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="SKY-Tbred-Cent/SRW"><title lang="en">Formline Extra Encore</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="SKY-Tbred-Cent/SRW"><title lang="en">Punter&apos;s Intelligence Encore</title></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="SKY-Tbred-Cent/SRW"><title lang="en">Flying Like An Eagle Encore</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="SKY-Tbred-Cent/SRW"><title lang="en">Warwick Farm Trials Encore</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="SKY-Tbred-Cent/SRW"><title lang="en">Take Two Encore</title></programme>
+<programme start="20241029073000 +0000" stop="20241029080000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029080000 +0000" stop="20241029083000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029083000 +0000" stop="20241029090000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029090000 +0000" stop="20241029093000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029093000 +0000" stop="20241029100000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029110000 +0000" stop="20241029113000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029113000 +0000" stop="20241029120000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029130000 +0000" stop="20241029133000 +0000" channel="SKY-Weather/FXW"><title lang="en">Australia&apos;s Weather</title></programme>
+<programme start="20241029070000 +0000" stop="20241029080000 +0000" channel="SonLife/SLT"><title lang="en">FWC Music</title></programme>
+<programme start="20241029080000 +0000" stop="20241029100000 +0000" channel="SonLife/SLT"><title lang="en">Frances and Friends</title></programme>
+<programme start="20241029100000 +0000" stop="20241029103000 +0000" channel="SonLife/SLT"><title lang="en">FWC Music</title></programme>
+<programme start="20241029103000 +0000" stop="20241029110000 +0000" channel="SonLife/SLT"><title lang="en">A Study in the Word</title></programme>
+<programme start="20241029110000 +0000" stop="20241029120000 +0000" channel="SonLife/SLT"><title lang="en">Family Worship Center: Associate Pastor</title></programme>
+<programme start="20241029120000 +0000" stop="20241029123000 +0000" channel="SonLife/SLT"><title lang="en">FWC Music</title></programme>
+<programme start="20241029064500 +0000" stop="20241029074000 +0000" channel="TLC-2/DT2"><title lang="en">Stuck</title><desc lang="en">Toys in the Tush</desc></programme>
+<programme start="20241029074000 +0000" stop="20241029083500 +0000" channel="TLC-2/DT2"><title lang="en">Say Yes To The Dress Lancashire</title><desc lang="en">Making Mum Happy</desc></programme>
+<programme start="20241029083500 +0000" stop="20241029090500 +0000" channel="TLC-2/DT2"><title lang="en">Extreme Cheapskates</title><desc lang="en">The Grass Is Always Cheaper</desc></programme>
+<programme start="20241029090500 +0000" stop="20241029093500 +0000" channel="TLC-2/DT2"><title lang="en">Extreme Cheapskates</title><desc lang="en">Feast or Famine</desc></programme>
+<programme start="20241029093500 +0000" stop="20241029103000 +0000" channel="TLC-2/DT2"><title lang="en">Outdaughtered</title><desc lang="en">Ava and the First Dance</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="TLC-2/DT2"><title lang="en">I Love A Mama&apos;s Boy</title><desc lang="en">Motherson Tango</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="TLC-2/DT2"><title lang="en">Unexpected</title><desc lang="en">The Foley Bulb</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="TLC-2/DT2"><title lang="en">Ghost Adventures</title><desc lang="en">Panic on Pine Street</desc></programme>
+<programme start="20241029073500 +0000" stop="20241029083000 +0000" channel="TLC/DTA"><title lang="en">Outdaughtered</title><desc lang="en">Ava and the First Dance</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="TLC/DTA"><title lang="en">I Love A Mama&apos;s Boy</title><desc lang="en">Motherson Tango</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="TLC/DTA"><title lang="en">Unexpected</title><desc lang="en">The Foley Bulb</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029112500 +0000" channel="TLC/DTA"><title lang="en">Ghost Adventures</title><desc lang="en">Panic on Pine Street</desc></programme>
+<programme start="20241029112500 +0000" stop="20241029122000 +0000" channel="TLC/DTA"><title lang="en">GHOSTOBER: Destination Fear</title><desc lang="en">Old Hospital On College Hill</desc></programme>
+<programme start="20241029122000 +0000" stop="20241029125000 +0000" channel="TLC/DTA"><title lang="en">These Woods Are Haunted</title><desc lang="en">No One&apos;s Ever Going To See Me Again</desc></programme>
+<programme start="20241029073500 +0000" stop="20241029084000 +0000" channel="Travel/TRS"><title lang="en">Great American Railroad Journeys</title><desc lang="en">Monterey To Los Angeles</desc></programme>
+<programme start="20241029084000 +0000" stop="20241029093000 +0000" channel="Travel/TRS"><title lang="en">The Cruise: Welcome Aboard</title><desc lang="en">Episode 9</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029100500 +0000" channel="Travel/TRS"><title lang="en">Rick Stein&apos;s Cornwall</title><desc lang="en">Episode 9</desc></programme>
+<programme start="20241029100500 +0000" stop="20241029103500 +0000" channel="Travel/TRS"><title lang="en">Luxury Escapes: World&apos;s Best Holidays</title><desc lang="en">Thailand</desc></programme>
+<programme start="20241029103500 +0000" stop="20241029113000 +0000" channel="Travel/TRS"><title lang="en">Amazing Hotels: Life Beyond The Lobby</title><desc lang="en">Morocco</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029122000 +0000" channel="Travel/TRS"><title lang="en">Walking Britain&apos;s Lost Railways</title><desc lang="en">Durham</desc></programme>
+<programme start="20241029122000 +0000" stop="20241029125500 +0000" channel="Travel/TRS"><title lang="en">Men in Kilts</title><desc lang="en">Last Call</desc></programme>
+<programme start="20241029125500 +0000" stop="20241029132500 +0000" channel="Travel/TRS"><title lang="en">James Martin&apos;s Islands To Highlands</title><desc lang="en">Isle Of Man</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="TVSN/TVS"><title lang="en">Santa Maria Aquamarine</title></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="TVSN/TVS"><title lang="en">Isaac Mizrahi Designer Fashion</title></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="TVSN/TVS"><title lang="en">Marcasite Jewellery</title></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="TVSN/TVS"><title lang="en">Diamonesque Gifts for Christmas</title></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="TVSN/TVS"><title lang="en">L&apos;Occitane en Provence</title></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="TVSN/TVS"><title lang="en">HairDo Hair Styles</title></programme>
+<programme start="20241029065500 +0000" stop="20241029075200 +0000" channel="UKTV2/UK2"><title lang="en">Father Brown</title><desc lang="en">The Children Of Kalon</desc></programme>
+<programme start="20241029075200 +0000" stop="20241029083000 +0000" channel="UKTV2/UK2"><title lang="en">QI</title><desc lang="en">Girls And Boys</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029090800 +0000" channel="UKTV2/UK2"><title lang="en">QI</title><desc lang="en">Germany</desc></programme>
+<programme start="20241029090800 +0000" stop="20241029094600 +0000" channel="UKTV2/UK2"><title lang="en">Would I Lie to You?</title><desc lang="en">Episode 2</desc></programme>
+<programme start="20241029094600 +0000" stop="20241029101800 +0000" channel="UKTV2/UK2"><title lang="en">Emmerdale</title><desc lang="en">Episode 10114</desc></programme>
+<programme start="20241029101800 +0000" stop="20241029105200 +0000" channel="UKTV2/UK2"><title lang="en">Coronation Street</title><desc lang="en">Episode 11389</desc></programme>
+<programme start="20241029105200 +0000" stop="20241029113000 +0000" channel="UKTV2/UK2"><title lang="en">EastEnders</title><desc lang="en">Episode 6988</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="UKTV2/UK2"><title lang="en">Joanna Lumley: Great Cities of the World</title><desc lang="en">Berlin</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="UKTV2/UK2"><title lang="en">Great Canal Journeys</title><desc lang="en">Episode 4</desc></programme>
+<programme start="20241029070800 +0000" stop="20241029074600 +0000" channel="UKTV/UKT"><title lang="en">Would I Lie to You?</title><desc lang="en">Episode 2</desc></programme>
+<programme start="20241029074600 +0000" stop="20241029081800 +0000" channel="UKTV/UKT"><title lang="en">Emmerdale</title><desc lang="en">Episode 10114</desc></programme>
+<programme start="20241029081800 +0000" stop="20241029085200 +0000" channel="UKTV/UKT"><title lang="en">Coronation Street</title><desc lang="en">Episode 11389</desc></programme>
+<programme start="20241029085200 +0000" stop="20241029093000 +0000" channel="UKTV/UKT"><title lang="en">EastEnders</title><desc lang="en">Episode 6988</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="UKTV/UKT"><title lang="en">Joanna Lumley: Great Cities of the World</title><desc lang="en">Berlin</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113200 +0000" channel="UKTV/UKT"><title lang="en">Great Canal Journeys</title><desc lang="en">Episode 4</desc></programme>
+<programme start="20241029113200 +0000" stop="20241029123200 +0000" channel="UKTV/UKT"><title lang="en">8 Out of 10 Cats Does Countdown</title><desc lang="en">Episode 4</desc></programme>
+<programme start="20241029123200 +0000" stop="20241029130200 +0000" channel="UKTV/UKT"><title lang="en">8 Out of 10 Cats Does Countdown</title><desc lang="en">Episode 6</desc></programme>
+<programme start="20241029073000 +0000" stop="20241029083000 +0000" channel="Universal-TV/HAL"><title lang="en">Law &amp; Order: UK</title><desc lang="en">Immune</desc></programme>
+<programme start="20241029083000 +0000" stop="20241029093000 +0000" channel="Universal-TV/HAL"><title lang="en">Law &amp; Order: SVU</title><desc lang="en">Lies And Videotape</desc></programme>
+<programme start="20241029093000 +0000" stop="20241029103000 +0000" channel="Universal-TV/HAL"><title lang="en">Chicago Fire</title><desc lang="en">Nobody Touches Anything</desc></programme>
+<programme start="20241029103000 +0000" stop="20241029113000 +0000" channel="Universal-TV/HAL"><title lang="en">Chicago P.D.</title><desc lang="en">Ghosts</desc></programme>
+<programme start="20241029113000 +0000" stop="20241029123000 +0000" channel="Universal-TV/HAL"><title lang="en">Law &amp; Order: SVU</title><desc lang="en">Sin</desc></programme>
+<programme start="20241029123000 +0000" stop="20241029130000 +0000" channel="Universal-TV/HAL"><title lang="en">Law &amp; Order: Criminal Intent</title><desc lang="en">The Pardoner&apos;s Tale</desc></programme>
+<programme start="20241029070000 +0000" stop="20241029075500 +0000" channel="WWE/WWS"><title lang="en">WWE Raw</title><desc lang="en">Episode 7</desc></programme>
+<programme start="20241029075500 +0000" stop="20241029085000 +0000" channel="WWE/WWS"><title lang="en">WWE Raw</title><desc lang="en">Episode 8</desc></programme>
+<programme start="20241029085000 +0000" stop="20241029094500 +0000" channel="WWE/WWS"><title lang="en">WWE Raw</title><desc lang="en">Episode 8</desc></programme>
+<programme start="20241029094500 +0000" stop="20241029104500 +0000" channel="WWE/WWS"><title lang="en">Tuesday Night Titans</title><desc lang="en">Mr Fuji Presents Don Muraco&apos;s Greatest Hits</desc></programme>
+<programme start="20241029104500 +0000" stop="20241029111500 +0000" channel="WWE/WWS"><title lang="en">WWE Raw</title><desc lang="en">2024</desc></programme>
+</tv>
