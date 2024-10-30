@@ -10,7 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: '9tv.co.il',
-  days: 2,
+  days: 1,
   url: function ({ date }) {
     return `https://www.9tv.co.il/BroadcastSchedule/getBrodcastSchedule?date=${date.format(
       'DD/MM/YYYY 00:00:00'
