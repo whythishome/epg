@@ -103,7 +103,7 @@
 <channel id="WWE/WWS"><display-name>WWE</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/WWS/WWS_290x170.png"/><url>https://foxtel.com.au</url></channel>
 <programme start="20241030050000 +0000" stop="20241030053000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News</title></programme>
 <programme start="20241030053000 +0000" stop="20241030060000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Inside Story</title><new /></programme>
-<programme start="20241030060000 +0000" stop="20241030063000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News</title><live /></programme>
+<programme start="20241030060000 +0000" stop="20241030063000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News</title><new /></programme>
 <programme start="20241030063000 +0000" stop="20241030070000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Counting the Cost</title></programme>
 <programme start="20241030070000 +0000" stop="20241030080000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title></programme>
 <programme start="20241030080000 +0000" stop="20241030083000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title></programme>
