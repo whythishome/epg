@@ -36,8 +36,8 @@ module.exports = {
       const lang = channel.lang;
       items.forEach(item => {
           // Determine the title based on the lang attribute
-          const title = lang === 'Hi' ? item.regional.hindi.title : item.title;
-          const desc = lang === 'Hi' ? item.regional.hindi.desc : item.desc;
+          const title = lang === 'hi' ? item.regional.hindi.title : item.title;
+          const desc = lang === 'hi' ? item.regional.hindi.desc : item.desc;
           programs.push({
               title: title,
               description: desc,
