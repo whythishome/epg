@@ -101,11 +101,11 @@
 <channel id="UKTV/UKT"><display-name>UKTV</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/UKT/UKT_290x170.png"/><url>https://foxtel.com.au</url></channel>
 <channel id="Universal-TV/HAL"><display-name>Universal TV</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/HAL/HAL_290x170.png"/><url>https://foxtel.com.au</url></channel>
 <channel id="WWE/WWS"><display-name>WWE</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/WWS/WWS_290x170.png"/><url>https://foxtel.com.au</url></channel>
-<programme start="20241030120000 +0000" stop="20241030130000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Witness</title><new /><desc lang="en">Paper City</desc></programme>
-<programme start="20241030120000 +0000" stop="20241030130000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Witness</title><new /><desc lang="en">Paper City</desc></programme>
+<programme start="20241030120000 +0000" stop="20241030130000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Witness</title><desc lang="en">Paper City</desc></programme>
+<programme start="20241030120000 +0000" stop="20241030130000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Witness</title><desc lang="en">Paper City</desc></programme>
 <programme start="20241030130000 +0000" stop="20241030133000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title><new /></programme>
-<programme start="20241030130000 +0000" stop="20241030140000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title></programme>
-<programme start="20241030140000 +0000" stop="20241030143000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title></programme>
+<programme start="20241030130000 +0000" stop="20241030140000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title><new /></programme>
+<programme start="20241030140000 +0000" stop="20241030143000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title><new /></programme>
 <programme start="20241030143000 +0000" stop="20241030150000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Talk to Al Jazeera</title><desc lang="en">Ahmed El Mokhallalati</desc></programme>
 <programme start="20241030150000 +0000" stop="20241030160000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title></programme>
 <programme start="20241030160000 +0000" stop="20241030163000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title></programme>
