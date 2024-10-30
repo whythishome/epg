@@ -30,22 +30,25 @@ module.exports = {
       }
     }
   },
-  parser: function({
-    content
-  }) {
-    let programs = []
-    const items = parseItems(content)
-    items.forEach(item => {
-      programs.push({
-        title: item.title,
-        description: item.desc,
-        image: item.programmeurl,
-        start: parseStart(item),
-        stop: parseStop(item)
-      })
-    })
-    return programs
+  parser: function({ channel, content }) {
+      let programs = [];
+      const items = parseItems(content);
+      const lang = channel.lang;
+      items.forEach(item => {
+          // Determine the title based on the lang attribute
+          const title = lang === 'Hi' ? item.regional.hindi.title : item.title;
+          const desc = lang === 'Hi' ? item.regional.hindi.desc : item.desc;
+          programs.push({
+              title: title,
+              description: desc,
+              image: item.programmeurl,
+              start: parseStart(item),
+              stop: parseStop(item)
+          });
+      });
+      return programs;
   }
+
   // async channels() {
   //   let channels = []
   //   const url = 'https://www.dishtv.in/services/epg/channels'
