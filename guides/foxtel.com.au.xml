@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?><tv date="20241030">
-<channel id="Al-Jazeera/AJE"><display-name>Al Jazeera</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/AJE/AJE_290x170.png"/><url>https://foxtel.com.au</url></channel>
+<channel id="Al-Jazeera/AJE"><display-name>AlJazeera</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/AJE/AJE_290x170.png"/><url>https://foxtel.com.au</url></channel>
 <channel id="Animal-Planet/ANI"><display-name>Animal Planet</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ANI/ANI_290x170.png"/><url>https://foxtel.com.au</url></channel>
 <channel id="Antenna-Pacific/ANT"><display-name>Antenna Pacific</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ANT/ANT_290x170.png"/><url>https://foxtel.com.au</url></channel>
 <channel id="Arena-2/AR2"><display-name>Arena +2</display-name><icon src="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ARN/AR2_290x170.png"/><url>https://foxtel.com.au</url></channel>
@@ -107,7 +107,7 @@
 <programme start="20241030063000 +0000" stop="20241030070000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Counting the Cost</title></programme>
 <programme start="20241030070000 +0000" stop="20241030080000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title></programme>
 <programme start="20241030080000 +0000" stop="20241030083000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title></programme>
-<programme start="20241030083000 +0000" stop="20241030090000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Echoes of a Lost Gaza</title><desc lang="en">Shattered Dreams</desc></programme>
+<programme start="20241030083000 +0000" stop="20241030090000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Echoes of a Lost Gaza</title><new /><desc lang="en">Shattered Dreams</desc></programme>
 <programme start="20241030090000 +0000" stop="20241030093000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title></programme>
 <programme start="20241030093000 +0000" stop="20241030100000 +0000" channel="Al-Jazeera/AJE"><title lang="en">The Stream</title></programme>
 <programme start="20241030100000 +0000" stop="20241030110000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title></programme>
