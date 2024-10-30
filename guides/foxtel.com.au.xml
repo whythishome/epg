@@ -107,7 +107,16 @@
 <programme start="20241030120000 +0000" stop="20241030130000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Witness</title><desc lang="en">Paper City</desc></programme>
 <programme start="20241030130000 +0000" stop="20241030133000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title><new /></programme>
 <programme start="20241030130000 +0000" stop="20241030140000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title><new /></programme>
-<programme start="20241030140000 +0000" stop="20241030143000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title><new /></programme>
+<programme start="20241030140000 +0000" stop="20241030143000 +0000" channel="Al-Jazeera/AJE">		<title lang="en">Scripps News On The Scene [NEW]</title>
+		<desc lang="en">Each weekday, Scripps News reporters take you to breaking news and live events across the country, bringing you the news as it unfolds.</desc>
+		<date>20241030</date>
+		<category lang="en">News</category>
+		<category lang="en">Series</category>
+		<length units="minutes">240</length>
+		<icon src="https://zap2it.tmsimg.com/assets/p26942880_b_v13_aa.jpg" />
+		<url>https://tvlistings.zap2it.com//overview.html?programSeriesId=SH05062606&amp;tmsId=EP050626060001</url>
+		<episode-num system="dd_progid">EP05062606.0001</episode-num>
+		<new /></programme>
 <programme start="20241030143000 +0000" stop="20241030150000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Talk to Al Jazeera</title><new /><desc lang="en">Ahmed El Mokhallalati</desc></programme>
 <programme start="20241030150000 +0000" stop="20241030160000 +0000" channel="Al-Jazeera/AJE"><title lang="en">Newshour</title></programme>
 <programme start="20241030160000 +0000" stop="20241030163000 +0000" channel="Al-Jazeera/AJE"><title lang="en">News Live</title></programme>
