@@ -24,14 +24,12 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=dishtv.in  --lang=en  --maxConnections=10 --gzip --output=guides/dishtv.in_en.xml
-          npm run grab -- --site=dishtv.in  --lang=hi  --maxConnections=10 --gzip --output=guides/dishtv.in_hi.xml
+          npm run grab -- --site=tvguide.com --maxConnections=10 --output=guides/tvguide.com.xml
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/dishtv.in_en.xml.gz
-        git add -f guides/dishtv.in_hi.xml.gz
+        git add -f guides/tvguide.com.xml
         git commit -m "Update xml"
         git push
