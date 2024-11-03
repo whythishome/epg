@@ -33,12 +33,11 @@ module.exports = {
     const data = Object.values(response.data.shows);
     let channels = []
     data.forEach(item => {
-      const channelData = item.seasons[0].episodes[0];
       channels.push({
         lang: 'en',
-        site_id: channelData.id,
-        name: channelData.title,
-        logo: channelData.img_thumbv
+        site_id: item.seasons[0].episodes[0].id,
+        name: item.seasons[0].episodes[0].title,
+        logo: item.img_logo
       })
     })
     return channels
