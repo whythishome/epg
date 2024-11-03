@@ -34,7 +34,7 @@ module.exports = {
     
     // Add this check to ensure that items is an array
     if (!Array.isArray(data)) {
-      console.error('Items is not an array:', items);
+      console.error('Items is not an array:');
       return [];
     }
 
