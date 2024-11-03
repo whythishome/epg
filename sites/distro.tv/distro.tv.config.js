@@ -32,6 +32,7 @@ module.exports = {
       )
       .then(r => r.data)
       .catch(console.log)
+    console.log(data);
 
     let channels = []
     data.shows.forEach(item => {
