@@ -25,7 +25,7 @@ module.exports = {
     return programs
   },  
   async channels() {
-    const data = await axios
+    const channelsData = await axios
       .get(
         'https://tv.jsrdn.com/tv_v5/getfeed.php?type=live',
       )
@@ -33,7 +33,7 @@ module.exports = {
       .catch(console.log)
 
     let channels = []
-    data.forEach(item => {
+    channelsData.forEach(item => {
       const channelData = item.seasons[0].episodes[0];
       channels.push({
         lang: 'en',
