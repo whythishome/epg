@@ -9,9 +9,9 @@ module.exports = {
   },
   parser: function ({ content, channel }) {
     let programs = []
-    const epg = parseItems(content, channel)
-    const items = content.epg[channel.site_id].slots
-    items.forEach(item => {
+    const items = parseItems(content, channel)
+    const slots = items.epg[channel.site_id].slots
+    slots.forEach(item => {
       programs.push({
         title: item.title,
         description: item.description,
