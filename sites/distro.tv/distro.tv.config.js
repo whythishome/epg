@@ -25,15 +25,21 @@ module.exports = {
     return programs
   },  
   async channels() {
-    const channelsData = await axios
+    const data = await axios
       .get(
         'https://tv.jsrdn.com/tv_v5/getfeed.php?type=live',
       )
       .then(r => r.data.shows)
       .catch(console.log)
+    
+    // Add this check to ensure that items is an array
+    if (!Array.isArray(data)) {
+      console.error('Items is not an array:', items);
+      return [];
+    }
 
     let channels = []
-    channelsData.forEach(item => {
+    data.forEach(item => {
       const channelData = item.seasons[0].episodes[0];
       channels.push({
         lang: 'en',
