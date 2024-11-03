@@ -26,19 +26,24 @@ module.exports = {
   },
   
   async channels() {
-    const items = await axios
+    const data = await axios
       .get(
         'https://tv.jsrdn.com/tv_v5/getfeed.php?type=live',
       )
       .then(r => r.data)
       .catch(console.log)
 
-    return items.map(item => ({
-      lang: 'en',
-      site_id: item.shows.seasons[0].episodes[0].id,
-      name: item.shows.seasons[0].episodes[0].title,
-      logo: item.shows.seasons[0].episodes[0].img_thumbv
-    }))
+    let channels = []
+    data.shows.forEach(item => {
+      const channelData = item.seasons[0].episodes[0];
+      channels.push({
+        lang: 'en',
+        site_id: channelData.id,
+        name: channelData.title,
+        logo: channelData.img_thumbv
+      })
+    })
+    return channels
   }
 }
 
