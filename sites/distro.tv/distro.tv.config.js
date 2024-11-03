@@ -30,7 +30,7 @@ module.exports = {
         'https://tv.jsrdn.com/tv_v5/getfeed.php?type=live',
       )
       .catch(console.log)
-    const items = Object.values(response.data.shows);
+    const data = Object.values(response.data.shows);
     let channels = []
     data.forEach(item => {
       const channelData = item.seasons[0].episodes[0];
