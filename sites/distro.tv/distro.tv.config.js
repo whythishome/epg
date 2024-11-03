@@ -29,14 +29,14 @@ module.exports = {
       .get(
         'https://tv.jsrdn.com/tv_v5/getfeed.php?type=live',
       )
-      .then(r => r.data.shows)
+      .then(r => r.data)
       .catch(console.log)
 
     return items.map(item => ({
       lang: 'en',
-      site_id: item.seasons[0].episodes[0].id,
-      name: item.seasons[0].episodes[0].title,
-      logo: item.seasons[0].episodes[0].img_thumbv
+      site_id: item.shows.seasons[0].episodes[0].id,
+      name: item.shows.seasons[0].episodes[0].title,
+      logo: item.shows.seasons[0].episodes[0].img_thumbv
     }))
   }
 }
