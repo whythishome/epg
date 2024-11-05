@@ -73,6 +73,6 @@ function parseStop(item) {
 }
 
 function parseItems(content, channel) {
-  const data = JSON.parse(content)
+  const data = content
   return data.epg ? data.epg : []
 }
