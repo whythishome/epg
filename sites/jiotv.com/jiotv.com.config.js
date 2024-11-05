@@ -5,16 +5,16 @@ module.exports = {
   site: 'jiotv.com',
   days: 2,
   url: function ({ date, channel }) {
-    return `https://jiotvapi.jsrdn.com/epg/query.php?range=now,24h&id=${channel.site_id}`
+    return `https://tsdevil.fun/testing/jtv-apis/getepg?id=${channel.site_id}&offset=0`
   },
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
-    const slots = items.epg[channel.site_id].slots
-    slots.forEach(item => {
+    items.forEach(item => {
       programs.push({
-        title: item.title,
-        description: item.description,
+        title: item.showname,
+        description: item.episode_num ? item.description + ' E' + item.episode_num : item.description,
+        image: 'https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/' + item.episodePoster,
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -48,14 +48,14 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs(item.start)
+  return dayjs.unix(item.startEpoch)
 }
 
 function parseStop(item) {
-  return dayjs(item.end)
+  return dayjs.unix(item.endEpoch)
 }
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
-  return data ? data : []
+  return data.epg ? data.epg : []
 }
