@@ -23,7 +23,10 @@ module.exports = {
   },  
   async channels() {
     const items = await axios
-      .get('https://jiotvapi.cdn.jio.com/apis/v3.0/getMobileChannelList/get/?langid=6&devicetype=phone&os=android&usertype=JIO&version=343')
+      .get(
+        'https://jiotvapi.cdn.jio.com/apis/v3.0/getMobileChannelList/get/?langid=6&devicetype=phone&os=android&usertype=JIO&version=343',
+        { headers: { Referer: 'https://www.jiotv.com' } }
+      )
       .then(r => r.data.result)
       .catch(console.log)
     let channels = []
