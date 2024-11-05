@@ -4,7 +4,7 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'jiotv.com',
   days: 2,
-  url: function ({ date, channel }) {
+  url: function ({ channel }) {
     return `https://tsdevil.fun/testing/jtv-apis/v1.3/getepg/get?channel_id=${channel.site_id}&offset=0`
   },
   request: {
