@@ -18,6 +18,7 @@ module.exports = {
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
+    console.log(items)
     items.forEach(item => {
       programs.push({
         title: item.showname,
