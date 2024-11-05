@@ -5,7 +5,7 @@ module.exports = {
   site: 'jiotv.com',
   days: 2,
   url: function ({ channel }) {
-    return `https://tsdevil.fun/testing/jtv-apis/v1.3/getepg/get?channel_id=${channel.site_id}&offset=0`
+    return `https://tsdevil.fun/testing/jtv-epg.php?channel_id=${channel.site_id}&offset=0`
   },
   request: {
     method: 'GET',
@@ -32,7 +32,7 @@ module.exports = {
   async channels() {
     const items = await axios
       .get(
-        'https://tsdevil.fun/testing/jtv-apis/v3.0/getMobileChannelList/get/?langid=6&devicetype=phone&os=android&usertype=JIO&version=343',
+        'https://tsdevil.fun/testing/jtv-epg.php?langid=6&devicetype=phone&os=android&usertype=JIO&version=343',
         { 
           headers: {
             Origin: 'https://www.jiotv.com',
