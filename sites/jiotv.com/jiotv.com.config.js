@@ -5,7 +5,7 @@ module.exports = {
   site: 'jiotv.com',
   days: 2,
   url: function ({ date, channel }) {
-    return `https://tsdevil.fun/testing/jtv-apis/getepg?id=${channel.site_id}&offset=0`
+    return `https://tsdevil.fun/testing/jtv-apis/v1.3/getepg/get?channel_id=${channel.site_id}&offset=0`
   },
   parser: function ({ content, channel }) {
     let programs = []
