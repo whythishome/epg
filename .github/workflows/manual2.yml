@@ -24,7 +24,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --site=jiotv.com --output=guides/jiotv.com.xml
+          npm run grab -- --site=jiotv.com --maxConnections=10 --output=guides/jiotv.com.xml
    
     - name: Commit changes
       run: |
