@@ -17,6 +17,7 @@ module.exports = {
   request: {
     method: 'GET',
     headers: {
+      'Accept-Encoding': '',
       Origin: 'https://www.jiotv.com',
       Referer: 'https://www.jiotv.com',
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0'
