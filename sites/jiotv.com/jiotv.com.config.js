@@ -7,6 +7,14 @@ module.exports = {
   url: function ({ date, channel }) {
     return `https://tsdevil.fun/testing/jtv-apis/v1.3/getepg/get?channel_id=${channel.site_id}&offset=0`
   },
+  request: {
+    method: 'GET',
+    headers: {
+      Origin: 'https://www.jiotv.com',
+      Referer: 'https://www.jiotv.com',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0'
+    }
+  },
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
@@ -29,7 +37,7 @@ module.exports = {
           headers: {
             Origin: 'https://www.jiotv.com',
             Referer: 'https://www.jiotv.com',
-            User-Agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0'
           } 
         }
       )
