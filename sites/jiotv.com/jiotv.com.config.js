@@ -18,7 +18,6 @@ module.exports = {
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
-    console.log(items)
     items.forEach(item => {
       programs.push({
         title: item.showname,
@@ -67,7 +66,5 @@ function parseStop(item) {
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
-  const epgData = data.epg
-  console.log(epgData)
   return data.epg ? data.epg : []
 }
