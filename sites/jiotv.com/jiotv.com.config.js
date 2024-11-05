@@ -18,10 +18,10 @@ module.exports = {
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
-    items.epg.forEach(item => {
+    items.forEach(item => {
       programs.push({
-        title: itemshowname,
-        description: itemepisode_num ? item.description + ' E' + item.episode_num : item.description,
+        title: item.showname,
+        description: item.episode_num ? item.description + ' E' + item.episode_num : item.description,
         image: 'https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/' + item.episodePoster,
         start: parseStart(item),
         stop: parseStop(item)
@@ -66,5 +66,5 @@ function parseStop(item) {
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
-  return data ? data : []
+  return data.epg ? data.epg : []
 }
