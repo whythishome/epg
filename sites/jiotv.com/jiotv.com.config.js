@@ -64,11 +64,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs(item.startEpoch).tz('Asia/Kolkata')
+  return dayjs(item.startEpoch).utcOffset('+05:30')
 }
 
 function parseStop(item) {
-  return dayjs(item.endEpoch).tz('Asia/Kolkata')
+  return dayjs(item.endEpoch).utcOffset('+05:30')
 }
 
 function parseItems(content, channel) {
