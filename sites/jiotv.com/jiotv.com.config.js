@@ -24,12 +24,11 @@ module.exports = {
   async channels() {
     const items = await axios
       .get(
-        'https://jiotvapi.cdn.jio.com/apis/v3.0/getMobileChannelList/get/?langid=6&devicetype=phone&os=android&usertype=JIO&version=343',
+        'https://tsdevil.fun/testing/jtv-apis/v3.0/getMobileChannelList/get/?langid=6&devicetype=phone&os=android&usertype=JIO&version=343',
         { 
-          proxy: {
-            protocol: 'http',
-            host: '115.112.231.145',
-            port: 443
+          headers: {
+            Origin: 'https://www.jiotv.com',
+            Referer: 'https://www.jiotv.com'
           } 
         }
       )
