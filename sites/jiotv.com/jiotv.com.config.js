@@ -57,11 +57,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs(item.startEpoch)
+  return dayjs(item.startEpoch).tz('Asia/Kolkata')
 }
 
 function parseStop(item) {
-  return dayjs(item.endEpoch)
+  return dayjs(item.endEpoch).tz('Asia/Kolkata')
 }
 
 function parseItems(content, channel) {
