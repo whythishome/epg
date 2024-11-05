@@ -28,8 +28,8 @@ module.exports = {
         { 
           proxy: {
             protocol: 'http',
-            host: '103.179.46.49',
-            port: 6789
+            host: '115.112.231.145',
+            port: 443
           } 
         }
       )
