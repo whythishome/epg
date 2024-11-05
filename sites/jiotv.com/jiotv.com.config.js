@@ -25,7 +25,13 @@ module.exports = {
     const items = await axios
       .get(
         'https://jiotvapi.cdn.jio.com/apis/v3.0/getMobileChannelList/get/?langid=6&devicetype=phone&os=android&usertype=JIO&version=343',
-        { headers: { Referer: 'https://www.jiotv.com' } }
+        { 
+          proxy: {
+            protocol: 'http',
+            host: '103.179.46.49',
+            port: 6789
+          } 
+        }
       )
       .then(r => r.data.result)
       .catch(console.log)
