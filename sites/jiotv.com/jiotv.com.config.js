@@ -57,11 +57,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs.unix(item.startEpoch)
+  return dayjs(item.startEpoch)
 }
 
 function parseStop(item) {
-  return dayjs.unix(item.endEpoch)
+  return dayjs(item.endEpoch)
 }
 
 function parseItems(content, channel) {
