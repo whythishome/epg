@@ -79,6 +79,11 @@ function parseItems(content, channel) {
       .replace(/(\r\n0\r\n\r\n)$/, ""); // replace end chunks info
     };
   const body = chunksParser(content)
-  const data = JSON.parse(body)
+  let data
+  try {
+    data = JSON.parse(body)
+  } catch (error) {
+    return console.log(body)
+  }
   return data.epg ? data.epg : []
 }
