@@ -76,7 +76,7 @@ function parseItems(content, channel) {
   try {
     data = JSON.parse(content)
   } catch (err) {
-    console.log(content)
+    console.log('Content -' + content)
     return []
   }
   return data.epg ? data.epg : []
