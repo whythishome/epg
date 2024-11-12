@@ -26,6 +26,7 @@ module.exports = {
     items.forEach(item => {
       programs.push({
         title: item.name,
+        description: item.name, 
         start: parseStart(item),
         stop: parseStop(item)
       })
