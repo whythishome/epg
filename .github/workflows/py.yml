@@ -24,7 +24,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run channels:parse -- --config=sites/jiotv.com/jiotv.com.config.js --output=sites/jiotv.com/jiotv.com.channels.xml
+          npm run channels:parse -- --config=./sites/directv.com/directv.com.config.js --output=./sites/directv.com/directv.com.channels.xml
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
