@@ -37,7 +37,7 @@ module.exports = {
       items.forEach(item => {
           // Determine the title based on the lang attribute
           const title = lang === 'hi' ? item.regional.hindi.title : item.title;
-          const desc = lang === 'hi' ? item.regional.hindi.desc + (item['episode-num'] ? ` ${item['episode-num']}` : '') : item.desc + (item['episode-num'] ? ` ${item['episode-num']}` : '');
+          const desc = lang === 'hi' ? item.regional.hindi.desc + (item['episode-num'] ? `E${item['episode-num']}` : '') : item.desc + (item['episode-num'] ? `E${item['episode-num']}` : '');
           programs.push({
               title: title,
               description: desc,
