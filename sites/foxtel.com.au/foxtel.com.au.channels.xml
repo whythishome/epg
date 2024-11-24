@@ -38,12 +38,12 @@
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Fashion-TV/FHT" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FHT/FHT_290x170.png">Fashion TV</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX8/FOX" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FOX/FOX_290x170.png">FOX8</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX82/FO2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FOX/FO2_290x170.png">FOX8+2</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-CRICKET-/FSP" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSP/FSP_290x170.png">FOX CRICKET +</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-CRICKET/FS1" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FS1/FS1_290x170.png">FOX CRICKET</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Fox-Footy/FAF" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FAF/FAF_290x170.png">Fox Footy</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-LEAGUE/SP2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SP2/SP2_290x170.png">FOX LEAGUE</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-News/FNC" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FNC/FNC_290x170.png">FOX News</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-SPORTS-503/FS3" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FS3/FS3_290x170.png">FOX SPORTS 503</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-SPORTS-505/FSP" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSP/FSP_290x170.png">FOX SPORTS 505</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-SPORTS-506/SPS" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SPS/SPS_290x170.png">FOX SPORTS 506</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Fox-Sports-More/FSS" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSS/FSS_290x170.png">Fox Sports More</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Fox-Sports-News/FSN" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSN/FSN_290x170.png">Fox Sports News</channel>
@@ -96,7 +96,6 @@
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SonLife/SLT" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SLT/SLT_290x170.png">SonLife</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="TLC-2/DT2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DTA/DT2_290x170.png">TLC +2</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="TLC/DTA" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/DTA/DTA_290x170.png">TLC</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Travel/TRS" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/TRS/TRS_290x170.png">Travel</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="TVSN/TVS" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/TVS/TVS_290x170.png">TVSN</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="UKTV2/UK2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/UKT/UK2_290x170.png">UKTV+2</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="UKTV/UKT" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/UKT/UKT_290x170.png">UKTV</channel>
