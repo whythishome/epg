@@ -95,7 +95,8 @@ module.exports = {
         return {
           lang: 'en',
           site_id: channel.serviceLocator,
-          name: channel.fullName
+          name: channel.fullName,
+          logo: 'https://images-live.youview.tv/images/entity/' + channel.id + '/ident/1_512x512.png'
         }
       }) || []
   }
