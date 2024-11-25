@@ -13,7 +13,6 @@
   <channel site="sky.com" lang="en" xmltv_id="RacingTVHD.uk" site_id="5272" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb5272.png">Racing TV HD</channel>
   <channel site="sky.com" lang="en" xmltv_id="SkySportsArena.uk" site_id="3839" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3839.png">SkySp Arena</channel>
   <channel site="sky.com" lang="en" xmltv_id="SkySportsArenaHD.uk" site_id="3940" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3940.png">SkySp ArenaHD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsBoxOffice.uk" site_id="1034" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1034.png">SkySpBoxOff</channel>
   <channel site="sky.com" lang="en" xmltv_id="SkySportsCricket.uk" site_id="1302" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1302.png">SkySp Cricket</channel>
   <channel site="sky.com" lang="en" xmltv_id="SkySportsCricketHD.uk" site_id="4081" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4081.png">SkySpCricket HD</channel>
   <channel site="sky.com" lang="en" xmltv_id="SkySportsF1.uk" site_id="1306" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1306.png">SkySp F1</channel>
@@ -41,7 +40,8 @@
   <channel site="sky.com" lang="en" xmltv_id="ViaplayXtra.uk" site_id="1150" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1150.png">ViaplayXtraHD</channel>
   <channel site="sky.com" lang="en" xmltv_id="W.uk" site_id="2617" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb2617.png">W</channel>
   <channel site="sky.com" lang="en" xmltv_id="WHD.uk" site_id="3810" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3810.png">W HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice2HD.uk" site_id="http://bds.tv/services/BT_772384" logo="">Sky Sports Box Office 2 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice1HD.uk" site_id="http://bds.tv/services/BT_769095">Sky Sports Box Office HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice2HD.uk" site_id="http://bds.tv/services/BT_772384">Sky Sports Box Office 2 HD</channel>
   <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports1.uk" site_id="http://bds.tv/services/BT_763997" logo="">TNT Sports 1</channel>
   <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports1HD.uk" site_id="http://bds.tv/services/BT_763999" logo="">TNT Sports 1 HD</channel>
   <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports2.uk" site_id="http://bds.tv/services/BT_764001" logo="">TNT Sports 2</channel>
