@@ -40,29 +40,30 @@
   <channel site="sky.com" lang="en" xmltv_id="ViaplayXtra.uk" site_id="1150" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1150.png">ViaplayXtraHD</channel>
   <channel site="sky.com" lang="en" xmltv_id="W.uk" site_id="2617" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb2617.png">W</channel>
   <channel site="sky.com" lang="en" xmltv_id="WHD.uk" site_id="3810" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3810.png">W HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice1HD.uk" site_id="http://bds.tv/services/BT_769095">Sky Sports Box Office HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice2HD.uk" site_id="http://bds.tv/services/BT_772384">Sky Sports Box Office 2 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports1.uk" site_id="http://bds.tv/services/BT_763997" logo="">TNT Sports 1</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports1HD.uk" site_id="http://bds.tv/services/BT_763999" logo="">TNT Sports 1 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports2.uk" site_id="http://bds.tv/services/BT_764001" logo="">TNT Sports 2</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports2HD.uk" site_id="http://bds.tv/services/BT_764003" logo="">TNT Sports 2 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports3.uk" site_id="http://bds.tv/services/BT_768612" logo="">TNT Sports 3</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports3HD.uk" site_id="http://bds.tv/services/BT_768613" logo="">TNT Sports 3 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports4.uk" site_id="http://bds.tv/services/BT_758465" logo="">TNT Sports 4</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports4HD.uk" site_id="http://bds.tv/services/BT_758466" logo="">TNT Sports 4 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports5.uk" site_id="http://bds.tv/services/BT_767933" logo="">TNT Sports 5</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports5HD.uk" site_id="http://bds.tv/services/BT_767454" logo="">TNT Sports 5 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports6.uk" site_id="http://bds.tv/services/BT_767934" logo="">TNT Sports 6</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports6HD.uk" site_id="http://bds.tv/services/BT_767456" logo="">TNT Sports 6 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports7.uk" site_id="http://bds.tv/services/BT_767935" logo="">TNT Sports 7</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports7HD.uk" site_id="http://bds.tv/services/BT_767457" logo="">TNT Sports 7 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports8.uk" site_id="http://bds.tv/services/BT_767936" logo="">TNT Sports 8</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports8HD.uk" site_id="http://bds.tv/services/BT_767459" logo="">TNT Sports 8 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports9.uk" site_id="http://bds.tv/services/BT_767937" logo="">TNT Sports 9</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports9HD.uk" site_id="http://bds.tv/services/BT_767460" logo="">TNT Sports 9 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports10.uk" site_id="http://bds.tv/services/BT_767938" logo="">TNT Sports 10</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports10HD.uk" site_id="http://bds.tv/services/BT_767461" logo="">TNT Sports 10 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsBoxOffice2HD.uk" site_id="http://bds.tv/services/BT_772073" logo="">TNT Sports Box Office 2 HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsBoxOfficeHD.uk" site_id="http://bds.tv/services/BT_771276" logo="">TNT Sports Box Office HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsUltimate.uk" site_id="http://bds.tv/services/BT_768397" logo="">TNT Sports Ultimate</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice1HD.uk" site_id="http://bds.tv/services/BT_769095" logo="https://images-live.youview.tv/images/entity/60355980/ident/1_512x512.png">Sky Sports Box Office HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice2HD.uk" site_id="http://bds.tv/services/BT_772384" logo="https://images-live.youview.tv/images/entity/71021947/ident/1_512x512.png">Sky Sports Box Office 2 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports1.uk" site_id="http://bds.tv/services/BT_763997" logo="https://images-live.youview.tv/images/entity/10068955/ident/1_512x512.png">TNT Sports 1</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports1HD.uk" site_id="http://bds.tv/services/BT_763999" logo="https://images-live.youview.tv/images/entity/10068964/ident/1_512x512.png">TNT Sports 1 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports2.uk" site_id="http://bds.tv/services/BT_764001" logo="https://images-live.youview.tv/images/entity/10068953/ident/1_512x512.png">TNT Sports 2</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports2HD.uk" site_id="http://bds.tv/services/BT_764003" logo="https://images-live.youview.tv/images/entity/10068952/ident/1_512x512.png">TNT Sports 2 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports3.uk" site_id="http://bds.tv/services/BT_768612" logo="https://images-live.youview.tv/images/entity/21871577/ident/1_512x512.png">TNT Sports 3</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports3HD.uk" site_id="http://bds.tv/services/BT_768613" logo="https://images-live.youview.tv/images/entity/22326210/ident/1_512x512.png">TNT Sports 3 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports4.uk" site_id="http://bds.tv/services/BT_758465" logo="https://images-live.youview.tv/images/entity/10845218/ident/1_512x512.png">TNT Sports 4</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports4HD.uk" site_id="http://bds.tv/services/BT_758466" logo="https://images-live.youview.tv/images/entity/11134246/ident/1_512x512.png">TNT Sports 4 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports5.uk" site_id="http://bds.tv/services/BT_767933" logo="https://images-live.youview.tv/images/entity/17254865/ident/1_512x512.png">TNT Sports 5</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports5HD.uk" site_id="http://bds.tv/services/BT_767454" logo="https://images-live.youview.tv/images/entity/22931888/ident/1_512x512.png">TNT Sports 5 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports6.uk" site_id="http://bds.tv/services/BT_767934" logo="https://images-live.youview.tv/images/entity/19231343/ident/1_512x512.png">TNT Sports 6</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports6HD.uk" site_id="http://bds.tv/services/BT_767456" logo="https://images-live.youview.tv/images/entity/19231339/ident/1_512x512.png">TNT Sports 6 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports7.uk" site_id="http://bds.tv/services/BT_767935" logo="https://images-live.youview.tv/images/entity/19231345/ident/1_512x512.png">TNT Sports 7</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports7HD.uk" site_id="http://bds.tv/services/BT_767457" logo="https://images-live.youview.tv/images/entity/19231344/ident/1_512x512.png">TNT Sports 7 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports8.uk" site_id="http://bds.tv/services/BT_767936" logo="https://images-live.youview.tv/images/entity/22932120/ident/1_512x512.png">TNT Sports 8</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports8HD.uk" site_id="http://bds.tv/services/BT_767459" logo="https://images-live.youview.tv/images/entity/22931889/ident/1_512x512.png">TNT Sports 8 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports9.uk" site_id="http://bds.tv/services/BT_767937" logo="https://images-live.youview.tv/images/entity/22931885/ident/1_512x512.png">TNT Sports 9</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports9HD.uk" site_id="http://bds.tv/services/BT_767460" logo="https://images-live.youview.tv/images/entity/22931890/ident/1_512x512.png">TNT Sports 9 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports10.uk" site_id="http://bds.tv/services/BT_767938" logo="https://images-live.youview.tv/images/entity/22931886/ident/1_512x512.png">TNT Sports 10</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports10HD.uk" site_id="http://bds.tv/services/BT_767461" logo="https://images-live.youview.tv/images/entity/22931891/ident/1_512x512.png">TNT Sports 10 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsBoxOffice2HD.uk" site_id="http://bds.tv/services/BT_772073" logo="https://images-live.youview.tv/images/entity/61246118/ident/1_512x512.png">TNT Sports Box Office 2 HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsBoxOfficeHD.uk" site_id="http://bds.tv/services/BT_771276" logo="https://images-live.youview.tv/images/entity/44112656/ident/1_512x512.png">TNT Sports Box Office HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsUltimate.uk" site_id="http://bds.tv/services/BT_768397" logo="https://images-live.youview.tv/images/entity/19231389/ident/1_512x512.png">TNT Sports Ultimate</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TogetherTV.uk" site_id="dvb://233a..3fec" logo="https://images-live.youview.tv/images/entity/dfa0587b-2960-5a89-aa5a-9c31f7071805/ident/1_512x512.png">Together TV</channel>
 </channels>
