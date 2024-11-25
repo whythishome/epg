@@ -35,6 +35,7 @@ jobs:
           npm run grab -- --site=starhubtvplus.com --gzip --output=guides/starhubtvplus.com.xml
           npm run grab -- --site=sky.com --maxConnections=10 --gzip --output=guides/sky.com.xml
           npm run grab -- --channels=sites/beinsports.com/beinsports.com_au-en.channels.xml --gzip --output=guides/beinsports.com_au-en.xml
+          npm run grab -- --channels=sites/sports/uk.channels.xml --maxConnections=10 --gzip --output=guides/sports/uk.xml
     
     - name: Commit changes
       run: |
@@ -49,5 +50,6 @@ jobs:
         git add -f guides/beinsports.com_au-en.xml.gz
         git add -f guides/starhubtvplus.com.xml.gz
         git add -f guides/sky.com.xml.gz
+        git add -f guides/sports/uk.xml.gz
         git commit -m "Update xml"
         git push
