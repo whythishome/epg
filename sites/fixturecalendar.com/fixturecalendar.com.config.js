@@ -5,7 +5,7 @@ module.exports = {
   site: 'fixturecalendar.com',
   days: 1,
   url: function ({ date, channel }) {
-    return 'https://api.fixturecalendar.com/api/v1/fixtures?sport=${channel.name}&startDate=${date.format('DD/MM/YYYY')}&endDate=${date.add(1, 'd').format('DD/MM/YYYY')}'
+    return `https://api.fixturecalendar.com/api/v1/fixtures?sport=${channel.name}&startDate=${date.format('DD/MM/YYYY')}&endDate=${date.add(1, 'd').format('DD/MM/YYYY')}`
   },
   request: {
     method: 'GET',
