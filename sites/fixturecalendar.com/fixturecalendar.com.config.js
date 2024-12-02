@@ -68,7 +68,6 @@ function parseTitle(item) {
   const title = `${name} - ${homeTeamName} ${guestTeamName}`;
   return title;
 }
-}
 
 function setHeaders() {
   return {
