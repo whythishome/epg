@@ -61,6 +61,7 @@ function parseItems(content) {
 
 function parseTitle(item) {
   // Extract the necessary fields
+  console.log(item);
   const name = item.name || 'A';
   const homeTeamName = item.homeTeam.name || 'B';
   const guestTeamName = item.guestTeam.name || 'C';
@@ -71,6 +72,7 @@ function parseTitle(item) {
 
 function parseDescription(item) {
   // Extract the necessary fields
+  console.log(item);
   const stadiumName = item.location.place.name || 'A';
   const cityName = item.city.name || 'B';
   const countryName = item.country.name || 'C';
