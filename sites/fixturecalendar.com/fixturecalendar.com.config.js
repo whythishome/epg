@@ -5,7 +5,7 @@ module.exports = {
   site: 'fixturecalendar.com',
   days: 1,
   url: function ({ date, channel }) {
-    return `https://api.fixturecalendar.com/api/v1/fixtures?sport=${channel.name}&startDate=${date.format('DD/MM/YYYY')}&endDate=${date.add(1, 'd').format('DD/MM/YYYY')}`
+    return 'https://api.fixturecalendar.com/api/v1/fixtures?sport=${channel.name}&startDate=${date.format('DD/MM/YYYY')}&endDate=${date.add(1, 'd').format('DD/MM/YYYY')}'
   },
   request: {
     method: 'GET',
@@ -56,7 +56,9 @@ function parseStop(item) {
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
-  return data.events ? data.events : []
+  console.log(content);
+  console.log(url);
+  return data.events ? data.events : [];
 }
 
 function parseTitle(item) {
@@ -76,7 +78,7 @@ function parseDescription(item) {
   const countryName = item.country.name || '';
   // Concatenate the fields
   const title = `LIVE action from ${stadiumName} in ${cityName}, ${countryName}`;
-  return title;
+  return description;
 }
 
 function setHeaders() {
