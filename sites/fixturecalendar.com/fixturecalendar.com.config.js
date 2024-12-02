@@ -14,19 +14,18 @@ module.exports = {
     }
   },
   parser: function ({ content, channel }) {
-    let programs = []
-    const items = parseItems(content, channel)
-    console.log(items)
+    let programs = [];
+    const items = parseItems(content);
+    console.log(items);
     items.forEach(item => {
       programs.push({
         title: parseTitle(item),
         description: parseDescription(item),
         start: parseStart(item),
         stop: parseStop(item)
-      })
-    })
-
-    return programs
+      });
+    });
+    return programs;
   },
   async channels() {
     const headers = setHeaders();
@@ -55,26 +54,10 @@ function parseStop(item) {
   return dayjs(item.endTime)
 }
 
-function parseItems(content, channel) {
-  try {
-    // Parse the JSON content
-    const data = JSON.parse(content);
-    console.log('Parsed data:', data); // Log the parsed data
-
-    // Check if events exist in the parsed data
-    if (data.events && Array.isArray(data.events)) {
-      console.log('Events found:', data.events); // Log the events
-      return data.events;
-    } else {
-      console.log('Data structure:', data); // Log the data structure
-      console.log('Events property:', data.events); // Log the events property
-      console.log('No events found or events is not an array'); // Log if no events are found
-      return [];
-    }
-  } catch (error) {
-    console.error('Error parsing content:', error); // Log any errors
-    return [];
-  }
+function parseItems(content) {
+  const data = JSON.parse(content)
+  if (!data.events || !Array.isArray(data.events)) return []
+  return data
 }
 
 function parseTitle(item) {
