@@ -16,7 +16,6 @@ module.exports = {
   parser: function ({ content, channel }) {
     let programs = [];
     const items = parseItems(content);
-    console.log(items);
     items.forEach(item => {
       programs.push({
         title: parseTitle(item),
@@ -39,7 +38,7 @@ module.exports = {
 
     return items.map(item => ({
       lang: 'en',
-      site_id: item.name,
+      site_id: item.id,
       name: item.name,
       logo: item.picture ? item.picture : ''
     }))
@@ -62,9 +61,9 @@ function parseItems(content) {
 
 function parseTitle(item) {
   // Extract the necessary fields
-  const name = item.name || '';
-  const homeTeamName = item.homeTeam.name || '';
-  const guestTeamName = item.guestTeam.name || '';
+  const name = item.name || 'A';
+  const homeTeamName = item.homeTeam.name || 'B';
+  const guestTeamName = item.guestTeam.name || 'C';
   // Concatenate the fields
   const title = `${name} - ${homeTeamName} ${guestTeamName}`;
   return title;
@@ -72,9 +71,9 @@ function parseTitle(item) {
 
 function parseDescription(item) {
   // Extract the necessary fields
-  const stadiumName = item.location.place.name || '';
-  const cityName = item.city.name || '';
-  const countryName = item.country.name || '';
+  const stadiumName = item.location.place.name || 'A';
+  const cityName = item.city.name || 'B';
+  const countryName = item.country.name || 'C';
   // Concatenate the fields
   const title = `LIVE action from ${stadiumName} in ${cityName}, ${countryName}`;
   return description;
