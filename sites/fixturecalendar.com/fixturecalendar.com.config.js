@@ -40,7 +40,7 @@ module.exports = {
 
     return items.map(item => ({
       lang: 'en',
-      site_id: item.id,
+      site_id: item.name,
       name: item.name,
       logo: item.picture ? item.picture : ''
     }))
