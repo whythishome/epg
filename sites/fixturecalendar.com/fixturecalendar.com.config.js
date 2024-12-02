@@ -57,7 +57,7 @@ function parseStop(item) {
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
-  return data.events ? data.events : []
+  return data.events;
 }
 
 function parseTitle(item) {
