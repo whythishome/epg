@@ -5,7 +5,7 @@ module.exports = {
   site: 'fixturecalendar.com',
   days: 1,
   url: function ({ date, channel }) {
-    return `https://api.fixturecalendar.com/api/v1/fixtures?sport=${channel.name}&startDate=${date.format('DD/MM/YYYY')}&endDate=${date.add(1, 'd').format('DD/MM/YYYY')}`
+    return `https://api.fixturecalendar.com/api/v1/fixtures?sport=${channel.id}&startDate=${date.format('DD/MM/YYYY')}&endDate=${date.add(1, 'd').format('DD/MM/YYYY')}`
   },
   request: {
     method: 'GET',
@@ -16,6 +16,7 @@ module.exports = {
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
+    console.log(items)
     items.forEach(item => {
       programs.push({
         title: parseTitle(item),
@@ -39,9 +40,9 @@ module.exports = {
 
     return items.map(item => ({
       lang: 'en',
-      site_id: item.name,
+      site_id: item.id,
       name: item.name,
-      logo: item.pictures ? item.pictures : ''
+      logo: item.picture ? item.picture : ''
     }))
   }
 }
@@ -56,8 +57,6 @@ function parseStop(item) {
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
-  console.log(content);
-  console.log(url);
   return data.events ? data.events : [];
 }
 
