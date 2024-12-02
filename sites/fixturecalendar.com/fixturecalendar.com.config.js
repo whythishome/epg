@@ -28,7 +28,7 @@ module.exports = {
     return programs
   },
   async channels() {
-    const headers = getHeaders();
+    const headers = setHeaders();
     const items = await axios
       .get(
         'https://api.fixturecalendar.com/api/v1/sports', {
