@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="1" logo="">Cricket</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="2" logo="">Rugby Union</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="3" logo="">Australian Rules Football</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="4" logo="">Football</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="5" logo="">Motorsport</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="6" logo="">Baseball</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="7" logo="">American Football</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="8" logo="">Rugby League</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="9" logo="">Golf</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="10" logo="">Ice Hockey</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="11" logo="">Basketball</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="12" logo="">Darts</channel>
+</channels>
