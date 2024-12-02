@@ -60,23 +60,17 @@ function parseItems(content) {
 }
 
 function parseTitle(item) {
-  // Extract the necessary fields
-  console.log(item);
-  const name = item.name || 'A';
-  const homeTeamName = item.homeTeam.name || 'B';
-  const guestTeamName = item.guestTeam.name || 'C';
-  // Concatenate the fields
+  const name = item.competition.name || '';
+  const homeTeamName = item.homeTeam.name || '';
+  const guestTeamName = item.guestTeam.name || '';
   const title = `${name} - ${homeTeamName} ${guestTeamName}`;
   return title;
 }
 
 function parseDescription(item) {
-  // Extract the necessary fields
-  console.log(item);
-  const stadiumName = item.location.place.name || 'A';
-  const cityName = item.city.name || 'B';
-  const countryName = item.country.name || 'C';
-  // Concatenate the fields
+  const stadiumName = item.location.place.name || '';
+  const cityName = item.city.name || '';
+  const countryName = item.country.name || '';
   const title = `LIVE action from ${stadiumName} in ${cityName}, ${countryName}`;
   return description;
 }
