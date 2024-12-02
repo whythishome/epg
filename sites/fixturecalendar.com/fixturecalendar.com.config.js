@@ -58,7 +58,7 @@ function parseStop(item) {
 function parseItems(content, channel) {
   try {
     // Parse the JSON content
-    const data = content;
+    const data = JSON.parse(content);
     console.log('Parsed data:', data); // Log the parsed data
 
     // Check if events exist in the parsed data
@@ -66,7 +66,9 @@ function parseItems(content, channel) {
       console.log('Events found:', data.events); // Log the events
       return data.events;
     } else {
-      console.log('No events found'); // Log if no events are found
+      console.log('Data structure:', data); // Log the data structure
+      console.log('Events property:', data.events); // Log the events property
+      console.log('No events found or events is not an array'); // Log if no events are found
       return [];
     }
   } catch (error) {
