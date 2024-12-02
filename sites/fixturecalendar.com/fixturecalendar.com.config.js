@@ -19,7 +19,7 @@ module.exports = {
     items.forEach(item => {
       programs.push({
         title: parseTitle(item),
-        description: item.description,
+        description: parseDescription(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -66,6 +66,16 @@ function parseTitle(item) {
   const guestTeamName = item.guestTeam.name || '';
   // Concatenate the fields
   const title = `${name} - ${homeTeamName} ${guestTeamName}`;
+  return title;
+}
+
+function parseDescription(item) {
+  // Extract the necessary fields
+  const stadiumName = item.location.place.name || '';
+  const cityName = item.city.name || '';
+  const countryName = item.country.name || '';
+  // Concatenate the fields
+  const title = `LIVE action from ${stadiumName} in ${cityName}, ${countryName}`;
   return title;
 }
 
