@@ -1,12 +1,9 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const APP_KEY = '5ee2ef931de1c4001b2e7fa3_5ee2ec25a0e845001c1783dc'
-const SESSION_KEY = '01G2QG0N3RWDNCBA1S5MK1MD2K17CE4431A2'
-
 module.exports = {
-  site: 'starhubtvplus.com',
-  days: 2,
+  site: 'fixturecalendar.com',
+  days: 1,
   url: function ({ date, channel }) {
     return `https://api.fixturecalendar.com/api/v1/fixtures?startDate=${date.format('DD/MM/YYYY')}&endDate=${date.add(1, 'd').format('DD/MM/YYYY')}`
   },
