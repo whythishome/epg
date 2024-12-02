@@ -14,9 +14,8 @@ module.exports = {
     }
   },
   parser: function ({ content, channel }) {
-    let programs = [];
-    const items = parseItems(content);
-    console.log(items)
+    let programs = []
+    const items = parseItems(content)
     items.forEach(item => {
       programs.push({
         title: parseTitle(item),
@@ -57,7 +56,7 @@ function parseStop(item) {
 function parseItems(content) {
   const data = JSON.parse(content)
   if (!data.events || !Array.isArray(data.events)) return []
-  return data
+  return data.events
 }
 
 function parseTitle(item) {
