@@ -56,8 +56,23 @@ function parseStop(item) {
 }
 
 function parseItems(content, channel) {
-  const data = JSON.parse(content);
-  return data.events;
+  try {
+    // Parse the JSON content
+    const data = JSON.parse(content);
+    console.log('Parsed data:', data); // Log the parsed data
+
+    // Check if events exist in the parsed data
+    if (data.events && Array.isArray(data.events)) {
+      console.log('Events found:', data.events); // Log the events
+      return data.events;
+    } else {
+      console.log('No events found'); // Log if no events are found
+      return [];
+    }
+  } catch (error) {
+    console.error('Error parsing content:', error); // Log any errors
+    return [];
+  }
 }
 
 function parseTitle(item) {
