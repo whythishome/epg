@@ -71,7 +71,7 @@ function parseDescription(item) {
   const stadiumName = item.location.place.name || '';
   const cityName = item.location.city.name || '';
   const countryName = item.location.country.name || '';
-  const title = `LIVE action from ${stadiumName} in ${cityName}, ${countryName}`;
+  const description = `LIVE action from ${stadiumName} in ${cityName}, ${countryName}`;
   return description;
 }
 
