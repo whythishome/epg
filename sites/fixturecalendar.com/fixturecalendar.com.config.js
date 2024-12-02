@@ -63,7 +63,7 @@ function parseTitle(item) {
   const name = item.competition.name || '';
   const homeTeamName = item.homeTeam.name || '';
   const guestTeamName = item.guestTeam.name || '';
-  const title = `${name} - ${homeTeamName} ${guestTeamName}`;
+  const title = `${name} - ${homeTeamName} vs ${guestTeamName}`;
   return title;
 }
 
