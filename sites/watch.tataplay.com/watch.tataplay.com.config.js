@@ -34,8 +34,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.desc,
-        image: item.boxCoverImage,
-        catchup: item.id,
+        icon: item.boxCoverImage,
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -144,7 +143,22 @@ function fetchToken() {
 
 function setHeaders() {
   return {
-    'Content-Type': 'application/json',
-    'Device_details': '{"pl":"web","os":"WINDOWS","lo":"en-us","app":"1.44.7","dn":"PC","bv":129,"bn":"CHROME","device_id":"6365f38557f4d6a21522cf320080d5e6","device_type":"WEB","device_platform":"PC","device_category":"open","manufacturer":"WINDOWS_CHROME_129","model":"PC","sname":""}'
+    'Accept': '*/*',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Cache-Control': 'no-cache',
+    'Connection': 'keep-alive',
+    'Origin': 'https://watch.tataplay.com',
+    'Pragma': 'no-cache',
+    'Referer': 'https://watch.tataplay.com/',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'cross-site',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'content-type': 'application/json',
+    'locale': 'ENG',
+    'platform': 'web',
+    'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"'
   }
 }
