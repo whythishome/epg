@@ -28,6 +28,7 @@ module.exports = {
     const items = parseItems(content)
     for (let item of items) {
       const details = await loadProgramDetails(item)
+      console.log(details.title)
       programs.push({
         title: item.title,
         sub_title: details.episodeTitle,
