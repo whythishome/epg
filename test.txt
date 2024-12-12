@@ -1,0 +1,13 @@
+curl 'https://tvtv.us/api/v1/lineup/USA-ME18440-X/channels' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'if-none-match: W/"12c9c-rRqstEbbwBdLtsD2bACh8ldLHLY"' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://tvtv.us/me/portland/04102/luUSA-ME18440-X' \
+  -H 'sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
