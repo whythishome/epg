@@ -53,7 +53,8 @@ module.exports = {
         channels.push({
           lang: 'en',
           site_id: `${providerId}#${item.sourceId}`,
-          name: item.fullName
+          name: item.fullName,
+          icon: item.logo ? `https://www.tvguide.com/a/img/catalog${item.img}` : null
         })
       })
     }
