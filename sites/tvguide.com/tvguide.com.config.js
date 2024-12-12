@@ -49,18 +49,12 @@ module.exports = {
         .then(r => r.data)
         .catch(console.log)
 
-      data.data.items.forEach(item => {
-        // Construct the icon URL
-        const icon = item.logo ? `https://www.tvguide.com/a/img/catalog${item.logo}` : null;
-
-        // Log the result to check
-        console.log(icon);
-        
+      data.data.items.forEach(item => {        
         channels.push({
           lang: 'en',
           site_id: `${providerId}#${item.sourceId}`,
           name: item.fullName,
-          icon: item.logo ? `https://www.tvguide.com/a/img/catalog${item.logo}` : null
+          icon: item.logo
         })
       })
     }
