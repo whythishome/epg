@@ -47,7 +47,7 @@ module.exports = {
     return programs
   },
   async channels() {
-    const codes = [10001]
+    const codes = [04102]
 
     let channels = []
     for (let code of codes) {
