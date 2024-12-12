@@ -27,7 +27,7 @@ module.exports = {
   async parser({ content }) {
     const programs = [];
     const items = parseItems(content);
-    // for (let item of items) {
+    for (let item of items) {
       // const details = await loadProgramDetails(item)
       // programs.push({
       //   title: item.title,
@@ -40,13 +40,12 @@ module.exports = {
       //   start: parseTime(item.startTime),
       //   stop: parseTime(item.endTime)
       // })
-    // }
-    programs.push({
-      title: item.title,
-      start: parseTime(item.startTime),
-      stop: parseTime(item.endTime)
-    })
-
+      programs.push({
+        title: item.title,
+        start: parseTime(item.startTime),
+        stop: parseTime(item.endTime)
+      })
+    }
     return programs
   },
   async channels() {
