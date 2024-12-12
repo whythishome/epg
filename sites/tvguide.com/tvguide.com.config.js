@@ -9,12 +9,12 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'tvguide.com',
   delay: 5000,
-  days: 1,
+  days: 2,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#')
     const url = `https://backend.tvguide.com/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
-      .unix()}&duration=2400&channelSourceIds=${channelSourceIds}`
+      .unix()}&duration=1200&channelSourceIds=${channelSourceIds}`
 
     return url
   },
