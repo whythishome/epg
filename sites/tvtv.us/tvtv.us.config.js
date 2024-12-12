@@ -8,7 +8,7 @@ module.exports = {
   delay: 1500, // 1500 ms (otherwise the server returns error 429: https://github.com/iptv-org/epg/issues/2176)
   days: 2,
   url: function ({ date, channel }) {
-    return `https://www.tvtv.us/api/v1/lineup/USA-NY71652-X/grid/${date.toJSON()}/${date
+    return `https://www.tvtv.us/api/v1/lineup/USA-ME18440-X/grid/${date.toJSON()}/${date
       .add(1, 'd')
       .toJSON()}/${channel.site_id}`
   },
@@ -28,6 +28,26 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    let channels = []
+    const data = await axios
+      .get(
+        `https://www.tvtv.us/api/v1/lineup/USA-ME18440-X/channels`
+      )
+      .then(r => r.data)
+      .catch(console.log)
+
+    data.data.items.forEach(item => {        
+      channels.push({
+        lang: 'en',
+        site_id: item.stationId,
+        name: item.stationCallSign,
+        logo: item.logo ? `https://www.tvtv.us${item.logo}` : null
+      })
+    })
+
+  return channels
   }
 }
 
