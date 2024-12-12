@@ -34,9 +34,10 @@ module.exports = {
     let channels = []
     const data = await axios
       .get( `https://www.tvtv.us/api/v1/lineup/USA-ME18440-X/channels`, {
-        headers : function() {
-            return setHeaders()
-          }
+        headers : {
+          'Referer': 'https://www.tvtv.us',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+        }
       }).then(r => r.data)
       .catch(console.log)
 
