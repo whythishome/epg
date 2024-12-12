@@ -27,20 +27,25 @@ module.exports = {
   async parser({ content }) {
     const programs = [];
     const items = parseItems(content);
-    for (let item of items) {
-      const details = await loadProgramDetails(item)
-      programs.push({
-        title: item.title,
-        sub_title: details.episodeTitle,
-        description: details.description,
-        season: details.seasonNumber,
-        episode: details.episodeNumber,
-        rating: parseRating(item),
-        categories: parseCategories(details),
-        start: parseTime(item.startTime),
-        stop: parseTime(item.endTime)
-      })
-    }
+    // for (let item of items) {
+      // const details = await loadProgramDetails(item)
+      // programs.push({
+      //   title: item.title,
+      //   sub_title: details.episodeTitle,
+      //   description: details.description,
+      //   season: details.seasonNumber,
+      //   episode: details.episodeNumber,
+      //   rating: parseRating(item),
+      //   categories: parseCategories(details),
+      //   start: parseTime(item.startTime),
+      //   stop: parseTime(item.endTime)
+      // })
+    // }
+    programs.push({
+      title: item.title,
+      start: parseTime(item.startTime),
+      stop: parseTime(item.endTime)
+    })
 
     return programs
   },
