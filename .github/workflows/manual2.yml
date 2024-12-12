@@ -26,11 +26,11 @@ jobs:
           npm install
           # npm run grab -- --channels=sites/sports/in.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/in.xml
           # npm run grab -- --site=tvguide.com --gzip --output=guides/tvguide.com.xml
-          npm run grab -- --site=tvpassport.com --maxConnections=100 --output=guides/tvpassport.com.xml
+          npm run grab -- --site=tvpassport.com --maxConnections=500 --output=guides/tvpassport.com.xml
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/tvpassport.com.xml.gz
+        git add -f guides/tvpassport.com.xml
         git commit -m "Update xml"
         git push
