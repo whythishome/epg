@@ -33,10 +33,11 @@ module.exports = {
   async channels() {
     let channels = []
     const data = await axios
-      .get(
-        `https://www.tvtv.us/api/v1/lineup/USA-ME18440-X/channels`
-      )
-      .then(r => r.data)
+      .get( `https://www.tvtv.us/api/v1/lineup/USA-ME18440-X/channels`, {
+        headers : function() {
+            return setHeaders()
+          }
+      }).then(r => r.data)
       .catch(console.log)
 
     data.data.items.forEach(item => {        
@@ -56,4 +57,11 @@ function parseItems(content) {
   const json = JSON.parse(content)
   if (!json.length) return []
   return json[0]
+}
+
+function setHeaders() {
+  return {
+    'Referer': 'https://www.tvtv.us',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+  }
 }
