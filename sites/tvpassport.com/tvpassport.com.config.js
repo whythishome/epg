@@ -19,7 +19,7 @@ module.exports = {
   },
   request: {
     headers: {
-      Cookie: 'cisession=e49ff13191d6875887193cae9e324b44ef85768d;'
+      Cookie: 'cisession=2286a90c4271966c2e5c4d34aac902e6d29ce85f;'
     }
   },
   parser: function ({ content }) {
