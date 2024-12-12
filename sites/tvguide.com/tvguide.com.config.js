@@ -11,7 +11,7 @@ module.exports = {
   days: 2,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#')
-    const url = `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/web?start=${date
+    const url = `https://backend.tvguide.com/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
       .unix()}&duration=20160&channelSourceIds=${channelSourceIds}`
 
@@ -26,10 +26,8 @@ module.exports = {
   async parser({ content }) {
     const programs = [];
     const items = parseItems(content);
-    console.log(items);
     for (let item of items) {
       const details = await loadProgramDetails(item)
-      console.log(details.title)
       programs.push({
         title: item.title,
         sub_title: details.episodeTitle,
@@ -98,7 +96,6 @@ async function loadProgramDetails(item) {
     .catch(err => {
       console.log(err.message)
     });
-  console.log(item.programDetails);
   if (!data || !data.data || !data.data.item) return {}
 
   return data.data.item
