@@ -24,9 +24,9 @@ module.exports = {
     }
   },
   async parser({ content }) {
-    const programs = []
-    const items = parseItems(content)
-    console.log(items)
+    const programs = [];
+    const items = parseItems(content);
+    console.log(items);
     for (let item of items) {
       const details = await loadProgramDetails(item)
       console.log(details.title)
@@ -97,7 +97,8 @@ async function loadProgramDetails(item) {
     .then(r => r.data)
     .catch(err => {
       console.log(err.message)
-    })
+    });
+  console.log(data);
   if (!data || !data.data || !data.data.item) return {}
 
   return data.data.item
