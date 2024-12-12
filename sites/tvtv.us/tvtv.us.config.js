@@ -46,7 +46,7 @@ module.exports = {
         lang: 'en',
         site_id: item.stationId,
         name: item.stationCallSign,
-        logo: item.logo ? `https://www.tvtv.us${item.logo}` : null
+        logo: item.logo ? `https://tvtv.us${item.logo}` : null
       })
     })
 
@@ -62,7 +62,7 @@ function parseItems(content) {
 
 function setHeaders() {
   return {
-    'Referer': 'https://www.tvtv.us',
+    'Referer': 'https://tvtv.us',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
   }
 }
