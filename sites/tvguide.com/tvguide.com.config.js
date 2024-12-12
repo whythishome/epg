@@ -8,7 +8,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'tvguide.com',
-  days: 2,
+  days: 1,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#')
     const url = `https://backend.tvguide.com/tvschedules/tvguide/${providerId}/web?start=${date
@@ -89,7 +89,6 @@ function parseItems(content) {
 }
 
 async function loadProgramDetails(item) {
-  // item.programDetails = item.programDetails.replace('player1-backend-prod-internal.apigee.net', 'internal-prod.apigee.fandom.net')
   const data = await axios
     .get(item.programDetails)
     .then(r => r.data)
