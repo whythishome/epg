@@ -26,6 +26,7 @@ module.exports = {
   async parser({ content }) {
     const programs = []
     const items = parseItems(content)
+    console.log(items)
     for (let item of items) {
       const details = await loadProgramDetails(item)
       console.log(details.title)
