@@ -98,7 +98,7 @@ async function loadProgramDetails(item) {
     .catch(err => {
       console.log(err.message)
     });
-  console.log(data);
+  console.log(item.programDetails);
   if (!data || !data.data || !data.data.item) return {}
 
   return data.data.item
