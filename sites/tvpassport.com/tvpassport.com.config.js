@@ -11,7 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'tvpassport.com',
-  days: 3,
+  days: 2,
   url({ channel, date }) {
     return `https://www.tvpassport.com/tv-listings/stations/${channel.site_id}/${date.format(
       'YYYY-MM-DD'
