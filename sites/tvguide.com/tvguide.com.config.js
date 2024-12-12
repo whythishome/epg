@@ -50,6 +50,7 @@ module.exports = {
         .catch(console.log)
 
       data.data.items.forEach(item => {
+        console.log(item)
         channels.push({
           lang: 'en',
           site_id: `${providerId}#${item.sourceId}`,
