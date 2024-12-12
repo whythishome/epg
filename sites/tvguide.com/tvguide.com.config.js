@@ -54,7 +54,7 @@ module.exports = {
           lang: 'en',
           site_id: `${providerId}#${item.sourceId}`,
           name: item.fullName,
-          icon: item.logo
+          logo: item.logo ? `https://www.tvguide.com/a/img/catalog${item.logo}` : null
         })
       })
     }
