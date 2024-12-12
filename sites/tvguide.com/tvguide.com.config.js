@@ -13,7 +13,7 @@ module.exports = {
     const [providerId, channelSourceIds] = channel.site_id.split('#')
     const url = `https://backend.tvguide.com/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
-      .unix()}&duration=20160&channelSourceIds=${channelSourceIds}`
+      .unix()}&duration=2400&channelSourceIds=${channelSourceIds}`
 
     return url
   },
