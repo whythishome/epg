@@ -44,7 +44,7 @@ module.exports = {
     for (let providerId of providers) {
       const data = await axios
         .get(
-          `https://internal-prod.apigee.fandom.net/v1/xapi/tvschedules/tvguide/serviceprovider/${providerId}/sources/web`
+          `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/sources/web`
         )
         .then(r => r.data)
         .catch(console.log)
