@@ -13,9 +13,15 @@ module.exports = {
     const [providerId, channelSourceIds] = channel.site_id.split('#')
     const url = `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/web?start=${date
       .startOf('d')
-      .unix()}&duration=1440&channelSourceIds=${channelSourceIds}`
+      .unix()}&duration=20160&channelSourceIds=${channelSourceIds}`
 
     return url
+  },
+  request: {
+    method: 'GET',
+    headers: function() {
+      return setHeaders()
+    }
   },
   async parser({ content }) {
     const programs = []
@@ -93,4 +99,10 @@ async function loadProgramDetails(item) {
   if (!data || !data.data || !data.data.item) return {}
 
   return data.data.item
+}
+
+function setHeaders() {
+  return {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+  }
 }
