@@ -82,7 +82,7 @@
 <channel id="9100001138#9233013810"><display-name>Paramount Network (East)</display-name><icon src="https://www.tvguide.com/a/img/catalog/provider/1/4/1-5622899876.png"/><url>https://tvguide.com</url></channel>
 <channel id="9100001138#9233013812"><display-name>Cable News Network</display-name><icon src="https://www.tvguide.com/a/img/catalog/provider/1/4/1-3783440668.png"/><url>https://tvguide.com</url></channel>
 <channel id="9100001138#9233013857"><display-name>Discovery Life Channel</display-name><icon src="https://www.tvguide.com/a/img/catalog/provider/1/4/1-3969518871.png"/><url>https://tvguide.com</url></channel>
-<channel id="9100001138#9233013967"><display-name>FX Movie Channel</display-name><icon src="https://www.tvguide.com/a/img/catalog/provider/1/4/1-3661741626.png"/><url>https://tvguide.com</url></channel>
+<channel id="9100001138#9233013967"><display-name>FX Movie Channel</display-name><icon src="https://github.com/festy1986/epg/blob/master/FXM.png?raw=true"/><url>https://tvguide.com</url></channel>
 <channel id="9100001138#9233015305"><display-name>The Movie Channel (East)</display-name><icon src="https://www.tvguide.com/a/img/catalog/provider/1/4/1-643767138.png"/><url>https://tvguide.com</url></channel>
 <channel id="9100001138#9233015766"><display-name>More Max (East)</display-name><icon src="https://www.tvguide.com/a/img/catalog/provider/1/4/1-4433101884.png"/><url>https://tvguide.com</url></channel>
 <programme start="20241212000000 +0000" stop="20241212003000 +0000" channel="9100001138#9200000657"><title lang="en">Family Guy</title></programme>
