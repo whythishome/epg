@@ -12,7 +12,7 @@ module.exports = {
       throw new Error('Invalid date object passed to url function')
     }
 
-    return `https://www.tvtv.us/api/v1/lineup/USA-NY71652-X/grid/${date.toJSON()}/${date
+    return `https://www.tvtv.us/api/v1/lineup/USA-ME18440-X/grid/${date.toJSON()}/${date
       .add(1, 'day')
       .toJSON()}/${channel.site_id}`
   },
@@ -44,6 +44,33 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    let channels = []
+    const data = await axios
+      .get( `https://tvtv.us/api/v1/lineup/USA-ME18440-X/channels`, {
+        headers: {
+          Accept: '*/*',
+          Connection: 'keep-alive',
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+          'sec-ch-ua': '"Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"'
+        }
+      }).then(r => r.data)
+      .catch(console.log)
+
+    data.data.items.forEach(item => {        
+      channels.push({
+        lang: 'en',
+        site_id: item.stationId,
+        name: item.stationCallSign,
+        logo: item.logo ? `https://tvtv.us${item.logo}` : null
+      })
+    })
+
+  return channels
   }
 }
 
