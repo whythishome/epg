@@ -34,6 +34,7 @@ jobs:
           npm run grab -- --site=foxtel.com.au --gzip --output=guides/foxtel.com.au.xml
           npm run grab -- --site=starhubtvplus.com --gzip --output=guides/starhubtvplus.com.xml
           npm run grab -- --site=sky.com --maxConnections=10 --gzip --output=guides/sky.com.xml
+          npm run grab -- --site=tvpassport.com --gzip --maxConnections=20 --output=guides/tvpassport.com.xml
           npm run grab -- --channels=sites/beinsports.com/beinsports.com_au-en.channels.xml --gzip --output=guides/beinsports.com_au-en.xml
           npm run grab -- --channels=sites/sports/uk.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/uk.xml
           npm run grab -- --channels=sites/sports/in.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/in.xml
@@ -58,5 +59,6 @@ jobs:
         git add -f guides/sports/in.xml.gz
         git add -f guides/sports/au.xml.gz
         git add -f guides/sports/fixturecalendar.com.xml.gz
+        git add -f guides/tvpassport.com.xml.gz
         git commit -m "Update xml"
         git push
