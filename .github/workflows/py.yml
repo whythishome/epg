@@ -33,6 +33,6 @@ jobs:
         git config --local user.name "Your Name"
         # git add -f sites/tvguide.com/tvguide.com.channels.xml
         # git add -f sites/tvpassport.com/tvpassport.com.channels.xml
-        # git add -f sites/tvtv.us/tvtv.us.channels.xml
+        git add -f sites/tvtv.us/tvtv.us.channels.xml
         git commit -a -m "Channel update"
         git push
