@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <channels>
+  
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBTSCD1.us" site_id="nbc-wbts-ld-boston-ma-hd/30964">NBC (WBTS-CD) Nashua, NH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBTSCD1.us" site_id="nbc-wbts-ld-boston-ma/30951">NBC (WBTS-CD) Nashua, NH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cozi-wbts3-boston-ma/30963">Cozi TV (WBTS-CD2) Nashua, NH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCVBDT2.us" site_id="metv-wcvb-dt2-boston/10773">Metv (WCVB-DT2) Boston</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCVBDT1.us" site_id="abc-wcvb-boston-ma/133">ABC (WCVB) Boston, MA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCVBDT1.us" site_id="abc-wcvb-boston-ma--canada/4035">ABC (WCVB) Boston, MA - Canada</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCVBDT1.us" site_id="abc-wcvb-boston-ma-hd/3661">ABC (WCVB) Boston, MA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="escape-wfxt-dt2-boston-ma/11851">Comet TV (WFXT2) Boston, MA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="FOXWFXT.us" site_id="fox-wfxt-boston-ma-dv/4038">FOX (WFXT) Boston, MA DV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="FOXWFXT.us" site_id="fox-wfxt-boston-ma-hd/3657">FOX (WFXT) Boston, MA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="laff-wfxt-dt3-boston-ma/16616">Laff (WFXT3) Boston, MA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WFXTDT1.us" site_id="fox-wfxt-boston-ma/338">FOX (WFXT) Boston, MA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="buzzr-tv-wlvi-dt2-boston-ma/9716">Buzzr TV (WLVI2) Boston, MA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cw-wlvi-boston-ma-hd/7114">CW (WLVI) Boston, MA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cw-wlvi-boston-ma/1007">CW (WLVI) Boston, MA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBZDT1.us" site_id="cbs-wbz-boston-ma/134">CBS (WBZ) Boston, MA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBZDT1.us" site_id="cbs-wbz-boston-ma-dv/4037">CBS (WBZ) Boston. MA DV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBZDT1.us" site_id="cbs-wbz-boston-ma-hd/3653">CBS (WBZ) Boston, MA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="decades-wbz-dt2-boston-ma/15415">Start TV (WBZ-TV2) Boston, MA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="5-star-max--eastern/636" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s25620_h15_ad.png">5 Star Max - Eastern</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ABCEast.us" site_id="abc--eastern/1224" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s10003_h15_ac.png">ABC - Eastern</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ABCNewsLive.us" site_id="abc-news-live/36224" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s113380_h15_ab.png">ABC News Live</channel>
