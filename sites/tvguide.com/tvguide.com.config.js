@@ -20,8 +20,9 @@ module.exports = {
   },
   request: {
     method: 'GET',
-    headers: function() {
-      return setHeaders()
+    headers: {
+      'Referer': 'https://www.tvguide.com/',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
     }
   },
   async parser({ content }) {
@@ -97,8 +98,9 @@ function parseItems(content) {
 async function loadProgramDetails(item) {
   const data = await axios
     .get(item.programDetails, {
-        headers: function() {
-          return setHeaders()
+        headers: {
+          'Referer': 'https://www.tvguide.com/',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
         }
     }).then(r => r.data)
     .catch(err => {
