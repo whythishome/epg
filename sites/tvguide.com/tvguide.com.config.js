@@ -46,7 +46,7 @@ module.exports = {
     for (let providerId of providers) {
       const data = await retryRequest(() => axios.get(
         `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/sources/web`
-      ), 5, 1000);
+      ), 10, 2000); // Increased maxRetries and initialDelay
 
       data.data.items.forEach(item => {
         channels.push({
@@ -87,7 +87,7 @@ async function loadProgramDetails(item) {
       'Referer': 'https://www.tvguide.com/',
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
     }
-  }), 5, 1000);
+  }), 10, 2000); // Increased maxRetries and initialDelay
 
   if (!data || !data.data || !data.data.item) return {};
 
@@ -113,7 +113,7 @@ async function retryRequest(requestFn, maxRetries, initialDelay) {
       if (error.response && error.response.status === 403) {
         retries++;
         console.log(`Retry ${retries}/${maxRetries}: Waiting for ${delay}ms`);
-        await new Promise(resolve => setTimeout(resolve, delay));
+        await new Promise(resolve => setTimeout(resolve, delay + Math.random() * 1000)); // Add randomness
         delay *= 2; // Exponential backoff
       } else {
         throw error;
