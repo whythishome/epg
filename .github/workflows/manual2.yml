@@ -6,8 +6,7 @@ on:
 jobs:
   run_script:
     runs-on: ubuntu-latest
-    env:
-      PROXY_URL: ${{ secrets.PROXY_URL }}
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -25,14 +24,18 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          # npm run grab -- --channels=sites/sports/in.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/in.xml
+          npm run grab -- --site=player.ee.co.uk --days=7 --maxConnections=10 --gzip --output=guides/player.ee.co.uk.xml
+          npm run grab -- --site=sky.com --days=7 --maxConnections=10 --gzip --output=guides/sky.com.xml
           npm run grab -- --site=tvguide.com --gzip --output=guides/tvguide.com.xml
-          # npm run grab -- --site=tvpassport.com --days=7 --maxConnections=50 --output=guides/tvpassport.com.xml
-          # npm run grab -- --site=tvtv.us --maxConnections=10 --output=guides/tvtv.us.xml
+          npm run grab -- --site=tvpassport.com --days=7 --maxConnections=50 --output=guides/tvpassport.com.xml
+          
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
+        git add -f guides/player.ee.co.uk.xml.gz
+        git add -f guides/sky.com.xml.gz
         git add -f guides/tvguide.com.xml.gz
+        git add -f guides/tvpassport.com.xml.gz
         git commit -m "Update xml"
         git push
