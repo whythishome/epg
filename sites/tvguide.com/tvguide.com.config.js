@@ -85,15 +85,8 @@ function parseItems(content) {
 }
 
 async function loadProgramDetails(item) {
-  const data = await retryRequest(() => axios.get(item.programDetails, {
-    headers: {
-      'Referer': 'https://www.tvguide.com/',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
-    }
-  }), 10, 5000); // Increased maxRetries and fixed delay of 15 seconds
-
+  const data = await retryRequest((useProxy) => createAxiosInstance(useProxy).get(item.programDetails), 10, 15000);
   if (!data || !data.data || !data.data.item) return {};
-
   return data.data.item;
 }
 
@@ -132,10 +125,4 @@ function createAxiosInstance(useProxy) {
     httpsAgent: useProxy ? new HttpsProxyAgent(PROXY_URL) : undefined
   });
   return instance;
-}
-
-async function loadProgramDetails(item) {
-  const data = await retryRequest((useProxy) => createAxiosInstance(useProxy).get(item.programDetails), 10, 15000);
-  if (!data || !data.data || !data.data.item) return {};
-  return data.data.item;
 }
