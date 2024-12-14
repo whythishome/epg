@@ -28,7 +28,7 @@ module.exports = {
     const programs = [];
     const items = parseItems(content);
     for (let item of items) {
-      // const details = await loadProgramDetails(item)
+      const details = await loadProgramDetails(item)
       // programs.push({
       //   title: item.title,
       //   sub_title: details.episodeTitle,
@@ -42,6 +42,7 @@ module.exports = {
       // })
       programs.push({
         title: item.title,
+        description: details.description,
         start: parseTime(item.startTime),
         stop: parseTime(item.endTime)
       })
