@@ -10,6 +10,7 @@ dayjs.extend(timezone);
 const PROXY_URL = process.env.PROXY_URL; // Read the proxy URL from the environment variable
 let requestCount = 0; // Global counter for the number of requests
 let first403Encountered = false; // Flag to track if the first 403 error has been encountered
+let startTime = dayjs(); // Start time for tracking duration
 
 module.exports = {
   site: 'tvguide.com',
@@ -99,25 +100,32 @@ function setHeaders() {
   };
 }
 
-async function retryRequest(requestFn, maxRetries, fixedDelay) {
+async function retryRequest(requestFn, maxRetries, initialDelay) {
   let retries = 0;
   let useProxy = false;
+  let delay = initialDelay;
 
   while (retries < maxRetries) {
     try {
       requestCount++; // Increment the request count
       const response = await requestFn(useProxy);
+      const duration = dayjs().diff(startTime, 'seconds');
+      console.log(`Successful request after ${requestCount} requests and ${duration} seconds.`);
+      requestCount = 0; // Reset the request count
+      startTime = dayjs(); // Reset the start time
       return response.data;
     } catch (error) {
       if (error.response && error.response.status === 403) {
         if (!first403Encountered) {
-          console.log(`First 403 error encountered after ${requestCount} requests.`);
+          const duration = dayjs().diff(startTime, 'seconds');
+          console.log(`First 403 error encountered after ${requestCount} requests and ${duration} seconds.`);
           first403Encountered = true; // Set the flag to true
         }
         retries++;
         useProxy = !useProxy; // Toggle between using proxy and normal request
-        console.log(`Retry ${retries}/${maxRetries}: Waiting for ${fixedDelay}ms, using proxy: ${useProxy}`);
-        await new Promise(resolve => setTimeout(resolve, fixedDelay));
+        console.log(`Retry ${retries}/${maxRetries}: Waiting for ${delay}ms, using proxy: ${useProxy}`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        delay = Math.min(delay * 2, 60000); // Exponential backoff with a max delay of 60 seconds
       } else {
         throw error;
       }
