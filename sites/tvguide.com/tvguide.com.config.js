@@ -88,7 +88,7 @@ function parseItems(content) {
 }
 
 async function loadProgramDetails(item) {
-  const data = await retryRequest((useProxy) => createAxiosInstance(useProxy).get(item.programDetails), 10, 15000);
+  const data = await retryRequest((useProxy) => createAxiosInstance(useProxy).get(item.programDetails), 10, 61000);
   if (!data || !data.data || !data.data.item) return {};
   return data.data.item;
 }
