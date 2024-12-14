@@ -121,19 +121,29 @@ let firstRequestDone = false;
 async function makeRequest(url, options) {
   try {
     const response = await axios.get(url, options);
-    console.log(response);
     if (!firstRequestDone && response.headers['set-cookie']) {
       cookies = response.headers['set-cookie'].join('; ');
       firstRequestDone = true;
       console.log('Cookies extracted:', cookies); // Log the extracted cookies
     }
     return response.data;
-  } catch (error) {
-    if (error.response && error.response.status === 403) {
-      console.log('Received 403 error:', error.response.data);
-      console.log('Headers sent:', error.config.headers); // Log the headers sent with the request
+    } catch (error) {
+    if (error.response) {
+      console.error("Error Status:", error.response.status);
+      console.error("Error Message:", error.message);
+      console.error("Response Body:", error.response.data);
+      console.error("Request URL:", error.config.url);
+      console.error("Request Headers:", error.config.headers);
+    } else if (error.request) {
+      console.error("No response received:", error.request);
+      console.error("Request URL:", error.config.url);
+      console.error("Request Headers:", error.config.headers);
+    } else {
+      console.error("Error Message:", error.message);
     }
-    console.log('Error:', error.message);
-    throw error;
+
+    throw new Error(
+      `Failed to fetch cookie for channel ${error.message}`,
+    );
   }
 }
