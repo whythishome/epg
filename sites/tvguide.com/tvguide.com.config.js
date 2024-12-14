@@ -2,11 +2,12 @@ const axios = require('axios');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
+const HttpsProxyAgent = require('https-proxy-agent');
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-const PROXY_URL = process.env.PROXY_URL;
+const PROXY_URL = process.env.PROXY_URL; // Read the proxy URL from the environment variable
 
 module.exports = {
   site: 'tvguide.com',
@@ -48,7 +49,7 @@ module.exports = {
     for (let providerId of providers) {
       const data = await retryRequest(() => axios.get(
         `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/sources/web`
-      ), 10, 2000); // Increased maxRetries and initialDelay
+      ), 10, 15000); // Increased maxRetries and fixed delay of 15 seconds
 
       data.data.items.forEach(item => {
         channels.push({
@@ -89,7 +90,7 @@ async function loadProgramDetails(item) {
       'Referer': 'https://www.tvguide.com/',
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
     }
-  }), 10, 2000); // Increased maxRetries and initialDelay
+  }), 10, 5000); // Increased maxRetries and fixed delay of 15 seconds
 
   if (!data || !data.data || !data.data.item) return {};
 
@@ -103,24 +104,38 @@ function setHeaders() {
   };
 }
 
-async function retryRequest(requestFn, maxRetries, initialDelay) {
+async function retryRequest(requestFn, maxRetries, fixedDelay) {
   let retries = 0;
-  let delay = initialDelay;
+  let useProxy = false;
 
   while (retries < maxRetries) {
     try {
-      const response = await requestFn();
+      const response = await requestFn(useProxy);
       return response.data;
     } catch (error) {
       if (error.response && error.response.status === 403) {
         retries++;
-        console.log(`Retry ${retries}/${maxRetries}: Waiting for ${delay}ms`);
-        await new Promise(resolve => setTimeout(resolve, delay + Math.random() * 1000)); // Add randomness
-        delay *= 2; // Exponential backoff
+        useProxy = !useProxy; // Toggle between using proxy and normal request
+        console.log(`Retry ${retries}/${maxRetries}: Waiting for ${fixedDelay}ms, using proxy: ${useProxy}`);
+        await new Promise(resolve => setTimeout(resolve, fixedDelay));
       } else {
         throw error;
       }
     }
   }
   throw new Error('Max retries exceeded');
+}
+
+function createAxiosInstance(useProxy) {
+  const instance = axios.create({
+    headers: setHeaders(),
+    httpsAgent: useProxy ? new HttpsProxyAgent(PROXY_URL) : undefined
+  });
+  return instance;
+}
+
+async function loadProgramDetails(item) {
+  const data = await retryRequest((useProxy) => createAxiosInstance(useProxy).get(item.programDetails), 10, 15000);
+  if (!data || !data.data || !data.data.item) return {};
+  return data.data.item;
 }
