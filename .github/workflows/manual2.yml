@@ -26,7 +26,7 @@ jobs:
           npm install
           # npm run grab -- --channels=sites/sports/in.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/in.xml
           # npm run grab -- --site=tvguide.com --maxConnections=10 --output=guides/tvguide.com.xml
-          npm run grab -- --site=tvpassport.com --maxConnections=20 --output=guides/tvpassport.com.xml
+          npm run grab -- --site=tvpassport.com --days=7 --maxConnections=50 --output=guides/tvpassport.com.xml
           # npm run grab -- --site=tvtv.us --maxConnections=10 --output=guides/tvtv.us.xml
     - name: Commit changes
       run: |
