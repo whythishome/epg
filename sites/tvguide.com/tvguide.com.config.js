@@ -127,6 +127,9 @@ async function makeRequest(url, options) {
     }
     return response.data;
   } catch (error) {
+    if (error.response && error.response.status === 403) {
+      console.log('Received 403 error:', error);
+    }
     console.log('Error:', error.message);
     throw error;
   }
