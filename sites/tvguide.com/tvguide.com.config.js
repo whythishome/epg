@@ -121,6 +121,7 @@ let firstRequestDone = false;
 async function makeRequest(url, options) {
   try {
     const response = await axios.get(url, options);
+    console.log(response);
     if (!firstRequestDone && response.headers['set-cookie']) {
       cookies = response.headers['set-cookie'].join('; ');
       firstRequestDone = true;
