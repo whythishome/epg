@@ -8,7 +8,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'tvguide.com',
-  delay: 5000,
+  delay: 2500,
   days: 1,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#')
@@ -21,18 +21,8 @@ module.exports = {
   request: {
     method: 'GET',
     headers: {
-      'accept': 'application/json, text/plain, */*',
-      'accept-language': 'en-US,en;q=0.9',
-      'origin': 'https://www.tvguide.com',
-      'priority': 'u=1, i',
-      'referer': 'https://www.tvguide.com/',
-      'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      'sec-ch-ua-mobile': '?0',
-      'sec-ch-ua-platform': '"Windows"',
-      'sec-fetch-dest': 'empty',
-      'sec-fetch-mode': 'cors',
-      'sec-fetch-site': 'same-site',
-      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+      'Referer': 'https://www.tvguide.com/',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
     }
   },
   async parser({ content }) {
@@ -40,17 +30,6 @@ module.exports = {
     const items = parseItems(content);
     for (let item of items) {
       const details = await loadProgramDetails(item)
-      // programs.push({
-      //   title: item.title,
-      //   sub_title: details.episodeTitle,
-      //   description: details.description,
-      //   season: details.seasonNumber,
-      //   episode: details.episodeNumber,
-      //   rating: parseRating(item),
-      //   categories: parseCategories(details),
-      //   start: parseTime(item.startTime),
-      //   stop: parseTime(item.endTime)
-      // })
       programs.push({
         title: item.title,
         description: details.description,
@@ -72,7 +51,7 @@ module.exports = {
         .then(r => r.data)
         .catch(console.log)
 
-      data.data.items.forEach(item => {        
+      data.data.items.forEach(item => {
         channels.push({
           lang: 'en',
           site_id: `${providerId}#${item.sourceId}`,
@@ -107,53 +86,42 @@ function parseItems(content) {
 
 async function loadProgramDetails(item) {
   const programDetailsUrl = `${item.programDetails}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
-  const data = await retryRequest(() => axios.get( programDetailsUrl, {
-    headers: {
-      'accept': 'application/json, text/plain, */*',
-      'accept-language': 'en-US,en;q=0.9',
-      'origin': 'https://www.tvguide.com',
-      'priority': 'u=1, i',
-      'referer': 'https://www.tvguide.com/',
-      'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      'sec-ch-ua-mobile': '?0',
-      'sec-ch-ua-platform': '"Windows"',
-      'sec-fetch-dest': 'empty',
-      'sec-fetch-mode': 'cors',
-      'sec-fetch-site': 'same-site',
-      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
-    }
-  }), 2, 61000);
+  const data = await makeRequest(programDetailsUrl, { headers: setHeaders() });
+  if (!data || !data.data || !data.data.item) return {}
 
-  if (!data || !data.data || !data.data.item) return {};
-
-  return data.data.item;
+  return data.data.item
 }
 
 function setHeaders() {
   return {
-    'Referer': 'https://www.tvguide.com/',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+    'accept': 'application/json, text/plain, */*',
+    'accept-language': 'en-US,en;q=0.9',
+    'origin': 'https://www.tvguide.com',
+    'priority': 'u=1, i',
+    'referer': 'https://www.tvguide.com/',
+    'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-site',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
   }
 }
 
-async function retryRequest(requestFn, maxRetries, initialDelay) {
-  let retries = 0;
-  let delay = initialDelay;
-
-  while (retries < maxRetries) {
-    try {
-      const response = await requestFn();
-      return response.data;
-    } catch (error) {
-      if (error.response && error.response.status === 403) {
-        retries++;
-        console.log(`Retry ${retries}/${maxRetries}: Waiting for ${delay}ms`);
-        await new Promise(resolve => setTimeout(resolve, delay));
-        delay *= 2; // Exponential backoff
-      } else {
-        throw error;
-      }
+async function makeRequest(url, options) {
+  try {
+    const response = await axios.get(url, options);
+    return response.data;
+  } catch (error) {
+    if (error.response && error.response.status === 403) {
+      console.log('Received 403 error, making a call to https://www.tvguide.com/listings/');
+      await axios.get('https://www.tvguide.com/listings/', { headers: setHeaders() });
+      console.log('Retrying the original URL');
+      return makeRequest(url, options); // Retry the original request
+    } else {
+      console.log('Error:', error.message);
+      throw error;
     }
   }
-  throw new Error('Max retries exceeded');
 }
