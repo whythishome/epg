@@ -97,19 +97,16 @@ function parseItems(content) {
 
 async function loadProgramDetails(item) {
   const programDetailsUrl = `${item.programDetails}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
-  const data = await axios
-    .get( programDetailsUrl, {
-        headers: {
-          'Referer': 'https://www.tvguide.com/',
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
-        }
-    }).then(r => r.data)
-    .catch(err => {
-      console.log(err.message)
-    });
-  if (!data || !data.data || !data.data.item) return {}
+  const data = await retryRequest(() => axios.get( programDetailsUrl, {
+    headers: {
+      'Referer': 'https://www.tvguide.com/',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+    }
+  }), 2, 61000);
 
-  return data.data.item
+  if (!data || !data.data || !data.data.item) return {};
+
+  return data.data.item;
 }
 
 function setHeaders() {
@@ -117,4 +114,26 @@ function setHeaders() {
     'Referer': 'https://www.tvguide.com/',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
   }
+}
+
+async function retryRequest(requestFn, maxRetries, initialDelay) {
+  let retries = 0;
+  let delay = initialDelay;
+
+  while (retries < maxRetries) {
+    try {
+      const response = await requestFn();
+      return response.data;
+    } catch (error) {
+      if (error.response && error.response.status === 403) {
+        retries++;
+        console.log(`Retry ${retries}/${maxRetries}: Waiting for ${delay}ms`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        delay *= 2; // Exponential backoff
+      } else {
+        throw error;
+      }
+    }
+  }
+  throw new Error('Max retries exceeded');
 }
