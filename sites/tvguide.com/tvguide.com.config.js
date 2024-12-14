@@ -49,7 +49,7 @@ module.exports = {
     return programs
   },
   async channels() {
-    const providers = [9100002976]
+    const providers = [9133001044]
 
     let channels = []
     for (let providerId of providers) {
