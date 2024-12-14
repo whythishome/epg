@@ -6,6 +6,8 @@ const timezone = require('dayjs/plugin/timezone');
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
+const PROXY_URL = process.env.PROXY_URL;
+
 module.exports = {
   site: 'tvguide.com',
   delay: 2500,
