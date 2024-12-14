@@ -1,22 +1,22 @@
-const axios = require('axios')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
+const axios = require('axios');
+const dayjs = require('dayjs');
+const utc = require('dayjs/plugin/utc');
+const timezone = require('dayjs/plugin/timezone');
 
-dayjs.extend(utc)
-dayjs.extend(timezone)
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 module.exports = {
   site: 'tvguide.com',
   delay: 2500,
   days: 1,
   url: function ({ date, channel }) {
-    const [providerId, channelSourceIds] = channel.site_id.split('#')
+    const [providerId, channelSourceIds] = channel.site_id.split('#');
     const url = `https://backend.tvguide.com/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
-      .unix()}&duration=12000&channelSourceIds=${channelSourceIds}`
+      .unix()}&duration=12000&channelSourceIds=${channelSourceIds}`;
 
-    return url
+    return url;
   },
   request: {
     method: 'GET',
@@ -29,91 +29,96 @@ module.exports = {
     const programs = [];
     const items = parseItems(content);
     for (let item of items) {
-      const details = await loadProgramDetails(item)
-      // programs.push({
-      //   title: item.title,
-      //   sub_title: details.episodeTitle,
-      //   description: details.description,
-      //   season: details.seasonNumber,
-      //   episode: details.episodeNumber,
-      //   rating: parseRating(item),
-      //   categories: parseCategories(details),
-      //   start: parseTime(item.startTime),
-      //   stop: parseTime(item.endTime)
-      // })
+      const details = await loadProgramDetails(item);
       programs.push({
         title: item.title,
         description: details.description,
         start: parseTime(item.startTime),
         stop: parseTime(item.endTime)
-      })
+      });
     }
-    return programs
+    return programs;
   },
   async channels() {
-    const providers = [9133001044]
+    const providers = [9133001044];
 
-    let channels = []
+    let channels = [];
     for (let providerId of providers) {
-      const data = await axios
-        .get(
-          `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/sources/web`
-        )
-        .then(r => r.data)
-        .catch(console.log)
+      const data = await retryRequest(() => axios.get(
+        `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/sources/web`
+      ), 5, 1000);
 
-      data.data.items.forEach(item => {        
+      data.data.items.forEach(item => {
         channels.push({
           lang: 'en',
           site_id: `${providerId}#${item.sourceId}`,
           name: item.fullName,
           logo: item.logo ? `https://www.tvguide.com/a/img/catalog${item.logo}` : null
-        })
-      })
+        });
+      });
     }
 
-    return channels
+    return channels;
   }
-}
+};
 
 function parseRating(item) {
-  return item.rating ? { system: 'MPA', value: item.rating } : null
+  return item.rating ? { system: 'MPA', value: item.rating } : null;
 }
 
 function parseCategories(details) {
-  return Array.isArray(details.genres) ? details.genres.map(g => g.name) : []
+  return Array.isArray(details.genres) ? details.genres.map(g => g.name) : [];
 }
 
 function parseTime(timestamp) {
-  return dayjs.unix(timestamp)
+  return dayjs.unix(timestamp);
 }
 
 function parseItems(content) {
-  const data = JSON.parse(content)
-  if (!data.data || !Array.isArray(data.data.items) || !data.data.items.length) return []
+  const data = JSON.parse(content);
+  if (!data.data || !Array.isArray(data.data.items) || !data.data.items.length) return [];
 
-  return data.data.items[0].programSchedules
+  return data.data.items[0].programSchedules;
 }
 
 async function loadProgramDetails(item) {
-  const data = await axios
-    .get(item.programDetails, {
-        headers: {
-          'Referer': 'https://www.tvguide.com/',
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
-        }
-    }).then(r => r.data)
-    .catch(err => {
-      console.log(err.message)
-    });
-  if (!data || !data.data || !data.data.item) return {}
+  const data = await retryRequest(() => axios.get(item.programDetails, {
+    headers: {
+      'Referer': 'https://www.tvguide.com/',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+    }
+  }), 5, 1000);
 
-  return data.data.item
+  if (!data || !data.data || !data.data.item) return {};
+
+  return data.data.item;
 }
 
 function setHeaders() {
   return {
     'Referer': 'https://www.tvguide.com/',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+  };
+}
+
+async function retryRequest(requestFn, maxRetries, initialDelay) {
+  let retries = 0;
+  let delay = initialDelay;
+
+  while (retries < maxRetries) {
+    try {
+      const response = await requestFn();
+      return response.data;
+    } catch (error) {
+      if (error.response && error.response.status === 403) {
+        retries++;
+        console.log(`Retry ${retries}/${maxRetries}: Waiting for ${delay}ms`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        delay *= 2; // Exponential backoff
+      } else {
+        throw error;
+      }
+    }
   }
+  throw new Error('Max retries exceeded');
 }
