@@ -24,15 +24,15 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          # npm run channels:parse -- --config=./sites/tvguide.com/tvguide.com.config.js --output=./sites/tvguide.com/tvguide.com.channels.xml
+          npm run channels:parse -- --config=./sites/tvguide.com/tvguide.com.config.js --output=./sites/tvguide.com/tvguide.com.channels.xml
           # npm run channels:parse -- --config=./sites/tvpassport.com/tvpassport.com.config.js --output=./sites/tvpassport.com/tvpassport.com.channels.xml
-          npm run channels:parse -- --config=./sites/tvtv.us/tvtv.us.config.js --output=./sites/tvtv.us/tvtv.us.channels.xml
+          # npm run channels:parse -- --config=./sites/tvtv.us/tvtv.us.config.js --output=./sites/tvtv.us/tvtv.us.channels.xml
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        # git add -f sites/tvguide.com/tvguide.com.channels.xml
+        git add -f sites/tvguide.com/tvguide.com.channels.xml
         # git add -f sites/tvpassport.com/tvpassport.com.channels.xml
-        git add -f sites/tvtv.us/tvtv.us.channels.xml
+        # git add -f sites/tvtv.us/tvtv.us.channels.xml
         git commit -a -m "Channel update"
         git push
