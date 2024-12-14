@@ -8,6 +8,8 @@ dayjs.extend(utc);
 dayjs.extend(timezone);
 
 const PROXY_URL = process.env.PROXY_URL; // Read the proxy URL from the environment variable
+let requestCount = 0; // Global counter for the number of requests
+let first403Encountered = false; // Flag to track if the first 403 error has been encountered
 
 module.exports = {
   site: 'tvguide.com',
@@ -103,10 +105,15 @@ async function retryRequest(requestFn, maxRetries, fixedDelay) {
 
   while (retries < maxRetries) {
     try {
+      requestCount++; // Increment the request count
       const response = await requestFn(useProxy);
       return response.data;
     } catch (error) {
       if (error.response && error.response.status === 403) {
+        if (!first403Encountered) {
+          console.log(`First 403 error encountered after ${requestCount} requests.`);
+          first403Encountered = true; // Set the flag to true
+        }
         retries++;
         useProxy = !useProxy; // Toggle between using proxy and normal request
         console.log(`Retry ${retries}/${maxRetries}: Waiting for ${fixedDelay}ms, using proxy: ${useProxy}`);
