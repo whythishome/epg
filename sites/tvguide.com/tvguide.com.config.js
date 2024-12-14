@@ -15,6 +15,7 @@ module.exports = {
     const url = `https://backend.tvguide.com/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
       .unix()}&duration=12000&channelSourceIds=${channelSourceIds}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`
+    console.log('Channel URL' + url )
 
     return url
   },
@@ -96,7 +97,8 @@ function parseItems(content) {
 }
 
 async function loadProgramDetails(item) {
-  const programDetailsUrl = `${item.programDetails}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`
+  const programDetailsUrl = `${item.programDetails}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
+  console.log(programDetailsUrl);
   const data = await axios
     .get( programDetailsUrl, {
         headers: {
