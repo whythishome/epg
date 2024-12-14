@@ -124,11 +124,13 @@ async function makeRequest(url, options) {
     if (!firstRequestDone && response.headers['set-cookie']) {
       cookies = response.headers['set-cookie'].join('; ');
       firstRequestDone = true;
+      console.log('Cookies extracted:', cookies); // Log the extracted cookies
     }
     return response.data;
   } catch (error) {
     if (error.response && error.response.status === 403) {
-      console.log('Received 403 error:', error);
+      console.log('Received 403 error:', error.response.data);
+      console.log('Headers sent:', error.config.headers); // Log the headers sent with the request
     }
     console.log('Error:', error.message);
     throw error;
