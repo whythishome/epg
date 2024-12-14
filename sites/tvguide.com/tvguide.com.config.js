@@ -86,7 +86,7 @@ function parseItems(content) {
 
 async function loadProgramDetails(item) {
   const programDetailsUrl = `${item.programDetails}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
-  const data = await makeRequest(programDetailsUrl, { headers: setHeaders() });
+  const data = await makeRequest(programDetailsUrl, { headers: setHeaders(cookies) });
   if (!data || !data.data || !data.data.item) return {};
 
   return data.data.item;
@@ -116,23 +116,18 @@ function setHeaders(cookies = '') {
 }
 
 let cookies = '';
+let firstRequestDone = false;
 
 async function makeRequest(url, options) {
   try {
     const response = await axios.get(url, options);
-    if (response.headers['set-cookie']) {
+    if (!firstRequestDone && response.headers['set-cookie']) {
       cookies = response.headers['set-cookie'].join('; ');
+      firstRequestDone = true;
     }
     return response.data;
   } catch (error) {
-    if (error.response && error.response.status === 403) {
-      console.log('Received 403 error, making a call to https://www.tvguide.com/listings/');
-      await axios.get('https://www.tvguide.com/listings/', { headers: setHeaders(cookies) });
-      console.log('Retrying the original URL');
-      return makeRequest(url, options); // Retry the original request
-    } else {
-      console.log('Error:', error.message);
-      throw error;
-    }
+    console.log('Error:', error.message);
+    throw error;
   }
 }
