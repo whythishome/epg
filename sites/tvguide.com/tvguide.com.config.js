@@ -46,6 +46,8 @@ module.exports = {
       const tvRating = details?.tvRating || '';
       const firstGenre = details?.genres?.[0]?.name || '';
       const secondGenre = details?.genres?.[1]?.name || '';
+      const episodeAirDate = details?.episodeAirDate || '';
+      
       // Extract the timestamp and convert it to a Date object
       const timestamp = episodeAirDate.match(/\/Date\((\d+)\)\//);
       const airDate = timestamp ? new Date(parseInt(timestamp[1])) : null;
