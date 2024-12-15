@@ -62,7 +62,7 @@ module.exports = {
 
       if (details.type == 'movie') {
         newDescription = description;
-        if (releaseYear) newDescription += ` ${releaseYear}.`;
+        if (releaseYear) newDescription += ` (${releaseYear}).`;
         if (tvRating) newDescription += ` ${tvRating}.`;
         if (firstGenre) newDescription += ` ${firstGenre}`;
         if (secondGenre) newDescription += ` / ${secondGenre}`;
