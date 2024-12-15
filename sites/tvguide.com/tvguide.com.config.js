@@ -6,9 +6,12 @@ const timezone = require('dayjs/plugin/timezone');
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
+const PROXY_URL = process.env.PROXY_URL;
+let useProxy = false; // Toggle flag to alternate requests per channel
+
 module.exports = {
   site: 'tvguide.com',
-  delay: 2500,
+  delay: 3000,
   days: 1,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#');
@@ -20,33 +23,41 @@ module.exports = {
   },
   request: {
     method: 'GET',
-    headers: {
-      'Referer': 'https://www.tvguide.com/',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+    headers: function() {
+      return setHeaders();
     }
   },
-  async parser({ content }) {
+  async parser({ content, channel }) {
     const programs = [];
     const items = parseItems(content);
+
+    // Set proxy toggle based on channel
+    useProxy = !useProxy;
     for (let item of items) {
-      const details = await loadProgramDetails(item);
+      const details = await loadProgramDetails(item); // Fetch details
       programs.push({
         title: item.title,
-        description: details.description,
+        sub_title: details?.episodeTitle || null,
+        description: details?.description || null,
+        season: details?.seasonNumber || null,
+        episode: details?.episodeNumber || null,
+        rating: parseRating(item),
+        categories: parseCategories(details || {}),
         start: parseTime(item.startTime),
         stop: parseTime(item.endTime)
       });
     }
+
     return programs;
   },
   async channels() {
-    const providers = [9133001044];
+    const providers = [9100001138];
 
     let channels = [];
     for (let providerId of providers) {
       const data = await axios
         .get(
-          `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/sources/web?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`
+          `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/sources/web`
         )
         .then(r => r.data)
         .catch(console.log);
@@ -64,6 +75,32 @@ module.exports = {
     return channels;
   }
 };
+
+async function loadProgramDetails(item) {
+  const programDetailsUrl = item.programDetails;
+
+  const axiosInstance = axios.create({
+    headers: setHeaders()
+  });
+
+  const requestUrl = useProxy
+    ? `${programDetailsUrl.replace('backend.tvguide.com', PROXY_URL)}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc` // Replace domain with proxy and append apiKey
+    : `${programDetailsUrl}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
+  
+  console.log(requestUrl);
+  
+  const data = await axiosInstance
+    .get(requestUrl)
+    .then(r => r.data)
+    .catch(err => {
+      console.log(`Error fetching program details: ${err.message}`);
+      return null; // Handle failed request gracefully
+    });
+
+  if (!data || !data.data || !data.data.item) return {};
+
+  return data.data.item;
+}
 
 function parseRating(item) {
   return item.rating ? { system: 'MPA', value: item.rating } : null;
@@ -84,66 +121,9 @@ function parseItems(content) {
   return data.data.items[0].programSchedules;
 }
 
-async function loadProgramDetails(item) {
-  const programDetailsUrl = `${item.programDetails}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
-  const data = await makeRequest(programDetailsUrl, { headers: setHeaders(cookies) });
-  if (!data || !data.data || !data.data.item) return {};
-
-  return data.data.item;
-}
-
-function setHeaders(cookies = '') {
-  const headers = {
-    'accept': 'application/json, text/plain, */*',
-    'accept-language': 'en-US,en;q=0.9',
-    'origin': 'https://www.tvguide.com',
-    'priority': 'u=1, i',
-    'referer': 'https://www.tvguide.com/',
-    'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-platform': '"Windows"',
-    'sec-fetch-dest': 'empty',
-    'sec-fetch-mode': 'cors',
-    'sec-fetch-site': 'same-site',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+function setHeaders() {
+  return {
+    'Referer': 'https://www.tvguide.com/',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
   };
-
-  if (cookies) {
-    headers['cookie'] = cookies;
-  }
-
-  return headers;
-}
-
-let cookies = '';
-let firstRequestDone = false;
-
-async function makeRequest(url, options) {
-  try {
-    const response = await axios.get(url, options);
-    if (!firstRequestDone && response.headers['set-cookie']) {
-      cookies = response.headers['set-cookie'].join('; ');
-      firstRequestDone = true;
-      console.log('Cookies extracted:', cookies); // Log the extracted cookies
-    }
-    return response.data;
-    } catch (error) {
-    if (error.response) {
-      console.error("Error Status:", error.response.status);
-      console.error("Error Message:", error.message);
-      console.error("Response Body:", error.response.data);
-      console.error("Request URL:", error.config.url);
-      console.error("Request Headers:", error.config.headers);
-    } else if (error.request) {
-      console.error("No response received:", error.request);
-      console.error("Request URL:", error.config.url);
-      console.error("Request Headers:", error.config.headers);
-    } else {
-      console.error("Error Message:", error.message);
-    }
-
-    throw new Error(
-      `Failed to fetch cookie for channel ${error.message}`,
-    );
-  }
 }
