@@ -46,24 +46,26 @@ module.exports = {
       const tvRating = details?.tvRating || '';
       const firstGenre = details?.genres?.[0]?.name || '';
       const secondGenre = details?.genres?.[1]?.name || '';
-      const episodeAirDate = details?.episodeAirDate ? new Date(parseInt(details.episodeAirDate.replace(/\/Date\((\d+)\)\//, '$1'))) : null;
+      const episodeAirDate = details?.episodeAirDate ? new Date(parseInt(details.episodeAirDate.replace(/\/Date$(\d+)$\//, '\$1'))) : null;
     
       // Format the date if it exists
-      const formattedDate = episodeAirDate ? episodeAirDate.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' }) : '';
-    
+      const formattedDate = episodeAirDate ? episodeAirDate.toLocaleDateString('en-US', { month: 'numeric', day: 'numeric', year: 'numeric' }) : '';
+
       // Create the new description variable conditionally
       let newDescription = description;
       if (seasonNumber && episodeNumber) newDescription += ` S${seasonNumber} E${episodeNumber}.`;
       if (episodeTitle) newDescription += ` ${episodeTitle}.`;
       if (formattedDate) newDescription += ` ${formattedDate}.`;
       if (tvRating) newDescription += ` ${tvRating}.`;
-      if (firstGenre) newDescription += ` ${firstGenre} / ${secondGenre}.`;
+      if (firstGenre) newDescription += ` ${firstGenre}.`;
+      if (secondGenre) newDescription += ` / ${secondGenre}`;
 
-      if (details.type == 'Movie') {
+      if (details.type == 'movie') {
         newDescription = description;
         if (releaseYear) newDescription += ` ${releaseYear}.`;
         if (tvRating) newDescription += ` ${tvRating}.`;
-        if (firstGenre) newDescription += ` ${firstGenre} / ${secondGenre}.`;
+        if (firstGenre) newDescription += ` ${firstGenre}`;
+        if (secondGenre) newDescription += ` / ${secondGenre}`;
       }
     
       programs.push({
