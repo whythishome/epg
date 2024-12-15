@@ -14,6 +14,7 @@ module.exports = {
   days: 1,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#');
+    const requestDomain = useProxy ? PROXY_URL : 'backend.tvguide.com';
     const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
       .unix()}&duration=120&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
