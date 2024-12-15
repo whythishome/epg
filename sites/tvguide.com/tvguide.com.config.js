@@ -11,14 +11,13 @@ let useProxy = false; // Toggle flag to alternate requests per channel
 
 module.exports = {
   site: 'tvguide.com',
-  delay: 3000,
   days: 1,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#');
     const requestDomain = useProxy ? PROXY_URL : 'backend.tvguide.com';
     const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
-      .unix()}&duration=12000&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
+      .unix()}&duration=120&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
 
     return url;
   },
@@ -38,19 +37,35 @@ module.exports = {
     
     for (let item of items) {
       const details = await loadProgramDetails(item); // Fetch details
+    
+      // Extract necessary properties
+      const episodeTitle = details?.episodeTitle || '';
+      const description = details?.description || '';
+      const seasonNumber = details?.seasonNumber || '';
+      const episodeNumber = details?.episodeNumber || '';
+      const releaseYear = details?.releaseYear || '';
+      const tvRating = details?.tvRating || '';
+      const firstGenre = details?.genres?.[0]?.name || '';
+      const episodeAirDate = details?.episodeAirDate ? new Date(parseInt(details.episodeAirDate.replace(/\/Date\((\d+)\)\//, '$1'))) : null;
+    
+      // Format the date if it exists
+      const formattedDate = episodeAirDate ? episodeAirDate.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' }) : '';
+    
+      // Create the new description variable conditionally
+      let newDescription = description;
+      if (seasonNumber && episodeNumber) newDescription += ` S${seasonNumber} E${episodeNumber}`;
+      if (episodeTitle) newDescription += `. ${episodeTitle}`;
+      if (formattedDate) newDescription += `. ${formattedDate}`;
+      if (tvRating) newDescription += `. ${tvRating}`;
+      if (firstGenre) newDescription += `. ${firstGenre}`;
+    
       programs.push({
         title: item.title,
-        sub_title: details?.episodeTitle || null,
-        description: details?.description || null,
-        season: details?.seasonNumber || null,
-        episode: details?.episodeNumber || null,
-        rating: parseRating(item),
-        categories: parseCategories(details || {}),
+        description: newDescription.trim(), // Trim any leading/trailing whitespace
         start: parseTime(item.startTime),
         stop: parseTime(item.endTime)
       });
     }
-
     return programs;
   },
   async channels() {
