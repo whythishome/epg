@@ -11,12 +11,14 @@ let useProxy = false; // Toggle flag to alternate requests per channel
 
 module.exports = {
   site: 'tvguide.com',
-  delay: 100,
+  delay: 3000,
   days: 1,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#');
     const requestDomain = useProxy ? PROXY_URL : 'backend.tvguide.com';
-    const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=1734274800&duration=120&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
+    const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=${date
+      .startOf('d')
+      .unix()}&duration=2400&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
 
     return url;
   },
