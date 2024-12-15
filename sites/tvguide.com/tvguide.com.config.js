@@ -18,6 +18,7 @@ module.exports = {
     const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
       .unix()}&duration=120&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
+    console.log('Channel URL' + url);
 
     return url;
   },
