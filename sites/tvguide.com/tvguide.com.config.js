@@ -33,6 +33,7 @@ module.exports = {
 
     if (items.length > 0) {
       useProxy = !useProxy;
+      console.log('use proxy: ' + useProxy);
     }
     
     for (let item of items) {
