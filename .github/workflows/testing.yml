@@ -6,7 +6,9 @@ on:
 jobs:
   run_script:
     runs-on: ubuntu-latest
-    
+    env:
+      PROXY_URL: ${{ secrets.PROXY_URL }}
+  
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
