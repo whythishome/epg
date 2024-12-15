@@ -16,7 +16,7 @@ module.exports = {
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#');
     const requestDomain = useProxy ? PROXY_URL : 'backend.tvguide.com';
-    const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=1734273000&duration=120&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
+    const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=1734274800&duration=120&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
 
     return url;
   },
@@ -52,16 +52,17 @@ module.exports = {
       const formattedDate = episodeAirDate ? episodeAirDate.toLocaleDateString('en-US', { month: 'numeric', day: 'numeric', year: 'numeric' }) : '';
 
       // Create the new description variable conditionally
-      let newDescription = description;
-      if (seasonNumber && episodeNumber) newDescription += ` S${seasonNumber} E${episodeNumber}.`;
+      let newDescription = '';
       if (episodeTitle) newDescription += ` ${episodeTitle}.`;
-      if (formattedDate) newDescription += ` ${formattedDate}.`;
+      if (seasonNumber && episodeNumber) newDescription += ` S${seasonNumber}E${episodeNumber}.`;
+      newDescription += ` ${details.description}.`;
+      if (formattedDate) newDescription += ` (${formattedDate}).`;
       if (tvRating) newDescription += ` ${tvRating}.`;
       if (firstGenre) newDescription += ` ${firstGenre}`;
       if (secondGenre) newDescription += ` / ${secondGenre}`;
 
       if (details.type == 'movie') {
-        newDescription = description;
+        newDescription = descriptio;
         if (releaseYear) newDescription += ` (${releaseYear}).`;
         if (tvRating) newDescription += ` ${tvRating}.`;
         if (firstGenre) newDescription += ` ${firstGenre}`;
