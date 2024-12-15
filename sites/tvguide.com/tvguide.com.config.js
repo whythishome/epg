@@ -6,16 +6,17 @@ const timezone = require('dayjs/plugin/timezone');
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-const PROXY_URL = process.env.PROXY_URL;
+const PROXY_URL_1 = process.env.PROXY_URL_1;
+const PROXY_URL_2 = process.env.PROXY_URL_2;
 let useProxy = false; // Toggle flag to alternate requests per channel
 
 module.exports = {
   site: 'tvguide.com',
-  delay: 3000,
+  delay: 2000,
   days: 1,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#');
-    const requestDomain = useProxy ? PROXY_URL : 'backend.tvguide.com';
+    const requestDomain = useProxy ? PROXY_URL_1 : PROXY_URL_2;
     const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
       .unix()}&duration=5240&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
@@ -118,8 +119,8 @@ async function loadProgramDetails(item) {
   });
 
   const requestUrl = useProxy
-    ? `${programDetailsUrl.replace('backend.tvguide.com', PROXY_URL)}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc` // Replace domain with proxy and append apiKey
-    : `${programDetailsUrl.replace(PROXY_URL, 'backend.tvguide.com')}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
+    ? `${programDetailsUrl.replace(PROXY_URL_2, PROXY_URL_1)}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc` // Replce domain with proxy and append apiKey
+    : `${programDetailsUrl.replace(PROXY_URL_1, PROXY_URL_2)}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
   
   const data = await axiosInstance
     .get(requestUrl)
