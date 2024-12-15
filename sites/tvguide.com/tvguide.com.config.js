@@ -31,8 +31,10 @@ module.exports = {
     const programs = [];
     const items = parseItems(content);
 
-    // Set proxy toggle based on channel
-    useProxy = !useProxy;
+    if (items.length > 0) {
+      useProxy = !useProxy;
+    }
+    
     for (let item of items) {
       const details = await loadProgramDetails(item); // Fetch details
       programs.push({
