@@ -46,10 +46,12 @@ module.exports = {
       const tvRating = details?.tvRating || '';
       const firstGenre = details?.genres?.[0]?.name || '';
       const secondGenre = details?.genres?.[1]?.name || '';
-      const episodeAirDate = details?.episodeAirDate ? new Date(parseInt(details.episodeAirDate.replace(/\/Date$(\d+)$\//, '\$1'))) : null;
+      // Extract the timestamp and convert it to a Date object
+      const timestamp = episodeAirDate.match(/\/Date\((\d+)\)\//);
+      const airDate = timestamp ? new Date(parseInt(timestamp[1])) : null;
     
       // Format the date if it exists
-      const formattedDate = episodeAirDate ? episodeAirDate.toLocaleDateString('en-US', { month: 'numeric', day: 'numeric', year: 'numeric' }) : '';
+      const formattedDate = airDate ? airDate.toLocaleDateString('en-US', { month: 'numeric', day: 'numeric', year: 'numeric' }) : '';
 
       // Create the new description variable conditionally
       let newDescription = '';
