@@ -62,7 +62,7 @@ module.exports = {
       let newDescription = '';
       if (episodeTitle) newDescription += ` ${episodeTitle} -`;
       if (seasonNumber && episodeNumber) newDescription += ` S${seasonNumber}E${episodeNumber}`;
-      newDescription += `\\r\\n${description}`;
+      newDescription += `&#xD;${description}`;
       if (tvRating) newDescription += ` ${tvRating}`;
       if (firstGenre) newDescription += ` ${firstGenre}`;
       if (secondGenre) newDescription += `/${secondGenre}`;
@@ -70,7 +70,7 @@ module.exports = {
 
       if (details.type == 'movie') {
         newDescription = description;
-        if (tvRating) newDescription += `\\r\\n${tvRating}`;
+        if (tvRating) newDescription += `&#xA;${tvRating}`;
         if (firstGenre) newDescription += ` ${firstGenre}`;
         if (secondGenre) newDescription += `/${secondGenre}`;
         if (releaseYear) newDescription += ` (${releaseYear})`;
