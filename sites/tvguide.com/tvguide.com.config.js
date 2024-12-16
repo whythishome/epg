@@ -61,19 +61,19 @@ module.exports = {
       // Create the new description variable conditionally
       let newDescription = '';
       if (episodeTitle) newDescription += `${episodeTitle}`;
-      if (seasonNumber && episodeNumber) newDescription += ` - S${seasonNumber}E${episodeNumber}`;
-      newDescription += ` \u2022 ${description}`;
-      if (tvRating) newDescription += ` \u2022 ${tvRating}`;
-      if (firstGenre) newDescription += ` \u2022 ${firstGenre}`;
+      if (seasonNumber && episodeNumber) newDescription += ` - S${seasonNumber}E${episodeNumber}.`;
+      newDescription += ` ${description}`;
+      if (tvRating) newDescription += ` ${tvRating}`;
+      if (firstGenre) newDescription += ` ${firstGenre}`;
       if (secondGenre) newDescription += `/${secondGenre}`;
-      if (formattedDate) newDescription += ` \u2022 (${formattedDate})`;
+      if (formattedDate) newDescription += ` (${formattedDate})`;
 
       if (details.type == 'movie') {
         newDescription = description;
-        if (tvRating) newDescription += ` \u2022 ${tvRating}`;
-        if (firstGenre) newDescription += ` \u2022 ${firstGenre}`;
+        if (tvRating) newDescription += ` ${tvRating}`;
+        if (firstGenre) newDescription += ` ${firstGenre}`;
         if (secondGenre) newDescription += `/${secondGenre}`;
-        if (releaseYear) newDescription += ` \u2022 (${releaseYear})`;
+        if (releaseYear) newDescription += ` (${releaseYear})`;
       }
     
       programs.push({
