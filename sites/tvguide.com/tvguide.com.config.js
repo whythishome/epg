@@ -12,7 +12,7 @@ let useProxy = false; // Toggle flag to alternate requests per channel
 
 module.exports = {
   site: 'tvguide.com',
-  delay: 3000,
+  delay: 4000,
   days: 1,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#');
