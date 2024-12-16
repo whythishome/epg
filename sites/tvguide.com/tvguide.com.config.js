@@ -61,8 +61,8 @@ module.exports = {
       // Create the new description variable conditionally
       let newDescription = '';
       if (episodeTitle) newDescription += ` ${episodeTitle} -`;
-      if (seasonNumber && episodeNumber) newDescription += ` S${seasonNumber}E${episodeNumber}.`;
-      newDescription += ` ${description}`;
+      if (seasonNumber && episodeNumber) newDescription += ` S${seasonNumber}E${episodeNumber}`;
+      newDescription += `\n${description}`;
       if (tvRating) newDescription += ` ${tvRating}`;
       if (firstGenre) newDescription += ` ${firstGenre}`;
       if (secondGenre) newDescription += `/${secondGenre}`;
@@ -70,7 +70,7 @@ module.exports = {
 
       if (details.type == 'movie') {
         newDescription = description;
-        if (tvRating) newDescription += ` ${tvRating}`;
+        if (tvRating) newDescription += `\n${tvRating}`;
         if (firstGenre) newDescription += ` ${firstGenre}`;
         if (secondGenre) newDescription += `/${secondGenre}`;
         if (releaseYear) newDescription += ` (${releaseYear})`;
