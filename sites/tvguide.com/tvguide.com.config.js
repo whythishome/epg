@@ -19,7 +19,7 @@ module.exports = {
     const requestDomain = useProxy ? PROXY_URL_1 : PROXY_URL_2;
     const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
-      .unix()}&duration=5240&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
+      .unix()}&duration=7240&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
 
     return url;
   },
