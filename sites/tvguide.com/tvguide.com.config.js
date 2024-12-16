@@ -60,20 +60,20 @@ module.exports = {
 
       // Create the new description variable conditionally
       let newDescription = '';
-      if (episodeTitle) newDescription += ` ${episodeTitle} -`;
-      if (seasonNumber && episodeNumber) newDescription += ` S${seasonNumber}E${episodeNumber}`;
-      newDescription += `&#xD;${description}`;
-      if (tvRating) newDescription += ` setText("\u2022 Bullet"); ${tvRating}`;
-      if (firstGenre) newDescription += ` setText("\u2022 Bullet"); ${firstGenre}`;
+      if (episodeTitle) newDescription += `${episodeTitle}`;
+      if (seasonNumber && episodeNumber) newDescription += ` - S${seasonNumber}E${episodeNumber}`;
+      newDescription += ` \u2022 ${description}`;
+      if (tvRating) newDescription += ` \u2022 ${tvRating}`;
+      if (firstGenre) newDescription += ` \u2022 ${firstGenre}`;
       if (secondGenre) newDescription += `/${secondGenre}`;
-      if (formattedDate) newDescription += ` (${formattedDate})`;
+      if (formattedDate) newDescription += ` \u2022 (${formattedDate})`;
 
       if (details.type == 'movie') {
         newDescription = description;
-        if (tvRating) newDescription += ` setText("\u2022 Bullet") ${tvRating}`;
-        if (firstGenre) newDescription += ` setText("\u2022 Bullet") ${firstGenre}`;
+        if (tvRating) newDescription += ` \u2022 ${tvRating}`;
+        if (firstGenre) newDescription += ` \u2022 ${firstGenre}`;
         if (secondGenre) newDescription += `/${secondGenre}`;
-        if (releaseYear) newDescription += ` (${releaseYear})`;
+        if (releaseYear) newDescription += ` \u2022 (${releaseYear})`;
       }
     
       programs.push({
