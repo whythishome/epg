@@ -2452,4 +2452,5 @@
   <channel site="tvpassport.com" lang="fr" xmltv_id="" site_id="amitele/13775" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s91109_h15_ab.png">US: AMI-télé</channel>
   <channel site="tvpassport.com" lang="hu" xmltv_id="ERTWorld.ca" site_id="ert-world-canada/3419" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s33684_h15_ac.png">CA: ERT World (Canada)</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="MediasetItalia.ca" site_id="mediaset-italia/8436" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s90588_h15_aa.png">CA: Mediaset Italia</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="amc/35317" logo="https://github.com/festy1986/epg/blob/master/logos/amc%20plus.png?raw=true">US: AMC+</channel>
 </channels>
