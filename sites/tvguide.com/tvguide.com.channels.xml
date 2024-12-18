@@ -33,6 +33,8 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012085" logo="https://github.com/festy1986/epg/blob/master/logos/cmt.png?raw=true">US: CMT (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012351" logo="https://github.com/festy1986/epg/blob/master/logos/espn2extra2.png?raw=true">US: ESPN2</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012415" logo="https://github.com/festy1986/epg/blob/master/logos/magnolia%20network.png?raw=true">US: Magnolia Network [East]</channel>
+    <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012415" logo="https://github.com/festy1986/epg/blob/master/logos/magnolia%20network.png?raw=true">US: MAGNOLIA Network</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012415" logo="https://github.com/festy1986/epg/blob/master/logos/magnolia%20network.png?raw=true">US: MAGNOLIA Network</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014573" logo="https://github.com/festy1986/epg/blob/master/logos/disney%20channel.png?raw=true">US: The Disney Channel (West)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014701" logo="https://github.com/festy1986/epg/blob/master/logos/bbc%20america.png?raw=true">US: BBC America (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014754" logo="https://github.com/festy1986/epg/blob/master/logos/mtv.png?raw=true">US: MTV (East)</channel>
@@ -185,4 +187,6 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233011931" logo="https://github.com/festy1986/epg/blob/master/logos/cinemax%205%20starmax.png?raw=true">US: 5StarMax</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233013799" logo="https://github.com/festy1986/epg/blob/master/logos/action%20max.png?raw=true">US: ActionMax (West)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233015766" logo="https://github.com/festy1986/epg/blob/master/logos/moremax.png?raw=true">US: MoreMax</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233001621" logo="https://github.com/festy1986/epg/blob/master/logos/lifetime%20real%20woman.png?raw=true">US: Lifetime Real Women</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005457" logo="https://github.com/festy1986/epg/blob/master/logos/necn.png?raw=true">US: New England Cable News</channel>
 </channels>
