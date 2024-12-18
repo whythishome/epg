@@ -31,7 +31,7 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200010020" logo="https://github.com/festy1986/epg/blob/master/logos/fetv.png?raw=true">US: Family Entertainment</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200011769" logo="https://github.com/festy1986/epg/blob/master/logos/reelz.png?raw=true">US: ReelzChannel</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012085" logo="https://github.com/festy1986/epg/blob/master/logos/cmt.png?raw=true">US: CMT (East)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012351" logo="https://github.com/festy1986/epg/blob/master/logos/espn%202.png?raw=true">US: ESPN2</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012351" logo="https://github.com/festy1986/epg/blob/master/logos/espn2extra2.png?raw=true">US: ESPN2</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012415" logo="https://github.com/festy1986/epg/blob/master/logos/magnolia%20network.png?raw=true">US: Magnolia Network [East]</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014573" logo="https://github.com/festy1986/epg/blob/master/logos/disney%20channel.png?raw=true">US: The Disney Channel (West)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014701" logo="https://github.com/festy1986/epg/blob/master/logos/bbc%20america.png?raw=true">US: BBC America (East)</channel>
@@ -49,7 +49,7 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200019964" logo="https://github.com/festy1986/epg/blob/master/logos/history.png?raw=true">US: The History Channel en Español</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200020452" logo="https://github.com/festy1986/epg/blob/master/logos/lifetime.png?raw=true">US: Lifetime Television (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200020460" logo="https://github.com/festy1986/epg/blob/master/logos/fyi.png?raw=true">US: FYI</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200020464" logo="https://github.com/festy1986/epg/blob/master/logos/pop.png?raw=true">US: Pop (East)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200020464" logo="https://github.com/festy1986/epg/blob/master/logos/poptvextra.png?raw=true">US: Pop (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200020612" logo="https://github.com/festy1986/epg/blob/master/logos/up.png?raw=true">US: UPtv</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233000028" logo="https://github.com/festy1986/epg/blob/master/logos/fuse.png?raw=true">US: Fuse (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233000035" logo="https://github.com/festy1986/epg/blob/master/logos/travel%20channel.png?raw=true">US: Travel Channel (East)</channel>
@@ -81,7 +81,7 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233013857" logo="https://github.com/festy1986/epg/blob/master/logos/discovery%20life.png?raw=true">US: Discovery Life Channel</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233013967" logo="https://github.com/festy1986/epg/blob/master/logos/FXM.png?raw=true">US: FX Movie Channel</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233015768" logo="https://github.com/festy1986/epg/blob/master/logos/american%20heroes.png?raw=true">US: American Heroes Channel</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005931" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200000050.png">US: BET</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005931" logo="https://github.com/festy1986/epg/blob/master/logos/bet.png?raw=true>US: BET</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200000075" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200000162.png">US: C-SPAN 2</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200003760" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200031178.png">US: WGME-DT3 (The Nest) Portland, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004423" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200014771.png">US: WPFO-DT (FOX) Waterville, Maine.</channel>
@@ -95,13 +95,13 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200017556" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200032793.png">US: WPXT-DT3 (ION) Mystery Portland, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200017917" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200011066.png">US: The Tennis Channel</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200018453" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200031068.png">US: WPFO-DT2 (Charge!) Waterville, Maine.</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200020338" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200027616.png">US: WPXT-DT2 (MyNet/Heroes &amp; Icons) Portland, Maine</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200020338" logo="https://github.com/festy1986/epg/blob/master/logos/heroes%20icons.png?raw=true">US: WPXT-DT2 (MyNet/Heroes &amp; Icons) Portland, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012343" logo="https://github.com/festy1986/epg/blob/master/logos/E!.png?raw=true">US: E!</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233000403" logo="https://github.com/festy1986/epg/blob/master/logos/tbs.png?raw=true">US: tbs</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233001666" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200013648.png">US: WGME-DT (CBS) Portland, Maine</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233003676" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200019158.png">US: WGME-DT2 (TBD) Portland, Maine</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233001666" logo="https://github.com/festy1986/epg/blob/master/logos/cbs%20portland.png?raw=true">US: WGME-DT (CBS) Portland, Maine</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233003676" logo="https://github.com/festy1986/epg/blob/master/logos/cbs%20portland.png?raw=true">US: WGME-DT2 (TBD) Portland, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005477" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200011354.png">US: WCBB-DT (PBS) Augusta, Me.</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005684" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200024843.png">US: WIPL-DT (ION) Lewiston, Maine</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005684" logo="https://github.com/festy1986/epg/blob/master/logos/ion.png?raw=true">US: WIPL-DT (ION) Lewiston, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233006796" logo="https://github.com/festy1986/epg/blob/master/logos/nbc%20portland.png?raw=true">US: WCSH-DT (NBC) Portland, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233007144" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200000030.png">US: C-SPAN</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233009689" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200027228.png">US: WCBB-DT3 (World) Augusta, Me.</channel>
@@ -111,8 +111,8 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200002104" logo="https://github.com/festy1986/epg/blob/master/logos/nbcbostonextra.png?raw=true">US: WBTS-CD (NBC) Nashua, N.H.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200014245" logo="https://github.com/festy1986/epg/blob/master/logos/abc%20boston.png?raw=true">US: WCVB-DT (ABC) Boston, Mass.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200008813" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200038899.png">US: WFXT-DT (FOX) Boston, Mass.</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200004386" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200038899.png">US: WLVI-DT (CW) Cambridge, Mass.</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200008811" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200038899.png">US: WBZ-DT (CBS) Boston, Mass.</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200004386" logo="https://github.com/festy1986/epg/blob/master/logos/cw.png?raw=true">US: WLVI-DT (CW) Cambridge, Mass.</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200008811" logo="https://github.com/festy1986/epg/blob/master/logos/cbs%20boston.png?raw=true">US: WBZ-DT (CBS) Boston, Mass.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200006937" logo="https://github.com/festy1986/epg/blob/master/logos/espn.png?raw=true">US: ESPN</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200020665" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200003892.png">US: BET Her</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233002112" logo="https://github.com/festy1986/epg/blob/master/logos/smithsonian%20channel%20extra.png?raw=true">US: Smithsonian</channel>
