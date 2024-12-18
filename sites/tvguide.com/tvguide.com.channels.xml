@@ -36,7 +36,7 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014573" logo="https://github.com/festy1986/epg/blob/master/logos/disney%20channel.png?raw=true">US: The Disney Channel (West)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014701" logo="https://github.com/festy1986/epg/blob/master/logos/bbc%20america.png?raw=true">US: BBC America (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014754" logo="https://github.com/festy1986/epg/blob/master/logos/mtv.png?raw=true">US: MTV (East)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200016034" logo="https://github.com/festy1986/epg/blob/master/logos/hallmark.png?raw=true">US: Hallmark Channel (East)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200016034" logo="https://github.com/festy1986/epg/blob/master/logos/hallmarkextra.png?raw=true">US: Hallmark Channel (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200016601" logo="https://github.com/festy1986/epg/blob/master/logos/hln.png?raw=true">US: HLN</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200017928" logo="https://github.com/festy1986/epg/blob/master/logos/tcm.png?raw=true">US: Turner Classic Movies</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200018188" logo="https://github.com/festy1986/epg/blob/master/logos/we.png?raw=true">US: Women's Entertainment Network (East)</channel>
@@ -73,7 +73,7 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233011240" logo="https://github.com/festy1986/epg/blob/master/logos/ovation.png?raw=true">US: Ovation Arts Network</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233011830" logo="https://github.com/festy1986/epg/blob/master/logos/tnt.png?raw=true">US: TNT (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233011832" logo="https://github.com/festy1986/epg/blob/master/logos/amc.png?raw=true">US: AMC (East)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233012938" logo="https://github.com/festy1986/epg/blob/master/logos/hallmark%20family.png?raw=true">US: Hallmark Family HDTV</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233012938" logo="https://github.com/festy1986/epg/blob/master/logos/hallmark%20family%20extra.png?raw=true">US: Hallmark Family HDTV</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233013235" logo="https://github.com/festy1986/epg/blob/master/logos/cbs%20sports%20network.png?raw=true">US: CBS Sports Network</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233013810" logo="https://github.com/festy1986/epg/blob/master/logos/paramount1.png?raw=true">US: Paramount Network (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233013812" logo="https://github.com/festy1986/epg/blob/master/logos/cnn.png?raw=true">US: Cable News Network</channel>
