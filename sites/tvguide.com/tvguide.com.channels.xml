@@ -159,20 +159,20 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233011247" logo="https://github.com/festy1986/epg/blob/master/logos/starz%20edge.png?raw=true">US: STARZ Edge</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233013809" logo="https://github.com/festy1986/epg/blob/master/logos/starz.png?raw=true">US: STARZ</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233015714" logo="https://github.com/festy1986/epg/blob/master/logos/starz%20black.png?raw=true">US: STARZ InBlack (West)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200000854" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200004172.png">US: SHOWTIME EXTREME (West)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200000968" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200005036.png">US: SHOWTIME FAMILY ZONE</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200002670" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200004170.png">US: SHOWTIME 2 (West)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200002975" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200005038.png">US: SHOWTIME WOMEN</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004693" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200005071.png">US: SHOWTIME SHOWCASE (West)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004879" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200004090.png">US: SHOWTIME EXTREME</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012474" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200005072.png">US: SHOWTIME FAMILY ZONE (West)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200016599" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200005446.png">US: Paramount+ with Showtime</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200016686" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200005037.png">US: SHOWTIME NEXT</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200018178" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200004016.png">US: SHOWTIME 2</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233003805" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200004267.png">US: SHOWTIME SHOWCASE</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005988" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200005073.png">US: SHOWTIME NEXT (West)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233009930" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200005074.png">US: SHOWTIME WOMEN (West)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233015599" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200004169.png">US: Paramount+ with Showtime (West)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200000854" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20extreme.png?raw=true">US: SHOWTIME EXTREME (West)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200000968" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20family%20zone.png?raw=true">US: SHOWTIME FAMILY ZONE</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200002670" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%202.png?raw=true">US: SHOWTIME 2 (West)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200002975" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20woman.png?raw=true">US: SHOWTIME WOMEN</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004693" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20showcase.png?raw=true">US: SHOWTIME SHOWCASE (West)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004879" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20extreme.png?raw=true">US: SHOWTIME EXTREME</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200012474" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20family%20zone.png?raw=true">US: SHOWTIME FAMILY ZONE (West)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200016599" logo="https://github.com/festy1986/epg/blob/master/logos/showtime.png?raw=true">US: Paramount+ with Showtime</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200016686" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20next.png?raw=true">US: SHOWTIME NEXT</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200018178" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%202.png?raw=true">US: SHOWTIME 2</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233003805" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20showcase.png?raw=true">US: SHOWTIME SHOWCASE</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005988" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20next.png?raw=true">US: SHOWTIME NEXT (West)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233009930" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20woman.png?raw=true">US: SHOWTIME WOMEN (West)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233015599" logo="https://github.com/festy1986/epg/blob/master/logos/showtime.png?raw=true">US: Paramount+ with Showtime (West)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233017018" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20bet.png?raw=true">US: SHOxBET</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200022063" logo="https://github.com/festy1986/epg/blob/master/logos/showtime%20bet.png?raw=true">US: SHOxBET (West)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200000856" logo="https://github.com/festy1986/epg/blob/master/logos/cinemax%20thrillermax.png?raw=true">US: ThrillerMax</channel>
