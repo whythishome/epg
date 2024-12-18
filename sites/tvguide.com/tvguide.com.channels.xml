@@ -10,9 +10,9 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200002886" logo="https://github.com/festy1986/epg/blob/master/logos/bravo.png?raw=true">US: Bravo (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200002987" logo="https://github.com/festy1986/epg/blob/master/logos/axs.png?raw=true">US: AXSTV HD</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004290" logo="https://github.com/festy1986/epg/blob/master/logos/discovery%20family.png?raw=true">US: Discovery Family Channel SDTV</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004303" logo="https://github.com/festy1986/epg/blob/master/logos/ifc.png?raw=true">US: IFC (East)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004303" logo="https://github.com/festy1986/epg/blob/master/logos/ifcextra.png?raw=true">US: IFC (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004312" logo="https://github.com/festy1986/epg/blob/master/logos/nesn.png?raw=true">US: New England Sports Network</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004316" logo="https://github.com/festy1986/epg/blob/master/logos/syfy2.png?raw=true">US: Syfy (East)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004316" logo="https://github.com/festy1986/epg/blob/master/logos/syfy.png?raw=true">US: Syfy (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004330" logo="https://github.com/festy1986/epg/blob/master/logos/nfl%20network.png?raw=true">US: The NFL Network</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004683" logo="https://github.com/festy1986/epg/blob/master/logos/nat%20geo%20wild.png?raw=true">US: NatGeo WILD</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004889" logo="https://github.com/festy1986/epg/blob/master/logos/aeextra.png?raw=true">US: A&amp;E Network (East)</channel>
@@ -56,7 +56,7 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233000037" logo="https://github.com/festy1986/epg/blob/master/logos/vh%201.png?raw=trueg">US: VH1 (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233000410" logo="https://github.com/festy1986/epg/blob/master/logos/fox%20news.png?raw=true">US: Fox News Channel (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233002242" logo="https://github.com/festy1986/epg/blob/master/logos/viceland.png?raw=true">US: VICE</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233002310" logo="https://github.com/festy1986/epg/blob/master/logos/nat%20geo.png?raw=true">US: National Geographic Channel</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233002310" logo="https://github.com/festy1986/epg/blob/master/logos/national%20geographic.png?raw=true">US: National Geographic Channel</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233003538" logo="https://github.com/festy1986/epg/blob/master/logos/outdoor%20channel.png?raw=true">US: Outdoor Channel</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233004102" logo="https://github.com/festy1986/epg/blob/master/logos/discovery.png?raw=true">US: The Discovery Channel (East)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233004106" logo="https://github.com/festy1986/epg/blob/master/logos/usa%20network.png?raw=true">US: USA Network (East)</channel>
@@ -92,7 +92,7 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014312" logo="https://github.com/festy1986/epg/blob/master/logos/abc%20portland.png?raw=true">US: WMTW-DT (ABC) Poland Spring, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014885" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200011357.png">US: WCBB-DT4 (PBS Kids 24/7) Augusta, Me.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200016252" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200026834.png">US: WMTW-DT2 (MeTV) Poland Spring, Maine</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200017556" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200032793.png">US: WPXT-DT3 (ION) Mystery Portland, Maine</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200017556" logo="https://github.com/festy1986/epg/blob/master/logos/ionmysteryextra.png?raw=true">US: WPXT-DT3 (ION) Mystery Portland, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200017917" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200011066.png">US: The Tennis Channel</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200018453" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200031068.png">US: WPFO-DT2 (Charge!) Waterville, Maine.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200020338" logo="https://github.com/festy1986/epg/blob/master/logos/heroes%20icons.png?raw=true">US: WPXT-DT2 (MyNet/Heroes &amp; Icons) Portland, Maine</channel>
@@ -119,16 +119,16 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004927" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200011005.png">US: BBC News</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233013351" logo="https://github.com/festy1986/epg/blob/master/logos/hallmark%20mystery.png?raw=true">US: Hallmark Mystery</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233003673" logo="https://github.com/festy1986/epg/blob/master/logos/crime%20%20investigation.png?raw=true">US: Crime &amp; Investigation Network</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200000652" logo="https://github.com/festy1986/epg/blob/master/logos/hbo%20west.png?raw=true">US: HBO (West)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200000652" logo="https://github.com/festy1986/epg/blob/master/logos/hboextra.png?raw=true">US: HBO (West)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004595" logo="https://github.com/festy1986/epg/blob/master/logos/hbo%20family.png?raw=true">US: HBO Family</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004886" logo="https://github.com/festy1986/epg/blob/master/logos/hbo.png?raw=true">US: HBO</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004886" logo="https://github.com/festy1986/epg/blob/master/logos/hboextra.png?raw=true">US: HBO</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200006981" logo="https://github.com/festy1986/epg/blob/master/logos/hbo%20comedy.png?raw=true">US: HBO Comedy</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200009688" logo="https://github.com/festy1986/epg/blob/master/logos/hbo%20comedy.png?raw=true">US: HBO Comedy (West)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200009764" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200004886.png">US: HBO Latino</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200016631" logo="https://github.com/festy1986/epg/blob/master/logos/hbo%20zone.png?raw=true">US: HBO Zone (West)</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233000263" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200004163.png">US: HBO Signature (West)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233000263" logo="https://github.com/festy1986/epg/blob/master/logos/hbosignatureextra.png?raw=true">US: HBO Signature (West)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233003524" logo="https://github.com/festy1986/epg/blob/master/logos/hbo%202.png?raw=true">US: HBO 2</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233008160" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200000139.png">US: HBO Signature</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233008160" logo="https://github.com/festy1986/epg/blob/master/logos/hbosignatureextra.png?raw=true">US: HBO Signature</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233009866" logo="https://github.com/festy1986/epg/blob/master/logos/hbo%20zone.png?raw=true">US: HBO Zone</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233009922" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200004887.png">US: HBO Latino (West)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233011639" logo="https://github.com/festy1986/epg/blob/master/logos/hbo%20family.png?raw=true">US: HBO Family (West)</channel>
