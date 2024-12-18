@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <channels>
   <channel site="tvpassport.com" lang="en" xmltv_id="WBTSCD1.us" site_id="nbc-wbts-ld-boston-ma-hd/30964" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s10991_h15_ad.png">US: NBC (WBTS-CD) Nashua, NH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="amc/35317" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s114759_h15_aa.png">US: AMC+</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="WBTSCD1.us" site_id="nbc-wbts-ld-boston-ma/30951" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s10991_h15_ad.png">US: NBC (WBTS-CD) Nashua, NH</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cozi-wbts3-boston-ma/30963" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s78851_h15_ab.png">US: Cozi TV (WBTS-CD2) Nashua, NH</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="WCVBDT2.us" site_id="metv-wcvb-dt2-boston/10773" logo="https://cdn.tvpassport.com/image/station/512x512/v2/s70436_h15_ab.png">US: Metv (WCVB-DT2) Boston</channel>
