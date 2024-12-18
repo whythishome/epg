@@ -85,11 +85,11 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200000075" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200000162.png">US: C-SPAN 2</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200003760" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200031178.png">US: WGME-DT3 (The Nest) Portland, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004423" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200014771.png">US: WPFO-DT (FOX) Waterville, Maine.</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200005724" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200031046.png">US: WPFO-DT3 (Comet) Waterville, Maine.</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200005724" logo="https://github.com/festy1986/epg/blob/master/logos/comet.png?raw=true">US: WPFO-DT3 (Comet) Waterville, Maine.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200006484" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200023750.png">US: WPXT-DT (CW) Portland, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200009047" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200023699.png">US: WCSH-DT2 (True Crime Network) Portland, Maine (True Crime Network)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200013537" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200030957.png">US: WCSH-DT3 (Quest) Portland, Maine</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014312" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200012837.png">US: WMTW-DT (ABC) Poland Spring, Maine</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014312" logo="https://github.com/festy1986/epg/blob/master/logos/abc%20portland.png?raw=true">US: WMTW-DT (ABC) Poland Spring, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200014885" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200011357.png">US: WCBB-DT4 (PBS Kids 24/7) Augusta, Me.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200016252" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200026834.png">US: WMTW-DT2 (MeTV) Poland Spring, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200017556" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200032793.png">US: WPXT-DT3 (ION) Mystery Portland, Maine</channel>
@@ -102,14 +102,14 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233003676" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200019158.png">US: WGME-DT2 (TBD) Portland, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005477" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200011354.png">US: WCBB-DT (PBS) Augusta, Me.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005684" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200024843.png">US: WIPL-DT (ION) Lewiston, Maine</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233006796" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200013617.png">US: WCSH-DT (NBC) Portland, Maine</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233006796" logo="https://github.com/festy1986/epg/blob/master/logos/nbc%20portland.png?raw=true">US: WCSH-DT (NBC) Portland, Maine</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233007144" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200000030.png">US: C-SPAN</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233009689" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200027228.png">US: WCBB-DT3 (World) Augusta, Me.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233015238" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200025598.png">US: WCBB-DT2 (Create) Augusta, Me.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233015433" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200013630.png">US: WENH-DT (PBS) Durham, N.H.</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9266073627" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200038899.png">US: WMTW-DT3 (Laff) Poland Spring, Maine</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200002104" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200038899.png">US: WBTS-CD (NBC) Nashua, N.H.</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200014245" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200038899.png">US: WCVB-DT (ABC) Boston, Mass.</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9266073627" logo="https://github.com/festy1986/epg/blob/master/logos/laffextra.png?raw=true">US: WMTW-DT3 (Laff) Poland Spring, Maine</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200002104" logo="https://github.com/festy1986/epg/blob/master/logos/nbcbostonextra.png?raw=true">US: WBTS-CD (NBC) Nashua, N.H.</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200014245" logo="https://github.com/festy1986/epg/blob/master/logos/abc%20boston.png?raw=true">US: WCVB-DT (ABC) Boston, Mass.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200008813" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200038899.png">US: WFXT-DT (FOX) Boston, Mass.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200004386" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200038899.png">US: WLVI-DT (CW) Cambridge, Mass.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200008811" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200038899.png">US: WBZ-DT (CBS) Boston, Mass.</channel>
