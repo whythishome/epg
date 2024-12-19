@@ -110,8 +110,8 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233015238" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200025598.png">US: WCBB-DT2 (Create) Augusta, Me.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233015433" logo="https://www.tvguide.com/a/img/catalog/provider/8/4/8-9200013630.png">US: WENH-DT (PBS) Durham, N.H.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9266073627" logo="https://github.com/festy1986/epg/blob/master/logos/laffextra.png?raw=true">US: WMTW-DT3 (Laff) Poland Spring, Maine</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200002104" logo="https://github.com/festy1986/epg/blob/master/logos/nbcextra.png?raw=true">US: WBTS-CD (NBC) Nashua, N.H.</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200014245" logo="https://github.com/festy1986/epg/blob/master/logos/abc%20.png?raw=true">US: WCVB-DT (ABC) Boston, Mass.</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200002104" logo="https://github.com/festy1986/epg/blob/master/logos/nbcbostonextra.png?raw=true">US: WBTS-CD (NBC) Nashua, N.H.</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200014245" logo="https://github.com/festy1986/epg/blob/master/logos/abc%20boston.png?raw=true">US: WCVB-DT (ABC) Boston, Mass.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200008813" logo="https://github.com/festy1986/epg/blob/master/logos/foxbostonextra.png?raw=true">US: WFXT-DT (FOX) Boston, Mass.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200004386" logo="https://github.com/festy1986/epg/blob/master/logos/cw.png?raw=true">US: WLVI-DT (CW) Cambridge, Mass.</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9133002850#9200008811" logo="https://github.com/festy1986/epg/blob/master/logos/cbs%20boston.png?raw=true">US: WBZ-DT (CBS) Boston, Mass.</channel>
@@ -194,4 +194,5 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233004104" logo="https://github.com/festy1986/epg/blob/master/logos/hgtv.png?raw=true">US: HGTV</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233004104" logo="https://github.com/festy1986/epg/blob/master/logos/hgtv.png?raw=true">US: HGTV</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002825#9233013354" logo="https://github.com/festy1986/epg/blob/master/logos/logo.png?raw=true">US: LOGO (East)</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002825#9233005909" logo="https://github.com/festy1986/epg/blob/master/logos/nbc%20sports%20boston.png?raw=true">US: NBC Sports Boston</channel>
 </channels>
