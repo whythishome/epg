@@ -189,4 +189,5 @@
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233005457" logo="https://github.com/festy1986/epg/blob/master/logos/necn.png?raw=true">US: New England Cable News</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9200004848" logo="https://github.com/festy1986/epg/blob/master/logos/cartoon%20network.png?raw=true">US: Cartoon Network</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002976#9233004104" logo="https://github.com/festy1986/epg/blob/master/logos/hgtv.png?raw=true">US: HGTV</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002825#9233013354" logo="https://github.com/festy1986/epg/blob/master/logos/logo.png?raw=true">US: LOGO (East)</channel</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9100002825#9233013354" logo="https://github.com/festy1986/epg/blob/master/logos/logo.png?raw=true">US: LOGO (East)</channel>
+</channels>
