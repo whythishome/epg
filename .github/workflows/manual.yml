@@ -43,7 +43,7 @@ jobs:
           npm run grab -- --channels=sites/sports/au.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/au.xml
           npm run grab -- --site=player.ee.co.uk --maxConnections=10 --gzip --output=guides/player.ee.co.uk.xml
           npm run grab -- --site=fixturecalendar.com --gzip --output=guides/sports/fixturecalendar.com.xml
-          npm run grab -- --site=tvguide.com --gzip --maxConnections=5 --output=guides/tvguide.com.xml
+          npm run grab -- --site=tvguide.com --gzip --maxConnections=2 --output=guides/tvguide.com.xml
           
     - name: Commit changes
       run: |
