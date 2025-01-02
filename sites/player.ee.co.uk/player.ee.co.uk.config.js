@@ -52,7 +52,7 @@ module.exports = {
           programs.push({
             title: item.title,
             description,
-            icon: item.id ? `https://images-live.youview.tv/images/entity/${item.id}/primary/1_512x288.jpg` : null
+            icon: item.id ? `https://images-live.youview.tv/images/entity/${item.id}/primary/1_512x288.jpg` : null,
             season,
             episode,
             start,
