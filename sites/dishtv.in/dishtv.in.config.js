@@ -59,11 +59,12 @@ module.exports = {
       const body = {
         pageNum: i + 1
       }
+      console.log(body);
       const data = await axios
         .post(url, body, params)
         .then(r => r.data)
         .catch(console.log)
-  
+      console.log(data);
       data.programDetailsByChannel.forEach(channel => {
         if (channel.channelname === '.') return
         channels.push({
