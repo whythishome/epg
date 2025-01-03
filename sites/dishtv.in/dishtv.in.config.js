@@ -51,11 +51,10 @@ module.exports = {
   async channels() {
     let channels = []
     const url = 'https://www.dishtv.in/services/epg/channels'
-    const params = {
-      headers: await setHeaders()
-    }
     const pages = await fetchPages()
-  
+    const params = {
+      headers: await setChannelHeaders()
+    }
     for (let i = 0; i < Number(pages); i++) {
       const body = {
         pageNum: i + 1
@@ -101,7 +100,7 @@ async function fetchPages() {
     pageNum: 1,
   }
   const params = {
-    headers: await setHeaders()
+    headers: await setChannelHeaders()
   }
   const data = await axios
     .post(url, body, params)
@@ -161,3 +160,16 @@ function setHeaders() {
   }
 }
 
+function setChannelHeaders() {
+  if (!TOKEN) {
+    return fetchToken().then(() => {
+      return {
+        'authorization-token': TOKEN
+      }
+    })
+  } else {
+    return {
+      'authorization-token': TOKEN
+    }
+  }
+}
