@@ -1,457 +1,457 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="135691" logo="">MBC TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="140066" logo="">Movies Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="140067" logo="">Indradhanu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142510" logo="">Aakash Aath</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142630" logo="">Alankar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142635" logo="">&amp;flix</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142636" logo="">&amp;flix HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142639" logo="">&amp;prive HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142683" logo="">Assam Talks</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142697" logo="">Balle Balle</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142713" logo="">Bhojpuri Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142725" logo="">Calcutta News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142736" logo="">Chardikla Time TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142748" logo="">Colors Bangla Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142751" logo="">Colors Gujarati Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142754" logo="">CTVN AKD Plus</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142776" logo="">DD Arun Prabha</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142777" logo="">DD Assam</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142783" logo="">DD GOA</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142784" logo="">DD Haryana</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142788" logo="">DD Kashir</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142792" logo="">DD Manipur</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142793" logo="">DD MEGHALAYA</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142794" logo="">DD MIZORAM</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142795" logo="">DD NAGALAND</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142796" logo="">DD Oriya</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142800" logo="">DD Punjabi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142803" logo="">DD Sahyadri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142810" logo="">DD Yadagiri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142881" logo="">Goldmines Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142882" logo="">Dhoom Music</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142892" logo="">Ayushmaan Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142893" logo="">Dish Bhakti Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142894" logo="">Dish Buzz</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142895" logo="">BUZZ 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142896" logo="">DISH BUZZ HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142897" logo="">Dish Cine Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142898" logo="">Comedy Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142899" logo="">Dish Cooking Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142902" logo="">Dish Fitness Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142911" logo="">Dish Kids Rhymes</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142912" logo="">Dish Kids Toon</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142913" logo="">KOREAN DRAMA ACTIVE</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142915" logo="">DishTV Music Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142918" logo="">Rangmanch Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142920" logo="">Songdew</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142926" logo="">Dish TV Evergreen Classic</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142964" logo="">Hits Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142986" logo="">Zindagi Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="135691" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/dEpknfQd.png">MBC TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="140066" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/gAAdpLjc.png">Movies Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="140067" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/T8YyJMyf.png">Indradhanu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142510" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/SqqSkBNx.png">Aakash Aath</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142630" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/jbu6pZvy.png">Alankar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142635" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/vHhAK4AN.png">&amp;flix</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142636" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/qA6wyYN3.png">&amp;flix HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142639" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/D3l5gEdI.png">&amp;prive HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142683" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/U7rtyvrW.png">Assam Talks</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142697" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/EE34xNQx.png">Balle Balle</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142713" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/MYsMH2Ln.png">Bhojpuri Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142725" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FUeDo199.png">Calcutta News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142736" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/TpiCYvsB.png">Chardikla Time TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142748" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7rM16ZwV.png">Colors Bangla Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142751" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/lXIcfESx.png">Colors Gujarati Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142754" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/OrVgC6Qi.png">CTVN AKD Plus</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142776" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/opRPhW9R.png">DD Arun Prabha</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142777" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/NfwePvqm.png">DD Assam</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142783" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/A1QXkc2q.png">DD GOA</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142784" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/aMShUuiJ.png">DD Haryana</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142788" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/qh9nKOx1.png">DD Kashir</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142792" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/WAbnczmn.png">DD Manipur</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142793" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/TyolYBrs.png">DD MEGHALAYA</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142794" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Ngqpg7ET.png">DD MIZORAM</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142795" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/KVs6gJc8.png">DD NAGALAND</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142796" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/URK3Kcio.png">DD Oriya</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142800" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/71lLHli7.png">DD Punjabi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142803" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/acUbfNIB.png">DD Sahyadri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142810" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/apa7UMVx.png">DD Yadagiri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142881" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7eCbCXa8.png">Goldmines Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142882" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/m7ZrH52c.png">Dhoom Music</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142892" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ol6h76kD.png">Ayushmaan Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142893" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7yTfpYug.png">Dish Bhakti Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142894" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/P9xnDJQR.png">Dish Buzz</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142895" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/CpPQ86Q8.png">BUZZ 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142896" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/mlMStroj.png">DISH BUZZ HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142897" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/fzb5R7s4.png">Dish Cine Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142898" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/fJNXRnAO.png">Comedy Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142899" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ufIboKp1.png">Dish Cooking Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142902" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/q6kGZgkd.png">Dish Fitness Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142911" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7M4bSY9z.png">Dish Kids Rhymes</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142912" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/qcTP89jI.png">Dish Kids Toon</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142913" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/NAlr2uh6.png">KOREAN DRAMA ACTIVE</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142915" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/iDePlm8G.png">DishTV Music Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142918" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/U6icapF2.png">Rangmanch Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142920" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Rv5ijEBQ.png">Songdew</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142926" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/c2OaIZ71.png">Dish TV Evergreen Classic</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142964" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/bsML1iNn.png">Hits Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142986" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/DQi7s4cd.png">Zindagi Active</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142988" logo="">Zing+</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143015" logo="">DY365</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143018" logo="">Enterr10 Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143037" logo="">Ez Mall</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143038" logo="">Fakt Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143089" logo="">Goldmines Bollywood</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143238" logo="">Jonack</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143250" logo="">Kalinga TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143252" logo="">Kanak News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143265" logo="">Khushboo Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143271" logo="">Kolkata TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143284" logo="">LOKSHAHI MARATHI</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143295" logo="">Maiboli</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143303" logo="">Manoranjan Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143539" logo="">MH1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143548" logo="">MN+</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143569" logo="">Nandighosha TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143578" logo="">News7</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143584" logo="">Nepal 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143595" logo="">News Live</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143602" logo="">News Time Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143620" logo="">Prarthana Life</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143624" logo="">NewsX</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143630" logo="">NKTV Plus</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143639" logo="">OTV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143650" logo="">Pitaara</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143671" logo="">Prag News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143674" logo="">Pratidin Time</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143675" logo="">Pravah Picture</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143676" logo="">Pravah Picture HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143691" logo="">PUNJABI HITS</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143717" logo="">Ramdhenu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143718" logo="">Rang</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143722" logo="">Rengoni TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143729" logo="">Romedy Now</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143735" logo="">Saam TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143742" logo="">SAILEELA TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143755" logo="">Sandesh News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143763" logo="">Santvani TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143777" logo="">Shemaroo Marathibana</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143806" logo="">Spondon</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143809" logo="">Sports18 Khel</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143816" logo="">Star Gold Select</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143926" logo="">Tarang Music</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143927" logo="">Tarang</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144026" logo="">TV9 Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144027" logo="">TV9 Bharatvarsh</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144028" logo="">TV9 Gujarati</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144083" logo="">VTV Gujarati</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144440" logo="">Zee Cafe</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144442" logo="">ZEE Chitramandir</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144460" logo="">Zee News+</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144464" logo="">Zee Punjabi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144467" logo="">Zee Sarthak</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="154892" logo="">Manoranjan Prime</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="157960" logo="">Shorts TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158140" logo="">Animal Planet HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158297" logo="">Star Gold 2 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158301" logo="">Hollywood Indie Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158370" logo="">VAS Promos1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158796" logo="">NB News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158825" logo="">India Daily Live</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158865" logo="">Daily Post- Punjab Haryana Himachal</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158889" logo="">Bollywood Hungama Active</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159011" logo="">Discovery Kids</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159339" logo="">DISH BUZZ HD Duplicate</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159340" logo="">DISH BUZZ HD Duplicate1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159389" logo="">EZ MALL#2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159390" logo="">EZ MALL#3</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159391" logo="">Buzz SD Duplicate</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159392" logo="">Buzz SD Duplicate 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159413" logo="">EZMALL.COM DUPLICATE3</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="160751" logo="">Sun Neo</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143015" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/lxKJGweV.png">DY365</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143018" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/dmkaLVPw.png">Enterr10 Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143037" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ZRhr2Pdc.png">Ez Mall</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143038" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FajRZsSN.png">Fakt Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143089" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/aewkdICN.png">Goldmines Bollywood</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143238" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ay6ozrWl.png">Jonack</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143250" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/yEo8wkhu.png">Kalinga TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143252" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/5fKY8c22.png">Kanak News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143265" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/H17idSiU.png">Khushboo Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143271" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ywj7c4kt.png">Kolkata TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143284" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/McxPGOZE.png">LOKSHAHI MARATHI</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143295" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/K5WmgDEG.png">Maiboli</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143303" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/8dei9BWL.png">Manoranjan Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143539" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/6QpYADJg.png">MH1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143548" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Z29kBEEo.png">MN+</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143569" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ziuEgFEx.png">Nandighosha TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143578" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FSkWYdOU.png">News7</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143584" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/k3damPFH.png">Nepal 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143595" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/te1WPSCp.png">News Live</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143602" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FnmKf4CC.png">News Time Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143620" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/cgqiAJhT.png">Prarthana Life</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143624" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/eKDb1Cxw.png">NewsX</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143630" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/v9NGKRk2.png">NKTV Plus</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143639" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/E6bllK1A.png">OTV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143650" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/dHXiSNK7.png">Pitaara</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143671" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ieaXH4tt.png">Prag News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143674" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/wi5DZBm5.png">Pratidin Time</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143675" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/G9kxOtZj.png">Pravah Picture</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143676" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/cFeYJqxF.png">Pravah Picture HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143691" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/VfxoChmv.png">PUNJABI HITS</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143717" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/xz8VDnmA.png">Ramdhenu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143718" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Xo6wM4rP.png">Rang</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143722" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/nqQybADF.png">Rengoni TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143729" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/XwN3paFv.png">Romedy Now</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143735" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/y2YpLx5q.png">Saam TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143742" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/zHuzr83s.png">SAILEELA TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143755" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Ghz9G7Mg.png">Sandesh News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143763" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/aN2ampKB.png">Santvani TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143777" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/BuF8lWUE.png">Shemaroo Marathibana</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143806" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/xfnMAtjB.png">Spondon</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143809" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Wko7nm9h.png">Sports18 Khel</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143816" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/giUy5t13.png">Star Gold Select</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143926" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Vaatng7B.png">Tarang Music</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143927" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ABnxdCW7.png">Tarang</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144026" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/nxt3Wfve.png">TV9 Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144027" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/sThtiQuR.png">TV9 Bharatvarsh</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144028" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7sFQre55.png">TV9 Gujarati</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144083" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/R2ZQVkNy.png">VTV Gujarati</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144440" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ZclWbeYF.png">Zee Cafe</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144442" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/xSpy5cJl.png">ZEE Chitramandir</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144460" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/QsY3JVyY.png">Zee News+</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144464" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/xOMCOOlV.png">Zee Punjabi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="144467" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/PXppNR3P.png">Zee Sarthak</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="154892" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/scA3wwVO.png">Manoranjan Prime</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="157960" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/1oQAHyaE.png">Shorts TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158140" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/I4SGkIgK.png">Animal Planet HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158297" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Ipooj3O5.png">Star Gold 2 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158301" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/gHDrdqEb.png">Hollywood Indie Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158370" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/IhEuY4ZF.png">VAS Promos1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158796" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/jDPmMaJA.png">NB News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158825" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/kqNSp7q9.png">India Daily Live</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158865" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/v7llVJwp.png">Daily Post- Punjab Haryana Himachal</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158889" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Q1tgFvkU.png">Bollywood Hungama Active</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159011" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/6glabJDV.png">Discovery Kids</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159339" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ZAo2YJJW.png">DISH BUZZ HD Duplicate</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159340" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/delJptoo.png">DISH BUZZ HD Duplicate1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159389" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/WlPjVraV.png">EZ MALL#2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159390" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/1LcekIQn.png">EZ MALL#3</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159391" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/uIiIYzih.png">Buzz SD Duplicate</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159392" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/eEQbBdOg.png">Buzz SD Duplicate 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="159413" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/uqdVF29A.png">EZMALL.COM DUPLICATE3</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="160751" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/arJj9YKw.png">Sun Neo</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="169137" logo="">Active Services</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000080000" logo="">STAR PLUS</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000100000" logo="">Star Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000110000" logo="">Star Gold</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000130000" logo="">Star Utsav</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000160000" logo="">Star Life</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000170000" logo="">National Geographic Channel</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000180000" logo="">ABP News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000190000" logo="">Star Sports 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000200000" logo="">Zee TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000210000" logo="">Zee Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000220000" logo="">Zee Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000240000" logo="">Sony Sports Ten 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000250000" logo="">Zee Telugu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000280000" logo="">Zee Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000310000" logo="">Discovery Channel</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000320000" logo="">Animal Planet</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000330000" logo="">TLC</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000340000" logo="">Disney Channel</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000350000" logo="">Super Hungama</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000360000" logo="">ETV Telugu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000380000" logo="">Colors Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000390000" logo="">Colors Gujarati</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000410000" logo="">News18 Bihar Jharkhand</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000420000" logo="">News18 Madhya Pradesh Chhattisgarh</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000430000" logo="">Colors Odia</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000440000" logo="">News18 Jammu Kashmir Ladakh Himachal Haryana</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000450000" logo="">NEWS18 RAJASTHAN</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000460000" logo="">Colors Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000470000" logo="">News18 Uttar Pradesh Uttarakhand</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000480000" logo="">MTV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000490000" logo="">NDTV India</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000500000" logo="">NDTV 24x7</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000520000" logo="">SET</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000540000" logo="">SONY MAX</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000550000" logo="">Sony Pix</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000560000" logo="">Sony SAB</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000570000" logo="">Sun TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000580000" logo="">Gemini TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000620000" logo="">Sony Sports Ten 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000690000" logo="">Zoom</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000710000" logo="">CNBC TV18</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000720000" logo="">Aaj Tak</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000730000" logo="">B4U Music</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000740000" logo="">B4U Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000750000" logo="">BBC News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000760000" logo="">Cartoon Network</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000770000" logo="">CNN International</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000780000" logo="">CNN-News18</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000810000" logo="">INDIA TODAY</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000860000" logo="">Pogo</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000870000" logo="">Times Now</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000890000" logo="">CNBC-Awaaz</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000910000" logo="">India TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000930000" logo="">Zee News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000950000" logo="">Vh1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000960000" logo="">Action Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000970000" logo="">Zing</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000980000" logo="">DD National</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001000000" logo="">Zee Kannada</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001010000" logo="">Nick</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001020000" logo="">Zee Classic</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001140000" logo="">Zee Business</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001160000" logo="">Sanskar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001180000" logo="">News18 India</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001220000" logo="">Star Maa</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001330000" logo="">Sadhna TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001380000" logo="">Sangeet Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001390000" logo="">Aastha</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001500000" logo="">Zee Punjab Haryana Himachal</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001690000" logo="">Hungama</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001780000" logo="">DD Bharati</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001800000" logo="">DD India</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001820000" logo="">DD News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001950000" logo="">ABP Ananda</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002020000" logo="">ABP Majha</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002040000" logo="">Music India</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002130000" logo="">Dangal 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002220000" logo="">Zee 24 Taas</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002490000" logo="">Zee 24 Ghanta</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002500000" logo="">DD TAMIL</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002520000" logo="">DD Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002540000" logo="">DD Girnar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002550000" logo="">DD Chandana</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002570000" logo="">DD Rajasthan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002610000" logo="">DD Malayalam</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002650000" logo="">Star Sports 1 Hindi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002670000" logo="">PTC News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002710000" logo="">Bindass</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002750000" logo="">Sansad TV 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002760000" logo="">Zee Talkies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002810000" logo="">DD Bihar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002850000" logo="">Sansad TV 2 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002860000" logo="">DD Saptagiri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002900000" logo="">DD UP</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002910000" logo="">DD Urdu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003060000" logo="">9XM</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003080000" logo="">Gyandarshan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003130000" logo="">Discovery Science</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003290000" logo="">Sudarshan News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003440000" logo="">News24</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003490000" logo="">RT</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003720000" logo="">Satsang</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003830000" logo="">News18 Lokmat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004170000" logo="">Colors</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004250000" logo="">PTC Punjabi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004320000" logo="">Sangeet Bhojpuri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004370000" logo="">Star Jalsha</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004380000" logo="">B4U Bhojpuri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004390000" logo="">Sony AATH</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004490000" logo="">Manoranjan TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004700000" logo="">Star Pravah</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004750000" logo="">Divya</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004930000" logo="">TV9 Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005190000" logo="">IBC24</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005240000" logo="">ET Now</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005300000" logo="">PTC Chakde</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005490000" logo="">Aastha Bhajan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005520000" logo="">Zee Bharat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005680000" logo="">Nat Geo Wild</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005690000" logo="">Rupasi Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005700000" logo="">Discovery Turbo</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005780000" logo="">National Geographic Channel HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005820000" logo="">Salaam TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005870000" logo="">Star Sports 2 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005890000" logo="">Mastiii</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005920000" logo="">Discovery HD World</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006000000" logo="">Sony Sports Ten 3</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006010000" logo="">STAR PLUS HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006560000" logo="">France 24</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006570000" logo="">Movies Now</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006690000" logo="">Star Maa Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006710000" logo="">Dharam Sandesh</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006760000" logo="">Star Sports 1 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006790000" logo="">Paras Gold One</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006930000" logo="">Movies Now HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006960000" logo="">Star Gold HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006970000" logo="">Star Movies HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007300000" logo="">9X Tashan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007350000" logo="">BIG Magic</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007360000" logo="">History TV18</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007390000" logo="">History TV18 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007410000" logo="">Travel XP HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007460000" logo="">Colors HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007480000" logo="">CNBC TV18 Prime HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007500000" logo="">9X Jhakaas</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007510000" logo="">Sony Sports Ten 1 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007610000" logo="">Sonic</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007680000" logo="">Dangal</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007730000" logo="">Comedy Central</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007740000" logo="">Zee TV HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007790000" logo="">Zee Cinema HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009260000" logo="">Star Gold 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009310000" logo="">Sony Sports Ten 5</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009390000" logo="">SET HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009400000" logo="">Sony Sports Ten 5 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009440000" logo="">Jinvani</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000010620000" logo="">News Nation</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000011140000" logo="">Peace of Mind</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000012150000" logo="">KBS World</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000012700000" logo="">Zee Bangla Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000012870000" logo="">Disney Junior</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000013090000" logo="">Ishwar TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000013230000" logo="">Nick Junior</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000013240000" logo="">Jalsha Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000013350000" logo="">Star Life HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000013430000" logo="">Nat Geo Wild HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000014200000" logo="">Star Sports 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000014880000" logo="">Zee Madhya Pradesh Chhattisgarh</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000016830000" logo="">DD Madhya Pradesh</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000016920000" logo="">India News Haryana</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000016950000" logo="">Zee Anmol Cinema 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000017540000" logo="">&amp; Pictures</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000017600000" logo="">Zee Anmol</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000018380000" logo="">Gulistan News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000018400000" logo="">Zee Rajasthan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000018500000" logo="">Colors Rishtey</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000019110000" logo="">Zee Bihar Jharkhand</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000019990000" logo="">Vedic</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000021290000" logo="">News State UK UP</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000022380000" logo="">CNBC Bajar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000022850000" logo="">SONY MAX 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000022900000" logo="">News18 Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000023120000" logo="">NEWS18 PUNJAB</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000023150000" logo="">SONY PIX HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000024270000" logo="">TLC HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000024300000" logo="">&amp; Pictures HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000024320000" logo="">Zee Cafe HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000025050000" logo="">SONY PAL</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000026390000" logo="">Epic TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000027750000" logo="">Star Sports 1 HD Hindi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000027760000" logo="">Star Sports Select 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028000000" logo="">&amp;TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028050000" logo="">&amp;TV HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028340000" logo="">News18 Gujarati</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000029140000" logo="">DD Kisan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000030850000" logo="">News18 Odia</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000033520000" logo="">SONY MAX HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000034570000" logo="">Star Movies Select HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000034590000" logo="">Comedy Central HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000035220000" logo="">Colors Infinity</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000035230000" logo="">Colors Infinity HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000038730000" logo="">Mirror Now</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000039210000" logo="">Nick HD+</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000039940000" logo="">ABP Asmita</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000041660000" logo="">Colors Cineplex</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000041760000" logo="">Shubh TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000041830000" logo="">Star Jalsha HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000041840000" logo="">Jalsha Movies HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000042610000" logo="">Star Pravah HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000042640000" logo="">Colors Marathi HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000042770000" logo="">Colors Bangla HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000043030000" logo="">Star Utsav Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000043750000" logo="">Sony Wah</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000045360000" logo="">MNX</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000047500000" logo="">Star Sports Select 1 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000047510000" logo="">Star Sports Select 2 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000047630000" logo="">WION</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000047760000" logo="">Zee Yuva</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048010000" logo="">News18 Assam North East</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048510000" logo="">Zee Cinemalu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048550000" logo="">Sony SAB HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048680000" logo="">Zee Anmol Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048710000" logo="">MTV Beats</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048720000" logo="">MTV Beats HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048830000" logo="">MNX HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000049240000" logo="">Zee Talkies HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000049740000" logo="">Zee Marathi HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000049750000" logo="">Zee Bangla HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050540000" logo="">North East Live</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050610000" logo="">EUROSPORT</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050850000" logo="">Colors Cineplex HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050920000" logo="">Star Gold Select HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050930000" logo="">SONY BBC Earth</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050940000" logo="">SONY BBC Earth HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000051840000" logo="">SONY YAY</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000051860000" logo="">EUROSPORT HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000051880000" logo="">Times Now World HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000052070000" logo="">Republic TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000052650000" logo="">Hare Krsna</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000052670000" logo="">Star Sports Select 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053070000" logo="">Sony Sports Ten 2 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053080000" logo="">Sony Sports Ten 3 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053100000" logo="">Star Sports First</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053330000" logo="">Zee 24 Kalak</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053350000" logo="">Star Bharat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053360000" logo="">Star Bharat HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053730000" logo="">Al Jazeera English</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000054020000" logo="">Disney International HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000055510000" logo="">Zee Uttar Pradesh Uttarakhand</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000056360000" logo="">Investigation Discovery</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000060520000" logo="">Sony Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000060840000" logo="">Zee Bollywood</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000061080000" logo="">Star Sports 3</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000062650000" logo="">DD News HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000063500000" logo="">Republic Bharat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000064090000" logo="">Sun Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000064480000" logo="">PTC Punjabi Gold</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000064490000" logo="">PTC Music</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000064500000" logo="">PTC Simran</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000065580000" logo="">Tabbar Hits</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000066390000" logo="">B4U Kadak</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000066570000" logo="">DD National HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000066760000" logo="">Siri Kannada</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000066990000" logo="">Rongeen TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000067140000" logo="">Showbox</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000080000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/1MlJHGDc.png">STAR PLUS</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000100000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9WMgCnfX.png">Star Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000110000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/fId5kfi3.png">Star Gold</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000130000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/SMnGVij5.png">Star Utsav</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000160000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/MKj8HEvI.png">Star Life</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000170000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/TQOkEcdR.png">National Geographic Channel</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000180000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/IPJzzcNx.png">ABP News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000190000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/VmljN1kZ.png">Star Sports 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000200000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/u1xj7ydj.png">Zee TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000210000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/AlVC6ZkI.png">Zee Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000220000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/MzO6bcKs.png">Zee Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000240000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Ybkb746Y.png">Sony Sports Ten 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000250000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/bKeiOCb1.png">Zee Telugu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000280000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/UL693HQ3.png">Zee Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000310000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9d2nOWzP.png">Discovery Channel</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000320000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/iXTcogWq.png">Animal Planet</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000330000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/y5jI3zJk.png">TLC</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000340000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/F81XBGrQ.png">Disney Channel</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000350000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/4mxVjCGM.png">Super Hungama</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000360000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/TzzKTVun.png">ETV Telugu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000380000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/5T7XkBeR.png">Colors Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000390000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/cTY6S3tm.png">Colors Gujarati</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000410000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/3UDHV7DI.png">News18 Bihar Jharkhand</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000420000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Tl3Ml9vc.png">News18 Madhya Pradesh Chhattisgarh</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000430000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/kp8srz8G.png">Colors Odia</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000440000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Wl3f15xG.png">News18 Jammu Kashmir Ladakh Himachal Haryana</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000450000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/QhQWYblW.png">NEWS18 RAJASTHAN</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000460000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/eUuT3U3V.png">Colors Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000470000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/PpTcKd7r.png">News18 Uttar Pradesh Uttarakhand</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000480000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/cVfreH6f.png">MTV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000490000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/UyTfc1E8.png">NDTV India</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000500000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/oYKraQbB.png">NDTV 24x7</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000520000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/MQVkf4bF.png">SET</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000540000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/UBYYWK17.png">SONY MAX</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000550000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Mccia8ek.png">Sony Pix</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000560000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/qRqldHfa.png">Sony SAB</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000570000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/pV5sbyUn.png">Sun TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000580000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/OMIlk8RJ.png">Gemini TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000620000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/HYG1Jq7V.png">Sony Sports Ten 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000690000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/NwnxFvVw.png">Zoom</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000710000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/xIUfvWZl.png">CNBC TV18</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000720000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/jr7GDkll.png">Aaj Tak</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000730000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/pITdVWJC.png">B4U Music</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000740000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/DMlor4ys.png">B4U Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000750000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/71cSlrCh.png">BBC News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/KI6QZhmI.png">Cartoon Network</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000770000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/mGjMfVUp.png">CNN International</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000780000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/sQFU9Eu4.png">CNN-News18</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000810000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/5qvJ3Y2O.png">INDIA TODAY</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000860000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/IIdmoZoE.png">Pogo</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000870000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/M6dfbLq6.png">Times Now</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000890000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/yGzEOWlv.png">CNBC-Awaaz</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000910000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/zKszkKQ7.png">India TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000930000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/BAhWycCH.png">Zee News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000950000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9As96Uib.png">Vh1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000960000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/lP3bii5Q.png">Action Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000970000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/CyOSMlN2.png">Zing</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000980000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/MhobzKEW.png">DD National</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001000000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/zvjCuQo9.png">Zee Kannada</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001010000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ETfm2bHn.png">Nick</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001020000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/iKkg3h6G.png">Zee Classic</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001140000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/KwWC2wfr.png">Zee Business</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001160000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ACTAOnH2.png">Sanskar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001180000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ZyN7IQWj.png">News18 India</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001220000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/KWAZbaBz.png">Star Maa</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001330000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/X28usXM6.png">Sadhna TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001380000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9X4NlQzx.png">Sangeet Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001390000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/bCNJDtkh.png">Aastha</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001500000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/UOyxSrDv.png">Zee Punjab Haryana Himachal</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001690000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/GaYYSAbG.png">Hungama</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001780000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/XHkKmkUp.png">DD Bharati</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001800000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/tXJR5X5e.png">DD India</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001820000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/QYyzgnaZ.png">DD News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000001950000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/VHu2gA2m.png">ABP Ananda</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002020000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/hnIlXBuy.png">ABP Majha</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002040000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/k2pW6LaO.png">Music India</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002130000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/HlSQHL1f.png">Dangal 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002220000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Ba8wW922.png">Zee 24 Taas</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002490000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ESkU5oDA.png">Zee 24 Ghanta</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002500000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Vfl6KnBd.png">DD TAMIL</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002520000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/275bluTB.png">DD Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002540000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/U3ct33Js.png">DD Girnar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002550000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7BhXOZmH.png">DD Chandana</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002570000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/oeysNgfP.png">DD Rajasthan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002610000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/tD5rXQvI.png">DD Malayalam</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002650000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ghnwMD3M.png">Star Sports 1 Hindi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002670000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/b5iT2QaH.png">PTC News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002710000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/HWfyTTpk.png">Bindass</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002750000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/pSzXE6eD.png">Sansad TV 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/12HOcqeK.png">Zee Talkies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002810000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/risuctVZ.png">DD Bihar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002850000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/II6rVgwe.png">Sansad TV 2 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002860000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/dJedVHY1.png">DD Saptagiri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002900000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/8rb6BVfD.png">DD UP</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002910000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7aVPWwKl.png">DD Urdu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003060000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/g5R3Wv36.png">9XM</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003080000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/d5oyrfeG.png">Gyandarshan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003130000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/2GMNcvK5.png">Discovery Science</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003290000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/9EQOflmz.png">Sudarshan News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003440000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FdQtYz9a.png">News24</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003490000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FBCanAk4.png">RT</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003720000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/1EnWPUFf.png">Satsang</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000003830000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/aBGT7nxE.png">News18 Lokmat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004170000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ILlLhGoA.png">Colors</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004250000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/yXZiQpMO.png">PTC Punjabi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004320000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/2VNiEQAh.png">Sangeet Bhojpuri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004370000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7wTxLDA2.png">Star Jalsha</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004380000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/kN42BXSX.png">B4U Bhojpuri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004390000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/BheGOjnm.png">Sony AATH</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004490000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/kNR4ubJZ.png">Manoranjan TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004700000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/41Al6ktm.png">Star Pravah</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004750000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/EYOP1Put.png">Divya</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000004930000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/boJhoYZ5.png">TV9 Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005190000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ztMZQWFS.png">IBC24</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005240000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/52tJ3ZwX.png">ET Now</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005300000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/hvfGoEbe.png">PTC Chakde</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005490000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/cxKKmBZz.png">Aastha Bhajan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005520000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/TZNMwj9n.png">Zee Bharat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005680000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/B7j5DOeg.png">Nat Geo Wild</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005690000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/XbsA4BLj.png">Rupasi Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005700000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/z2ffVNzv.png">Discovery Turbo</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005780000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/eMflO13P.png">National Geographic Channel HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005820000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/lMDAV5bq.png">Salaam TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005870000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/pwp8J23o.png">Star Sports 2 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005890000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/jYmRt7wk.png">Mastiii</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000005920000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/NbLsoaej.png">Discovery HD World</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006000000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FHmx8ktP.png">Sony Sports Ten 3</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006010000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/1DjwtgQi.png">STAR PLUS HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006560000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/PtdRiLYn.png">France 24</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006570000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/rFi98AYq.png">Movies Now</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006690000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/nnuqQf7t.png">Star Maa Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006710000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/dKfFXEYc.png">Dharam Sandesh</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/5KSkBXcJ.png">Star Sports 1 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006790000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/VDRQtnl9.png">Paras Gold One</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006930000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/6z69pGKb.png">Movies Now HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006960000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/DvfrYoaM.png">Star Gold HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006970000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/xOksMo1R.png">Star Movies HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007300000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/C615rt6l.png">9X Tashan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007350000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/8DxNJxgT.png">BIG Magic</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007360000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Nyf8skQR.png">History TV18</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007390000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/EmW1m9Or.png">History TV18 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007410000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/PY8nfO6w.png">Travel XP HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007460000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ez7MY6Yj.png">Colors HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007480000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/WfDSOGjU.png">CNBC TV18 Prime HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007500000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/jAMLQBxF.png">9X Jhakaas</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007510000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ryix5hzL.png">Sony Sports Ten 1 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007610000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7VD9q8eQ.png">Sonic</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007680000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/neiqmb6i.png">Dangal</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007730000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/gwS8O6jz.png">Comedy Central</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007740000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/aFcrmBVk.png">Zee TV HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000007790000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/GyoYQsKb.png">Zee Cinema HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009260000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Kf6jTnkj.png">Star Gold 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009310000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/xngy65EJ.png">Sony Sports Ten 5</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009390000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/r6Ge7wR5.png">SET HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009400000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/uYDqxdc4.png">Sony Sports Ten 5 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009440000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/wyxfmQqA.png">Jinvani</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000010620000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ThvmmdeL.png">News Nation</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000011140000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/PJdZtD57.png">Peace of Mind</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000012150000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/dLjcVHn7.png">KBS World</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000012700000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/gLSSl4nG.png">Zee Bangla Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000012870000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/jmqryXlW.png">Disney Junior</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000013090000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/oPAB8guL.png">Ishwar TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000013230000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7h7t1H1f.png">Nick Junior</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000013240000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/fEC3XxHV.png">Jalsha Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000013350000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/e9bq3jmx.png">Star Life HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000013430000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ThVa3Zxd.png">Nat Geo Wild HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000014200000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/LDF5UJeX.png">Star Sports 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000014880000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7D21qaZu.png">Zee Madhya Pradesh Chhattisgarh</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000016830000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/UIjpOXBc.png">DD Madhya Pradesh</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000016920000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/S6MmFemr.png">India News Haryana</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000016950000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/AN9WR6cw.png">Zee Anmol Cinema 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000017540000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Oimlzkm9.png">&amp; Pictures</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000017600000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/AXbTJLZ9.png">Zee Anmol</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000018380000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/zf3M5TAW.png">Gulistan News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000018400000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/r8uOaxRr.png">Zee Rajasthan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000018500000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/o5uzGuGM.png">Colors Rishtey</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000019110000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7SbswfCY.png">Zee Bihar Jharkhand</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000019990000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/lZvaZIDk.png">Vedic</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000021290000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/y7YYTghf.png">News State UK UP</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000022380000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/u6NlH1iZ.png">CNBC Bajar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000022850000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/EIkNgGgX.png">SONY MAX 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000022900000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/g8HaGTFB.png">News18 Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000023120000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/XuglaSQe.png">NEWS18 PUNJAB</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000023150000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/hYyZH1sL.png">SONY PIX HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000024270000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/HiVOmW3L.png">TLC HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000024300000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/QJeWNeZZ.png">&amp; Pictures HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000024320000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/e9NQzgwN.png">Zee Cafe HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000025050000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Nh1KdrlO.png">SONY PAL</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000026390000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/LvU6PFfM.png">Epic TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000027750000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/EU2zjOeN.png">Star Sports 1 HD Hindi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000027760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/CDzxunbK.png">Star Sports Select 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028000000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/rCWZ2DPn.png">&amp;TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028050000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/y5ZhwK7P.png">&amp;TV HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000028340000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/itJJZtrZ.png">News18 Gujarati</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000029140000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/saNRotHK.png">DD Kisan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000030850000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/OgaUjixL.png">News18 Odia</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000033520000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Ji5e1wHc.png">SONY MAX HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000034570000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/glgBSfm7.png">Star Movies Select HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000034590000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/p2s5Mdsi.png">Comedy Central HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000035220000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/3uPQKRek.png">Colors Infinity</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000035230000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Su2qMlC9.png">Colors Infinity HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000038730000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/rWt8UPnZ.png">Mirror Now</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000039210000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/1UHxVkEr.png">Nick HD+</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000039940000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ihiAOxtH.png">ABP Asmita</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000041660000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/3AallzyK.png">Colors Cineplex</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000041760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/w9UEj6wk.png">Shubh TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000041830000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/QvWTUnY9.png">Star Jalsha HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000041840000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/G5Zz1Ps1.png">Jalsha Movies HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000042610000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ORBjQmFM.png">Star Pravah HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000042640000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/KMxloEfD.png">Colors Marathi HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000042770000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ShcJA9T3.png">Colors Bangla HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000043030000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/4lqGdBTB.png">Star Utsav Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000043750000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/jI6RzSQU.png">Sony Wah</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000045360000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/LF4q4BS3.png">MNX</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000047500000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/77F6TJgZ.png">Star Sports Select 1 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000047510000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ge6P8Fyy.png">Star Sports Select 2 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000047630000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/cLnBMmSM.png">WION</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000047760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/i2bCljEL.png">Zee Yuva</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048010000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/t1ehIJNq.png">News18 Assam North East</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048510000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/PqTh5GCk.png">Zee Cinemalu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048550000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/mavuk93z.png">Sony SAB HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048680000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/BOhHUZjx.png">Zee Anmol Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048710000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/RzIZMEdf.png">MTV Beats</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048720000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/EGQKiLzj.png">MTV Beats HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000048830000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/5qzbJrL3.png">MNX HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000049240000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/h6aDCBPg.png">Zee Talkies HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000049740000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/JFQxsas7.png">Zee Marathi HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000049750000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/GGGZf4sl.png">Zee Bangla HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050540000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/yWQ5uucg.png">North East Live</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050610000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/gR48PSB6.png">EUROSPORT</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050850000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/U2ReVTUt.png">Colors Cineplex HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050920000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/sLCJGc6R.png">Star Gold Select HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050930000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/BkRltyBJ.png">SONY BBC Earth</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050940000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/xZd8Gwlc.png">SONY BBC Earth HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000051840000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/lUdumr2e.png">SONY YAY</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000051860000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/5NRgVjlQ.png">EUROSPORT HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000051880000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/RdgGtUTZ.png">Times Now World HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000052070000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/fgxXtZrX.png">Republic TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000052650000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/6DlEnMOk.png">Hare Krsna</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000052670000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/YwJdYV7r.png">Star Sports Select 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053070000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FSG6zC9Q.png">Sony Sports Ten 2 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053080000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/N2uHRQdk.png">Sony Sports Ten 3 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053100000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/h35LhCTD.png">Star Sports First</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053330000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/O6qUjAZV.png">Zee 24 Kalak</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053350000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ggVWmXju.png">Star Bharat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053360000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/fbvotjWN.png">Star Bharat HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000053730000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/H1SAsdSk.png">Al Jazeera English</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000054020000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/1rpQftIB.png">Disney International HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000055510000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/nGJxKYW5.png">Zee Uttar Pradesh Uttarakhand</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000056360000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Iru4Cav9.png">Investigation Discovery</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000060520000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/UVzEQKbc.png">Sony Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000060840000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/hyVFec5u.png">Zee Bollywood</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000061080000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ArxHAGxh.png">Star Sports 3</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000062650000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/iJSRI6RS.png">DD News HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000063500000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/MQFc9Pjs.png">Republic Bharat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000064090000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/F5CwMkAK.png">Sun Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000064480000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/eomzdxpW.png">PTC Punjabi Gold</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000064490000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/8GvUDJl9.png">PTC Music</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000064500000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/EGLsv35K.png">PTC Simran</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000065580000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/uuEyvGH9.png">Tabbar Hits</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000066390000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/IwWnBbSr.png">B4U Kadak</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000066570000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/SyK5AzNn.png">DD National HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000066760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/W2cdOpuC.png">Siri Kannada</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000066990000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/wtICsTGV.png">Rongeen TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000067140000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Ja3iR7EG.png">Showbox</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000069120000" logo="">Customer Care</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000069130000" logo="">RECHARGE REMINDER</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000069590000" logo="">Manoranjan Grand</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000070980000" logo="">Movie Plus</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000071000000" logo="">Zing Home</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000072330000" logo="">Zee Biskope</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000072450000" logo="">BTV WORLD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000073540000" logo="">Shemaroo TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000073830000" logo="">Filamchi Bhojpuri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000074520000" logo="">Goldmines</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000074760000" logo="">DD SPORTS Duplicate1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075090000" logo="">Colors Cineplex Superhits</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990084" logo="">Zee Zest</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990144" logo="">Gubbare TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990296" logo="">ISHARA</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990309" logo="">R. Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990318" logo="">ND24-Newsdaily.in</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990334" logo="">Colors Cineplex Bollywood</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990464" logo="">All Time Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075991959" logo="">SUN MARATHI</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992171" logo="">TheQ</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992190" logo="">Chumbak TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992191" logo="">ETV Bal Bharat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992204" logo="">Argus</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000069590000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/jcEtF4nY.png">Manoranjan Grand</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000070980000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/EWiKNcuA.png">Movie Plus</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000071000000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/YiUTfdmP.png">Zing Home</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000072330000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/7oZCGsz6.png">Zee Biskope</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000072450000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/HKv5p2Uw.png">BTV WORLD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000073540000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/YfftV2gk.png">Shemaroo TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000073830000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/58Ot7YFY.png">Filamchi Bhojpuri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000074520000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/YZGW3Sn6.png">Goldmines</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000074760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/kNgTx2fp.png">DD SPORTS Duplicate1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075090000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/6wjC5FAv.png">Colors Cineplex Superhits</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990084" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/YRkzsEtT.png">Zee Zest</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990144" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/q2J7laqf.png">Gubbare TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990296" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/4B4Nfr3v.png">ISHARA</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990309" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/bDKuB3Cp.png">R. Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990318" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/V7Y81H5l.png">ND24-Newsdaily.in</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990334" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/VPE6hg7H.png">Colors Cineplex Bollywood</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075990464" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/dikzyvi6.png">All Time Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075991959" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/bC7dUaCX.png">SUN MARATHI</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992171" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/B5TmubXh.png">TheQ</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992190" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/caBejMKu.png">Chumbak TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992191" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/5Ph6Hb28.png">ETV Bal Bharat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992204" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/SDRr8jLf.png">Argus</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992211" logo="">Active Services Duplicate</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992212" logo="">Active Services Duplicate1</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992213" logo="">Active Services Duplicate2</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992214" logo="">Active Services Duplicate3</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992215" logo="">Active Services Duplicate4</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992321" logo="">Good News Today</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992323" logo="">Sidharth TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992324" logo="">Sidharth Utsav</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992325" logo="">Sidharth GOLD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992357" logo="">ET Now Swadesh</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992386" logo="">Sansad TV 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992392" logo="">Times Now Navbharat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992466" logo="">Gujarat First</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992321" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/W4iGczSN.png">Good News Today</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992325" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/tOfvoXP6.png">Sidharth GOLD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992323" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/C7tOg3cc.png">Sidharth TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992324" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/p6ZE5Ajr.png">Sidharth Utsav</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992357" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/iiINXh3p.png">ET Now Swadesh</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992386" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/hPmztfp9.png">Sansad TV 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992392" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/aoEKwULW.png">Times Now Navbharat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992466" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/krZMx1pv.png">Gujarat First</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992470" logo="">VAS Promos duplicate</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992476" logo="">Zee Delhi NCR Haryana</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992497" logo="">Shemaroo Umang</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992500" logo="">Sports18 - 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992522" logo="">Sports18 - 1 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992539" logo="">Star Kiran</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992553" logo="">Jay Jagannath</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992476" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/SrrjUv5i.png">Zee Delhi NCR Haryana</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992497" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/wlvK7g38.png">Shemaroo Umang</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992500" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/lNsQCMii.png">Sports18 - 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992522" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ePHEiP3k.png">Sports18 - 1 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992539" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/rbtybtFg.png">Star Kiran</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992553" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/MVZd68BS.png">Jay Jagannath</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992558" logo="">VAS Promo Duplicate1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992604" logo="">Bharat 24</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992720" logo="">Sansad TV 2 Duplicate</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992739" logo="">Bharat Express</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992762" logo="">Star Gold Romance</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992764" logo="">Star Movies Select</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992763" logo="">Star Gold Thrills</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992767" logo="">Disney Channel HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992604" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/dfjUIxl8.png">Bharat 24</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992720" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Cvuhi6Af.png">Sansad TV 2 Duplicate</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992739" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/zID7Sjy9.png">Bharat Express</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992762" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/nvweiLGU.png">Star Gold Romance</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992763" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/yAleOGpz.png">Star Gold Thrills</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992764" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/PyObJjLK.png">Star Movies Select</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992767" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/PrGIjkJG.png">Disney Channel HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992783" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Pc2bpqwP.png">Nazara</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992784" logo="">Unique TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992783" logo="">Nazara</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992808" logo="">Zing Home</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992880" logo="">Sun Marathi Duplicate</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992886" logo="">Star Kiran HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992930" logo="">NDTV MPCG</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992931" logo="">NDTV Rajasthan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993005" logo="">Sports18 - 3</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993004" logo="">Sports18 - 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993139" logo="">NDTV Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993176" logo="">Bharat 24</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993194" logo="">Russia Today Duplicate</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993222" logo="">Live Times</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993228" logo="">News State Punjab Haryana Himachal</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992880" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/MqHHbyUs.png">Sun Marathi Duplicate</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992886" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/e2bJLXPI.png">Star Kiran HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992930" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/sklmSrvC.png">NDTV MPCG</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992931" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/lsYCQbti.png">NDTV Rajasthan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993004" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/uLbDo1pe.png">Sports18 - 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993005" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/HkkvzkdB.png">Sports18 - 3</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993139" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/UZRnAF9b.png">NDTV Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993176" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/yLtdutiX.png">Bharat 24</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993194" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/LRDFKhTu.png">Russia Today Duplicate</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993222" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/k4pwDHjE.png">Live Times</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075993228" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/f5fFKv8K.png">News State Punjab Haryana Himachal</channel>
 </channels>
