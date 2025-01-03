@@ -13,7 +13,7 @@ module.exports = {
   url: 'https://epg.mysmartstick.com/dishtv/api/v1/epg/entities/programs',
   request: {
     method: 'POST',
-    headers: () => getHeaders(),
+    headers: getHeaders(),
     data: ({ channel, date }) => ({
       allowPastEvents: true,
       channelid: channel.site_id,
