@@ -58,12 +58,10 @@ module.exports = {
     for (let i = 0; i < Number(pages); i++) {
       const body = new FormData();
       body.append('pageNum', i + 1);
-      console.log(body);
       const data = await axios
         .post(url, body, params)
         .then(r => r.data)
         .catch(console.log)
-      console.log(data);
       data.programDetailsByChannel.forEach(channel => {
         if (channel.channelname === '.') return
         channels.push({
