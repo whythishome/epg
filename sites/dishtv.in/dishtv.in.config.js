@@ -56,9 +56,8 @@ module.exports = {
       headers: await setChannelHeaders()
     }
     for (let i = 0; i < Number(pages); i++) {
-      const body = {
-        pageNum: i + 1
-      }
+      const body = new FormData();
+      body.append('pageNum', i + 1);
       console.log(body);
       const data = await axios
         .post(url, body, params)
