@@ -42,7 +42,7 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ lang }) {
     const totalPages = await fetchPages('https://www.dishtv.in/services/epg/channels')
 
     const channels = []
@@ -57,7 +57,7 @@ module.exports = {
         resp.data.programDetailsByChannel.forEach(channel => {
           if (channel.channelname !== '.') {
             channels.push({
-              lang: 'en',
+              lang,
               site_id: channel.channelid,
               name: channel.channelname,
               logo: channel.channelimage
