@@ -60,7 +60,7 @@ module.exports = {
               lang: 'en',
               site_id: channel.channelid,
               name: channel.channelname,
-              icon: channel.channelimage
+              logo: channel.channelimage
             })
           }
         })
