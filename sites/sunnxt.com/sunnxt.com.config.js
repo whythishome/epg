@@ -35,35 +35,27 @@ module.exports = {
     return programs
   },
   async channels({ lang }) {
-    const totalPages = await fetchPages('https://www.dishtv.in/services/epg/channels')
-
     const channels = []
-    for (let i = 0; i < Number(totalPages); i++) {
-      const body = new FormData()
-      body.append('pageNum', i + 1)
-
-      try {
-        const resp = await axios.get('https://pwaapi.sunnxt.com/content/v2/contentList?type=live&fields=images,generalInfo&startIndex=1&count=100&orderBy=siblingOrder&orderMode=1&language=', body, {
-          headers: {
-            Referer: 'https://www.sunnxt.com/',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
-          }
-        })
-        resp.data.results.forEach(channel => {
-          if (channel.channelname !== '.') {
-            channels.push({
-              lang: 'en',
-              site_id: channel._id,
-              name: channel.title,
-              logo: channel.images.values[5].link
-            })
-          }
-        })
-      } catch (error) {
-        console.error(error.message)
-      }
+    try {
+      const resp = await axios.get('https://pwaapi.sunnxt.com/content/v2/contentList?type=live&fields=images,generalInfo&startIndex=1&count=100&orderBy=siblingOrder&orderMode=1&language=', body, {
+        headers: {
+          Referer: 'https://www.sunnxt.com/',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+        }
+      })
+      resp.data.results.forEach(channel => {
+        if (channel.channelname !== '.') {
+          channels.push({
+            lang: 'en',
+            site_id: channel._id,
+            name: channel.title,
+            logo: channel.images.values[5].link
+          })
+        }
+      })
+    } catch (error) {
+      console.error(error.message)
     }
-
     return channels
   }
 }
