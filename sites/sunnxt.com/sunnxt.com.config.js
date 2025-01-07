@@ -37,7 +37,7 @@ module.exports = {
   async channels({ lang }) {
     const channels = []
     try {
-      const resp = await axios.get('https://pwaapi.sunnxt.com/content/v2/contentList?type=live&fields=images,generalInfo&startIndex=1&count=100&orderBy=siblingOrder&orderMode=1&language=', body, {
+      const resp = await axios.get('https://pwaapi.sunnxt.com/content/v2/contentList?type=live&fields=images,generalInfo&startIndex=1&count=100&orderBy=siblingOrder&orderMode=1&language=', {
         headers: {
           Referer: 'https://www.sunnxt.com/',
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
