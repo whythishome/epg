@@ -44,7 +44,7 @@ module.exports = {
         }
       })
       resp.data.results.forEach(channel => {
-        if (channel.channelname !== '.') {
+        if (channel.title !== '.') {
           channels.push({
             lang: 'en',
             site_id: channel._id,
