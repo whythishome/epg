@@ -12,7 +12,7 @@ module.exports = {
   days: 2,
   url: function ({ date, channel }) {
     return `https://pwaapi.sunnxt.com/epg/v2/channelEPG/${channel.site_id}?date=${date.format('YYYY-MM-DD')}&level=epgstatic&imageProfile=mdpi&count=100&startIndex=1&orderBy=siblingOrder&orderMode=1`
-  }
+  },
   request: {
     method: 'GET',
     headers: {
