@@ -43,15 +43,14 @@ module.exports = {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
         }
       })
+      console.log(resp.data.results)
       resp.data.results.forEach(channel => {
-        if (channel.title !== '.') {
           channels.push({
             lang: 'en',
             site_id: channel._id,
             name: channel.title,
             logo: channel.images.values[5].link
           })
-        }
       })
     } catch (error) {
       console.error(error.message)
