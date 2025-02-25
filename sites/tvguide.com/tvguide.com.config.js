@@ -33,9 +33,9 @@ module.exports = {
     const programs = [];
     const items = parseItems(content);
 
-    if (items.length > 0) {
-      useProxy = !useProxy;
-    }
+    // if (items.length > 0) {
+    //   useProxy = !useProxy;
+    // }
     
     for (let item of items) {
       const details = await loadProgramDetails(item); // Fetch details
