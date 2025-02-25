@@ -1,6 +1,8 @@
-name: EPG Update
+name: Single EPG Update
 
 on:
+  schedule:
+    - cron: '0 */24 * * *' # Daily schedule
   workflow_dispatch:
 
 jobs:
@@ -9,7 +11,7 @@ jobs:
     env:
       PROXY_URL_1: ${{ secrets.PROXY_URL_1 }}
       PROXY_URL_2: ${{ secrets.PROXY_URL_2 }}
-      
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
