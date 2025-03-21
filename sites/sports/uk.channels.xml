@@ -66,4 +66,8 @@
   <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsBoxOfficeHD.uk" site_id="http://bds.tv/services/BT_771276" logo="https://images-live.youview.tv/images/entity/44112656/ident/1_512x512.png">TNT Sports Box Office HD</channel>
   <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsUltimate.uk" site_id="http://bds.tv/services/BT_768397" logo="https://images-live.youview.tv/images/entity/19231389/ident/1_512x512.png">TNT Sports Ultimate</channel>
   <channel site="player.ee.co.uk" lang="en" xmltv_id="TogetherTV.uk" site_id="dvb://233a..3fec" logo="https://images-live.youview.tv/images/entity/dfa0587b-2960-5a89-aa5a-9c31f7071805/ident/1_512x512.png">Together TV</channel>
+  <channel site="virgintvgo.virginmedia.com" lang="en" xmltv_id="" site_id="2257" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-main-event-uhd-uk.png?raw=true">Sky SportMainEventUHD</channel>
+  <channel site="virgintvgo.virginmedia.com" lang="en" xmltv_id="" site_id="2258" logo="https://staticqbr-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/image-service/ImagesEPG/EventImages/sky-sports-uhd.png">Sky Sports Ultra HD 1</channel>
+  <channel site="virgintvgo.virginmedia.com" lang="en" xmltv_id="" site_id="2259" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-f1-uhd-uk.png?raw=true">Sky Sports F1 UHD</channel>
+  <channel site="virgintvgo.virginmedia.com" lang="en" xmltv_id="" site_id="2265" logo="https://staticqbr-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/image-service/ImagesEPG/EventImages/sky-sports-uhd.png">Sky Sports Ultra HD 2</channel>
 </channels>
