@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
   <channel site="sky.com" lang="en" xmltv_id="CourtTV.uk" site_id="1207" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1207.png">Court TV</channel>
-  <channel site="sky.com" lang="en" xmltv_id="DAZN1HD.uk" site_id="1359" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1359.png">DAZN 1 HD</channel>
   <channel site="sky.com" lang="en" xmltv_id="Eurosport1.uk" site_id="1726" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1726.png">Eurosport 1</channel>
   <channel site="sky.com" lang="en" xmltv_id="Eurosport1HD.uk" site_id="4004" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4004.png">Eurosport 1 HD</channel>
   <channel site="sky.com" lang="en" xmltv_id="Eurosport2.uk" site_id="1841" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1841.png">Eurosport 2</channel>
@@ -34,7 +33,6 @@
   <channel site="sky.com" lang="en" xmltv_id="SkySportsRacing.uk" site_id="1354" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1354.png">SkySp Racing</channel>
   <channel site="sky.com" lang="en" xmltv_id="SkySportsRacingHD.uk" site_id="4032" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4032.png">SkySp Racing HD</channel>
   <channel site="sky.com" lang="en" xmltv_id="SkySportsTennis.uk" site_id="1284" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1284.png">SkySp Tennis</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SportyStuffTV.uk" site_id="1223" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1223.png">SportyStuff HD</channel>
   <channel site="sky.com" lang="en" xmltv_id="ViaplaySports1.uk" site_id="1289" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1289.png">Viaplay 1 HD</channel>
   <channel site="sky.com" lang="en" xmltv_id="ViaplaySports2.uk" site_id="1290" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1290.png">Viaplay 2 HD</channel>
   <channel site="sky.com" lang="en" xmltv_id="ViaplayXtra.uk" site_id="1150" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1150.png">ViaplayXtraHD</channel>
