@@ -8,9 +8,9 @@ module.exports = {
   site: 'player.ee.co.uk',
   days: 2,
   url({ date, channel, hour = 0 }) {
-    return `https://api.youview.tv/metadata/linear/v2/schedule/by-servicelocator?serviceLocator=${encodeURIComponent(
-      channel.site_id
-    )}&interval=${date.format('YYYY-MM-DD')}T${hour.toString().padStart(2, '0')}Z/PT12H`
+    return `https://api.youview.tv/metadata/linear/v2/schedule/by-servicelocator?serviceLocator=${
+        encodeURIComponent(channel.site_id)
+      }&interval=${date.format('YYYY-MM-DD')}T${hour.toString().padStart(2,'0')}Z/PT12H`
   },
   request: {
     headers: {
@@ -39,7 +39,7 @@ module.exports = {
           const stop = start.add(item.publishedDuration, 's')
           const description = item.synopsis
           if (description) {
-            const matches = description.trim().match(/\(?S(\d+)[/\s]Ep(\d+)\)?/)
+            const matches = description.trim().match(/\(?S(\d+)[\/\s]Ep(\d+)\)?/)
             if (matches) {
               if (matches[1]) {
                 season = parseInt(matches[1])
@@ -52,6 +52,7 @@ module.exports = {
           programs.push({
             title: item.title,
             description,
+            icon: item.id ? `https://images-live.youview.tv/images/entity/${item.id}/primary/1_512x288.jpg` : null,
             season,
             episode,
             start,
@@ -79,7 +80,7 @@ module.exports = {
       'BTSubscriptionCodesExtension'
     ]
     const result = await axios
-      .get('https://api.youview.tv/metadata/linear/v2/linear-services', {
+      .get(`https://api.youview.tv/metadata/linear/v2/linear-services`, {
         params: {
           contentTargetingToken: token,
           extensions: extensions.join(',')
@@ -89,16 +90,15 @@ module.exports = {
       .then(response => response.data)
       .catch(console.error)
 
-    return (
-      result?.items
-        .filter(channel => channel.contentTypes.indexOf('tv') >= 0)
-        .map(channel => {
-          return {
-            lang: 'en',
-            site_id: channel.serviceLocator,
-            name: channel.fullName
-          }
-        }) || []
-    )
+    return result?.items
+      .filter(channel => channel.contentTypes.indexOf('tv') >= 0)
+      .map(channel => {
+        return {
+          lang: 'en',
+          site_id: channel.serviceLocator,
+          name: channel.fullName,
+          logo: 'https://images-live.youview.tv/images/entity/' + channel.id + '/ident/1_512x512.png'
+        }
+      }) || []
   }
 }
