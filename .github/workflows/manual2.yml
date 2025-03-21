@@ -1,8 +1,6 @@
 name: Single EPG Update
 
 on:
-  schedule:
-    - cron: '0 */24 * * *' # Daily schedule
   workflow_dispatch:
 
 jobs:
