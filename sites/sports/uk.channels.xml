@@ -10,35 +10,35 @@
   <channel site="sky.com" lang="en" xmltv_id="MUTV.uk" site_id="1834" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1834.png">MUTV</channel>
   <channel site="sky.com" lang="en" xmltv_id="RacingTV.uk" site_id="3636" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3636.png">Racing TV</channel>
   <channel site="sky.com" lang="en" xmltv_id="RacingTVHD.uk" site_id="5272" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb5272.png">Racing TV HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsArena.uk" site_id="3839" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3839.png">SkySp Arena</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsArenaHD.uk" site_id="3940" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3940.png">SkySp ArenaHD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsCricket.uk" site_id="1302" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1302.png">SkySp Cricket</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsCricketHD.uk" site_id="4081" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4081.png">SkySpCricket HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsF1.uk" site_id="1306" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1306.png">SkySp F1</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsF1HD.uk" site_id="3835" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3835.png">SkySp F1 HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsFootball.uk" site_id="3838" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3838.png">SkySp F'ball</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsFootballHD.uk" site_id="3939" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3939.png">SkySp F'ball HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsGolf.uk" site_id="1322" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1322.png">SkySp Golf</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsGolfHD.uk" site_id="4026" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4026.png">SkySp Golf HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsMainEvent.uk" site_id="1301" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1301.png">SkySpMainEv</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsMainEventHD.uk" site_id="4002" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4002.png">SkySpMainEvHD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsMix.uk" site_id="4090" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4090.png">SkySp Mix HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsMix.uk" site_id="4091" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4091.png">SkySp Mix</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsNews.uk" site_id="1314" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1314.png">SkySp News</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsNewsHD.uk" site_id="4049" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4049.png">SkySp News HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsNFL.uk" site_id="1333" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1333.png">SkySp NFL</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsNFLHD.uk" site_id="4022" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4022.png">SkySp NFL HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsPremierLeague.uk" site_id="1303" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1303.png">SkySp PL</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsPremierLeagueHD.uk" site_id="4010" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4010.png">SkySp PL HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsRacing.uk" site_id="1354" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1354.png">SkySp Racing</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsRacingHD.uk" site_id="4032" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb4032.png">SkySp Racing HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkySportsTennis.uk" site_id="1284" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1284.png">SkySp Tennis</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsArena.uk" site_id="3839" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sportsplus-uk.png?raw=true">SkySp Arena</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsArenaHD.uk" site_id="3940" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sportsplus-uk.png?raw=true">SkySp ArenaHD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsCricket.uk" site_id="1302" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-cricket-uk.png?raw=true">SkySp Cricket</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsCricketHD.uk" site_id="4081" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-cricket-uk.png?raw=true">SkySpCricket HD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsF1.uk" site_id="1306" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-f1-uk.png?raw=true">SkySp F1</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsF1HD.uk" site_id="3835" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-f1-uk.png?raw=true">SkySp F1 HD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsFootball.uk" site_id="3838" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-football-uk.png?raw=true">SkySp F'ball</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsFootballHD.uk" site_id="3939" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-football-uk.png?raw=true">SkySp F'ball HD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsGolf.uk" site_id="1322" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-golf-uk.png?raw=true">SkySp Golf</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsGolfHD.uk" site_id="4026" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-golf-uk.png?raw=true">SkySp Golf HD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsMainEvent.uk" site_id="1301" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-main-event-uk.png?raw=true">SkySpMainEv</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsMainEventHD.uk" site_id="4002" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-main-event-uk.png?raw=true">SkySpMainEvHD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsMix.uk" site_id="4090" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-mix-uk.png?raw=true">SkySp Mix HD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsMix.uk" site_id="4091" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-mix-uk.png?raw=true">SkySp Mix</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsNews.uk" site_id="1314" logo="hhttps://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-news-uk.png?raw=true">SkySp News</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsNewsHD.uk" site_id="4049" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-news-uk.png?raw=true">SkySp News HD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsNFL.uk" site_id="1333" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-action-uk.png?raw=true">SkySp NFL</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsNFLHD.uk" site_id="4022" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-action-uk.png?raw=true">SkySp NFL HD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsPremierLeague.uk" site_id="1303" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-premier-league-uk.png?raw=true">SkySp PL</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsPremierLeagueHD.uk" site_id="4010" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-premier-league-uk.png?raw=true">SkySp PL HD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsRacing.uk" site_id="1354" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-racing-uk.png?raw=true">SkySp Racing</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsRacingHD.uk" site_id="4032" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-racing-uk.png?raw=true">SkySp Racing HD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsTennis.uk" site_id="1284" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-tennis-uk.png?raw=true">SkySp Tennis</channel>
   <channel site="sky.com" lang="en" xmltv_id="ViaplaySports1.uk" site_id="1289" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1289.png">Viaplay 1 HD</channel>
   <channel site="sky.com" lang="en" xmltv_id="ViaplaySports2.uk" site_id="1290" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1290.png">Viaplay 2 HD</channel>
   <channel site="sky.com" lang="en" xmltv_id="ViaplayXtra.uk" site_id="1150" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1150.png">ViaplayXtraHD</channel>
   <channel site="sky.com" lang="en" xmltv_id="W.uk" site_id="2617" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb2617.png">W</channel>
   <channel site="sky.com" lang="en" xmltv_id="WHD.uk" site_id="3810" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3810.png">W HD</channel>
-  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice1HD.uk" site_id="http://bds.tv/services/BT_769095" logo="https://images-live.youview.tv/images/entity/60355980/ident/1_512x512.png">Sky Sports Box Office HD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice1HD.uk" site_id="http://bds.tv/services/BT_769095" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-box-office-uk.png?raw=true">Sky Sports Box Office HD</channel>
   <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice2HD.uk" site_id="http://bds.tv/services/BT_772384" logo="https://images-live.youview.tv/images/entity/71021947/ident/1_512x512.png">Sky Sports Box Office 2 HD</channel>
   <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports1.uk" site_id="http://bds.tv/services/BT_763997" logo="https://images-live.youview.tv/images/entity/10068955/ident/1_512x512.png">TNT Sports 1</channel>
   <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports1HD.uk" site_id="http://bds.tv/services/BT_763999" logo="https://images-live.youview.tv/images/entity/10068964/ident/1_512x512.png">TNT Sports 1 HD</channel>
