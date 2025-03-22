@@ -16,7 +16,7 @@ const segments = 1440 / maxDuration
 
 module.exports = {
   site: 'tvguide.com',
-  days: 2,
+  days: 7,
   request: {
     cache: {
       ttl: 24 * 60 * 60 * 1000 // 1 day
