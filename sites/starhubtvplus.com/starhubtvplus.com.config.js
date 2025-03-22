@@ -50,7 +50,7 @@ module.exports = {
         subTitle: item.serie_title,
         description: item.description,
         category: item.genres,
-        image: item.pictures?.map(img => img.url),
+        icon: item.pictures?.map(img => img.url),
         season: season(item.serie_title),
         episode: item.episode_number,
         rating: item.rating,
@@ -82,7 +82,8 @@ module.exports = {
     return resources.map(ch => ({
       lang,
       site_id: ch.id,
-      name: ch.title
+      name: ch.title,
+      logo: ch.pictures[0] ? ch.pictures[0].url : null
     }))
   }
 }
