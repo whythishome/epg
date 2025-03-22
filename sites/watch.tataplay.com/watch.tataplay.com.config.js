@@ -51,7 +51,8 @@ module.exports = {
             headers: await setHeaders()
           }
         );
-        resp.data.channelList.forEach(channel => {
+        console.log(resp.data);
+        resp.data.data.channelList.forEach(channel => {
           if (channel.title !== '.') {
             channels.push({
               lang: 'en',
