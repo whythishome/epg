@@ -20,7 +20,7 @@ module.exports = {
     const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
       .unix()}&duration=10240&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
-
+    console.log(url);
     return url;
   },
   request: {
@@ -96,7 +96,7 @@ module.exports = {
         )
         .then(r => r.data)
         .catch(console.log);
-
+      console.log(data.data);
       data.data.items.forEach(item => {
         channels.push({
           lang: 'en',
