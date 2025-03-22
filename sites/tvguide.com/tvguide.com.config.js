@@ -24,7 +24,7 @@ module.exports = {
   },
   request: {
     method: 'GET',
-    timeout: 5000,
+    timeout: 3000,
     cache: { ttl: 60 * 60 * 1000 },
     headers: function() {
       return setHeaders();
