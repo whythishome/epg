@@ -99,6 +99,7 @@ async function fetchPages() {
   };
   try {
     const response = await axios.post(url, body, params);
+    console.log(response)
     return response.data.total;
   } catch (error) {
     console.error('Error fetching total pages:', error.message);
