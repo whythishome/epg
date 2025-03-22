@@ -121,7 +121,7 @@ async function loadProgramDetails(item) {
   const requestUrl = useProxy
     ? `${programDetailsUrl.replace(PROXY_URL_2, PROXY_URL_1)}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc` // Replce domain with proxy and append apiKey
     : `${programDetailsUrl.replace(PROXY_URL_1, PROXY_URL_2)}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
-  
+  console.log(requestUrl);
   const data = await axiosInstance
     .get(requestUrl)
     .then(r => r.data)
@@ -129,7 +129,7 @@ async function loadProgramDetails(item) {
       console.log(`Error fetching program details: ${err.message}`);
       return null; // Handle failed request gracefully
     });
-  console.log(data.data);
+  console.log(data.status)
   if (!data || !data.data || !data.data.item) return {};
 
   return data.data.item;
