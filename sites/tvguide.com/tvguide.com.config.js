@@ -129,7 +129,7 @@ async function loadProgramDetails(item) {
       console.log(`Error fetching program details: ${err.message}`);
       return null; // Handle failed request gracefully
     });
-
+  console.log(data.data);
   if (!data || !data.data || !data.data.item) return {};
 
   return data.data.item;
