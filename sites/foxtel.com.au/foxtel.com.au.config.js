@@ -10,12 +10,6 @@ module.exports = {
       'YYYY/MM/DD'
     )}`
   },
-  request: {
-    headers: {
-      'Accept-Language': 'en-US,en;',
-      Cookie: 'AAMC_foxtel_0=REGION|6'
-    }
-  },
   parser: function ({ content, date }) {
     let programs = []
     const items = parseItems(content)
