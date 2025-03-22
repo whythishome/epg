@@ -52,7 +52,8 @@ module.exports = {
           .filter(i => i.channel.sourceId.toString() === channel.site_id)
           .forEach(i => {
             result.push(...i.programSchedules.map(p => {
-              return { i: p, url: p.programDetails }
+              const programDetailsWithApiKey = `${p.programDetails}?apiKey=${module.exports.apiKey}`
+              return { i: p, url: programDetailsWithApiKey }
             }))
           })
       }
