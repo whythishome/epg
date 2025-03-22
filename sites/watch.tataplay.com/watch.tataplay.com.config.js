@@ -95,7 +95,7 @@ async function fetchPages() {
   };
   try {
     const response = await axios.get(url, params);
-    console.log(response.data); // Log the response data for debugging
+    console.log(response.data.data.total);
     return response.data.total;
   } catch (error) {
     console.error('Error fetching total pages:', error.message);
