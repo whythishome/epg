@@ -4,7 +4,7 @@ const cheerio = require('cheerio')
 
 module.exports = {
   site: 'foxtel.com.au',
-  days: 7,
+  days: 2,
   url({ channel, date }) {
     return `https://www.foxtel.com.au/tv-guide/channel/${channel.site_id}/${date.format(
       'YYYY/MM/DD'
@@ -33,7 +33,11 @@ module.exports = {
       const stop = start.add(30, 'm')
       programs.push({
         title: parseTitle($item),
-        description: parseSubTitle($item),
+        sub_title: parseSubTitle($item),
+        image: parseImage($item),
+        rating: parseRating($item),
+        season: parseSeason($item),
+        episode: parseEpisode($item),
         start,
         stop
       })
@@ -62,7 +66,7 @@ module.exports = {
         lang: 'en',
         name: item.name,
         site_id: `${slug}/${item.channelTag}`,
-        logo: item.channelImages.medium
+        logo: item.channelImages.hq
       }
     })
   }
