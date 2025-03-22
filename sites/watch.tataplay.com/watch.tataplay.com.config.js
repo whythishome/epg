@@ -47,9 +47,8 @@ module.exports = {
     let newOffset = 0;
     for (let i = 0; i < Number(totalPages); i += 20) {
       try {
-        const resp = await axios.post(
+        const resp = await axios.get(
           `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=${newOffset}`,
-          {},
           {
             headers: await setHeaders()
           }
@@ -93,13 +92,12 @@ function parseItems(content) {
 
 async function fetchPages() {
   const url = 'https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=0';
-  const body = {};
   const params = {
     headers: await setHeaders()
   };
   try {
-    const response = await axios.post(url, body, params);
-    console.log(response)
+    const response = await axios.get(url, params);
+    console.log(response.data); // Log the response data for debugging
     return response.data.total;
   } catch (error) {
     console.error('Error fetching total pages:', error.message);
