@@ -25,7 +25,7 @@ jobs:
       run: |
           npm install
           # npm run channels:parse --- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com_en.channels.xml --set=lang:en
-          npm run channels:parse -- --config=./sites/dishtv.in/dishtv.in.config.js --output=./sites/dishtv.in/dishtv.in_en.channels.xml
+          npm run channels:parse -- --config=./sites/dishtv.in/dishtv.in.config.js --output=./sites/dishtv.in/dishtv.in_en.channels.xml --set=lang:en
           # npm run channels:parse -- --config=./sites/tvpassport.com/tvpassport.com.config.js --output=./sites/tvpassport.com/tvpassport.com.channels.xml
           # npm run channels:parse -- --config=./sites/tvtv.us/tvtv.us.config.js --output=./sites/tvtv.us/tvtv.us.channels.xml
     - name: Commit changes
