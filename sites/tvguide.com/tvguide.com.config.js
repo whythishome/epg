@@ -25,6 +25,8 @@ module.exports = {
   },
   request: {
     method: 'GET',
+    timeout: 5000,
+    cache: { ttl: 60 * 60 * 1000 },
     headers: function() {
       return setHeaders();
     }
@@ -123,7 +125,7 @@ async function loadProgramDetails(item) {
     : `${programDetailsUrl.replace(PROXY_URL_1, PROXY_URL_2)}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
   console.log(requestUrl);
   const data = await axiosInstance
-    .get(requestUrl)
+    .get(requestUrl, { timeout: 5000 })
     .then(r => r.data)
     .catch(err => {
       console.log(`Error fetching program details: ${err.message}`);
