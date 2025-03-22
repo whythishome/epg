@@ -43,8 +43,10 @@ module.exports = {
     const totalPages = await fetchPages();
     const channels = [];
     let newOffset = 0;
+    console.log('before For ${totalPages}');
     for (let i = 0; i < Number(totalPages); i += 20) {
       try {
+        console.log('inside for');
         const resp = await axios.get(
           `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=${newOffset}`,
           {
