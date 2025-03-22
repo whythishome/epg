@@ -43,8 +43,8 @@ module.exports = {
     const totalPages = await fetchPages();
     const channels = [];
     let newOffset = 0;
-    console.log('before For ${totalPages}');
-    for (let i = 0; i < Number(totalPages); i += 20) {
+    console.log(`before For ${totalPages}`);
+    for (let i = 0; i < totalPages; i += 20) {
       try {
         console.log('inside for');
         const resp = await axios.get(
@@ -97,9 +97,9 @@ async function fetchPages() {
     headers: await setHeaders()
   };
   try {
-    const response = await axios.get(url, params);
+    const response = await axios.get(url, { headers: params.headers });
     console.log(response.data.data.total);
-    return response.data.total;
+    return response.data.data.total;
   } catch (error) {
     console.error('Error fetching total pages:', error.message);
     return 0;
