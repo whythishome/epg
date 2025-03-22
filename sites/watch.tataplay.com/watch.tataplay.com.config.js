@@ -43,7 +43,7 @@ module.exports = {
     const totalPages = await fetchPages();
     const channels = [];
     let newOffset = 0;
-    console.log(`before For ${totalPages}`);
+    console.log('before For ${totalPages}');
     for (let i = 0; i < totalPages; i += 20) {
       try {
         console.log('inside for');
@@ -60,7 +60,7 @@ module.exports = {
               lang: 'en',
               site_id: channel.id,
               name: channel.title,
-              logo: channel.transparentImageUrl ? channel.transparentImageUrl : channel.thumbnailImage
+              logo: escapeAmpersands(channel.transparentImageUrl) ? escapeAmpersands(channel.transparentImageUrl) : channel.thumbnailImage
             });
           }
         });
@@ -97,13 +97,17 @@ async function fetchPages() {
     headers: await setHeaders()
   };
   try {
-    const response = await axios.get(url, { headers: params.headers });
+    const response = await axios.get(url, params);
     console.log(response.data.data.total);
     return response.data.data.total;
   } catch (error) {
     console.error('Error fetching total pages:', error.message);
     return 0;
   }
+}
+
+function escapeAmpersands(text) {
+  return text.replace(/&(?!amp;|lt;|gt;|quot;|apos;)/g, '&amp;');
 }
 
 function setHeaders() {
