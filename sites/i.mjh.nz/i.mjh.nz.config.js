@@ -112,7 +112,7 @@ module.exports = {
         .then(r => r.data)
         .catch(console.error)
       const data = parser.parse(xml);
-      console.log(data.channels);
+      console.dir(data.channels, { depth: null });
       data.channels.forEach(item => {
         channels.push({
           lang: option.lang,
