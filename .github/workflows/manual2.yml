@@ -27,7 +27,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --channels=sites/sports/all.channels.xml --days=7 --gzip --output=guides/sports/all.xml
+          npm run grab -- --channels=sites/sports/all.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/all.xml
           # npm run grab -- --site=dishtv.in --gzip --maxConnections=10 --output=guides/dishtv.in_en.xml --lang=en
           # npm run grab -- --site=dishtv.in --gzip --maxConnections=10 --output=guides/dishtv.in_hi.xml --lang=hi
           # npm run grab --- --site=sky.co.nz --gzip --maxConnections=10 --output=guides/sky.co.nz.xml
