@@ -117,8 +117,8 @@ module.exports = {
         channels.push({
           lang: option.lang,
           site_id: `${option.path}#${item.id}`,
-          name: item.displayName,
-          logo: item.icon
+          name: item.displayName.length ? item.displayName[0].value : null,
+          logo: item.icon.length ? item.icon[0].src : null
         })
       })
     }
