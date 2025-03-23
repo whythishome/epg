@@ -118,7 +118,7 @@ module.exports = {
           lang: option.lang,
           site_id: `${option.path}#${item.id}`,
           name: item.displayName,
-          logo: `${option.path}#${item.icon}`
+          logo: item.icon
         })
       })
     }
