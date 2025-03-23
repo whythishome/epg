@@ -52,7 +52,8 @@ module.exports = {
       return {
         lang: displayName.lang || 'en',
         site_id: `${tag}#${channel.id}`,
-        name: displayName.value
+        name: displayName.value,
+        logo: `${tag}#${channel.logo}`
       }
     })
   }
