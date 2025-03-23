@@ -30,7 +30,7 @@ module.exports = {
       .get('https://skywebconfig.msl-prod.skycloud.co.nz/sky/json/channels.prod.json')
       .then(r => r.data)
       .catch(console.log)
-
+    console.log(data);
     return data.channels.map(item => {
       return {
         lang: 'en',
