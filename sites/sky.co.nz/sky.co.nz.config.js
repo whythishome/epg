@@ -31,11 +31,12 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
     console.log(data);
-    return data.channels.map(item => {
+    return data.map(item => {
       return {
         lang: 'en',
         site_id: parseInt(item.number).toString(),
-        name: item.name
+        name: item.name,
+        logo: item.logoThumbnail
       }
     })
   }
