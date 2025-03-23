@@ -15,7 +15,8 @@ module.exports = {
       'Accept-Language': 'en-US,en;',
       Cookie: 'AAMC_foxtel_0=REGION|6',
       'User-Agent': 'insomnia/2022.7.5'
-    }
+    },
+    timeout: 2000
   },
   parser: function ({ content, date }) {
     let programs = []
