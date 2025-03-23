@@ -33,7 +33,7 @@ jobs:
           npm run grab -- --site=dishtv.in --lang=hi --maxConnections=10 --gzip --output=guides/dishtv.in_hi.xml
           npm run grab -- --site=watch.tataplay.com --maxConnections=10 --gzip --output=guides/watch.tataplay.com.xml
           npm run grab -- --site=distro.tv --maxConnections=10 --gzip --output=guides/distro.tv.xml
-          npm run grab -- --site=nowplayer.now.com --lang=en --gzip --output=guides/nowplayer.now.com.xml
+          npm run grab -- --site=nowplayer.now.com --maxConnections=10 --lang=en --gzip --output=guides/nowplayer.now.com.xml
           npm run grab -- --site=foxtel.com.au --gzip --output=guides/foxtel.com.au.xml
           npm run grab -- --site=starhubtvplus.com --gzip --output=guides/starhubtvplus.com.xml
           npm run grab -- --site=sky.com --maxConnections=10 --gzip --output=guides/sky.com.xml
