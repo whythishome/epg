@@ -111,8 +111,8 @@ module.exports = {
         .get(`${API_ENDPOINT}/${option.path}.xml`)
         .then(r => r.data)
         .catch(console.error)
-      const data = parser.parse(xml)
-
+      const data = parser.parse(xml);
+      console.log(data.channels);
       data.channels.forEach(item => {
         channels.push({
           lang: option.lang,
