@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="ESPN2/ES2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ES2/ES2_290x170.png">ESPN2</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="ESPN/ESP" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ESP/ESP_290x170.png">ESPN</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="ESPN2/ES2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ES2/ES2_290x170.png">ESPN2 AU</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="ESPN/ESP" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ESP/ESP_290x170.png">ESPN AU</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-CRICKET/FS1" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FS1/FS1_290x170.png">Fox Cricket</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Fox-Footy/FAF" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FAF/FAF_290x170.png">Fox Footy</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-LEAGUE/SP2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SP2/SP2_290x170.png">Fox League</channel>
@@ -10,9 +10,13 @@
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-SPORTS-506/SPS" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SPS/SPS_290x170.png">Fox Sports 506</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Fox-Sports-More/FSS" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSS/FSS_290x170.png">Fox Sports More</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="RACINGCOM/RTV" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/RTV/RTV_290x170.png">RACING.COM</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Racing-2/SR2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SR2/SR2_290x170.png">SKY Racing 2</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Racing/SRA" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SRA/SRA_290x170.png">SKY Racing</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Tbred-Cent/SRW" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SRW/SRW_290x170.png">SKY Tbred Cent</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Racing-2/SR2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SR2/SR2_290x170.png">Sky Racing 2</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Racing/SRA" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SRA/SRA_290x170.png">Sky Racing</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Tbred-Cent/SRW" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SRW/SRW_290x170.png">Sky Tbred Cent</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="63A30D9C-609D-4A30-8730-2CA391DF287A" logo="">beIN Sports 2 AU</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="164C0EDA-EBCE-4AA6-9DDA-D603E0948B9F" logo="">beIN Sports 1 AU</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="2E8A6222-8D90-4291-81E3-AF2F72557746" logo="">beIN Sports 3 AU</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="C938A2D0-375A-4876-B05D-08EE29D33B07" logo="">beIN Sports XTRA AU</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000620000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/HYG1Jq7V.png">Sony Sports Ten 1</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000240000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Ybkb746Y.png">Sony Sports Ten 2</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006000000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FHmx8ktP.png">Sony Sports Ten 3</channel>
@@ -29,7 +33,7 @@
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000027760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/CDzxunbK.png">Star Sports Select 1</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000052670000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/YwJdYV7r.png">Star Sports Select 2</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000061080000" logo="https://whythishome.github.io/epg/logos/in/star-sports-3.png">Star Sports 3</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000074760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/kNgTx2fp.png">DD SPORTS Duplicate1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000074760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/kNgTx2fp.png">DD Sports</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050610000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/gR48PSB6.png">EUROSPORT</channel>
   <channel site="sky.com" lang="en" xmltv_id="CourtTV.uk" site_id="1207" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1207.png">Court TV</channel>
   <channel site="sky.com" lang="en" xmltv_id="Eurosport1.uk" site_id="1726" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1726.png">Eurosport 1</channel>
@@ -49,9 +53,9 @@
   <channel site="sky.com" lang="en" xmltv_id="SkySportsPremierLeague.uk" site_id="1303" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-premier-league-uk.png?raw=true">Sky Sports PL</channel>
   <channel site="sky.com" lang="en" xmltv_id="SkySportsRacing.uk" site_id="1354" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-racing-uk.png?raw=true">Sky Sports Racing</channel>
   <channel site="sky.com" lang="en" xmltv_id="SkySportsTennis.uk" site_id="1284" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-tennis-uk.png?raw=true">Sky Sports Tennis</channel>
-  <channel site="sky.com" lang="en" xmltv_id="ViaplaySports1.uk" site_id="1289" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1289.png">Viaplay 1 HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="ViaplaySports2.uk" site_id="1290" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1290.png">Viaplay 2 HD</channel>
-  <channel site="sky.com" lang="en" xmltv_id="ViaplayXtra.uk" site_id="1150" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1150.png">ViaplayXtraHD</channel>
+  <channel site="sky.com" lang="en" xmltv_id="ViaplaySports1.uk" site_id="1289" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1289.png">Viaplay 1</channel>
+  <channel site="sky.com" lang="en" xmltv_id="ViaplaySports2.uk" site_id="1290" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1290.png">Viaplay 2</channel>
+  <channel site="sky.com" lang="en" xmltv_id="ViaplayXtra.uk" site_id="1150" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1150.png">Viaplay Xtra</channel>
   <channel site="sky.com" lang="en" xmltv_id="W.uk" site_id="2617" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb2617.png">W</channel>
   <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice1HD.uk" site_id="http://bds.tv/services/BT_769095" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-box-office-uk.png?raw=true">Sky Sports Box Office HD</channel>
   <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice2HD.uk" site_id="http://bds.tv/services/BT_772384" logo="https://images-live.youview.tv/images/entity/71021947/ident/1_512x512.png">Sky Sports Box Office 2 HD</channel>
@@ -81,17 +85,31 @@
   <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="53115456-8c87-474d-9154-8f4f88a080d2" logo="https://poster.starhubgo.com/Linear_Channels2/225_1920x1080_HTV.png?w=272">Hub Premier 5</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="832a00f8-8c73-4e52-85d8-2bc475574d70" logo="https://poster.starhubgo.com/Linear_Channels2/226_1920x1080_HTV.png?w=272">Hub Premier 6</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="f2f7a291-3447-4807-95f0-8cc270608be0" logo="https://poster.starhubgo.com/Linear_Channels2/228_1920x1080_HTV.png?w=272">Hub Premier 8</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9f3a21bb-b934-4147-bfb9-888057ec0657" logo="https://poster.starhubgo.com/Linear_channels2/213_1920x1080_HTV.png?w=272">beIN Sports</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="6fb02848-2b74-4803-9661-ab4ff642764b" logo="https://poster.starhubgo.com/Linear_channels2/211_1920x1080_HTV.png?w=272">beIN Sports 2</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="249f5236-ca5d-416d-98b2-7e6961f1bccd" logo="https://poster.starhubgo.com/Linear_channels2/214_1920x1080_HTV.png?w=272">beIN Sports 3</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="17fa7e83-50d3-499c-8b64-9c38c0266cc7" logo="https://poster.starhubgo.com/Linear_channels2/215_1920x1080_HTV.png?w=272">beIN Sports 4</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="bdfc77d0-516a-4943-8a30-fb0fcb7fbf28" logo="https://poster.starhubgo.com/Linear_channels2/216_1920x1080_HTV.png?w=272">beIN Sports 5</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9f3a21bb-b934-4147-bfb9-888057ec0657" logo="https://poster.starhubgo.com/Linear_channels2/213_1920x1080_HTV.png?w=272">beIN Sports SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="6fb02848-2b74-4803-9661-ab4ff642764b" logo="https://poster.starhubgo.com/Linear_channels2/211_1920x1080_HTV.png?w=272">beIN Sports 2 SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="249f5236-ca5d-416d-98b2-7e6961f1bccd" logo="https://poster.starhubgo.com/Linear_channels2/214_1920x1080_HTV.png?w=272">beIN Sports 3 SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="17fa7e83-50d3-499c-8b64-9c38c0266cc7" logo="https://poster.starhubgo.com/Linear_channels2/215_1920x1080_HTV.png?w=272">beIN Sports 4 SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="bdfc77d0-516a-4943-8a30-fb0fcb7fbf28" logo="https://poster.starhubgo.com/Linear_channels2/216_1920x1080_HTV.png?w=272">beIN Sports 5 SG</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="b5c3d45b-e2c9-462b-bcf1-06a149d68f25" logo="https://poster.starhubgo.com/Linear_Channels2/201_1920x1080_HTV.png?w=272">Hub Sports 1</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="347fa620-e966-423c-8d46-98469f0fc974" logo="https://poster.starhubgo.com/Linear_Channels2/202_1920x1080_HTV.png?w=272">Hub Sports 2</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="4ff7b357-9338-41a3-b7be-ede530555279" logo="https://poster.starhubgo.com/Linear_Channels2/203_1920x1080_HTV.png?w=272">Hub Sports 3</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="753b50fe-262e-48da-9b5e-3fd9894ff531" logo="https://poster.starhubgo.com/Linear_Channels2/204_1920x1080_HTV.png?w=272">Hub Sports 4</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="38df8124-1bcd-49b6-abb3-ee230a1f40d2" logo="https://poster.starhubgo.com/Linear_channels2/205_1920x1080_HTV.png?w=272">Hub Sports 5</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="cc214bae-ddf2-4c17-84e2-7690fe4e65db" logo="https://poster.starhubgo.com/Linear_channels2/206_1920x1080_HTV.png?w=272">Hub Sports 6</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="e90f7070-37bc-431d-ae30-137a5ec5e8e4" logo="https://poster.starhubgo.com/Linear_channels2/209_1920x1080_HTV.png?w=272">SPOTV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="0e9c2522-9489-43d9-ba57-cc8750937972" logo="https://poster.starhubgo.com/Linear_channels2/210_1920x1080_HTV.png?w=272">SPOTV2</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="e90f7070-37bc-431d-ae30-137a5ec5e8e4" logo="https://poster.starhubgo.com/Linear_channels2/209_1920x1080_HTV.png?w=272">SPOTV SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="0e9c2522-9489-43d9-ba57-cc8750937972" logo="https://poster.starhubgo.com/Linear_channels2/210_1920x1080_HTV.png?w=272">SPOTV2 SG</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport1.nz" site_id="51" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport1_NewLogo_V_80x60.png">Sky Sport 1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport2.nz" site_id="52" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport2_NewLogo_V_80x60.png">Sky Sport 2</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport3.nz" site_id="53" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport3_NewLogo_V_80x60.png">Sky Sport 3</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport4.nz" site_id="54" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport4_NewLogo_V_80x60.png">Sky Sport 4</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport5.nz" site_id="55" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport5_NewLogo_V_80x60.png">Sky Sport 5</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport6.nz" site_id="56" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport6_NewLogo_V_80x60.png">Sky Sport 6</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport7.nz" site_id="57" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport7_NewLogo_V_80x60.png">Sky Sport 7</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport8.nz" site_id="58" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport8_NewLogo_V_80x60.png">Sky Sport 8</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport9.nz" site_id="59" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport9_NewLogo_V_80x60.png">Sky Sport 9</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySportSelect.nz" site_id="50" logo="https://static.sky.co.nz/sky/epglogos/logo_SKY_Sport_Select_80x60.png">Sky Sport Select</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ESPN2.au" site_id="61" logo="https://static.sky.co.nz/sky/epglogos/ESPN2.png">ESPN2 NZ</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ESPN.au" site_id="60" logo="https://static.sky.co.nz/sky/epglogos/ESPN.png">ESPN NZ</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="600" logo="https://static.sky.co.nz/sky/epglogos/MK_SKYSportPopUp1_Logo_80x60.png">Sky Sport Popup 1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="601" logo="https://static.sky.co.nz/sky/epglogos/MK_SKYSportPopUp2_Logo_80x60.png">Sky Sport Popup 2</channel>
 </channels>
