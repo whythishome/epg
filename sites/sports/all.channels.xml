@@ -11,9 +11,6 @@
   <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53216">Fox Sports More+</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53217">Fox Sports News</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#68330">Racing.com</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Racing-2/SR2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SR2/SR2_290x170.png">Sky Racing 2</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Racing/SRA" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SRA/SRA_290x170.png">Sky Racing</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Tbred-Cent/SRW" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SRW/SRW_290x170.png">Sky Tbred Central</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="" site_id="63A30D9C-609D-4A30-8730-2CA391DF287A" logo="">beIN Sports 2 AU</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="" site_id="164C0EDA-EBCE-4AA6-9DDA-D603E0948B9F" logo="">beIN Sports 1 AU</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="" site_id="2E8A6222-8D90-4291-81E3-AF2F72557746" logo="">beIN Sports 3 AU</channel>
@@ -37,8 +34,8 @@
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000074760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/kNgTx2fp.png">DD Sports</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050610000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/gR48PSB6.png">Eurosport IN</channel>
   <channel site="sky.com" lang="en" xmltv_id="CourtTV.uk" site_id="1207" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1207.png">Court TV</channel>
-  <channel site="sky.com" lang="en" xmltv_id="Eurosport1.uk" site_id="1726" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1726.png">Eurosport 1 UK</channel>
-  <channel site="sky.com" lang="en" xmltv_id="Eurosport2.uk" site_id="1841" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1841.png">Eurosport 2 UK</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="Eurosport1.uk" site_id="http://bds.tv/services/BT_750611" logo="https://images-live.youview.tv/images/entity/9911467/ident/1_512x512.png">Eurosport 1 UK</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="Eurosport2.uk" site_id="http://bds.tv/services/BT_750823" logo="https://images-live.youview.tv/images/entity/9911469/ident/1_512x512.png">Eurosport 2 UK</channel>
   <channel site="sky.com" lang="en" xmltv_id="LFCTV.uk" site_id="3845" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3845.png">LFCTV</channel>
   <channel site="sky.com" lang="en" xmltv_id="MUTV.uk" site_id="1834" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1834.png">MUTV</channel>
   <channel site="sky.com" lang="en" xmltv_id="RacingTV.uk" site_id="3636" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3636.png">Racing TV</channel>
