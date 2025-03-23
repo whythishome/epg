@@ -28,14 +28,14 @@ jobs:
           # npm run channels:parse -- --config=./sites/dishtv.in/dishtv.in.config.js --output=./sites/dishtv.in/dishtv.in_en.channels.xml --set=lang:en
           # npm run channels:parse -- --config=./sites/tvpassport.com/tvpassport.com.config.js --output=./sites/tvpassport.com/tvpassport.com.channels.xml
           # npm run channels:parse -- --config=./sites/tvtv.us/tvtv.us.config.js --output=./sites/tvtv.us/tvtv.us.channels.xml
-          npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_en.channels.xml --set=lang:en
+          npm run channels:parse --- --config=./sites/content.astro.com.my/content.astro.com.my.config.js --output=./sites/content.astro.com.my/content.astro.com.my.channels.xml
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
         # git add -f sites/starhubtvplus.com/starhubtvplus.com_en.channels.xml
         # git add -f sites/dishtv.in/dishtv.in_en.channels.xml
-        git add -f sites/nowplayer.now.com/nowplayer.now.com_en.channels.xml
+        git add -f sites/content.astro.com.my/content.astro.com.my.channels.xml
         # git add -f sites/tvpassport.com/tvpassport.com.channels.xml
         # git add -f sites/tvtv.us/tvtv.us.channels.xml
         git commit -a -m "Channel update"
