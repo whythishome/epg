@@ -26,7 +26,7 @@ module.exports = {
         description: details.longSynopsis || details.shortSynopsis,
         actors: parseList(details.cast),
         directors: parseList(details.director),
-        image: details.imageUrl,
+        icon: details.imageUrl,
         rating: parseRating(details),
         categories: parseCategories(details),
         episode: parseEpisode(item),
@@ -48,7 +48,8 @@ module.exports = {
       return {
         lang: 'ms',
         site_id: item.id,
-        name: item.title
+        name: item.title,
+        logo: item.originalImage
       }
     })
   }
