@@ -26,9 +26,12 @@ module.exports = {
     const lang = channel.lang
 
     items.forEach(item => {
-      const title = lang === 'hi' ? item.regional.hindi.title : item.title
+      const title =
+        lang === 'hi' && item.regional?.hindi?.title
+          ? item.regional.hindi.title
+          : item.title
       const description =
-        lang === 'hi'
+        lang === 'hi' && item.regional?.hindi?.desc
           ? `${item.regional.hindi.desc}${item['episode-num'] ? ` E${item['episode-num']}` : ''}`
           : `${item.desc}${item['episode-num'] ? ` E${item['episode-num']}` : ''}`
       programs.push({
