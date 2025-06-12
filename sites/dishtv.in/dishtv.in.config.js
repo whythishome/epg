@@ -119,7 +119,7 @@ async function fetchToken() {
     if (response.data?.token) {
       return response.data.token
     } else {
-      throw new Error('TOKEN not found in the response.')
+      throw new Error('TOKEN not found in the response. Response: ${response.data}`)
     }
   } catch (error) {
     throw new Error(`Error fetching TOKEN: ${error.message}`)
