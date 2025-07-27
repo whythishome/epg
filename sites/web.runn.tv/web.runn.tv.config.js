@@ -13,8 +13,7 @@ module.exports = {
   request: {
     method: 'GET',
     headers: {
-      'User-Agent': 'okhttp/4.11.0',
-      'userid': '0D-62-2D-15-FD-CE'
+      'User-Agent': 'PostmanRuntime/7.44.1'
     }
   },
   parser: ({ channel, content }) => {
