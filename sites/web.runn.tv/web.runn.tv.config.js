@@ -4,9 +4,6 @@ const plugins = ['utc', 'timezone', 'customParseFormat']
 
 plugins.forEach(plugin => dayjs.extend(require(`dayjs/plugin/${plugin}`)))
 
-let TOKEN
-let tokenPromise = null
-
 module.exports = {
   site: 'web.runn.tv',
   days: 1,
@@ -16,7 +13,7 @@ module.exports = {
   request: {
     method: 'GET',
     headers: {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+      'User-Agent': 'okhttp/4.11.0',
       'userid': '0D-62-2D-15-FD-CE'
     }
   },
@@ -53,10 +50,4 @@ function parseItems(content) {
     console.error('Error parsing content:', error.message)
     return []
   }
-}
-
-async function getHeaders() {
-  return {
-    'userid': '0D-62-2D-15-FD-CE'
-  };
 }
