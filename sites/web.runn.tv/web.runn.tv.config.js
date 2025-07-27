@@ -1,44 +1,6 @@
 const axios = require('axios');
 const dayjs = require('dayjs');
 const plugins = ['utc', 'timezone', 'customParseFormat'];
-
-// —–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-// Axios interceptors for logging
-// —–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-axios.interceptors.request.use(
-  config => {
-    console.log('→ Request URL:', config.url);
-    console.log('→ Request Headers:', JSON.stringify(config.headers, null, 2));
-    return config;
-  },
-  error => Promise.reject(error)
-);
-
-axios.interceptors.response.use(
-  response => {
-    // response.data might be an object or string
-    const text = typeof response.data === 'string'
-      ? response.data
-      : JSON.stringify(response.data, null, 2);
-    console.log('← Response Text:', text);
-    return response;
-  },
-  error => {
-    if (error.response) {
-      const text = typeof error.response.data === 'string'
-        ? error.response.data
-        : JSON.stringify(error.response.data, null, 2);
-      console.error('← Error Response Text:', text);
-    } else {
-      console.error('← Network/Error:', error.message);
-    }
-    return Promise.reject(error);
-  }
-);
-
-// —–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-// Your scraper module
-// —–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 require('dayjs/plugin/utc');
 require('dayjs/plugin/timezone');
 require('dayjs/plugin/customParseFormat');
@@ -49,17 +11,14 @@ dayjs.extend(require('dayjs/plugin/customParseFormat'));
 module.exports = {
   site: 'web.runn.tv',
   days: 1,
-
   url({ channel }) {
+    console.log(`https://prod-epg.runn.tv/runtv/v1/schedule/getChannelEpg/${channel.site_id}`);
     return `https://prod-epg.runn.tv/runtv/v1/schedule/getChannelEpg/${channel.site_id}`;
   },
-
   request: {
     method: 'GET',
-    headers: {
-      userid: '0D-62-2D-15-FD-CE',
-      'User-Agent': 'PostmanRuntime/7.44.1',
-      Accept: 'application/json, text/plain, */*'
+    headers: function() {
+      return setHeaders();
     }
   },
 
@@ -99,4 +58,10 @@ function parseItems(content) {
     console.error('Error parsing content:', error.message);
     return [];
   }
+}
+function setHeaders() {
+  return {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'content-type': 'application/json'
+  };
 }
