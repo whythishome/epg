@@ -1,0 +1,72 @@
+name: EPG Update
+
+on:
+  schedule:
+    - cron: '0 */24 * * *' # Daily schedule
+  workflow_dispatch:
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+    env:
+      PROXY_URL_1: ${{ secrets.PROXY_URL_1 }}
+      PROXY_URL_2: ${{ secrets.PROXY_URL_2 }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+           node-version: 18
+
+    - name: npm grab epg
+      run: |
+          npm install
+          npm run grab -- --site=dishtv.in --lang=en --maxConnections=10 --gzip --output=guides/dishtv.in_en.xml
+          npm run grab -- --site=dishtv.in --lang=hi --maxConnections=10 --gzip --output=guides/dishtv.in_hi.xml
+          npm run grab -- --site=watch.tataplay.com --maxConnections=10 --gzip --output=guides/watch.tataplay.com.xml
+          npm run grab -- --site=distro.tv --maxConnections=10 --gzip --output=guides/distro.tv.xml
+          npm run grab -- --site=nowplayer.now.com --maxConnections=10 --lang=en --gzip --output=guides/nowplayer.now.com.xml
+          npm run grab -- --site=foxtel.com.au --gzip --output=guides/foxtel.com.au.xml
+          npm run grab -- --site=starhubtvplus.com --gzip --output=guides/starhubtvplus.com.xml
+          npm run grab -- --site=sky.com --maxConnections=10 --gzip --output=guides/sky.com.xml
+          npm run grab -- --channels=sites/beinsports.com/beinsports.com_au-en.channels.xml --gzip --output=guides/beinsports.com_au-en.xml
+          npm run grab -- --channels=sites/sports/uk.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/uk.xml
+          npm run grab -- --channels=sites/sports/in.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/in.xml
+          npm run grab -- --channels=sites/sports/au.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/au.xml
+          npm run grab -- --channels=sites/sports/all.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/all.xml
+          npm run grab -- --site=player.ee.co.uk --maxConnections=10 --gzip --output=guides/player.ee.co.uk.xml
+          npm run grab -- --site=virgintvgo.virginmedia.com --maxConnections=10 --gzip --output=guides/virgintvgo.virginmedia.com.xml
+          npm run grab -- --site=fixturecalendar.com --gzip --output=guides/sports/fixturecalendar.com.xml
+          npm run grab -- --site=tvguide.com --gzip --maxConnections=2 --output=guides/tvguide.com.xml
+          
+    - name: Commit changes
+      run: |
+        git config --local user.email "your-email@example.com"
+        git config --local user.name "Your Name"
+        git add -f guides/dishtv.in_en.xml.gz
+        git add -f guides/dishtv.in_hi.xml.gz
+        git add -f guides/watch.tataplay.com.xml.gz
+        git add -f guides/distro.tv.xml.gz
+        git add -f guides/nowplayer.now.com.xml.gz
+        git add -f guides/foxtel.com.au.xml.gz
+        git add -f guides/beinsports.com_au-en.xml.gz
+        git add -f guides/starhubtvplus.com.xml.gz
+        git add -f guides/sky.com.xml.gz
+        git add -f guides/player.ee.co.uk.xml.gz
+        git add -f guides/virgintvgo.virginmedia.com.xml.gz
+        git add -f guides/sports/uk.xml.gz
+        git add -f guides/sports/in.xml.gz
+        git add -f guides/sports/au.xml.gz
+        git add -f guides/sports/all.xml.gz
+        git add -f guides/sports/fixturecalendar.com.xml.gz
+        git add -f guides/tvguide.com.xml.gz
+        git commit -m "Update xml"
+        git push
