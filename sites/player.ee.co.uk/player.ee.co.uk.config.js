@@ -52,6 +52,7 @@ module.exports = {
           programs.push({
             title: item.title,
             description,
+            icon: item.id ? `https://images-live.youview.tv/images/entity/${item.id}/primary/1_512x288.jpg` : null,
             season,
             episode,
             start,
@@ -96,7 +97,8 @@ module.exports = {
           return {
             lang: 'en',
             site_id: channel.serviceLocator,
-            name: channel.fullName
+            name: channel.fullName,
+            logo: 'https://images-live.youview.tv/images/entity/' + channel.id + '/ident/1_512x512.png'
           }
         }) || []
     )

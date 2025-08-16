@@ -7,7 +7,7 @@ const debug = require('debug')('site:tvguide.com')
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
-const providerId = '9100001138'
+const providerId = '9100002976'
 const maxDuration = 240
 const segments = 1440 / maxDuration
 const headers = {

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="ESPN2/ES2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ES2/ES2_290x170.png">ESPN2</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="ESPN/ESP" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/ESP/ESP_290x170.png">ESPN</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-CRICKET-/FSP" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSP/FSP_290x170.png">FOX CRICKET +</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-CRICKET/FS1" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FS1/FS1_290x170.png">FOX CRICKET</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Fox-Footy/FAF" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FAF/FAF_290x170.png">Fox Footy</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-LEAGUE/SP2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SP2/SP2_290x170.png">FOX LEAGUE</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-News/FNC" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FNC/FNC_290x170.png">FOX News</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-SPORTS-503/FS3" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FS3/FS3_290x170.png">FOX SPORTS 503</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="FOX-SPORTS-506/SPS" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SPS/SPS_290x170.png">FOX SPORTS 506</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Fox-Sports-More/FSS" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSS/FSS_290x170.png">Fox Sports More</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Fox-Sports-News/FSN" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FSN/FSN_290x170.png">Fox Sports News</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="Racingcom-HD/RTD" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/RTV/RTD_290x170.png">Racing.com HD</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="RACINGCOM/RTV" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/RTV/RTV_290x170.png">RACING.COM</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Racing-2/SR2" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SR2/SR2_290x170.png">SKY Racing 2</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Racing/SRA" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SRA/SRA_290x170.png">SKY Racing</channel>  
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="SKY-Tbred-Cent/SRW" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/SRW/SRW_290x170.png">SKY Tbred Cent</channel>
+  <channel site="foxtel.com.au" lang="en" xmltv_id="" site_id="WWE/WWS" logo="https://www.foxtel.com.au/content/dam/foxtel/shared/channel/WWS/WWS_290x170.png">WWE</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="63A30D9C-609D-4A30-8730-2CA391DF287A" logo="https://prod-media.beinsports.com/image/b5de4caa4232fc8afacdba10daf5ba7b.128.png">beIN Sports 2 AU</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="164C0EDA-EBCE-4AA6-9DDA-D603E0948B9F" logo="https://prod-media.beinsports.com/image/a5dc8600e76af1e1d3b58c569580713e.128.png">beIN Sports 1 AU</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="2E8A6222-8D90-4291-81E3-AF2F72557746" logo="https://prod-media.beinsports.com/image/5c72fa3d1788a0afa9a79ab3ec1f4ef6.128.png">beIN Sports 3 AU</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="C938A2D0-375A-4876-B05D-08EE29D33B07" logo="https://prod-media.beinsports.com/image/383dda3c7662c2e80a95c10c0af72fe9.128.png">beIN Sports XTRA AU</channel>
+</channels>

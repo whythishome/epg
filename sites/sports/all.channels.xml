@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="" site_id="us#69038836/willow-cricket" logo="https://cricket.willow.tv/_nuxt/img/willow_blue_logo.362ed8e.png">Willow Cricket</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="" site_id="us#4573019901/willow-xtra" logo="https://cricket.willow.tv/_nuxt/img/willow_2_blue_logo.fa6b253.png">Willow Xtra</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="PLEX1#plex.tv.Willow.Sports.plex" logo="https://a.jsrdn.com/hls/23197/willow-sports/logo_20241003_234953_68.png">Willow Sports</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53169">ESPN AU</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53207">ESPN2 AU</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53208">Fox Cricket</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53210">Fox League</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53211">Fox Sports 503</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53212">Fox Footy</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53214">Fox Sports 505</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53215">Fox Sports 506</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53216">Fox Sports More+</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#53217">Fox Sports News</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Kayo/epg#68330">Racing.com</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="63A30D9C-609D-4A30-8730-2CA391DF287A" logo="https://prod-media.beinsports.com/image/b5de4caa4232fc8afacdba10daf5ba7b.128.png">beIN Sports 2 AU</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="164C0EDA-EBCE-4AA6-9DDA-D603E0948B9F" logo="https://prod-media.beinsports.com/image/a5dc8600e76af1e1d3b58c569580713e.128.png">beIN Sports 1 AU</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="2E8A6222-8D90-4291-81E3-AF2F72557746" logo="https://prod-media.beinsports.com/image/5c72fa3d1788a0afa9a79ab3ec1f4ef6.128.png">beIN Sports 3 AU</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="C938A2D0-375A-4876-B05D-08EE29D33B07" logo="https://prod-media.beinsports.com/image/383dda3c7662c2e80a95c10c0af72fe9.128.png">beIN Sports XTRA AU</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000620000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/HYG1Jq7V.png">Sony Sports Ten 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000240000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/Ybkb746Y.png">Sony Sports Ten 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000006000000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FHmx8ktP.png">Sony Sports Ten 3</channel>
+  <channel site="watch.tataplay.com" lang="en" xmltv_id="" site_id="914" icon="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/SONY-SPORTS-TEN-4-Transparent.png">Sony Sports Ten 4</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000009310000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/xngy65EJ.png">Sony Sports Ten 5</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="158147" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/U2ReVTUt.png">Colors Cineplex</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142749" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/VPE6hg7H.png">Colors Cineplex Bollywood</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="142750" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/6wjC5FAv.png">Colors Cineplex Superhits</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="143809" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/r1W3wpgX.png">Star Sports Khel</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000000190000" logo="hhttps://whythishome.github.io/epg/logos/in/star-sports-1.png">Star Sports 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000002650000" logo="https://whythishome.github.io/epg/logos/in/star-sports-1-hindi.png">Star Sports 1 Hindi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000014200000" logo="https://whythishome.github.io/epg/logos/in/star-sports-2.png">Star Sports 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000075992500" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/3lAwZ2Hq.png">Star Sports 2 Hindi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000027760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/CDzxunbK.png">Star Sports Select 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000052670000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/YwJdYV7r.png">Star Sports Select 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000061080000" logo="https://whythishome.github.io/epg/logos/in/star-sports-3.png">Star Sports 3</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000074760000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/kNgTx2fp.png">DD Sports</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="" site_id="10000000050610000" logo="https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/gR48PSB6.png">Eurosport IN</channel>
+  <channel site="sky.com" lang="en" xmltv_id="CourtTV.uk" site_id="1207" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1207.png">Court TV</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="Eurosport1.uk" site_id="http://bds.tv/services/BT_750611" logo="https://images-live.youview.tv/images/entity/9911467/ident/1_512x512.png">Eurosport 1 UK</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="Eurosport2.uk" site_id="http://bds.tv/services/BT_750823" logo="https://images-live.youview.tv/images/entity/9911469/ident/1_512x512.png">Eurosport 2 UK</channel>
+  <channel site="sky.com" lang="en" xmltv_id="LFCTV.uk" site_id="3845" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3845.png">LFCTV</channel>
+  <channel site="sky.com" lang="en" xmltv_id="MUTV.uk" site_id="1834" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1834.png">MUTV</channel>
+  <channel site="sky.com" lang="en" xmltv_id="RacingTV.uk" site_id="3636" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3636.png">Racing TV</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsArena.uk" site_id="3839" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sportsplus-uk.png?raw=true">Sky Sports Arena</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsCricket.uk" site_id="1302" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-cricket-uk.png?raw=true">Sky Sports Cricket</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsF1.uk" site_id="1306" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-f1-uk.png?raw=true">Sky Sports F1</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsFootball.uk" site_id="3838" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-football-uk.png?raw=true">Sky Sports Football</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsGolf.uk" site_id="1322" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-golf-uk.png?raw=true">Sky Sports Golf</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsMainEvent.uk" site_id="1301" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-main-event-uk.png?raw=true">Sky Sports Main Event</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsMix.uk" site_id="4091" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-mix-uk.png?raw=true">Sky Sports Mix</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsNews.uk" site_id="1314" logo="hhttps://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-news-uk.png?raw=true">Sky Sports News</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsNFL.uk" site_id="1333" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-action-uk.png?raw=true">Sky Sports NFL</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsPremierLeague.uk" site_id="1303" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-premier-league-uk.png?raw=true">Sky Sports PL</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsRacing.uk" site_id="1354" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-racing-uk.png?raw=true">Sky Sports Racing</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkySportsTennis.uk" site_id="1284" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-tennis-uk.png?raw=true">Sky Sports Tennis</channel>
+  <channel site="sky.com" lang="en" xmltv_id="ViaplaySports1.uk" site_id="1289" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1289.png">Viaplay 1</channel>
+  <channel site="sky.com" lang="en" xmltv_id="ViaplaySports2.uk" site_id="1290" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1290.png">Viaplay 2</channel>
+  <channel site="sky.com" lang="en" xmltv_id="ViaplayXtra.uk" site_id="1150" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1150.png">Viaplay Xtra</channel>
+  <channel site="sky.com" lang="en" xmltv_id="W.uk" site_id="2617" logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb2617.png">W</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice1HD.uk" site_id="http://bds.tv/services/BT_769095" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-box-office-uk.png?raw=true">Sky Sports Box Office</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="SkySportsBoxOffice2HD.uk" site_id="http://bds.tv/services/BT_772384" logo="https://images-live.youview.tv/images/entity/71021947/ident/1_512x512.png">Sky Sports Box Office 2</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports1.uk" site_id="http://bds.tv/services/BT_763997" logo="https://images-live.youview.tv/images/entity/10068955/ident/1_512x512.png">TNT Sports 1</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports2.uk" site_id="http://bds.tv/services/BT_764001" logo="https://images-live.youview.tv/images/entity/10068953/ident/1_512x512.png">TNT Sports 2</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports3.uk" site_id="http://bds.tv/services/BT_768612" logo="https://images-live.youview.tv/images/entity/21871577/ident/1_512x512.png">TNT Sports 3</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports4.uk" site_id="http://bds.tv/services/BT_758465" logo="https://images-live.youview.tv/images/entity/10845218/ident/1_512x512.png">TNT Sports 4</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports5.uk" site_id="http://bds.tv/services/BT_767933" logo="https://images-live.youview.tv/images/entity/17254865/ident/1_512x512.png">TNT Sports 5</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports6.uk" site_id="http://bds.tv/services/BT_767934" logo="https://images-live.youview.tv/images/entity/19231343/ident/1_512x512.png">TNT Sports 6</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports7.uk" site_id="http://bds.tv/services/BT_767935" logo="https://images-live.youview.tv/images/entity/19231345/ident/1_512x512.png">TNT Sports 7</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports8.uk" site_id="http://bds.tv/services/BT_767936" logo="https://images-live.youview.tv/images/entity/22932120/ident/1_512x512.png">TNT Sports 8</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports9.uk" site_id="http://bds.tv/services/BT_767937" logo="https://images-live.youview.tv/images/entity/22931885/ident/1_512x512.png">TNT Sports 9</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSports10.uk" site_id="http://bds.tv/services/BT_767938" logo="https://images-live.youview.tv/images/entity/22931886/ident/1_512x512.png">TNT Sports 10</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsBoxOffice2HD.uk" site_id="http://bds.tv/services/BT_772073" logo="https://images-live.youview.tv/images/entity/61246118/ident/1_512x512.png">TNT Sports Box Office 2</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsBoxOfficeHD.uk" site_id="http://bds.tv/services/BT_771276" logo="https://images-live.youview.tv/images/entity/44112656/ident/1_512x512.png">TNT Sports Box Office</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TNTSportsUltimate.uk" site_id="http://bds.tv/services/BT_768397" logo="https://images-live.youview.tv/images/entity/19231389/ident/1_512x512.png">TNT Sports Ultimate UHD</channel>
+  <channel site="player.ee.co.uk" lang="en" xmltv_id="TogetherTV.uk" site_id="dvb://233a..3fec" logo="https://images-live.youview.tv/images/entity/dfa0587b-2960-5a89-aa5a-9c31f7071805/ident/1_512x512.png">Together TV</channel>
+  <channel site="virgintvgo.virginmedia.com" lang="en" xmltv_id="" site_id="2257" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-main-event-uhd-uk.png?raw=true">Sky Sports Main Event UHD</channel>
+  <channel site="virgintvgo.virginmedia.com" lang="en" xmltv_id="" site_id="2258" logo="https://staticqbr-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/image-service/ImagesEPG/EventImages/sky-sports-uhd.png">Sky Sports UHD 1</channel>
+  <channel site="virgintvgo.virginmedia.com" lang="en" xmltv_id="" site_id="2259" logo="https://github.com/whythishome/epg/blob/master/logos/uk/sky-sports-f1-uhd-uk.png?raw=true">Sky Sports F1 UHD</channel>
+  <channel site="virgintvgo.virginmedia.com" lang="en" xmltv_id="" site_id="2265" logo="https://staticqbr-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/image-service/ImagesEPG/EventImages/sky-sports-uhd.png">Sky Sports UHD 2</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="6bdd83c0-d833-42a0-896c-8a94fbb35f73" logo="https://poster.starhubgo.com/Linear_Channels2/247_1920x1080_HTV.png?w=272">Premier Sports</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="5cee1079-1bb5-4054-ae02-0322144a248b" logo="https://poster.starhubgo.com/Linear_Channels2/221_1920x1080_HTV.png?w=272">Hub Premier 1</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="6f186614-28de-416a-b8a6-02fa5c579aa7" logo="https://poster.starhubgo.com/Linear_Channels2/222_1920x1080_HTV.png?w=272">Hub Premier 2 (HD)</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="1c94dd39-657c-428c-959a-e646f7da99cc" logo="https://poster.starhubgo.com/Linear_Channels2/223_1920x1080_HTV.png?w=272">Hub Premier 3</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="b6752f04-c904-43d8-befb-7d3b20efe98c" logo="https://poster.starhubgo.com/Linear_Channels2/224_1920x1080_HTV.png?w=272">Hub Premier 4</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="53115456-8c87-474d-9154-8f4f88a080d2" logo="https://poster.starhubgo.com/Linear_Channels2/225_1920x1080_HTV.png?w=272">Hub Premier 5</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="832a00f8-8c73-4e52-85d8-2bc475574d70" logo="https://poster.starhubgo.com/Linear_Channels2/226_1920x1080_HTV.png?w=272">Hub Premier 6</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="f2f7a291-3447-4807-95f0-8cc270608be0" logo="https://poster.starhubgo.com/Linear_Channels2/228_1920x1080_HTV.png?w=272">Hub Premier 8</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="9f3a21bb-b934-4147-bfb9-888057ec0657" logo="https://poster.starhubgo.com/Linear_channels2/213_1920x1080_HTV.png?w=272">beIN Sports 1 SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="6fb02848-2b74-4803-9661-ab4ff642764b" logo="https://poster.starhubgo.com/Linear_channels2/211_1920x1080_HTV.png?w=272">beIN Sports 2 SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="249f5236-ca5d-416d-98b2-7e6961f1bccd" logo="https://poster.starhubgo.com/Linear_channels2/214_1920x1080_HTV.png?w=272">beIN Sports 3 SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="17fa7e83-50d3-499c-8b64-9c38c0266cc7" logo="https://poster.starhubgo.com/Linear_channels2/215_1920x1080_HTV.png?w=272">beIN Sports 4 SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="bdfc77d0-516a-4943-8a30-fb0fcb7fbf28" logo="https://poster.starhubgo.com/Linear_channels2/216_1920x1080_HTV.png?w=272">beIN Sports 5 SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="b5c3d45b-e2c9-462b-bcf1-06a149d68f25" logo="https://poster.starhubgo.com/Linear_Channels2/201_1920x1080_HTV.png?w=272">Hub Sports 1</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="347fa620-e966-423c-8d46-98469f0fc974" logo="https://poster.starhubgo.com/Linear_Channels2/202_1920x1080_HTV.png?w=272">Hub Sports 2</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="4ff7b357-9338-41a3-b7be-ede530555279" logo="https://poster.starhubgo.com/Linear_Channels2/203_1920x1080_HTV.png?w=272">Hub Sports 3</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="753b50fe-262e-48da-9b5e-3fd9894ff531" logo="https://poster.starhubgo.com/Linear_Channels2/204_1920x1080_HTV.png?w=272">Hub Sports 4</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="38df8124-1bcd-49b6-abb3-ee230a1f40d2" logo="https://poster.starhubgo.com/Linear_channels2/205_1920x1080_HTV.png?w=272">Hub Sports 5</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="cc214bae-ddf2-4c17-84e2-7690fe4e65db" logo="https://poster.starhubgo.com/Linear_channels2/206_1920x1080_HTV.png?w=272">Hub Sports 6</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="e90f7070-37bc-431d-ae30-137a5ec5e8e4" logo="https://poster.starhubgo.com/Linear_channels2/209_1920x1080_HTV.png?w=272">SPOTV SG</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="" site_id="0e9c2522-9489-43d9-ba57-cc8750937972" logo="https://poster.starhubgo.com/Linear_channels2/210_1920x1080_HTV.png?w=272">SPOTV2 SG</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport1.nz" site_id="51" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport1_NewLogo_V_80x60.png">Sky Sport 1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport2.nz" site_id="52" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport2_NewLogo_V_80x60.png">Sky Sport 2</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport3.nz" site_id="53" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport3_NewLogo_V_80x60.png">Sky Sport 3</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport4.nz" site_id="54" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport4_NewLogo_V_80x60.png">Sky Sport 4</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport5.nz" site_id="55" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport5_NewLogo_V_80x60.png">Sky Sport 5</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport6.nz" site_id="56" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport6_NewLogo_V_80x60.png">Sky Sport 6</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport7.nz" site_id="57" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport7_NewLogo_V_80x60.png">Sky Sport 7</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport8.nz" site_id="58" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport8_NewLogo_V_80x60.png">Sky Sport 8</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport9.nz" site_id="59" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport9_NewLogo_V_80x60.png">Sky Sport 9</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySportSelect.nz" site_id="50" logo="https://static.sky.co.nz/sky/epglogos/logo_SKY_Sport_Select_80x60.png">Sky Sport Select</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ESPN2.au" site_id="61" logo="https://static.sky.co.nz/sky/epglogos/ESPN2.png">ESPN2 NZ</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ESPN.au" site_id="60" logo="https://static.sky.co.nz/sky/epglogos/ESPN.png">ESPN NZ</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#SPOTV2.my">SPOTV2 MY</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#SPOTV.my">SPOTV MY</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Golf.Channel.my">Golf Channel</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#EUROSPORT.my">Eurosport MY</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#beIN.SPORTS.1.my">beIN Sports 1 MY</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#beIN.SPORTS.2.my">beIN Sports 2 MY</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#beIN.SPORTS.3.my">beIN Sports 3 MY</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Sports.Plus.my">Astro Sports Plus</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Sports.UHD.my">Astro Sports UHD</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Premier.League.2.my">Astro Premier League 2</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Premier.League.3.my">Astro Premier League 3</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Premier.League.4.my">Astro Premier League 4</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Premier.League.5.my">Astro Premier League 5</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Premier.League.my">Astro Premier League</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Cricket.my">Astro Cricket</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Football.my">Astro Football</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Grandstand.my">Astro Grandstand</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="MY1#Astro.Badminton.my">Astro Badminton</channel>
+</channels>

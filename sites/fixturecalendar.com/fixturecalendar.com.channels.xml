@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="1" logo="https://api.fixturecalendar.com/images/sport/pictures/CRICKET.jpg">Cricket</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="2" logo="https://api.fixturecalendar.com/images/sport/pictures/RUGBY-UNION.jpg">Rugby Union</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="3" logo="https://api.fixturecalendar.com/images/sport/pictures/AUSTRALIAN-RULES-FOOTBALL.jpg">Australian Rules Football</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="4" logo="https://api.fixturecalendar.com/images/sport/pictures/FOOTBALL.jpg">Football</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="5" logo="https://api.fixturecalendar.com/images/sport/pictures/MOTORSPORT.jpg">Motorsport</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="6" logo="https://api.fixturecalendar.com/images/sport/pictures/BASEBALL.jpg">Baseball</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="7" logo="">American Football</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="8" logo="">Rugby League</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="9" logo="">Golf</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="10" logo="https://api.fixturecalendar.com/images/sport/pictures/ICE-HOCKEY.jpg">Ice Hockey</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="11" logo="">Basketball</channel>
+  <channel site="fixturecalendar.com" lang="en" xmltv_id="" site_id="12" logo="">Darts</channel>
+</channels>

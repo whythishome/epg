@@ -53,6 +53,7 @@ module.exports = {
                 item.events.forEach(event => {
                   programs.push({
                     title: event.title,
+                    icon: `https://staticqbr-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/image-service/intent/${event.id}/posterTile?imageVersion=1JG-wQ&w=512`,
                     start: dayjs.utc(event.startTime * 1000),
                     stop: dayjs.utc(event.endTime * 1000)
                   })
@@ -67,6 +68,7 @@ module.exports = {
               title: res.title,
               subTitle: res.episodeName,
               description: res.longDescription ? res.longDescription : res.shortDescription,
+              icon: `https://staticqbr-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/image-service/intent/${res.eventId}/posterTile?imageVersion=1JG-wQ&w=512`,
               category: res.genres,
               season: res.seasonNumber,
               episode: res.episodeNumber,
@@ -103,7 +105,8 @@ module.exports = {
             return {
               lang: 'en',
               site_id: item.id,
-              name: item.name
+              name: item.name,
+              logo: item.logo.focused
             }
           })
       )
