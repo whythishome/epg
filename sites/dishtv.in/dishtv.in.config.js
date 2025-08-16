@@ -24,9 +24,11 @@ module.exports = {
       }
     }
   },
-  parser: ({ content }) => {
+  parser: ({ channel, content }) => {
     const programs = []
     const items = parseItems(content)
+    const lang = channel.lang
+
     items.forEach(item => {
       const title =
         lang === 'hi' && item.programlanguage !== 'English' && item.regional?.hindi?.title
