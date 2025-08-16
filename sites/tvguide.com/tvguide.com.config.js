@@ -8,7 +8,7 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 const providerId = '9100002976'
-const maxDuration = 240
+const maxDuration = 10240
 const segments = 1440 / maxDuration
 const headers = {
   'referer': 'https://www.tvguide.com/',
@@ -104,6 +104,7 @@ module.exports = {
           title: item.title || queue.i.title,
           sub_title: item.episodeNumber ? item.episodeTitle : null,
           description: item.description,
+          icon: item.images[1] ? `https://www.tvguide.com/a/img/catalog${item.images[1].bucketPath}` : null,
           season: item.seasonNumber,
           episode: item.episodeNumber,
           rating: item.rating ? { system: 'MPA', value: item.rating } : null,
@@ -130,7 +131,8 @@ module.exports = {
           lang: 'en',
           site_id: item.sourceId,
           xmltv_id: finalName.replaceAll(/[ '&]/g, '') + '.us' + (isEast ? '@East' : ''),
-          name: finalName
+          name: finalName,
+          logo: item.logo ? `https://www.tvguide.com/a/img/catalog${item.logo}` : null
         })
       })
     } catch (err) {
