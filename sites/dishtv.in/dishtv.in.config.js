@@ -28,9 +28,18 @@ module.exports = {
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
+      const title =
+        lang === 'hi' && item.programlanguage !== 'English' && item.regional?.hindi?.title
+          ? item.regional.hindi.title
+          : item.title
+
+      const description =
+        lang === 'hi' && item.programlanguage !== 'English' && item.regional?.hindi?.desc
+          ? `${item.regional.hindi.desc}${item['episode-num'] ? ` E${item['episode-num']}` : ''}`
+          : `${item.desc}${item['episode-num'] ? ` E${item['episode-num']}` : ''}`
       programs.push({
-        title: parseTitle(item),
-        description: parseDescription(item),
+        title: title,
+        description: description,
         category: parseCategory(item),
         actors: item.credits.actors,
         directors: item.credits.directors,
@@ -75,7 +84,8 @@ module.exports = {
         channels.push({
           lang: 'en',
           site_id: channel.channelid,
-          name: channel.channelname
+          name: channel.channelname,
+          logo: channel.channelimage
         })
       })
     }
