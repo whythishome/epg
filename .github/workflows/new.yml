@@ -1,4 +1,4 @@
-name: Single EPG Update
+name: New Single EPG Update
 
 on:
   workflow_dispatch:
