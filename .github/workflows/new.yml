@@ -1,0 +1,117 @@
+name: Single EPG Update
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+    env:
+      PROXY_URL_1: ${{ secrets.PROXY_URL_1 }}
+      PROXY_URL_2: ${{ secrets.PROXY_URL_2 }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # If you need this push to trigger another workflow, use a PAT:
+          # token: ${{ secrets.GH_PAT }}
+
+      - name: Safety: disable global CRLF conversion in CI
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.safecrlf false
+
+      - name: Ensure .gitattributes protects binaries
+        run: |
+          # Keep your CRLF default for text, but protect archives
+          {
+            echo "* text eol=crlf"
+            echo "*.xml.gz binary"
+            echo "*.gz     binary"
+            echo "*.zip    binary"
+            echo "*.tar    binary"
+            echo "*.tgz    binary"
+            echo ".husky/** -text"
+          } > .gitattributes
+          git add .gitattributes
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: npm grab epg
+        run: |
+          set -e
+          npm install
+          # If your grabber writes *.xml.gz directly, keep --gzip + .xml path.
+          # Your command (kept as-is):
+          npm run grab -- --site=dishtv.in --lang=en --maxConnections=10 --output=guides/dishtv.in_en.xml --gzip
+
+          # Sanity: list what was created
+          ls -lah guides | sed -n '1,200p'
+
+      - name: Validate gzip & XML inside
+        run: |
+          set -e
+          sudo apt-get update -y
+          sudo apt-get install -y libxml2-utils xxd
+
+          # Handle both cases: tool might produce .xml.gz OR .xml + you wanted gz.
+          if [ -f guides/dishtv.in_en.xml.gz ]; then
+            GZ=guides/dishtv.in_en.xml.gz
+          elif [ -f guides/dishtv.in_en.xml ]; then
+            # Create a reproducible gzip from the xml
+            gzip -9 -n -c guides/dishtv.in_en.xml > guides/dishtv.in_en.xml.gz
+            GZ=guides/dishtv.in_en.xml.gz
+          else
+            echo "Neither guides/dishtv.in_en.xml.gz nor guides/dishtv.in_en.xml found"; exit 1
+          fi
+
+          echo "Checking $GZ"
+          # gzip magic bytes
+          xxd -g 1 -l 2 "$GZ" | grep -q "1f 8b"
+          # gzip integrity
+          gunzip -t "$GZ"
+          # XML well-formedness
+          zcat "$GZ" | xmllint --noout -
+
+          # Show gzip header summary (helps spot double-gzip)
+          gzip -l "$GZ"
+
+      - name: Show Git attributes applied (debug)
+        run: |
+          git check-attr -a -- guides/dishtv.in_en.xml.gz || true
+          git ls-files --eol guides/dishtv.in_en.xml.gz || true
+
+      - name: Commit changes
+        run: |
+          set -e
+          git config --local user.email "your-email@example.com"
+          git config --local user.name "Your Name"
+
+          # Re-stage gz with correct attributes
+          git add -f guides/dishtv.in_en.xml.gz
+          # If you also generate Hindi later, add here:
+          # git add -f guides/dishtv.in_hi.xml.gz
+
+          # This also stages .gitattributes if it changed
+          git commit -m "Update xml"
+          git push
+
+      - name: Upload gz artifact (debug)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: guides-gz
+          path: guides/*.xml.gz
