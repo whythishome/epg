@@ -34,15 +34,15 @@ jobs:
           # npm run grab -- --site=tvguide.com --gzip --maxConnections=2 --output=guides/tvguide.com.xml
           # npm run grab -- --site=web.runn.tv --maxConnections=2 --output=guides/web.runn.tv.xml
           # npm run grab -- --site=sky.com --maxConnections=10 --output=guides/sky.com.xml --gzip
-          npm run grab -- --site=dishtv.in --lang=en --maxConnections=10 --gzip --output=guides/dishtv.in_en.xml
-          npm run grab -- --site=dishtv.in --lang=hi --maxConnections=10 --gzip --output=guides/dishtv.in_hi.xml
+          npm run grab -- --site=dishtv.in --lang=en --maxConnections=10 --output=guides/dishtv.in_en.xml
+          npm run grab -- --site=dishtv.in --lang=hi --maxConnections=10 --output=guides/dishtv.in_hi.xml
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
         # git add -f guides/sports/all.xml.gz
-        git add -f guides/dishtv.in_en.xml.gz
-        git add -f guides/dishtv.in_hi.xml.gz
+        git add -f guides/dishtv.in_en.xml
+        git add -f guides/dishtv.in_hi.xml
         # git add -f guides/content.astro.com.my.xml.gz        
         # git add -f guides/tvguide.com.xml.gz
         # git add -f guides/web.runn.tv.xml
