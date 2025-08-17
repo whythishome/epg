@@ -1,3 +1,15 @@
 # Enforce the usage of CRLF in GitHub Actions per ESLint configuration.
 * text eol=crlf
+
+# But NEVER do line-ending conversion on binary archives
+*.gz binary
+*.zip binary
+*.tar binary
+*.tgz binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+
+# Keep husky hooks raw
 .husky/** -text
