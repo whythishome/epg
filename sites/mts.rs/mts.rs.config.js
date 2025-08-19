@@ -1,55 +1,105 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'mts.rs',
   days: 2,
-  url({ date }) {
-    return `https://mts.rs/hybris/ecommerce/b2c/v1/products/search?sort=pozicija-rastuce&searchQueryContext=CHANNEL_PROGRAM&query=:pozicija-rastuce:tip-kanala-radio:TV kanali:channelProgramDates:${date.format(
-      'YYYY-MM-DD'
-    )}&pageSize=10000`
+  url({ date, channel }) {
+    const [position] = channel.site_id.split('#')
+
+    return `https://mts.rs/oec/epg/program?date=${date.format('YYYY-MM-DD')}&position=${position}`
   },
   request: {
-    maxContentLength: 10000000 // 10 Mb
+    headers: {
+      'X-Requested-With': 'XMLHttpRequest'
+    }
   },
-  parser({ content, channel }) {
-    const items = parseItems(content, channel)
-
-    return items.map(item => {
-      return {
+  parser: function ({ content, channel }) {
+    let programs = []
+    const data = parseContent(content, channel)
+    const items = parseItems(data)
+    items.forEach(item => {
+      programs.push({
         title: item.title,
         category: item.category,
         description: item.description,
-        image: item?.picture?.url || null,
-        start: dayjs(item.start),
-        stop: dayjs(item.end)
-      }
+        image: item.image,
+        start: parseStart(item),
+        stop: parseStop(item)
+      })
     })
+
+    return programs
   },
   async channels() {
-    const data = await axios
-      .get(module.exports.url({ date: dayjs() }))
-      .then(r => r.data)
-      .catch(console.error)
+    let channels = []
 
-    return data.products.map(channel => ({
-      lang: 'bs',
-      name: channel.name,
-      site_id: encodeURIComponent(channel.code)
-    }))
+    const totalPages = await getTotalPageCount()
+    const pages = Array.from(Array(totalPages).keys())
+    for (let page of pages) {
+      const data = await axios
+        .get(`https://mts.rs/oec/epg/program`, {
+          params: { page, date: dayjs().format('YYYY-MM-DD') },
+          headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+          }
+        })
+        .then(r => r.data)
+        .catch(console.log)
+
+      data.channels.forEach(item => {
+        channels.push({
+          lang: 'bs',
+          site_id: `${item.position}#${item.id}`,
+          name: item.name
+        })
+      })
+    }
+
+    return channels
   }
 }
 
-function parseItems(content, channel) {
+async function getTotalPageCount() {
+  const data = await axios
+    .get(`https://mts.rs/oec/epg/program`, {
+      params: { page: 0, date: dayjs().format('YYYY-MM-DD') },
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest'
+      }
+    })
+    .then(r => r.data)
+    .catch(console.log)
+
+  return data.total_pages
+}
+
+function parseContent(content, channel) {
+  const [, site_id] = channel.site_id.split('#')
+  let data
   try {
-    const data = JSON.parse(content)
-    if (!data || !Array.isArray(data.products)) return []
-
-    const channelData = data.products.find(c => c.code === channel.site_id)
-    if (!channelData || !Array.isArray(channelData.programs)) return []
-
-    return channelData.programs
-  } catch {
-    return []
+    data = JSON.parse(content)
+  } catch (error) {
+    console.log(error)
   }
+  if (!data || !data.channels || !data.channels.length) return null
+
+  return data.channels.find(c => c.id === site_id) || null
+}
+
+function parseStart(item) {
+  return dayjs.tz(item.full_start, 'Europe/Belgrade')
+}
+
+function parseStop(item) {
+  return dayjs.tz(item.full_end, 'Europe/Belgrade')
+}
+
+function parseItems(data) {
+  return data && Array.isArray(data.items) ? data.items : []
 }

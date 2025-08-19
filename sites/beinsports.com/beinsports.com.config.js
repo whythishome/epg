@@ -52,8 +52,7 @@ module.exports = {
       return {
         lang,
         site_id: item.id,
-        name: item.name,
-        logo: item.externalUniqueId ? 'https://prod-media.beinsports.com/image/' +  item.externalUniqueId + '.128.png' : null
+        name: item.name
       }
     })
   }

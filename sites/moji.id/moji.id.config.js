@@ -9,15 +9,33 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 const currentYear = new Date().getFullYear()
-const tz = 'Asia/Jakarta'
 
 module.exports = {
   site: 'moji.id',
-  days: 2,
-  url: 'https://moji.id/schedule',
+  days: 4,
+  output: 'moji.id.guide.xml',
+  channels: 'moji.id.channels.xml',
+  lang: 'en',
+  delay: 5000,
+
+  url: function () {
+    return 'https://moji.id/schedule'
+  },
+
+  request: {
+    method: 'GET',
+    timeout: 5000,
+    cache: { ttl: 60 * 60 * 1000 },
+    headers: {
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
+    }
+  },
+
   logo: function (context) {
     return context.channel.logo
   },
+
   parser: function (context) {
     const programs = []
     const items = parseItems(context)
@@ -42,18 +60,15 @@ function parseItems(context) {
   const monthDate = dayjs(context.date).format('MMM DD')
   const items = []
 
-  schDayMonths.forEach((schDayMonth, i) => {
+  schDayMonths.forEach(function (schDayMonth, i) {
     if (monthDate == $(schDayMonth).text()) {
-      const schDayPrograms = $(schPrograms[i]).find('.accordion').toArray()
-      schDayPrograms.forEach((program, i) => {
-        const itemDay = {
-          progStart: parseStart($(schDayMonth), $(program)),
-          progStop: parseStop(
-            $(schDayMonth),
-            schDayPrograms[i + 1] ? $(schDayPrograms[i + 1]) : null
-          ),
-          progTitle: parseTitle($(program)),
-          progDesc: parseDescription($(program))
+      let schDayPrograms = $(schPrograms[i]).find('.accordion').toArray()
+      schDayPrograms.forEach(function (program, i) {
+        let itemDay = {
+          progStart: parseStart(schDayMonth, program),
+          progStop: parseStop(schDayMonth, program, schDayPrograms[i + 1]),
+          progTitle: parseTitle(program),
+          progDesc: parseDescription(program)
         }
         items.push(itemDay)
       })
@@ -64,40 +79,44 @@ function parseItems(context) {
 }
 
 function parseTitle(item) {
-  return item.find('.name-prog').text()
+  return cheerio.load(item)('.name-prog').text()
 }
 
 function parseDescription(item) {
-  return item.find('.content-acc span').text()
+  return cheerio.load(item)('.content-acc span').text()
 }
 
 function parseStart(schDayMonth, item) {
-  const monthDate = schDayMonth.text().split(' ')
-  const startTime = item.find('.pkl').text()
-
-  return dayjs.tz(
-    `${currentYear}-${monthDate[0]}-${monthDate[1]} ${startTime}`,
-    'YYYY-MMM-DD HH:mm',
-    tz
+  let monthDate = cheerio.load(schDayMonth).text().split(' ')
+  let startTime = cheerio.load(item)('.pkl').text()
+  let progStart = dayjs.tz(
+    currentYear + ' ' + monthDate[0] + ' ' + monthDate[1] + ' ' + startTime,
+    'YYYY MMM DD HH:mm',
+    'Asia/Jakarta'
   )
+  return progStart
 }
 
-function parseStop(schDayMonth, itemNext) {
-  const monthDate = schDayMonth.text().split(' ')
+function parseStop(schDayMonth, itemCurrent, itemNext) {
+  let monthDate = cheerio.load(schDayMonth).text().split(' ')
+
   if (itemNext) {
-    const stopTime = itemNext.find('.pkl').text()
+    let stopTime = cheerio.load(itemNext)('.pkl').text()
     return dayjs.tz(
-      `${currentYear}-${monthDate[0]}-${monthDate[1]} ${stopTime}`,
-      'YYYY-MMM-DD HH:mm',
-      tz
+      currentYear + ' ' + monthDate[0] + ' ' + monthDate[1] + ' ' + stopTime,
+      'YYYY MMM DD HH:mm',
+      'Asia/Jakarta'
     )
   } else {
     return dayjs.tz(
-      `${currentYear}-${monthDate[0]}-${(parseInt(monthDate[1]) + 1)
-        .toString()
-        .padStart(2, '0')} 00:00`,
-      'YYYY-MMM-DD HH:mm',
-      tz
+      currentYear +
+        ' ' +
+        monthDate[0] +
+        ' ' +
+        (parseInt(monthDate[1]) + 1).toString().padStart(2, '0') +
+        ' 00:00',
+      'YYYY MMM DD HH:mm',
+      'Asia/Jakarta'
     )
   }
 }

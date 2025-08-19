@@ -1,17 +1,14 @@
+const _ = require('lodash')
 const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('@ntlab/sfetch')
-const debug = require('debug')('site:mncvision.id')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
-
-doFetch.setCheckResult(false).setDebugger(debug)
 
 const languages = { en: 'english', id: 'indonesia' }
 const cookies = {}
@@ -50,13 +47,33 @@ module.exports = {
     jar: null
   },
   async parser({ content, headers, date, channel }) {
+    const programs = []
+
     if (!cookies[channel.lang]) {
       cookies[channel.lang] = parseCookies(headers)
     }
+    const [$, items] = parseItems(content)
+    for (const item of items) {
+      const $item = $(item)
+      const start = parseStart($item, date)
+      const duration = parseDuration($item)
+      const stop = start.add(duration, 'm')
+      const description = await loadDescription($item, cookies[channel.lang])
+      programs.push({
+        title: parseTitle($item),
+        season: parseSeason($item),
+        episode: parseEpisode($item),
+        description,
+        start,
+        stop
+      })
+    }
 
-    return await parseItems(content, date, cookies[channel.lang])
+    return programs
   },
   async channels({ lang = 'id' }) {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
     const result = await axios
       .get('https://www.mncvision.id/schedule')
       .then(response => response.data)
@@ -112,40 +129,10 @@ function parseTitle($item) {
   return $item.find('td:nth-child(2) > a').text()
 }
 
-async function parseItems(content, date, cookies) {
-  const programs = []
+function parseItems(content) {
   const $ = cheerio.load(content)
-  const items = $('tr[valign="top"]').toArray()
-  if (items.length) {
-    const queues = []
-    for (const item of items) {
-      const $item = $(item)
-      const url = $item.find('a').attr('href')
-      const headers = {
-        'X-Requested-With': 'XMLHttpRequest',
-        Cookie: cookies
-      }
-      queues.push({ i: $item, url, params: { headers, timeout } })
-    }
-    await doFetch(queues, (queue, res) => {
-      const $item = queue.i
-      const $page = cheerio.load(res)
-      const description = $page('.synopsis').text().trim()
-      const start = parseStart($item, date)
-      const duration = parseDuration($item)
-      const stop = start.add(duration, 'm')
-      programs.push({
-        title: parseTitle($item),
-        season: parseSeason($item),
-        episode: parseEpisode($item),
-        description: description && description !== '-' ? description : null,
-        start,
-        stop
-      })
-    })
-  }
 
-  return programs
+  return [$, $('tr[valign="top"]').toArray()]
 }
 
 function loadLangCookies(channel) {
@@ -155,6 +142,24 @@ function loadLangCookies(channel) {
     .get(url, { timeout })
     .then(r => parseCookies(r.headers))
     .catch(error => console.error(error.message))
+}
+
+async function loadDescription($item, cookies) {
+  const url = $item.find('a').attr('href')
+  if (!url) return null
+  const content = await axios
+    .get(url, {
+      headers: { 'X-Requested-With': 'XMLHttpRequest', Cookie: cookies },
+      timeout
+    })
+    .then(r => r.data)
+    .catch(error => console.error(error.message))
+  if (!content) return null
+
+  const $page = cheerio.load(content)
+  const description = $page('.synopsis').text().trim()
+
+  return description !== '-' ? description : null
 }
 
 function parseCookies(headers) {

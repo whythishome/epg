@@ -1,85 +1,58 @@
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const doFetch = require('@ntlab/sfetch')
-const debug = require('debug')('site:sky.com')
-const _ = require('lodash')
-
-dayjs.extend(utc)
-
-doFetch.setDebugger(debug)
 
 module.exports = {
   site: 'sky.com',
   days: 2,
-  url({ date, channel }) {
-    return `https://awk.epgsky.com/hawk/linear/schedule/${date.format('YYYYMMDD')}/${
+  url: function ({ date, channel }) {
+    return `https://epgservices.sky.com/5.2.2/api/2.0/channel/json/${
       channel.site_id
-    }`
+    }/${date.unix()}/86400/4`
   },
-  parser({ content, channel, date }) {
+  parser: function ({ content, channel }) {
     const programs = []
-    if (content) {
-      const items = JSON.parse(content) || null
-      if (Array.isArray(items.schedule)) {
-        items.schedule
-          .filter(schedule => schedule.sid === channel.site_id)
-          .forEach(schedule => {
-            if (Array.isArray(schedule.events)) {
-              _.sortBy(schedule.events, 'st').forEach(event => {
-                const start = dayjs.utc(event.st * 1000)
-                if (start.isSame(date, 'd')) {
-                  const image = `https://images.metadata.sky.com/pd-image/${event.programmeuuid}/16-9/640`
-                  programs.push({
-                    title: event.t,
-                    description: event.sy,
-                    season: event.seasonnumber,
-                    episode: event.episodenumber,
-                    start,
-                    stop: start.add(event.d, 's'),
-                    icon: image,
-                    image
-                  })
-                }
-              })
-            }
-          })
-      }
-    }
+    const items = parseItems(content, channel)
+
+    items.forEach(item => {
+      programs.push({
+        title: item.t,
+        description: item.d,
+        start: dayjs.unix(item.s),
+        stop: dayjs.unix(item.s + item.m[1]),
+        icon: item.img ? `http://epgstatic.sky.com/epgdata/1.0/paimage/46/1/${item.img}` : null
+      })
+    })
 
     return programs
   },
   async channels() {
-    const channels = {}
-    const queues = [{ t: 'r', url: 'https://www.sky.com/tv-guide' }]
-    await doFetch(queues, (queue, res) => {
-      // process regions
-      if (queue.t === 'r') {
-        const $ = cheerio.load(res)
-        const initialData = JSON.parse(decodeURIComponent($('#initialData').text()))
-        initialData.state.epgData.regions.forEach(region => {
-          queues.push({
-            t: 'c',
-            url: `https://awk.epgsky.com/hawk/linear/services/${region.bouquet}/${region.subBouquet}`
-          })
-        })
-      }
-      // process channels
-      if (queue.t === 'c') {
-        if (Array.isArray(res.services)) {
-          for (const ch of res.services) {
-            if (channels[ch.sid] === undefined) {
-              channels[ch.sid] = {
-                lang: 'en',
-                site_id: ch.sid,
-                name: ch.t
-              }
-            }
-          }
-        }
-      }
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+
+    const data = await axios
+      .get(`https://www.sky.com/tv-guide/`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    const $ = cheerio.load(data)
+    let initialData = $('#initialData').text()
+    initialData = JSON.parse(decodeURIComponent(initialData))
+
+    initialData.state.epgData.channelsForRegion.forEach(item => {
+      channels.push({
+        lang: 'en',
+        site_id: item.sid,
+        name: item.t
+      })
     })
 
-    return Object.values(channels)
+    return channels
   }
+}
+
+function parseItems(content, channel) {
+  const data = JSON.parse(content)
+
+  return data && data.listings ? data.listings[channel.site_id] : []
 }

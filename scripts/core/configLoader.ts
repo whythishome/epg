@@ -7,7 +7,7 @@ export class ConfigLoader {
     const fileUrl = pathToFileURL(filepath).toString()
     const config = (await import(fileUrl)).default
     const defaultConfig = {
-      days: 1,
+      days: 2,
       delay: 0,
       output: 'guide.xml',
       request: {

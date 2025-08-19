@@ -18,7 +18,7 @@ module.exports = {
     }
     const day = date.day()
 
-    return `https://www.programetv.ro/program-tv/${channel.site_id}/${daysOfWeek[day]}/`
+    return `https://www.programetv.ro/post/${channel.site_id}/${daysOfWeek[day]}/`
   },
   parser: function ({ content }) {
     let programs = []
@@ -46,10 +46,10 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ country, lang }) {
     const axios = require('axios')
     const data = await axios
-      .get('https://www.programetv.ro/api/station/index/')
+      .get(`https://www.programetv.ro/api/station/index/`)
       .then(r => r.data)
       .catch(console.log)
 

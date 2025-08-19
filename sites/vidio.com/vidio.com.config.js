@@ -1,14 +1,5 @@
 const cheerio = require('cheerio')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
-
-const tz = 'Asia/Jakarta'
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'vidio.com',
@@ -24,12 +15,12 @@ module.exports = {
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
       if (prev && start < prev.start) {
-        start = start.add(1, 'd')
+        start = start.plus({ days: 1 })
         date = date.add(1, 'd')
       }
       let stop = parseStop($item, date)
       if (stop < start) {
-        stop = stop.add(1, 'd')
+        stop = stop.plus({ days: 1 })
         date = date.add(1, 'd')
       }
       programs.push({
@@ -45,38 +36,31 @@ module.exports = {
     const axios = require('axios')
     const cheerio = require('cheerio')
     const result = await axios
-      .get('https://www.vidio.com/categories/daftar-channel-tv-radio-live-sports')
+      .get('https://www.vidio.com/categories/276-daftar-channel-tv-radio-live-sports')
       .then(response => response.data)
       .catch(console.error)
 
     const $ = cheerio.load(result)
-    const itemGroups = $('div[data-variation="circle_horizontal"] ul').toArray()
+    const itemGroups = $('.home-content').toArray()
     const channels = []
+    const processedIds = []
 
     itemGroups.forEach(group => {
       const $group = $(group)
-      let skip = false
-      const sites = []
-      const items = $group.find('a[data-testid="circle-card"]').toArray()
-      items.forEach(item => {
-        const name = $(item).find('span[data-testid="circle-title"]').text()
-        // skip radio channels
-        if (name.toLowerCase().indexOf('fm') >= 0 || name.toLowerCase().indexOf('radio') >= 0) {
-          skip = true
-          return true
-        }
-        let url = $(item).attr('href')
-        url = url.substr(url.lastIndexOf('/') + 1)
-        const matches = url.match(/(\d+)/)
-        sites.push({
-          lang: 'id',
-          site_id: matches[0],
-          name: name
-        })
-      })
-      if (!skip && sites.length) {
-        channels.push(...sites)
+      const props = $group.data('ahoy-props')
+      const name = props.content_title
+      const siteId = props.content_id
+
+      if (props.section.includes('Radio') || processedIds.includes(siteId)) {
+        return
       }
+
+      channels.push({
+        lang: 'id',
+        site_id: siteId,
+        name: name
+      })
+      processedIds.push(siteId)
     })
 
     return channels
@@ -86,15 +70,17 @@ module.exports = {
 function parseStart($item, date) {
   const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
   const [, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
+  const dateString = `${date.format('YYYY-MM-DD')} ${start}`
 
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${start}`, 'YYYY-MM-DD HH:mm', tz)
+  return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Jakarta' }).toUTC()
 }
 
 function parseStop($item, date) {
   const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
   const [, stop] = timeString.match(/- (\d{2}:\d{2}) WIB/) || [null, null]
+  const dateString = `${date.format('YYYY-MM-DD')} ${stop}`
 
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${stop}`, 'YYYY-MM-DD HH:mm', tz)
+  return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Jakarta' }).toUTC()
 }
 
 function parseTitle($item) {

@@ -26,7 +26,6 @@ module.exports = {
     items.forEach(item => {
       programs.push({
         title: item.name,
-        description: item.name, 
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -47,8 +46,7 @@ module.exports = {
       channels.push({
         lang,
         site_id: $(el).find('.guide-g-play > p.channel').text().replace('CH', ''),
-        name: $(el).find('.thumbnail > a > span.image > p').text(),
-        logo: $(el).find('.thumbnail > a > span.image > img').attr('src')
+        name: $(el).find('.thumbnail > a > span.image > p').text()
       })
     })
 

@@ -13,9 +13,7 @@ module.exports = {
   site: 'artonline.tv',
   days: 2,
   url: function ({ channel }) {
-    const [, site_id] = channel.site_id.split('#')
-
-    return `https://www.artonline.tv/Home/Tvlist${site_id}`
+    return `https://www.artonline.tv/Home/Tvlist${channel.site_id}`
   },
   request: {
     method: 'POST',

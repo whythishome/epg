@@ -1,49 +1,24 @@
-const { parser, url, request } = require('./pickx.be.config.js')
-const axios = require('axios')
+const { parser, url, request, fetchApiVersion, apiVersion } = require('./pickx.be.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+
 dayjs.extend(utc)
-
-jest.mock('axios')
-
-axios.get.mockImplementation((url, data) => {
-  if (url === 'https://www.pickx.be/nl/televisie/tv-gids') {
-    return Promise.resolve({
-      data: fs.readFileSync(path.resolve(__dirname, '__data__/hash.html'), 'utf8')
-    })
-  } else if (
-    url ===
-      'https://www.pickx.be/api/s-375ce5e452cf964b4158545d9ddf26cc97d6411f0998a2fa7ed5922c88d5bdc4' &&
-    JSON.stringify(data) ===
-      JSON.stringify({
-        headers: {
-          Origin: 'https://www.pickx.be',
-          Referer: 'https://www.pickx.be/'
-        }
-      })
-  ) {
-    return Promise.resolve({
-      status: 200,
-      data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/version.json')))
-    })
-  } else {
-    return Promise.resolve({
-      data: ''
-    })
-  }
-})
 
 const date = dayjs.utc('2023-12-13').startOf('d')
 const channel = {
   lang: 'fr',
-  site_id: 'UID0118'
+  site_id: 'UID0118',
+  xmltv_id: 'Vedia.be'
 }
 
 it('can generate valid url', async () => {
-  expect(await url({ channel, date })).toBe(
-    'https://px-epg.azureedge.net/airings/21738594888692v.4.2/2023-12-13/channel/UID0118?timezone=Europe%2FBrussels'
+  await fetchApiVersion()
+  const generatedUrl = await url({ channel, date })
+  const resolvedApiVersion = apiVersion()
+  expect(generatedUrl).toBe(
+    `https://px-epg.azureedge.net/airings/${resolvedApiVersion}/2023-12-13/channel/UID0118?timezone=Europe%2FBrussels`
   )
 })
 

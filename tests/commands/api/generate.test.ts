@@ -1,8 +1,13 @@
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
-import { pathToFileURL } from 'node:url'
+import path from 'path'
+import os from 'os'
 
-const ENV_VAR = 'cross-env SITES_DIR=tests/__data__/input/api_generate/sites API_DIR=tests/__data__/output'
+let ENV_VAR = 'SITES_DIR=tests/__data__/input/epg-grab/sites API_DIR=tests/__data__/output'
+if (os.platform() === 'win32') {
+  ENV_VAR =
+    'SET "SITES_DIR=tests/__data__/input/epg-grab/sites" && SET "API_DIR=tests/__data__/output" &&'
+}
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -11,17 +16,16 @@ beforeEach(() => {
 describe('api:generate', () => {
   it('can generate guides.json', () => {
     const cmd = `${ENV_VAR} npm run api:generate`
-    const stdout = execSync(cmd, { encoding: 'utf8' })
-    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+    execSync(cmd, { encoding: 'utf8' })
 
     expect(content('tests/__data__/output/guides.json')).toEqual(
-      content('tests/__data__/expected/api_generate/guides.json')
+      content('tests/__data__/expected/guides.json')
     )
   })
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(pathToFileURL(filepath), {
+  return fs.readFileSync(path.resolve(filepath), {
     encoding: 'utf8'
   })
 }
