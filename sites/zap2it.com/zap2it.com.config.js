@@ -10,7 +10,7 @@ dayjs.extend(isBetween)
 module.exports = {
   site: 'zap2it.com',
   days: 2,
-  url: 'https://tvlistings.gracenote.com/api/sslgrid',
+  url: 'https://tvlistings.zap2it.com/api/sslgrid',
   request: {
     method: 'POST',
     headers: {
@@ -34,7 +34,7 @@ module.exports = {
         postalCode,
         device,
         userId: '-',
-        aid: 'orbebb',
+        aid: 'gapzap',
         DSTUTCOffset: '-240',
         STDUTCOffset: '-300',
         DSTStart: '2025-03-09T02:00Z',
@@ -65,7 +65,6 @@ module.exports = {
       })
     })
 
-    return programs.filter(p => dayjs(p.start).add(dayjs(p.start).utcOffset(), 'minute').isBetween(date.startOf('day').subtract(dayjs().utcOffset(), 'minute').utc(), 
-    date.endOf('day').subtract(dayjs().utcOffset(), 'minute').utc(), 'second', '[]'))
+    return programs.filter(p => dayjs(p.start).add(dayjs(p.start).utcOffset(), 'minute').isBetween(date.startOf('day').utc(), date.endOf('day').utc(), 'second', '[]'))
   }
 }

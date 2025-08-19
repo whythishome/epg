@@ -5,7 +5,7 @@ import { GrabOptions } from '../commands/epg/grab'
 import { TaskQueue, PromisyClass } from 'cwait'
 import { SocksProxyAgent } from 'socks-proxy-agent'
 
-interface GrabberProps {
+type GrabberProps = {
   logger: Logger
   queue: Queue
   options: GrabOptions
@@ -68,10 +68,6 @@ export class Grabber {
               } else {
                 config.request = { ...config.request, ...{ proxy } }
               }
-            }
-
-            if (this.options.curl === true) {
-              config.curl = true
             }
 
             const _programs = await this.grabber.grab(

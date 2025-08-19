@@ -72,8 +72,8 @@ function parseStop(item) {
 }
 
 function parseContent(content) {
-  const [, data] = content.match(/var pageData = ({.+?});/) || [null, null]
-  
+  const [, data] = content.match(/var pageData = ({.+});\n/) || [null, null]
+
   return data ? JSON.parse(data) : {}
 }
 

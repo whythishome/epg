@@ -1,18 +1,15 @@
-import { ChannelsParser, DataLoader, DataProcessor } from '../../core'
-import { DataProcessorData } from '../../types/dataProcessor'
-import { Storage, Dictionary, File } from '@freearhey/core'
-import { DataLoaderData } from '../../types/dataLoader'
-import { ChannelList } from '../../models'
-import { DATA_DIR } from '../../constants'
-import epgGrabber from 'epg-grabber'
+import { Storage, Collection, Dictionary, File } from '@freearhey/core'
+import { ChannelsParser, ApiChannel } from '../../core'
 import { program } from 'commander'
 import chalk from 'chalk'
 import langs from 'langs'
+import { DATA_DIR } from '../../constants'
+import { Channel } from 'epg-grabber'
 
-program.argument('[filepath...]', 'Path to *.channels.xml files to validate').parse(process.argv)
+program.argument('[filepath]', 'Path to *.channels.xml files to validate').parse(process.argv)
 
-interface ValidationError {
-  type: 'duplicate' | 'wrong_channel_id' | 'wrong_feed_id' | 'wrong_lang'
+type ValidationError = {
+  type: 'duplicate' | 'wrong_xmltv_id' | 'wrong_lang'
   name: string
   lang?: string
   xmltv_id?: string
@@ -21,18 +18,14 @@ interface ValidationError {
 }
 
 async function main() {
-  const processor = new DataProcessor()
+  const parser = new ChannelsParser({ storage: new Storage() })
+
   const dataStorage = new Storage(DATA_DIR)
-  const loader = new DataLoader({ storage: dataStorage })
-  const data: DataLoaderData = await loader.load()
-  const { channelsKeyById, feedsKeyByStreamId }: DataProcessorData = processor.process(data)
-  const parser = new ChannelsParser({
-    storage: new Storage()
-  })
+  const channelsContent = await dataStorage.json('channels.json')
+  const channels = new Collection(channelsContent).map(data => new ApiChannel(data))
 
   let totalFiles = 0
   let totalErrors = 0
-  let totalWarnings = 0
 
   const storage = new Storage()
   const files = program.args.length ? program.args : await storage.list('sites/**/*.channels.xml')
@@ -40,11 +33,11 @@ async function main() {
     const file = new File(filepath)
     if (file.extension() !== 'xml') continue
 
-    const channelList: ChannelList = await parser.parse(filepath)
+    const parsedChannels = await parser.parse(filepath)
 
     const bufferBySiteId = new Dictionary()
     const errors: ValidationError[] = []
-    channelList.channels.forEach((channel: epgGrabber.Channel) => {
+    parsedChannels.forEach((channel: Channel) => {
       const bufferId: string = channel.site_id
       if (bufferBySiteId.missing(bufferId)) {
         bufferBySiteId.set(bufferId, true)
@@ -53,26 +46,19 @@ async function main() {
         totalErrors++
       }
 
-      if (!langs.where('1', channel.lang ?? '')) {
+      if (!langs.where('1', channel.lang)) {
         errors.push({ type: 'wrong_lang', ...channel })
         totalErrors++
       }
 
       if (!channel.xmltv_id) return
-      const [channelId, feedId] = channel.xmltv_id.split('@')
 
-      const foundChannel = channelsKeyById.get(channelId)
+      const foundChannel = channels.first(
+        (_channel: ApiChannel) => _channel.id === channel.xmltv_id
+      )
       if (!foundChannel) {
-        errors.push({ type: 'wrong_channel_id', ...channel })
-        totalWarnings++
-      }
-
-      if (feedId) {
-        const foundFeed = feedsKeyByStreamId.get(channel.xmltv_id)
-        if (!foundFeed) {
-          errors.push({ type: 'wrong_feed_id', ...channel })
-          totalWarnings++
-        }
+        errors.push({ type: 'wrong_xmltv_id', ...channel })
+        totalErrors++
       }
     })
 
@@ -84,16 +70,9 @@ async function main() {
     }
   }
 
-  const totalProblems = totalWarnings + totalErrors
-  if (totalProblems > 0) {
-    console.log(
-      chalk.red(
-        `${totalProblems} problems (${totalErrors} errors, ${totalWarnings} warnings) in ${totalFiles} file(s)`
-      )
-    )
-    if (totalErrors > 0) {
-      process.exit(1)
-    }
+  if (totalErrors > 0) {
+    console.log(chalk.red(`${totalErrors} error(s) in ${totalFiles} file(s)`))
+    process.exit(1)
   }
 }
 

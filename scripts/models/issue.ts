@@ -1,7 +1,7 @@
 import { Dictionary } from '@freearhey/core'
 import { OWNER, REPO } from '../constants'
 
-interface IssueProps {
+type IssueProps = {
   number: number
   labels: string[]
   data: Dictionary

@@ -14,9 +14,9 @@ module.exports = {
   request: {
     headers: {
       'Accept-Language': 'en-US,en;',
-      Cookie: 'AAMC_foxtel_0=REGION|7',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-    },    
+      Cookie: 'AAMC_foxtel_0=REGION|6',
+      'User-Agent': 'insomnia/2022.7.5'
+    },
     timeout: 2000
   },
   parser: function ({ content, date }) {
@@ -121,9 +121,9 @@ function parseRating($item) {
 
   return rating
     ? {
-      system: 'ACB',
-      value: rating
-    }
+        system: 'ACB',
+        value: rating
+      }
     : null
 }
 

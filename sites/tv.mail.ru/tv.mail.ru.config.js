@@ -1,6 +1,5 @@
 const { DateTime } = require('luxon')
 const axios = require('axios')
-const uniqBy = require('lodash.uniqby')
 
 module.exports = {
   site: 'tv.mail.ru',
@@ -36,6 +35,8 @@ module.exports = {
     return programs
   },
   async channels() {
+    const _ = require('lodash')
+
     const regions = [5506, 1096, 1125, 285]
 
     let channels = []
@@ -63,7 +64,7 @@ module.exports = {
       }
     }
 
-    return uniqBy(channels, 'site_id')
+    return _.uniqBy(channels, 'site_id')
   }
 }
 

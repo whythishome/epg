@@ -1,6 +1,6 @@
 # <DOMAIN>
 
-https://<DOMAIN>
+https://example.com
 
 ### Download the guide
 

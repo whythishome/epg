@@ -1,4 +1,5 @@
 const axios = require('axios')
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -51,7 +52,8 @@ module.exports = {
       return {
         lang,
         site_id: item.id,
-        name: item.name
+        name: item.name,
+        logo: item.externalUniqueId ? 'https://prod-media.beinsports.com/image/' +  item.externalUniqueId + '.128.png' : null
       }
     })
   }
@@ -61,7 +63,7 @@ function parseItems(content) {
   let data
   try {
     data = JSON.parse(content)
-  } catch {
+  } catch (error) {
     return []
   }
 

@@ -18,12 +18,6 @@ const tz = 'Europe/London'
 module.exports = {
   site: 'mytelly.co.uk',
   days: 2,
-  request: {
-    headers: {
-      'User-Agent':
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0'
-    }
-  },
   url({ date, channel }) {
     return `https://www.mytelly.co.uk/tv-guide/listings/channel/${
       channel.site_id
@@ -42,7 +36,7 @@ module.exports = {
           const td = $(el).find('td:eq(1)')
           const title = td.find('h5 a')
           if (detailedGuide) {
-            queues.push({ url: title.attr('href'), params: module.exports.request })
+            queues.push(title.attr('href'))
           } else {
             const subtitle = td.find('h6')
             const time = $(el).find('td:eq(0)')
@@ -121,7 +115,7 @@ module.exports = {
   },
   async channels() {
     const channels = {}
-    const queues = [{ t: 'p', url: 'https://www.mytelly.co.uk/getform', params: this.request }]
+    const queues = [{ t: 'p', method: 'post', url: 'https://www.mytelly.co.uk/getform' }]
     await doFetch(queues, (queue, res) => {
       // process form -> provider
       if (queue.t === 'p') {
@@ -133,8 +127,9 @@ module.exports = {
             const provider = opt.attr('value')
             queues.push({
               t: 'r',
+              method: 'post',
               url: 'https://www.mytelly.co.uk/getregions',
-              params: { ...this.request, provider }
+              params: { provider }
             })
           })
       }
@@ -155,7 +150,7 @@ module.exports = {
             t: 's',
             method: 'post',
             url: 'https://www.mytelly.co.uk/tv-guide/schedule',
-            params: { ...this.request, data: params }
+            params
           })
         }
       }

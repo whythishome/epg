@@ -10,78 +10,74 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'jiotv.com',
-  days: 2,
-  url({ date, channel }) {
-    const offset = date.diff(dayjs.utc().startOf('d'), 'd')
-
-    return `https://jiotvapi.cdn.jio.com/apis/v1.3/getepg/get?channel_id=${channel.site_id}&offset=${offset}`
+  days: 1,
+  url: function ({ channel }) {
+    return `https://tsdevil.fun/testing/jtv-epg.php?channel_id=${channel.site_id}&offset=0`
   },
-  parser({ content }) {
+  request: {
+    method: 'GET',
+    headers: {
+      Origin: 'https://www.jiotv.com',
+      Referer: 'https://www.jiotv.com',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0'
+    }
+  },
+  parser: function ({ content, channel }) {
     let programs = []
-    let items = parseItems(content)
+    const items = parseItems(content, channel)
     items.forEach(item => {
       programs.push({
         title: item.showname,
-        description: item.episode_desc || item.description,
-        directors: parseList(item.director),
-        actors: parseList(item.starCast),
-        categories: item.showGenre,
-        episode: parseEpisode(item),
-        keywords: item.keywords,
-        icon: parseIcon(item),
-        image: parseImage(item),
-        start: dayjs(item.startEpoch),
-        stop: dayjs(item.endEpoch)
+        description: item.episode_num ? item.description + ' E' + item.episode_num : item.description,
+        image: 'https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/' + item.episodePoster,
+        start: parseStart(item),
+        stop: parseStop(item)
       })
     })
-
     return programs
-  },
+  },  
   async channels() {
-    const data = await axios
+    const items = await axios
       .get(
-        'https://jiotvapi.cdn.jio.com/apis/v3.0/getMobileChannelList/get/?langId=6&devicetype=phone&os=android&usertype=JIO&version=343'
+        'https://tsdevil.fun/testing/jtv-epg.php?langid=6&devicetype=phone&os=android&usertype=JIO&version=343',
+        { 
+          headers: {
+            Origin: 'https://www.jiotv.com',
+            Referer: 'https://www.jiotv.com',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0'
+          } 
+        }
       )
-      .then(r => r.data)
-      .catch(console.error)
-
-    return data.result.map(c => {
-      return {
+      .then(r => r.data.result)
+      .catch(console.log)
+    let channels = []
+    items.forEach(item => {
+      channels.push({
         lang: 'en',
-        site_id: c.channel_id,
-        name: c.channel_name
-      }
+        site_id: item.channel_id,
+        name: item.channel_name,
+        logo: 'https://jiotvimages.cdn.jio.com/dare_images/images/' + item.logoUrl
+      })
     })
+    return channels
   }
 }
 
-function parseEpisode(item) {
-  return item.episode_num > 0 ? item.episode_num : null
+function parseStart(item) {
+  return dayjs(item.startEpoch).utcOffset('+05:30')
 }
 
-function parseList(string) {
-  return string.split(', ').filter(Boolean)
+function parseStop(item) {
+  return dayjs(item.endEpoch).utcOffset('+05:30')
 }
 
-function parseIcon(item) {
-  return item.episodeThumbnail
-    ? `https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/${item.episodeThumbnail}`
-    : null
-}
-
-function parseImage(item) {
-  return item.episodePoster
-    ? `https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/${item.episodePoster}`
-    : null
-}
-
-function parseItems(content) {
+function parseItems(content, channel) {
+  let data
   try {
-    const data = JSON.parse(content)
-    if (!data || !Array.isArray(data.epg)) return []
-
-    return data.epg
-  } catch {
+    data = JSON.parse(content)
+  } catch (err) {
+    console.log('Content -' + content)
     return []
   }
+  return data.epg ? data.epg : []
 }

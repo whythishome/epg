@@ -1,5 +1,4 @@
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
-import stylistic from '@stylistic/eslint-plugin'
 import globals from 'globals'
 import tsParser from '@typescript-eslint/parser'
 import path from 'node:path'
@@ -16,11 +15,10 @@ const compat = new FlatCompat({
 })
 
 export default [
-  ...compat.extends('eslint:recommended', 'plugin:@typescript-eslint/strict', 'plugin:@typescript-eslint/stylistic', 'prettier'),
+  ...compat.extends('eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'),
   {
     plugins: {
-      '@typescript-eslint': typescriptEslint,
-      '@stylistic': stylistic
+      '@typescript-eslint': typescriptEslint
     },
 
     languageOptions: {
@@ -38,7 +36,7 @@ export default [
       '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/no-var-requires': 'off',
       'no-case-declarations': 'off',
-      '@stylistic/linebreak-style': ['error', 'windows'],
+      'linebreak-style': ['error', 'windows'],
 
       quotes: [
         'error',

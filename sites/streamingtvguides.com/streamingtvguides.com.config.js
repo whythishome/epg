@@ -2,8 +2,7 @@ const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const timezone = require('dayjs/plugin/timezone')
-const sortBy = require('lodash.sortby')
-const uniqBy = require('lodash.uniqby')
+const _ = require('lodash')
 
 dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
@@ -30,7 +29,7 @@ module.exports = {
       })
     })
 
-    programs = sortBy(uniqBy(programs, p => p.start), p => p.start.valueOf())
+    programs = _.orderBy(_.uniqBy(programs, 'start'), 'start')
 
     return programs
   },

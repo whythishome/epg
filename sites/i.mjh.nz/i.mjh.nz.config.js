@@ -111,13 +111,14 @@ module.exports = {
         .get(`${API_ENDPOINT}/${option.path}.xml`)
         .then(r => r.data)
         .catch(console.error)
-      const data = parser.parse(xml)
-
+      const data = parser.parse(xml);
+      console.dir(data.channels, { depth: null });
       data.channels.forEach(item => {
         channels.push({
           lang: option.lang,
           site_id: `${option.path}#${item.id}`,
-          name: item.name[0].value
+          name: item.displayName.length ? item.displayName[0].value : null,
+          logo: item.icon.length ? item.icon[0].src : null
         })
       })
     }

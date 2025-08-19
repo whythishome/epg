@@ -1,6 +1,6 @@
 # mytelly.co.uk
 
-https://www.mytelly.co.uk/tv-guide/
+https://www.mytelly.co.uk/tv-guide/listings/tv-tonight.html
 
 ### Download the guide
 

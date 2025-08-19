@@ -1,9 +1,9 @@
+const _ = require('lodash')
 const doFetch = require('@ntlab/sfetch')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const sortBy = require('lodash.sortby')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -15,7 +15,7 @@ module.exports = {
   url({ channel, date }) {
     const [platform] = channel.site_id.split('#')
 
-    return `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-${platform}&pageSize=999&date=${date.format(
+    return `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-${platform}&currentPage=0&pageSize=1000&date=${date.format(
       'YYYY-MM-DD'
     )}`
   },
@@ -31,6 +31,7 @@ module.exports = {
     let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
+      if (item.title === 'Nema informacija o programu') return
       programs.push({
         title: item.title,
         description: item.description,
@@ -45,14 +46,14 @@ module.exports = {
   },
   async channels({ platform = 'msat' }) {
     const platforms = {
-      msat: 'https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search?pageSize=999&query=:relevantno:tv-kategorija:tv-msat',
-      iptv: 'https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search?pageSize=999&query=:relevantno:tv-kategorija:tv-iptv'
+      msat: 'https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search?pageSize=100&currentPage=<CURRENT_PAGE>&query=:relevantno:tv-kategorija:tv-msat',
+      iptv: 'https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search?pageSize=100&currentPage=<CURRENT_PAGE>&query=:relevantno:tv-kategorija:tv-iptv:tv-iptv-paket:Svi+kanali'
     }
 
     const queue = [
       {
         platform,
-        url: platforms[platform]
+        url: platforms[platform].replace('<CURRENT_PAGE>', 0)
       }
     ]
 
@@ -61,7 +62,7 @@ module.exports = {
       if (data && data.pagination.currentPage < data.pagination.totalPages) {
         queue.push({
           platform: req.platform,
-          url: platforms[req.platform]
+          url: platforms[req.platform].replace('<CURRENT_PAGE>', ++data.pagination.currentPage)
         })
       }
 
@@ -101,9 +102,8 @@ function parseItems(content, channel) {
     const [, channelId] = channel.site_id.split('#')
     const channelData = data.products.find(channel => channel.code === channelId)
     if (!channelData || !Array.isArray(channelData.programs)) return []
-    // filter out programs that have the sentence "no program information available"
-    channelData.programs = channelData.programs.filter(p => !p.title.includes('Nema informacija o programu'))
-    return sortBy(channelData.programs, p => parseStart(p).valueOf())
+
+    return _.sortBy(channelData.programs, p => parseStart(p).valueOf())
   } catch {
     return []
   }

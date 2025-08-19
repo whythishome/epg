@@ -1,9 +1,8 @@
-import { Logger, File, Storage } from '@freearhey/core'
-import { ChannelsParser } from '../../core'
-import { ChannelList } from '../../models'
-import { pathToFileURL } from 'node:url'
-import epgGrabber from 'epg-grabber'
+import { Logger, File, Collection, Storage } from '@freearhey/core'
+import { ChannelsParser, XML } from '../../core'
+import { Channel } from 'epg-grabber'
 import { Command } from 'commander'
+import { pathToFileURL } from 'node:url'
 
 const program = new Command()
 program
@@ -12,7 +11,7 @@ program
   .option('-o, --output <output>', 'Output file')
   .parse(process.argv)
 
-interface ParseOptions {
+type ParseOptions = {
   config: string
   set?: string
   output?: string
@@ -22,28 +21,22 @@ interface ParseOptions {
 const options: ParseOptions = program.opts()
 
 async function main() {
-  function isPromise(promise: object[] | Promise<object[]>) {
-    return (
-      !!promise &&
-      typeof promise === 'object' &&
-      typeof (promise as Promise<object[]>).then === 'function'
-    )
-  }
-
   const storage = new Storage()
-  const logger = new Logger()
   const parser = new ChannelsParser({ storage })
+  const logger = new Logger()
   const file = new File(options.config)
   const dir = file.dirname()
   const config = (await import(pathToFileURL(options.config).toString())).default
   const outputFilepath = options.output || `${dir}/${config.site}.channels.xml`
 
-  let channelList = new ChannelList({ channels: [] })
+  let channels = new Collection()
   if (await storage.exists(outputFilepath)) {
-    channelList = await parser.parse(outputFilepath)
+    channels = await parser.parse(outputFilepath)
   }
 
-  const args: Record<string, string> = {}
+  const args: {
+    [key: string]: string
+  } = {}
 
   if (Array.isArray(options.set)) {
     options.set.forEach((arg: string) => {
@@ -56,31 +49,45 @@ async function main() {
   if (isPromise(parsedChannels)) {
     parsedChannels = await parsedChannels
   }
-  parsedChannels = parsedChannels.map((channel: epgGrabber.Channel) => {
+  parsedChannels = parsedChannels.map((channel: Channel) => {
     channel.site = config.site
 
     return channel
   })
 
-  const newChannelList = new ChannelList({ channels: [] })
-  parsedChannels.forEach((channel: epgGrabber.Channel) => {
-    if (!channel.site_id) return
-
-    const found: epgGrabber.Channel | undefined = channelList.get(channel.site_id)
+  let output = new Collection()
+  parsedChannels.forEach((channel: Channel) => {
+    const found: Channel | undefined = channels.first(
+      (_channel: Channel) => _channel.site_id == channel.site_id
+    )
 
     if (found) {
       channel.xmltv_id = found.xmltv_id
       channel.lang = found.lang
     }
 
-    newChannelList.add(channel)
+    output.add(channel)
   })
 
-  newChannelList.sort()
+  output = output.orderBy([
+    (channel: Channel) => channel.lang || '_',
+    (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '0'),
+    (channel: Channel) => channel.site_id
+  ])
 
-  await storage.save(outputFilepath, newChannelList.toString())
+  const xml = new XML(output)
+
+  await storage.save(outputFilepath, xml.toString())
 
   logger.info(`File '${outputFilepath}' successfully saved`)
 }
 
 main()
+
+function isPromise(promise: object[] | Promise<object[]>) {
+  return (
+    !!promise &&
+    typeof promise === 'object' &&
+    typeof (promise as Promise<object[]>).then === 'function'
+  )
+}

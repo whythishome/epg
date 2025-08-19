@@ -1,5 +1,6 @@
-const durationParser = require('parse-duration').default
+const durationParser = require('parse-duration')
 const cheerio = require('cheerio')
+const srcset = require('srcset')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -28,14 +29,13 @@ module.exports = {
     items.forEach(item => {
       const $item = cheerio.load(item)
       const title = parseTitle($item)
-      const subTitle = parseSubtitle($item)
       const image = parseImage($item)
       const category = parseCategory($item)
       const start = parseStart($item, date)
       const duration = parseDuration($item)
       const stop = start.add(duration, 'ms')
 
-      programs.push({ title, subTitle, image, category, start, stop })
+      programs.push({ title, image, category, start, stop })
     })
 
     return programs
@@ -91,21 +91,13 @@ function parseDuration($item) {
 function parseImage($item) {
   const img = $item('.mainBroadcastCard-imageContent').first().find('img')
   const value = img.attr('srcset') || img.data('srcset')
+  const obj = value ? srcset.parse(value).find(i => i.width === 128) : {}
 
-  let url = null
-
-  if (value) {
-    const sources = value.split(',').map(s => s.trim())
-    for (const source of sources) {
-      const [src, descriptor] = source.split(/\s+/)
-      if (descriptor === '128w') {
-        url = src.replace('128x180', '960x540')
-        break
-      }
-    }
+  if (obj.url) {
+    obj.url = obj.url.replace('128x180', '960x540')
   }
 
-  return url
+  return obj.url
 }
 
 function parseCategory($item) {
@@ -120,8 +112,4 @@ function parseItems(content) {
   const $ = cheerio.load(content)
 
   return $('.mainBroadcastCard').toArray()
-}
-
-function parseSubtitle($item) {
-  return $item('.mainBroadcastCard-subtitle').text().trim() || null
 }

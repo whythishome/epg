@@ -44,9 +44,7 @@ module.exports = {
   async channels({ lang }) {
     const axios = require('axios')
     const data = await axios
-      .get(`https://elcinema.com/${lang}/tvguide/`, {
-        headers: headers
-      })
+      .get(`https://elcinema.com/${lang}/tvguide/`)
       .then(r => r.data)
       .catch(console.log)
 

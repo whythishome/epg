@@ -1,7 +1,7 @@
-import chalk from 'chalk'
-import { program } from 'commander'
-import { Storage, File } from '@freearhey/core'
-import { XmlDocument, XsdValidator, XmlValidateError, ErrorDetail } from 'libxml2-wasm'
+import chalk from 'chalk';
+import { program } from 'commander';
+import { Storage, File } from '@freearhey/core';
+import { XmlDocument, XsdValidator, XmlValidateError, ErrorDetail } from 'libxml2-wasm';
 
 const xsd = `<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
@@ -19,7 +19,6 @@ const xsd = `<?xml version="1.0" encoding="UTF-8"?>
       <xs:attribute use="required" ref="site_id"/>
       <xs:attribute name="xmltv_id" use="required" type="xs:string"/>
       <xs:attribute name="logo" type="xs:string"/>
-      <xs:attribute name="lcn" type="xs:string"/>
     </xs:complexType>
   </xs:element>
   <xs:attribute name="site">
@@ -43,67 +42,69 @@ const xsd = `<?xml version="1.0" encoding="UTF-8"?>
       </xs:restriction>
     </xs:simpleType>
   </xs:attribute>
-</xs:schema>`
+</xs:schema>`;
 
-program.argument('[filepath...]', 'Path to *.channels.xml files to check').parse(process.argv)
+program.argument('[filepath]', 'Path to *.channels.xml files to check').parse(process.argv);
 
 async function main() {
-  const storage = new Storage()
+  const storage = new Storage();
 
-  let errors: ErrorDetail[] = []
+  let errors: ErrorDetail[] = [];
 
-  const files = program.args.length ? program.args : await storage.list('sites/**/*.channels.xml')
+  const files = program.args.length ? program.args : await storage.list('sites/**/*.channels.xml');
   for (const filepath of files) {
-    const file = new File(filepath)
-    if (file.extension() !== 'xml') continue
+    const file = new File(filepath);
+    if (file.extension() !== 'xml') continue;
 
-    const xml = await storage.load(filepath)
+    const xml = await storage.load(filepath);
+    const lines = xml.split('\n');
 
-    let localErrors: ErrorDetail[] = []
+    let localErrors: ErrorDetail[] = [];
 
     try {
-      const schema = XmlDocument.fromString(xsd)
-      const validator = XsdValidator.fromDoc(schema)
-      const doc = XmlDocument.fromString(xml)
+      const schema = XmlDocument.fromString(xsd);
+      const validator = XsdValidator.fromDoc(schema);
+      const doc = XmlDocument.fromString(xml);
 
-      validator.validate(doc)
+      validator.validate(doc);
 
-      schema.dispose()
-      validator.dispose()
-      doc.dispose()
+      schema.dispose();
+      validator.dispose();
+      doc.dispose();
     } catch (_error) {
-      const error = _error as XmlValidateError
+      const error = _error as XmlValidateError;
 
-      localErrors = localErrors.concat(error.details)
+      localErrors = localErrors.concat(error.details);
     }
 
-    xml.split('\n').forEach((line: string, lineIndex: number) => {
-      const found = line.match(/='/)
+    lines.forEach((line: string, lineIndex: number) => {
+      const found = line.match(/='/);
       if (found) {
-        const colIndex = found.index || 0
+        const colIndex = found.index || 0;
         localErrors.push({
           line: lineIndex + 1,
           col: colIndex + 1,
           message: 'Single quotes cannot be used in attributes'
-        })
+        });
       }
-    })
+    });
 
     if (localErrors.length) {
-      console.log(`\n${chalk.underline(filepath)}`)
+      console.log(`\n${chalk.underline(filepath)}`);
       localErrors.forEach((error: ErrorDetail) => {
-        const position = `${error.line}:${error.col}`
-        console.log(` ${chalk.gray(position.padEnd(4, ' '))} ${error.message.trim()}`)
-      })
+        const position = `${error.line}:${error.col}`;
+        console.log(` ${chalk.gray(position.padEnd(4, ' '))} ${error.message.trim()}`);
+        console.log(` ${chalk.gray('Line:')} ${lines[error.line - 1].trim()}`);
+      });
 
-      errors = errors.concat(localErrors)
+      errors = errors.concat(localErrors);
     }
   }
 
   if (errors.length) {
-    console.log(chalk.red(`\n${errors.length} error(s)`))
-    process.exit(1)
+    console.log(chalk.red(`\n${errors.length} error(s)`));
+    process.exit(1);
   }
 }
 
-main()
+main();

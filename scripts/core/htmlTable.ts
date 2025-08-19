@@ -1,4 +1,4 @@
-interface Column {
+type Column = {
   name: string
   nowrap?: boolean
   align?: string

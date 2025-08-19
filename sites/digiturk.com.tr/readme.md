@@ -1,6 +1,6 @@
 # digiturk.com.tr
 
-https://www.digiturk.com.tr/yayin-akisi (only accessible with a Turkish IP address)
+https://www.digiturk.com.tr/yayin-akisi
 
 ### Download the guide
 

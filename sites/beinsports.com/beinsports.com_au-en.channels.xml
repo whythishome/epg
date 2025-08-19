@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="beinsports.com" lang="en" xmltv_id="beINSports2.qa@Australia" site_id="63A30D9C-609D-4A30-8730-2CA391DF287A">beIN SPORTS 2</channel>
-  <channel site="beinsports.com" lang="en" xmltv_id="beINSports1.qa@Australia" site_id="164C0EDA-EBCE-4AA6-9DDA-D603E0948B9F">beIN SPORTS 1</channel>
-  <channel site="beinsports.com" lang="en" xmltv_id="beINSports3.qa@Australia" site_id="2E8A6222-8D90-4291-81E3-AF2F72557746">beIN SPORTS 3</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="63A30D9C-609D-4A30-8730-2CA391DF287A" logo="https://prod-media.beinsports.com/image/b5de4caa4232fc8afacdba10daf5ba7b.128.png">beIN SPORTS 2</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="164C0EDA-EBCE-4AA6-9DDA-D603E0948B9F" logo="https://prod-media.beinsports.com/image/a5dc8600e76af1e1d3b58c569580713e.128.png">beIN SPORTS 1</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="2E8A6222-8D90-4291-81E3-AF2F72557746" logo="https://prod-media.beinsports.com/image/5c72fa3d1788a0afa9a79ab3ec1f4ef6.128.png">beIN SPORTS 3</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="" site_id="C938A2D0-375A-4876-B05D-08EE29D33B07" logo="https://prod-media.beinsports.com/image/383dda3c7662c2e80a95c10c0af72fe9.128.png">beIN SPORTS XTRA</channel>
 </channels>

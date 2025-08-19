@@ -30,12 +30,13 @@ module.exports = {
       .get('https://skywebconfig.msl-prod.skycloud.co.nz/sky/json/channels.prod.json')
       .then(r => r.data)
       .catch(console.log)
-
-    return data.channels.map(item => {
+    console.log(data);
+    return data.map(item => {
       return {
         lang: 'en',
         site_id: parseInt(item.number).toString(),
-        name: item.name
+        name: item.name,
+        logo: item.logoThumbnail
       }
     })
   }

@@ -1,114 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="600">SKY Sport Popup 1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="601">SKY Sport Popup 2</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="605">Rod Laver Arena</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="606">Margaret Court Arena</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="607">John Cain Arena</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="608">Kia Arena</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="609">1573 Arena</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="610">Court 3</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="611">Court 5</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="612">Court 6</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="613">Court 7</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="614">Court 8</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="615">Court 12</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="616">Court 13</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="617">Court 14</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="618">Court 15</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="619">Court 16</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="620">Court 17</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="AlJazeera.qa@English" site_id="90">Al Jazeera</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="AnimalPlanet.au" site_id="76">Animal Planet</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="BBCEarth.uk@NewZealand" site_id="74">BBC Earth</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="BBCUKTV.au@NewZealand" site_id="7">UKTV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="BBCNews.uk@AsiaPacific" site_id="89">BBC World News</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Bravo.nz" site_id="12">BRAVO</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Bravo.nz@Plus1" site_id="512">BRAVO +1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CartoonNetwork.au" site_id="102">Cartoon Network</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CBeebies.au" site_id="103">CBeebies</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CGTN.cn" site_id="310">CGTN</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CGTNDocumentary.cn" site_id="309">CGTN Documentary</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CNBCAustralia.au" site_id="91">CNBC</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CNNInternational.us@AsiaPacific" site_id="87">CNN International</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ColorsAsiaPacific.in" site_id="151">Colors</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ComedyCentral.au" site_id="11">Comedy Central</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CountryTV.nz" site_id="81">Country TV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CrimePlusInvestigation.au" site_id="71">Crime + Investigation</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="DaystarTV.us" site_id="202">Daystar TV Network</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="DiscoveryChannel.nz" site_id="70">Discovery Channel</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="DiscoveryTurbo.au@NewZealand" site_id="75">Discovery Turbo</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="eden.nz" site_id="13">eden</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="eden.nz@Plus1" site_id="505">eden +1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ESPN2.au" site_id="61">ESPN2</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ESPN.au" site_id="60">ESPN</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="FaceTV.nz" site_id="83">Face TV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Firstlight.nz" site_id="206">Firstlight</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="FoxNewsChannel.us" site_id="88">Fox News</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="HGTV.nz" site_id="21">HGTV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="History.au" site_id="73">History</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="HopeChannelNewZealand.nz" site_id="204">Hope Channel</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="InvestigationDiscovery.au" site_id="18">Investigation Discovery</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="JONES.nz" site_id="8">JONES!</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="JONEStoo.nz" site_id="208">JONES! too</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Living.nz" site_id="17">Living Channel</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="MTVHits.nz" site_id="22">MTV Hits</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="MTV.nz" site_id="15">MTV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="NationalGeographic.au" site_id="72">National Geographic</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Nickelodeon.au" site_id="101">Nick</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="NickJr.au" site_id="104">nick jr.</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="NickMusic.au" site_id="100">Nick Music</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ParliamentTV.nz" site_id="86">Parliament TV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyOpen.nz" site_id="4">Prime TV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyOpen.nz@Plus1" site_id="514">Prime +1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Rialto.nz" site_id="39">Rialto</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Rush.nz" site_id="24">Rush</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SBNTV.au" site_id="203">SBN</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ShineTV.nz" site_id="201">Shine TV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Sky5.nz" site_id="5">Sky 5</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyArena.nz" site_id="65">SKY Arena</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyArts.nz" site_id="20">SKY ARTS</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyBoxOffice040.nz" site_id="40">SKY Box Office</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyBoxOffice041.nz" site_id="41">SKY Box Office 041</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyBoxOffice042.nz" site_id="42">SKY Box Office 042</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyBoxOffice043.nz" site_id="43">SKY Box Office 043</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyBoxSets.nz" site_id="9">SKY BOX SETS</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesAction.nz" site_id="32">SKY Movies Action</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesClassics.nz" site_id="34">SKY Movies Classic</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesCollection.nz" site_id="35">SKY Movies Collection</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesComedy.nz" site_id="31">SKY Movies Comedy</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesFamily.nz" site_id="36">SKY Movies Family</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesGreats.nz" site_id="33">SKY Movies Greats</channel>    
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesPremiere.nz" site_id="30">SKY Movies Premiere</channel>    
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyNewsNewZealand.nz" site_id="85">SKY NEWS</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport1.nz" site_id="51">SKY Sport 1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport2.nz" site_id="52">SKY Sport 2</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport3.nz" site_id="53">SKY Sport 3</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport4.nz" site_id="54">SKY Sport 4</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport5.nz" site_id="55">SKY Sport 5</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport6.nz" site_id="56">SKY Sport 6</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport7.nz" site_id="57">SKY Sport 7</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport8.nz" site_id="58">SKY Sport 8</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport9.nz" site_id="59">SKY Sport 9</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySportSelect.nz" site_id="50">SKY Sport Select</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SoHo.nz" site_id="10">SoHo</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="StarGold.in" site_id="152">Star Gold</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="StarPlus.in" site_id="150">Star Plus Hindi</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TABTrackside1.nz" site_id="62">TAB Trackside 1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TABTrackside2.nz" site_id="63">TAB Trackside 2</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TeReo.nz" site_id="82">Te Reo</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TheFilipinoChannelAsia.us" site_id="160">The Filipino Channel</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TheShoppingChannel.nz" site_id="25">The Shopping Channel</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Three.nz" site_id="3">Three</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Three.nz@Plus1" site_id="503">Three +1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TLC.nz" site_id="16">TLC</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZ1.nz" site_id="1">One</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZ1.nz@Plus1" site_id="501">One +1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZ2.nz" site_id="2">TV2</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZ2.nz@Plus1" site_id="502">TV2 +1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZDUKE.nz" site_id="23">DUKE</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZDUKE.nz@Plus1" site_id="504">DUKE +1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="UniversalTV.nz" site_id="210">UniversalTV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Vibe.nz" site_id="6">Vibe</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="WhakaataMaori.nz" site_id="19">Maori Television</channel>
-</channels>  
+  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="207" logo="https://static.sky.co.nz/sky/epglogos/BBC_FIRST_V1.png">BBC First</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="600" logo="https://static.sky.co.nz/sky/epglogos/MK_SKYSportPopUp1_Logo_80x60.png">SKY Sport Popup 1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="" site_id="601" logo="https://static.sky.co.nz/sky/epglogos/MK_SKYSportPopUp2_Logo_80x60.png">SKY Sport Popup 2</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="90" logo="https://static.sky.co.nz/sky/epglogos/Al_Jazeera.png">Al Jazeera</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="AnimalPlanet.au" site_id="76" logo="https://static.sky.co.nz/sky/epglogos/MK_AnimalPlanetUpdate_Thumbnail_80x60.png">Animal Planet</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="BBCEarth.nz" site_id="74" logo="https://static.sky.co.nz/sky/epglogos/BBC_EARTH_Green_Logo_Web_V2_80x60.png">BBC Earth</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="BBCNewsAsiaPacific.uk" site_id="89" logo="https://static.sky.co.nz/sky/channel-logos/BBC_News_Stacked_Black_Core_Colour_RGB_HR.png">BBC World News</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="BBCUKTV.nz" site_id="7" logo="https://static.sky.co.nz/sky/epglogos/UKTV.png">UKTV</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="Bravo.nz" site_id="12" logo="https://static.sky.co.nz/sky/epglogos/mk_bravo_thumbnail.png">BRAVO</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="BravoPlus1.nz" site_id="512" logo="https://static.sky.co.nz/sky/epglogos/MK_Bravo_plus1_Thumbnail_Logo_80x60.png">BRAVO Plus 1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="CartoonNetwork.au" site_id="102" logo="https://static.sky.co.nz/sky/epglogos/MK_CartoonNetwork_LogoThumbnail_80x60.jpg">Cartoon Network</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="CBeebies.au" site_id="103" logo="https://static.sky.co.nz/sky/epglogos/CBeebies_logo_80x60.png">CBeebies</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="CGTN.cn" site_id="310" logo="https://static.sky.co.nz/sky/epglogos/MK_CGTNnew_LogoThumbnail_80x60.png">CGTN</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="CGTNDocumentary.cn" site_id="309" logo="https://static.sky.co.nz/sky/epglogos/MK_CGTNDoc_LogoThumbnail_80x60.png">CGTN</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="CNBCAustralia.au" site_id="91" logo="https://static.sky.co.nz/sky/epglogos/CNBC_V1.png">CNBC</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="CNNInternationalAsiaPacific.hk" site_id="87" logo="https://static.sky.co.nz/sky/epglogos/CNN_Logo_80x60.jpg">CNN International</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ColorsAsiaPacific.in" site_id="151" logo="https://static.sky.co.nz/sky/epglogos/logo_151_320x320.png">Colors</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ComedyCentral.au" site_id="11" logo="https://static.sky.co.nz/sky/epglogos/Comedy_Central.png">Comedy Central</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="CountryTV.nz" site_id="81" logo="https://static.sky.co.nz/sky/epglogos/logo_081_250x180.png">Country TV</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="CrimePlusInvestigation.au" site_id="71" logo="https://static.sky.co.nz/sky/epglogos/071_V2.png">Real Crime</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="DaystarTV.us" site_id="202" logo="https://static.sky.co.nz/sky/epglogos/Daystar.png">Daystar TV Network</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="DiscoveryChannel.nz" site_id="70" logo="https://static.sky.co.nz/sky/epglogos/Discovery_Channel_V2.png">Discovery Channel</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="DiscoveryTurbo.nz" site_id="75" logo="https://static.sky.co.nz/sky/epglogos/MK_DiscoveryTurbo_LogoThumbnail_80x60.jpg">Discovery Turbo</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="eden.nz" site_id="13" logo="https://static.sky.co.nz/sky/epglogos/EdenLogoRed.png">eden</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="edenPlus1.nz" site_id="505" logo="https://static.sky.co.nz/sky/epglogos/EdenPlus1Red.png">eden +1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ESPN2.au" site_id="61" logo="https://static.sky.co.nz/sky/epglogos/ESPN2.png">ESPN2</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ESPN.au" site_id="60" logo="https://static.sky.co.nz/sky/epglogos/ESPN.png">ESPN</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="FaceTV.nz" site_id="83" logo="https://static.sky.co.nz/sky/epglogos/MK_FaceTV_LogoThumbnail_80x60.jpg">FACE TV</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="Firstlight.nz" site_id="206" logo="https://static.sky.co.nz/sky/epglogos/MK_Firstlight_LogoThumb_250x180.jpg">Firstlight</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="FoxNewsChannel.us" site_id="88" logo="https://static.sky.co.nz/sky/epglogos/Fox_News_Channel.png">Fox News</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="HGTV.nz" site_id="21" logo="https://static.sky.co.nz/sky/epglogos/MK_HGTV_LogoThumbnail_70x70.png">HGTV</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="History.au" site_id="73" logo="https://static.sky.co.nz/sky/epglogos/073_V5.png">Real History</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="HopeChannelNewZealand.nz" site_id="204" logo="https://static.sky.co.nz/sky/epglogos/MK_HopeChannel_Logo_80x60.png">Hope Channel</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="InvestigationDiscovery.au" site_id="18" logo="https://static.sky.co.nz/sky/epglogos/MK_ID.png">Investigation Discovery</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="JONES.nz" site_id="8" logo="https://static.sky.co.nz/sky/epglogos/JONES.png">Jones!</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="Living.nz" site_id="17" logo="https://static.sky.co.nz/sky/epglogos/MK_LivingChannel_LogoSmall.jpg">Living Channel</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="MTV.nz" site_id="15" logo="https://static.sky.co.nz/sky/epglogos/mtv.png">MTV</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="MTVHits.nz" site_id="22" logo="https://static.sky.co.nz/sky/epglogos/mtv-hits.png">MTV Music</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="Nickelodeon.au" site_id="101" logo="https://static.sky.co.nz/sky/epglogos/MK_Nick_LogoThumbnail_80x60.png">Nick</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="NickJr.au" site_id="104" logo="https://static.sky.co.nz/sky/epglogos/Nick_Jr_V1.png">nick jr.</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="NickMusic.au" site_id="100" logo="https://static.sky.co.nz/sky/epglogos/MK_Logo_NickMusic_80x60.png">Nick Music</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ParliamentTV.nz" site_id="86" logo="https://static.sky.co.nz/sky/epglogos/parliament-tv-thumb.png">Parliament TV</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="Rialto.nz" site_id="39" logo="https://static.sky.co.nz/sky/epglogos/logo_039_80x60.png">Rialto</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="Rush.nz" site_id="24" logo="https://static.sky.co.nz/sky/epglogos/logo_Rush_80x60.png">Rush</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SBNTV.au" site_id="203" logo="https://static.sky.co.nz/sky/epglogos/MK_SBN_LogoThumbnail_80x60.jpg">SBN</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ShineTV.nz" site_id="201" logo="https://static.sky.co.nz/sky/epglogos/MK_ShineTV_LogoThumbnail_80x60.jpg">Shine TV</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="Sky5.nz" site_id="5" logo="https://static.sky.co.nz/sky/epglogos/MK_SKY5_LogoThumbnail_70x70.png">Sky 5</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyArena.nz" site_id="65" logo="https://static.sky.co.nz/sky/epglogos/MK_SkyArena_NewLogo_80x60.png">SKY Arena</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyArts.nz" site_id="20" logo="https://static.sky.co.nz/sky/epglogos/logo_020_80x60.png">SKY ARTS</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyBoxOffice040.nz" site_id="40" logo="https://static.sky.co.nz/sky/epglogos/MK_SBO_LogoThumbnail_80x60.png">SKY Box Office</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyBoxOffice041.nz" site_id="41" logo="https://static.sky.co.nz/sky/epglogos/MK_SBO_LogoThumbnail_80x60.png">SKY Box Office 041</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyBoxOffice042.nz" site_id="42" logo="https://static.sky.co.nz/sky/epglogos/MK_SBO_LogoThumbnail_80x60.png">SKY Box Office 042</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyBoxOffice043.nz" site_id="43" logo="https://static.sky.co.nz/sky/epglogos/MK_SBO_LogoThumbnail_80x60.png">SKY Box Office 043</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesAction.nz" site_id="32" logo="https://static.sky.co.nz/sky/epglogos/MK_Sky_Movies_Action_Logo.png">Action Movies</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesClassics.nz" site_id="34" logo="https://static.sky.co.nz/sky/epglogos/MK_Sky_Movies_Classics_Logo.png">Classic Movies</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesComedy.nz" site_id="31" logo="https://static.sky.co.nz/sky/epglogos/MK_Sky_Movies_Comedy_Logo.png">Comedy Movies</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesFamily.nz" site_id="36" logo="https://static.sky.co.nz/sky/epglogos/MK_Sky_Movies_Family_Logo.png">Family Movies</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesGreats.nz" site_id="33" logo="https://static.sky.co.nz/sky/epglogos/MK_Sky_Movies_Greats_Logo.png">Great Movies</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesPremiere.nz" site_id="30" logo="https://static.sky.co.nz/sky/epglogos/MK_Sky_Movies_Premiere_Logo.png">Premiere Movies</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyNewsNewZealand.nz" site_id="85" logo="https://static.sky.co.nz/sky/epglogos/MK_SKYNews_LogoThumb_v2_80x60px.png">SKY NEWS</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyOpen.nz" site_id="4" logo="https://static.sky.co.nz/sky/channel-logos/004_V7.png">Sky Open</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkyOpenPlus1.nz" site_id="514" logo="https://static.sky.co.nz/sky/channel-logos/514_prime_plus_1_v2.png">Sky Open +1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport1.nz" site_id="51" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport1_NewLogo_V_80x60.png">SKY Sport 1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport2.nz" site_id="52" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport2_NewLogo_V_80x60.png">SKY Sport 2</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport3.nz" site_id="53" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport3_NewLogo_V_80x60.png">SKY Sport 3</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport4.nz" site_id="54" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport4_NewLogo_V_80x60.png">SKY Sport 4</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport5.nz" site_id="55" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport5_NewLogo_V_80x60.png">SKY Sport 5</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport6.nz" site_id="56" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport6_NewLogo_V_80x60.png">SKY Sport 6</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport7.nz" site_id="57" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport7_NewLogo_V_80x60.png">SKY Sport 7</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport8.nz" site_id="58" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport8_NewLogo_V_80x60.png">SKY Sport 8</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport9.nz" site_id="59" logo="https://static.sky.co.nz/sky/epglogos/MK_SkySport9_NewLogo_V_80x60.png">SKY Sport 9</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SkySportSelect.nz" site_id="50" logo="https://static.sky.co.nz/sky/epglogos/logo_SKY_Sport_Select_80x60.png">SKY Sport Select</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="SoHo.nz" site_id="10" logo="https://static.sky.co.nz/sky/epglogos/MK_HBO_LogoThumbnail2024__320x320.png">SoHo</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="StarGold.in" site_id="152" logo="https://static.sky.co.nz/sky/epglogos/logo_152_250x180.png">Star Gold</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="StarPlus.in" site_id="150" logo="https://static.sky.co.nz/sky/epglogos/logo_150_250x180.png">Star Plus Hindi</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TABTrackside1.nz" site_id="62" logo="https://static.sky.co.nz/sky/epglogos/Trackside_1_V3.png">TAB Trackside 1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TABTrackside2.nz" site_id="63" logo="https://static.sky.co.nz/sky/epglogos/Trackside_2_V3.png">TAB Trackside 2</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TeReo.nz" site_id="82" logo="https://static.sky.co.nz/sky/epglogos/Te_Reo.png">Te Reo</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TheFilipinoChannelAsia.us" site_id="160" logo="https://static.sky.co.nz/sky/epglogos/0111_80x60.png">The Filipino Channel</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="Three.nz" site_id="3" logo="https://static.sky.co.nz/sky/epglogos/003_1920x1080.png">Three</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="ThreePlus1.nz" site_id="503" logo="https://static.sky.co.nz/sky/epglogos/503_1920x1080.png">ThreePlus1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TLC.nz" site_id="16" logo="https://static.sky.co.nz/sky/epglogos/MK_TLC_LogoThumb_70x70.png">TLC</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZ1.nz" site_id="1" logo="https://static.sky.co.nz/sky/epglogos/TV1.png">One</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZ1Plus1.nz" site_id="501" logo="https://static.sky.co.nz/sky/epglogos/TV1_plus_1.png">One Plus 1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZ2.nz" site_id="2" logo="https://static.sky.co.nz/sky/epglogos/TV2.png">TV2</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZ2Plus1.nz" site_id="502" logo="https://static.sky.co.nz/sky/epglogos/TV2_plus_1.png">TV2 + 1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZDUKE.nz" site_id="23" logo="https://static.sky.co.nz/sky/epglogos/MK_DUKE_LogoThumbnail_80x60.png">DUKE</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZDUKEPlus1.nz" site_id="504" logo="https://static.sky.co.nz/sky/epglogos/MK_DUKEPlus1_Logo.png">DukePlus1</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="UniversalTV.nz" site_id="210" logo="https://static.sky.co.nz/sky/channel-logos/210_universal_tv.png">UniversalTV</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="Vibe.nz" site_id="6" logo="https://static.sky.co.nz/sky/epglogos/VIBE.png">Vibe</channel>
+  <channel site="sky.co.nz" lang="en" xmltv_id="WhakaataMaori.nz" site_id="19" logo="https://static.sky.co.nz/sky/epglogos/Maori_TV.png">Maori Television</channel>
+</channels>

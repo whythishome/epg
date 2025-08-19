@@ -1,8 +1,12 @@
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
+import os from 'os'
 import { pathToFileURL } from 'node:url'
 
-const ENV_VAR = 'cross-env SITES_DIR=tests/__data__/output/sites'
+let ENV_VAR = 'SITES_DIR=tests/__data__/output/sites'
+if (os.platform() === 'win32') {
+  ENV_VAR = 'SET "SITES_DIR=tests/__data__/output/sites" &&'
+}
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -20,13 +24,13 @@ it('can create new site config from template', () => {
   expect(exists('tests/__data__/output/sites/example.com/example.com.config.js')).toBe(true)
   expect(exists('tests/__data__/output/sites/example.com/readme.md')).toBe(true)
   expect(content('tests/__data__/output/sites/example.com/example.com.test.js')).toEqual(
-    content('tests/__data__/expected/sites_init/example.com.test.js')
+    content('tests/__data__/expected/sites/sites-init/example.com.test.js')
   )
   expect(content('tests/__data__/output/sites/example.com/example.com.config.js')).toEqual(
-    content('tests/__data__/expected/sites_init/example.com.config.js')
+    content('tests/__data__/expected/sites/sites-init/example.com.config.js')
   )
   expect(content('tests/__data__/output/sites/example.com/readme.md')).toEqual(
-    content('tests/__data__/expected/sites_init/readme.md')
+    content('tests/__data__/expected/sites/sites-init/readme.md')
   )
 })
 

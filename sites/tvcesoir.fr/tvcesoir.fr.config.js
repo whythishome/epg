@@ -3,7 +3,6 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const uniqBy = require('lodash.uniqby')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -43,6 +42,7 @@ module.exports = {
   },
   async channels() {
     const axios = require('axios')
+    const _ = require('lodash')
 
     const providers = ['-1', '-2', '-3', '-4', '-5']
 
@@ -77,7 +77,7 @@ module.exports = {
       })
     }
 
-    return uniqBy(channels, x => x.site_id)
+    return _.uniqBy(channels, 'site_id')
   }
 }
 

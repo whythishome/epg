@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -61,5 +62,5 @@ function parseItems(content) {
   if (!content) return []
   const data = JSON.parse(content)
 
-  return Object.values(data.result).flat()
+  return _.flatten(Object.values(data.result))
 }

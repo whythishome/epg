@@ -8,7 +8,7 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2025-07-30', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2024-12-07', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'a1p',
   xmltv_id: 'ArenaSport1Premium.rs'
@@ -20,23 +20,24 @@ it('can generate valid url', () => {
 
 it('can parse response', () => {
   const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.html'))
-  const result = parser({ content, channel, date }).map(p => {
+  const result = parser({ channel, date, content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(result.length).toBe(13)
+  expect(result.length).toBe(19)
   expect(result[4]).toMatchObject({
-    start: '2025-07-30T08:00:00.000Z',
-    stop: '2025-07-30T09:00:00.000Z',
-    title: 'UEFA LIGA ŠAMPIONA: Liga Šampiona: Pregled sezone',
-    category: 'Fudbal'
+    start: '2024-12-07T03:30:00.000Z',
+    stop: '2024-12-07T05:00:00.000Z',
+    title: 'EVROPSKO PRVENSTVO Ž',
+    description: 'Francuska - Crna Gora',
+    category: 'Rukomet'
   })
-  expect(result[6]).toMatchObject({
-    start: '2025-07-30T11:00:00.000Z',
-    stop: '2025-07-30T13:00:00.000Z',
-    title: '(Uživo) PRIJATELJSKE UTAKMICE: K League - Newcastle Utd'
+  expect(result[8]).toMatchObject({
+    start: '2024-12-07T11:00:00.000Z',
+    stop: '2024-12-07T11:05:00.000Z',
+    title: 'Arena News'
   })
 })
 

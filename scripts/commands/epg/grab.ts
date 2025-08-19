@@ -1,64 +1,48 @@
 import { Logger, Timer, Storage, Collection } from '@freearhey/core'
+import { program } from 'commander'
+import { CronJob } from 'cron'
 import { QueueCreator, Job, ChannelsParser } from '../../core'
-import { Option, program } from 'commander'
-import { SITES_DIR } from '../../constants'
 import { Channel } from 'epg-grabber'
 import path from 'path'
-import { ChannelList } from '../../models'
+import { SITES_DIR } from '../../constants'
 
 program
-  .addOption(new Option('-s, --site <name>', 'Name of the site to parse'))
-  .addOption(
-    new Option(
-      '-c, --channels <path>',
-      'Path to *.channels.xml file (required if the "--site" attribute is not specified)'
-    )
+  .option('-s, --site <name>', 'Name of the site to parse')
+  .option(
+    '-c, --channels <path>',
+    'Path to *.channels.xml file (required if the "--site" attribute is not specified)'
   )
-  .addOption(new Option('-o, --output <path>', 'Path to output file').default('guide.xml'))
-  .addOption(new Option('-l, --lang <codes>', 'Filter channels by languages (ISO 639-1 codes)'))
-  .addOption(
-    new Option('-t, --timeout <milliseconds>', 'Override the default timeout for each request').env(
-      'TIMEOUT'
-    )
+  .option('-o, --output <path>', 'Path to output file', 'guide.xml')
+  .option('-l, --lang <code>', 'Filter channels by language (ISO 639-2 code)')
+  .option('-t, --timeout <milliseconds>', 'Override the default timeout for each request')
+  .option('-d, --delay <milliseconds>', 'Override the default delay between request')
+  .option('-x, --proxy <url>', 'Use the specified proxy')
+  .option(
+    '--days <days>',
+    'Override the number of days for which the program will be loaded (defaults to the value from the site config)',
+    value => parseInt(value)
   )
-  .addOption(
-    new Option('-d, --delay <milliseconds>', 'Override the default delay between request').env(
-      'DELAY'
-    )
+  .option(
+    '--maxConnections <number>',
+    'Limit on the number of concurrent requests',
+    value => parseInt(value),
+    1
   )
-  .addOption(new Option('-x, --proxy <url>', 'Use the specified proxy').env('PROXY'))
-  .addOption(
-    new Option(
-      '--days <days>',
-      'Override the number of days for which the program will be loaded (defaults to the value from the site config)'
-    )
-      .argParser(value => parseInt(value))
-      .env('DAYS')
-  )
-  .addOption(
-    new Option('--maxConnections <number>', 'Limit on the number of concurrent requests')
-      .default(1)
-      .env('MAX_CONNECTIONS')
-  )
-  .addOption(
-    new Option('--gzip', 'Create a compressed version of the guide as well')
-      .default(false)
-      .env('GZIP')
-  )
-  .addOption(new Option('--curl', 'Display each request as CURL').default(false).env('CURL'))
-  .parse()
+  .option('--cron <expression>', 'Schedule a script run (example: "0 0 * * *")')
+  .option('--gzip', 'Create a compressed version of the guide as well', false)
+  .parse(process.argv)
 
-export interface GrabOptions {
+export type GrabOptions = {
   site?: string
   channels?: string
   output: string
   gzip: boolean
-  curl: boolean
   maxConnections: number
   timeout?: string
   delay?: string
   lang?: string
   days?: number
+  cron?: string
   proxy?: string
 }
 
@@ -88,35 +72,37 @@ async function main() {
     files = await storage.list(options.channels)
   }
 
-  let channels = new Collection()
+  let parsedChannels = new Collection()
   for (const filepath of files) {
-    const channelList: ChannelList = await parser.parse(filepath)
-
-    channels = channels.concat(channelList.channels)
+    parsedChannels = parsedChannels.concat(await parser.parse(filepath))
   }
-
   if (options.lang) {
-    channels = channels.filter((channel: Channel) => {
-      if (!options.lang || !channel.lang) return true
-
-      return options.lang.includes(channel.lang)
-    })
+    parsedChannels = parsedChannels.filter((channel: Channel) => channel.lang === options.lang)
   }
+  logger.info(`  found ${parsedChannels.count()} channel(s)`)
 
-  logger.info(`  found ${channels.count()} channel(s)`)
-
-  logger.info('run:')
-  runJob({ logger, channels })
+  let runIndex = 1
+  if (options.cron) {
+    const cronJob = new CronJob(options.cron, async () => {
+      logger.info(`run #${runIndex}:`)
+      await runJob({ logger, parsedChannels })
+      runIndex++
+    })
+    cronJob.start()
+  } else {
+    logger.info(`run #${runIndex}:`)
+    runJob({ logger, parsedChannels })
+  }
 }
 
 main()
 
-async function runJob({ logger, channels }: { logger: Logger; channels: Collection }) {
+async function runJob({ logger, parsedChannels }: { logger: Logger; parsedChannels: Collection }) {
   const timer = new Timer()
   timer.start()
 
   const queueCreator = new QueueCreator({
-    channels,
+    parsedChannels,
     logger,
     options
   })

@@ -44,7 +44,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: fs.readFileSync(path.resolve(__dirname, './__data__/no_content.html'), 'utf8')
+    content: '<!DOCTYPE html><html><head></head><body></body></html>'
   })
   expect(result).toMatchObject([])
 })
