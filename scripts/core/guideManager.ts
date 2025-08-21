@@ -1,4 +1,5 @@
 import { Collection, Logger, Zip, Storage, StringTemplate } from '@freearhey/core'
+import { gzipSync } from 'zlib'
 import epgGrabber from 'epg-grabber'
 import { OptionValues } from 'commander'
 import { Channel, Feed, Guide } from '../models'
@@ -100,8 +101,8 @@ export class GuideManager {
     await storage.save(xmlFilename, xmltv)
 
     if (guide.gzip) {
-      const zip = new Zip()
-      const compressed = zip.compress(xmltv)
+      const xmlBytes = Buffer.from(xmltv, 'utf8');
+      const compressed: Buffer = gzipSync(xmlBytes);
       const gzFilepath = `${guide.filepath}.gz`
       const gzFilename = path.basename(gzFilepath)
       this.logger.info(`  saving to "${gzFilepath}"...`)
