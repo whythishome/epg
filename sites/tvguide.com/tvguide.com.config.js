@@ -8,7 +8,7 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 const providerId = '9100002976'
-const maxDuration = 240
+const maxDuration = 10240
 const segments = 1440 / maxDuration
 const headers = {
   'referer': 'https://www.tvguide.com/',
