@@ -46,7 +46,8 @@ module.exports = {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  async url({ date, segment = 1 }) {
+  async url({ date, channel, segment = 1 }) {    
+    const [providerId, channelSourceIds] = channel.site_id.split('#');
     const params = []
     if (module.exports.apiKey === undefined) {
       module.exports.apiKey = await module.exports.fetchApiKey()
@@ -58,7 +59,7 @@ module.exports = {
       }
       params.push(`start=${date.unix()}`, `duration=${maxDuration}`)
     }
-    params.push(`apiKey=${module.exports.apiKey}`)
+    params.push(`channelSourceIds=${channelSourceIds}`, `apiKey=${module.exports.apiKey}`)
 
     return date ?
       `https://backend.tvguide.com/tvschedules/tvguide/${providerId}/web?${params.join('&')}` :
