@@ -42,6 +42,6 @@ jobs:
         # git add -f sites/i.mjh.nz/i.mjh.nz_kayo.channels.xml
         # git add -f sites/tvpassport.com/tvpassport.com.channels.xml
         # git add -f sites/sky.com/sky.com.channels.xml
-        # git add -f sites/repo-server.site/repo-server.site_6.channels.xml
+        git add -f sites/repo-server.site/repo-server.site_6.channels.xml
         git commit -a -m "Channel update"
         git push
