@@ -32,7 +32,7 @@ jobs:
           # npm run channels:parse --- --config=./sites/content.astro.com.my/content.astro.com.my.config.js --output=./sites/content.astro.com.my/content.astro.com.my.channels.xml
           # npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_au-en.channels.xml --set=region:au --set=lang:en
           # npm run channels:parse --- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_kayo.channels.xml --set=provider:kayo
-          npm run channels:parse --- --config=./sites/repo-server.site/repo-server.site.config.js --output=./sites/repo-server.site/repo-server.site_6.channels.xml --set=tag:6
+          npm run channels:parse --- --config=./sites/epg.jesmann.com/epg.jesmann.com.config.js --output=./sites/epg.jesmann.com/epg.jesmann.com_unitedstates.channels.xml --set=tag:UnitedStates.xml.gz
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
@@ -42,6 +42,6 @@ jobs:
         # git add -f sites/i.mjh.nz/i.mjh.nz_kayo.channels.xml
         # git add -f sites/tvpassport.com/tvpassport.com.channels.xml
         # git add -f sites/sky.com/sky.com.channels.xml
-        git add -f sites/repo-server.site/repo-server.site_6.channels.xml
+        git add -f sites/epg.jesmann.com/epg.jesmann.com_unitedstates.channels.xml
         git commit -a -m "Channel update"
         git push
