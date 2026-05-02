@@ -1,160 +1,236 @@
-const axios = require('axios');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
+name: Festy TVGuide
 
-dayjs.extend(utc);
-dayjs.extend(timezone);
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"
 
-const PROXY_URL_1 = process.env.PROXY_URL_1;
-const PROXY_URL_2 = process.env.PROXY_URL_2;
-let useProxy = false; // Toggle flag to alternate requests per channel
+permissions:
+  contents: write
 
-module.exports = {
-  site: 'tvguide.com',
-  delay: 3000,
-  days: 1,
-  url: function ({ date, channel }) {
-    const [providerId, channelSourceIds] = channel.site_id.split('#');
-    const requestDomain = useProxy ? PROXY_URL_1 : PROXY_URL_2;
-    const url = `https://${requestDomain}/tvschedules/tvguide/${providerId}/web?start=${date
-      .startOf('d')
-      .unix()}&duration=10240&channelSourceIds=${channelSourceIds}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
-    return url;
-  },
-  request: {
-    method: 'GET',
-    timeout: 3000,
-    cache: { ttl: 60 * 60 * 1000 },
-    headers: function() {
-      return setHeaders();
-    }
-  },
-  async parser({ content, channel }) {
-    const programs = [];
-    const items = parseItems(content);
+jobs:
+  build-festy-tvguide:
+    runs-on: ubuntu-latest
 
-    if (items.length > 0) {
-      useProxy = !useProxy;
-    }
-    
-    for (let item of items) {
-      const details = await loadProgramDetails(item); // Fetch details
-    
-      // Extract necessary properties
-      const episodeTitle = details?.episodeTitle || '';
-      const description = details?.description || '';
-      const seasonNumber = details?.seasonNumber || '';
-      const episodeNumber = details?.episodeNumber || '';
-      const releaseYear = details?.releaseYear || '';
-      const tvRating = details?.tvRating || '';
-      const firstGenre = details?.genres?.[0]?.name || '';
-      const secondGenre = details?.genres?.[1]?.name || '';
-      const episodeAirDate = details?.episodeAirDate || '';
-      
-      // Extract the timestamp and convert it to a Date object
-      const timestamp = episodeAirDate.match(/\/Date\((\d+)\)\//);
-      const airDate = timestamp ? new Date(parseInt(timestamp[1])) : null;
-    
-      // Format the date if it exists
-      const formattedDate = airDate ? airDate.toLocaleDateString('en-US', { month: 'numeric', day: 'numeric', year: 'numeric' }) : '';
+    steps:
+      - name: Checkout your repo
+        uses: actions/checkout@v4
 
-      // Create the new description variable conditionally
-      let newDescription = '';
-      if (episodeTitle) newDescription += `${episodeTitle}`;
-      if (seasonNumber && episodeNumber) newDescription += ` - S${seasonNumber}E${episodeNumber}.`;
-      newDescription += ` ${description}`;
-      // if (tvRating) newDescription += ` ${tvRating}.`;
-      // if (firstGenre) newDescription += ` ${firstGenre}`;
-      // if (secondGenre) newDescription += `/${secondGenre}`;
-      if (formattedDate) newDescription += ` (${formattedDate})`;
+      - name: Clone IPTV-org EPG engine
+        run: |
+          rm -rf epg
+          git clone --depth 1 https://github.com/iptv-org/epg.git epg
 
-      if (details.type == 'movie') {
-        newDescription = description;
-        // if (tvRating) newDescription += ` ${tvRating}.`;
-        // if (firstGenre) newDescription += ` ${firstGenre}`;
-        // if (secondGenre) newDescription += `/${secondGenre}`;
-        if (releaseYear) newDescription += ` (${releaseYear})`;
-      }
-    
-      programs.push({
-        title: item.title,
-        description: newDescription.trim(), // Trim any leading/trailing whitespace
-        start: parseTime(item.startTime),
-        stop: parseTime(item.endTime)
-      });
-    }
-    return programs;
-  },
-  async channels() {
-    const providers = [9100002976];
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-    let channels = [];
-    for (let providerId of providers) {
-      const data = await axios
-        .get(
-          `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/sources/web`
-        )
-        .then(r => r.data)
-        .catch(console.log);
-      data.data.items.forEach(item => {
-        channels.push({
-          lang: 'en',
-          site_id: `${providerId}#${item.sourceId}`,
-          name: item.fullName,
-          logo: item.logo ? `https://www.tvguide.com/a/img/catalog${item.logo}` : null
-        });
-      });
-    }
+      - name: Install EPG dependencies
+        run: |
+          cd epg
+          npm install
 
-    return channels;
-  }
-};
+      - name: Copy Festy TVGuide channels and custom config
+        run: |
+          mkdir -p epg/sites/tvguide.com
+          cp guides/festy.channels.xml epg/sites/tvguide.com/festy.channels.xml
 
-async function loadProgramDetails(item) {
-  const programDetailsUrl = item.programDetails;
+          cat > epg/sites/tvguide.com/tvguide.com.config.js <<'EOF'
+          const axios = require('axios')
+          const dayjs = require('dayjs')
+          const utc = require('dayjs/plugin/utc')
+          const timezone = require('dayjs/plugin/timezone')
 
-  const axiosInstance = axios.create({
-    headers: setHeaders()
-  });
+          dayjs.extend(utc)
+          dayjs.extend(timezone)
 
-  const requestUrl = useProxy
-    ? `${programDetailsUrl.replace(PROXY_URL_2, PROXY_URL_1)}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc` // Replce domain with proxy and append apiKey
-    : `${programDetailsUrl.replace(PROXY_URL_1, PROXY_URL_2)}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`;
-  const data = await axiosInstance
-    .get(requestUrl, { timeout: 5000 })
-    .then(r => r.data)
-    .catch(err => {
-      console.log(`Error fetching program details: ${err.message}`);
-      return null; // Handle failed request gracefully
-    });
-  if (!data || !data.data || !data.data.item) return {};
+          module.exports = {
+            site: 'tvguide.com',
+            delay: 3000,
+            days: 2,
 
-  return data.data.item;
-}
+            url({ date, channel }) {
+              const [providerId, sourceId] = String(channel.site_id).split('#')
+              return `https://backend.tvguide.com/tvschedules/tvguide/${providerId}/web?start=${date.startOf('d').unix()}&duration=10240&channelSourceIds=${sourceId}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`
+            },
 
-function parseRating(item) {
-  return item.rating ? { system: 'MPA', value: item.rating } : null;
-}
+            request: {
+              method: 'GET',
+              timeout: 10000,
+              cache: { ttl: 60 * 60 * 1000 },
+              headers() {
+                return {
+                  Referer: 'https://www.tvguide.com/',
+                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36'
+                }
+              }
+            },
 
-function parseCategories(details) {
-  return Array.isArray(details.genres) ? details.genres.map(g => g.name) : [];
-}
+            async parser({ content }) {
+              const programs = []
+              const items = parseItems(content)
 
-function parseTime(timestamp) {
-  return dayjs.unix(timestamp);
-}
+              for (const item of items) {
+                const details = await loadProgramDetails(item)
 
-function parseItems(content) {
-  const data = JSON.parse(content);
-  if (!data.data || !Array.isArray(data.data.items) || !data.data.items.length) return [];
+                const title = cleanTitle(item.title || details.title || '')
+                const episodeTitle = cleanSpaces(details.episodeTitle || '')
+                const description = fixBrokenDescription(details.description || item.description || '')
+                const seasonNumber = details.seasonNumber || ''
+                const episodeNumber = details.episodeNumber || ''
+                const releaseYear = details.releaseYear || ''
+                const episodeAirDate = details.episodeAirDate || ''
+                const type = String(details.type || item.type || '').toLowerCase()
 
-  return data.data.items[0].programSchedules;
-}
+                const episodeCode =
+                  seasonNumber && episodeNumber
+                    ? `S${String(seasonNumber).padStart(2, '0')}E${String(episodeNumber).padStart(2, '0')}`
+                    : ''
 
-function setHeaders() {
-  return {
-    'Referer': 'https://www.tvguide.com/',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
-  };
-}
+                const airDate = formatTVGuideDate(episodeAirDate) || formatUnixDate(item.startTime)
+
+                let finalDescription = ''
+
+                if (type === 'movie') {
+                  finalDescription = description
+                  if (releaseYear) finalDescription = finalDescription ? `${finalDescription} (${releaseYear})` : `(${releaseYear})`
+                } else {
+                  let prefix = ''
+
+                  if (episodeTitle && episodeCode) prefix = `${episodeTitle} - ${episodeCode}`
+                  else if (episodeTitle) prefix = episodeTitle
+                  else if (episodeCode) prefix = episodeCode
+
+                  if (prefix && description) finalDescription = `${prefix}. ${description}`
+                  else if (prefix) finalDescription = `${prefix}.`
+                  else finalDescription = description
+
+                  if (airDate) finalDescription = finalDescription ? `${finalDescription} (${airDate})` : `(${airDate})`
+                }
+
+                programs.push({
+                  title,
+                  description: cleanSpaces(finalDescription),
+                  start: dayjs.unix(item.startTime),
+                  stop: dayjs.unix(item.endTime)
+                })
+              }
+
+              return programs
+            }
+          }
+
+          async function loadProgramDetails(item) {
+            if (!item.programDetails) return {}
+
+            const url = item.programDetails.includes('?')
+              ? `${item.programDetails}&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`
+              : `${item.programDetails}?apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc`
+
+            return axios
+              .get(url, {
+                timeout: 10000,
+                headers: {
+                  Referer: 'https://www.tvguide.com/',
+                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36'
+                }
+              })
+              .then(r => r.data?.data?.item || {})
+              .catch(() => ({}))
+          }
+
+          function parseItems(content) {
+            const data = JSON.parse(content)
+            return data?.data?.items?.[0]?.programSchedules || []
+          }
+
+          function cleanTitle(value) {
+            return String(value || '')
+              .replace(/\s+/g, ' ')
+              .replace(/^\s*(New|Live|Repeat)\s*[:\-]\s*/i, '')
+              .replace(/\s*\((New|Live|Repeat)\)\s*$/i, '')
+              .replace(/\s*[-–—]\s*(New|Live|Repeat)\s*$/i, '')
+              .trim()
+          }
+
+          function cleanSpaces(value) {
+            return String(value || '')
+              .replace(/\s+/g, ' ')
+              .replace(/\s+([.,!?;:])/g, '$1')
+              .replace(/([.,!?;:])([A-Za-z0-9])/g, '$1 $2')
+              .trim()
+          }
+
+          function fixBrokenDescription(value) {
+            let d = cleanSpaces(value)
+            if (!d) return ''
+
+            d = d.replace(/\.\.\.$/, '').trim()
+            d = d.replace(/[,:;–—-]\s*$/, '').trim()
+
+            const words = d.split(/\s+/)
+            const last = words[words.length - 1] || ''
+            const stripped = last.toLowerCase().replace(/[^a-z]/g, '')
+
+            const badEndings = [
+              'stor', 'storie', 'experienc', 'becaus', 'includ', 'discover',
+              'investigat', 'myster', 'famil', 'friend', 'someth', 'everyth',
+              'meanwhil', 'continu', 'return', 'learn', 'realiz'
+            ]
+
+            if (badEndings.includes(stripped) && words.length > 1) {
+              words.pop()
+              d = words.join(' ').trim()
+            }
+
+            if (!/[.!?]$/.test(d)) d += '.'
+            return d
+          }
+
+          function formatTVGuideDate(value) {
+            const match = String(value || '').match(/\/Date\((\d+)\)\//)
+            if (!match) return ''
+            const date = new Date(Number(match[1]))
+            return date.toLocaleDateString('en-US', {
+              month: '2-digit',
+              day: '2-digit',
+              year: 'numeric'
+            })
+          }
+
+          function formatUnixDate(value) {
+            if (!value) return ''
+            return dayjs.unix(value).format('MM/DD/YYYY')
+          }
+          EOF
+
+      - name: Grab TVGuide guide - 2 days
+        run: |
+          cd epg
+          npx tsx scripts/commands/epg/grab.ts \
+            --channels=sites/tvguide.com/festy.channels.xml \
+            --output=../guide.xml \
+            --days=2
+
+          cd ..
+          if [ ! -s guide.xml ]; then
+            echo "guide.xml was not created or is empty"
+            exit 1
+          fi
+
+          ls -lh guide.xml
+
+      - name: Commit guide
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add guide.xml
+
+          if git diff --cached --quiet; then
+            echo "No guide changes to commit"
+          else
+            git commit -m "Update Festy TVGuide guide"
+            git push
+          fi
