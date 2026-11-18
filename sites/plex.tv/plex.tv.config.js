@@ -8,28 +8,23 @@ module.exports = {
   days: 2,
   request: {
     headers: {
-      'x-plex-provider-version': '7.2',
-      'Accept': 'application/json'
+      'x-plex-provider-version': '5.1'
     }
   },
   url: function ({ channel, date }) {
-    
-    return `${API_ENDPOINT}/grid?channelGridKey=${channel.site_id}&date=${date.format('YYYY-MM-DD')}`
+    const [, channelGridKey] = channel.site_id.split('-')
+
+    return `${API_ENDPOINT}/grid?channelGridKey=${channelGridKey}&date=${date.format('YYYY-MM-DD')}`
   },
   parser({ content }) {
     const programs = []
     const items = parseItems(content)
     for (let item of items) {
       programs.push({
-        title: item.grandparentTitle || item.title,
-        subTitle: (item.grandparentTitle && item.title !== item.grandparentTitle) ? item.title : null,
+        title: item.title,
         description: item.summary,
-        rating: item.contentRating || null,
-        date: item.originallyAvailableAt || item.year || null,
         categories: parseCategories(item),
-        season: item.parentIndex || null,
-        episode: item.index || null,
-        image: item.thumb || item.grandparentThumb || null,
+        image: item.art,
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -46,10 +41,8 @@ module.exports = {
     return data.MediaContainer.Channel.map(c => {
       return {
         lang: 'en',
-        site_id: c.gridKey,
-        name: c.title,
-        //  logo: c.thumb || null,
-        //  url: c.Media?.[0]?.Part?.[0]?.key ? `${API_ENDPOINT}${c.Media?.[0]?.Part?.[0]?.key}?X-Plex-Token=${token}` : null
+        site_id: c.id,
+        name: c.title
       }
     })
   }

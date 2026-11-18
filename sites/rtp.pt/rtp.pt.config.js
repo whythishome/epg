@@ -1,3 +1,5 @@
+const _ = require('lodash')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -16,7 +18,6 @@ const tz = {
 module.exports = {
   site: 'rtp.pt',
   days: 2,
-
   url({ channel, date }) {
     let [region, channelCode] = channel.site_id.split('#')
     return `https://www.rtp.pt/EPG/json/rtp-channels-page/list-grid/tv/${channelCode}/${date.format(
@@ -62,5 +63,5 @@ function parseItems(content) {
   if (!content) return []
   const data = JSON.parse(content)
 
-  return Object.values(data.result).flat()
+  return _.flatten(Object.values(data.result))
 }

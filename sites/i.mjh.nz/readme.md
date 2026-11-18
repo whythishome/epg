@@ -11,6 +11,7 @@
 | Kayo            | `kayo`        | https://i.mjh.nz/Kayo          |
 | MeTV            | `metv`        | https://i.mjh.nz/MeTV          |
 | New Zealand     | `nz`          | https://i.mjh.nz/nz            |
+| Optus           | `optus`       | https://i.mjh.nz/Optus         |
 | PBS             | `pbs`         | https://i.mjh.nz/PBS           |
 | Plex            | `plex`        | https://i.mjh.nz/Plex          |
 | Pluto TV        | `pluto`       | https://i.mjh.nz/PlutoTV       |
@@ -19,23 +20,24 @@
 | Singtel         | `singtel`     | https://i.mjh.nz/Singtel       |
 | SkyGo           | `skygo`       | https://i.mjh.nz/SkyGo         |
 | Sky Sport Now   | `skysportnow` | https://i.mjh.nz/SkySportNow   |
+| STIRR           | `stirr`       | https://i.mjh.nz/Stirr         |
 
 | Provider | Code |
 
 ### Download the guide
 
 ```sh
-npm run grab --- --channels=sites/i.mjh.nz/i.mjh.nz_<PROVIDER_CODE>.channels.xml
+npm run grab -- --channels=sites/i.mjh.nz/i.mjh.nz_<PROVIDER_CODE>.channels.xml
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse --- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_<PROVIDER_CODE>.channels.xml --set=provider:<PROVIDER_CODE>
+npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_<PROVIDER_CODE>.channels.xml --set=provider:<PROVIDER_CODE>
 ```
 
 ### Test
 
 ```sh
-npm test --- i.mjh.nz
+npm test -- i.mjh.nz
 ```

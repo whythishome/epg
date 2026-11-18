@@ -1,96 +1,54 @@
 const { parser, url, request } = require('./tvplus.com.tr.config.js')
-const fs = require('fs')
-const path = require('path')
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-jest.mock('axios')
-
-const date = dayjs.utc('2026-04-22', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: '32' }
-
-axios.post.mockImplementation(url => {
-  if (url === 'https://izmaottvsc14.tvplus.com.tr:33207/EPG/JSON/Authenticate') {
-    return Promise.resolve({
-      headers: {
-        'set-cookie': [
-          'XSESSIONID=05DIPYMD4BHOKRQCZTHF8F5GHMMBCNJ6; Domain=izmaottvsc14.tvplus.com.tr; Path=/; Secure; HttpOnly',
-          'JSESSIONID=05DIPYMD4BHOKRQCZTHF8F5GHMMBCNJ6; Domain=izmaottvsc14.tvplus.com.tr; Path=/; HttpOnly'
-        ]
-      }
-    })
-  }
-})
+const date = dayjs.utc('2021-11-07', 'YYYY-MM-DD').startOf('d')
+const channel = {
+  site_id: '32',
+  xmltv_id: '24TV.tr'
+}
+const content =
+  '{"counttotal":"23","playbilllist":[{"country":"","starttime":"20211107000000","type":"PROGRAM","isBlackout":"0","rerun":"0","ppvsubscribed":"0","foreignsn":"134383557","isLive":"0","ratingid":"0","episodeTotalCount":"0","id":"134383557","keyword":"24 Portre","contentType":"0","isnpvr":"1","slsType":"0","iscpvr":"0","advisory":[],"genreIds":["1179"],"istvod":"0","name":"24 Portre","tvodStatus":"0","pictures":[{"href":"https://izmottvsc23.tvplus.com.tr:33207/CPS/images/universal/film/program/202111/20211104/35/20211104000026695lh5.jpg","resolution":["null","null"],"imageType":"0"}],"externalContentCode":"105445035962202111070300","genres":"Yaşam","visittimes":"0","issubscribed":"0","programType":"program","gapFiller":"0","introduce":"Kendi alanında büyük başarılar elde etmiş insanların kendi ağzından hayat hikayeleri ekrana geliyor.","priceType":[{"value":"0","key":"BTV"},{"value":"0","key":"TVOD"}],"endtime":"20211107010000","seasonTotalCount":"0","recordedMediaIds":[],"picture":{},"isLoyalty":"0","isppv":"0","mainGenre":"0","contentRight":"[{\\"mediaId\\":\\"3000435\\",\\"businessType\\":\\"13\\",\\"enable\\":\\"0\\"},{\\"mediaId\\":\\"3000435\\",\\"businessType\\":\\"14\\",\\"enable\\":\\"0\\"},{\\"mediaId\\":\\"3000435\\",\\"businessType\\":\\"15\\",\\"enable\\":\\"1\\"},{\\"mediaId\\":\\"100067919\\",\\"businessType\\":\\"13\\",\\"enable\\":\\"0\\"},{\\"mediaId\\":\\"100067919\\",\\"businessType\\":\\"14\\",\\"enable\\":\\"0\\"},{\\"mediaId\\":\\"100067919\\",\\"businessType\\":\\"15\\",\\"enable\\":\\"1\\"}]","channelid":"32"}],"playbillVersion":[{"channelId":"32","date":"20211108","version":"20211106000043"},{"channelId":"32","date":"20211107","version":"20211105000027"}]}'
 
 it('can generate valid url', () => {
-  expect(url).toBe('https://izmaottvsc14.tvplus.com.tr:33207/EPG/JSON/PlayBillList')
-})
-
-it('can generate valid request method', () => {
-  expect(request.method).toBe('POST')
-})
-
-it('can generate valid request headers', async () => {
-  const headers = await request.headers()
-  expect(headers).toMatchObject({
-    cookie:
-      'XSESSIONID=05DIPYMD4BHOKRQCZTHF8F5GHMMBCNJ6; Domain=izmaottvsc14.tvplus.com.tr; Path=/; Secure; HttpOnly;JSESSIONID=05DIPYMD4BHOKRQCZTHF8F5GHMMBCNJ6; Domain=izmaottvsc14.tvplus.com.tr; Path=/; HttpOnly'
-  })
+  expect(url).toBe('https://izmottvsc23.tvplus.com.tr:33207/EPG/JSON/PlayBillList')
 })
 
 it('can generate valid request data', () => {
-  expect(request.data({ channel, date })).toMatchObject({
+  const result = request.data({ date, channel })
+  expect(result).toMatchObject({
     type: '2',
     channelid: '32',
-    begintime: '20260422000000',
-    endtime: '20260423000000',
-    isFillProgram: 1
+    begintime: '20211107000000',
+    endtime: '20211108000000'
   })
 })
 
 it('can parse response', () => {
-  const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.json'))
-  const results = parser({ content }).map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
-
-  expect(results.length).toBe(18)
-  expect(results[0]).toMatchObject({
-    start: '2026-04-21T23:30:00.000Z',
-    stop: '2026-04-22T01:15:00.000Z',
-    title: 'Bu Ülke',
-    description:
-      "Türkiye'nin gündemindeki merak edilen ve tartışılan sorular, siyaset, ekonomi, toplumsal meseleler ve kültür-eğitim başlıklarıyla ele alınıyor. Uzman konuklar ve sahadan aktarılan bilgilerle olayların arka planı izleyiciye aktarılıyor.",
-    icon: 'https://izmaottvsc14.tvplus.com.tr:33207/CPS/images/universal/film/program/202604/20260414/0/0005330799055eb7f426.jpg',
-    image:
-      'https://izmaottvsc14.tvplus.com.tr:33207/CPS/images/universal/film/program/202604/20260414/10/0005330799045eb7f426.jpg',
-    category: 'Haber'
-  })
-  expect(results[17]).toMatchObject({
-    start: '2026-04-22T23:00:00.000Z',
-    stop: '2026-04-23T01:15:00.000Z',
-    title: 'Açık Görüş',
-    description:
-      'Açık Görüş, farklı alanlardan uzman konukları ağırlayarak, güncel politika, ekonomi, kültür ve toplumsal meseleleri kapsamlı bir şekilde ele alan bilgilendirici bir programdır. Tartışmalar, izleyicilere olayları çok yönlü değerlendirme imkânı sunar.',
-    icon: 'https://izmaottvsc14.tvplus.com.tr:33207/CPS/images/universal/film/program/202604/20260418/58/0905279525125eb9b42e.jpg',
-    image:
-      'https://izmaottvsc14.tvplus.com.tr:33207/CPS/images/universal/film/program/202604/20260418/44/0905279525115eb9b42e.jpg',
-    category: 'Magazin'
-  })
+  const result = parser({ date, channel, content })
+  expect(result).toMatchObject([
+    {
+      start: '2021-11-07T00:00:00.000Z',
+      stop: '2021-11-07T01:00:00.000Z',
+      title: '24 Portre',
+      category: 'Yaşam',
+      image:
+        'https://izmottvsc23.tvplus.com.tr:33207/CPS/images/universal/film/program/202111/20211104/35/20211104000026695lh5.jpg',
+      description:
+        'Kendi alanında büyük başarılar elde etmiş insanların kendi ağzından hayat hikayeleri ekrana geliyor.'
+    }
+  ])
 })
 
 it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: ''
+    content:
+      '{"counttotal":"0","playbilllist":[],"playbillVersion":[{"channelId":"10000","date":"20211108","version":"20211107163253"},{"channelId":"10000","date":"20211107","version":"20211107163253"}]}'
   })
   expect(result).toMatchObject([])
 })

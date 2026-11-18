@@ -98,6 +98,5 @@ function parseStart($item, date) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  // only the full-day schedule: the "ce soir" highlights at the top of the page broke the day rollover
-  return $('.day_sublist .box').toArray()
+  return $('.box').toArray()
 }

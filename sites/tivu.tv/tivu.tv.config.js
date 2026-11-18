@@ -1,11 +1,5 @@
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-const timezone = require('dayjs/plugin/timezone')
-
-dayjs.extend(customParseFormat)
-dayjs.extend(utc)
-dayjs.extend(timezone)
+const cheerio = require('cheerio')
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'tivu.tv',
@@ -15,54 +9,31 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     }
   },
-  url({ channel, date }) {
-    date = date.startOf('day')
-    return `https://services.tivulaguida.it/api/epg/channels/${channel.site_id}/date/${date.format('YYYY-MM-DD')}`
+  url({ date }) {
+    const diff = date.diff(DateTime.now().toUTC().startOf('day'), 'd')
+
+    return `https://www.tivu.tv/epg_ajax_sat.aspx?d=${diff}`
   },
-  parser: async function ({ content, channel, date }) {
-    const axios = require('axios')
+  parser: function ({ content, channel, date }) {
     let programs = []
-    const items = JSON.parse(content)
-    if (!items || !Array.isArray(items.events)) return programs
-
-    const previousDay = date.subtract(1, 'day')
-    let urlDayBefore
-    try {
-      const response = await axios.get(
-        `https://services.tivulaguida.it/api/epg/channels/${channel.site_id}/date/${previousDay.format('YYYY-MM-DD')}`
-      )
-      urlDayBefore = response?.data
-    } catch (error) {
-      console.log(error)
-    }
-    
-    const allEvents = [
-      ...(urlDayBefore?.events || []),
-      ...items.events
-    ]
-
-    const midnight = dayjs.tz(date.format('YYYY-MM-DD 00:00'), 'YYYY-MM-DD HH:mm', 'Europe/Rome')
-    const nextMidnight = midnight.add(1, 'day')
-
-    const seen = new Set()
-    allEvents.forEach(item => {
-      if (!item.program) return
-
-      const start = dayjs.tz(item.date_start, 'DD-MM-YYYY HH:mm', 'Europe/Rome')
-      const stop = dayjs.tz(item.date_end, 'DD-MM-YYYY HH:mm', 'Europe/Rome')
-
-      if (start.isBefore(midnight) || !start.isBefore(nextMidnight)) return
-
-      const key = `${start.format()}|${stop.format()}`
-      if (seen.has(key)) return
-      seen.add(key)
-
+    const items = parseItems(content, channel, date)
+    items.forEach(item => {
+      const $item = cheerio.load(item)
+      const prev = programs[programs.length - 1]
+      let start = parseStart($item, date)
+      if (!start) return
+      if (prev) {
+        if (start < prev.start) {
+          start = start.plus({ days: 1 })
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
+      }
+      const stop = start.plus({ minutes: 30 })
       programs.push({
-        title: item.program.title,
+        title: parseTitle($item),
         start,
-        stop,
-        description: item.program.description,
-        icon: item.program.url_poster
+        stop
       })
     })
 
@@ -71,22 +42,48 @@ module.exports = {
   async channels() {
     const axios = require('axios')
     const html = await axios
-      .get('https://services.tivulaguida.it/api/epg/channels.json')
+      .get('https://www.tivu.tv/epg_ajax_sat.aspx?d=0')
       .then(r => r.data)
       .catch(console.log)
 
     let channels = []
-    if (html && html.channels) {
-      html.channels.forEach(channel => {
-        channels.push({
-          lang: 'it',
-          site_id: channel.id,
-          name: channel.name,
-          logo: 'https://services.tivulaguida.it/' + channel.icon
-        })
+
+    const $ = cheerio.load(html)
+    $('.q').each((i, el) => {
+      const site_id = $(el).attr('id')
+      const name = $(el).find('a').first().data('channel')
+
+      if (!name) return
+
+      channels.push({
+        lang: 'it',
+        site_id,
+        name
       })
-    }
+    })
 
     return channels
   }
+}
+
+function parseTitle($item) {
+  const [title] = $item('a').html().split('<br>')
+
+  return title
+}
+
+function parseStart($item, date) {
+  const [, , time] = $item('a').html().split('<br>')
+  if (!time) return null
+
+  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
+    zone: 'Europe/Rome'
+  }).toUTC()
+}
+
+function parseItems(content, channel) {
+  if (!content) return []
+  const $ = cheerio.load(content)
+
+  return $(`.q[id="${channel.site_id}"] > .p`).toArray()
 }

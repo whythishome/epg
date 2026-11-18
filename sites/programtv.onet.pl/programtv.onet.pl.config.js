@@ -1,60 +1,44 @@
-const axios = require('axios')
 const cheerio = require('cheerio')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-dayjs.extend(utc)
-dayjs.extend(timezone)
+const { DateTime } = require('luxon')
 
 module.exports = {
   delay: 5000,
   site: 'programtv.onet.pl',
   days: 2,
   url: function ({ date, channel }) {
-    const currDate = dayjs().utc().startOf('day')
+    const currDate = DateTime.now().toUTC().startOf('day')
     const day = date.diff(currDate, 'd')
 
     return `https://programtv.onet.pl/program-tv/${channel.site_id}?dzien=${day}`
   },
-  async parser({ content, date }) {
+  parser: function ({ content, date }) {
     const programs = []
     const items = parseItems(content)
-    for (const item of items) {
+    items.forEach(item => {
       const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
       if (prev) {
         if (start < prev.start) {
-          start = start.add(1, 'day')
-          date = date.add(1, 'day')
+          start = start.plus({ days: 1 })
+          date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.add(1, 'hour')
-
-      const programUrl = parseProgramUrl($item)
-      const details = await loadProgramDetails(programUrl)
-      let image
-      let icon
-      if (details) {
-        image = details.image
-        icon = image
-      }
-
+      const stop = start.plus({ hours: 1 })
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        image,
-        icon,
         category: parseCategory($item),
         start,
         stop
       })
-    }
+    })
 
     return programs
   },
   async channels() {
+    const axios = require('axios')
     const data = await axios
       .get('https://programtv.onet.pl/stacje')
       .then(r => r.data)
@@ -66,7 +50,7 @@ module.exports = {
     $('ul.channelList a').each((i, el) => {
       const name = $(el).text()
       const url = $(el).attr('href')
-      const [, site_id] = url.match(/^\/program-tv\/(.*)$/i)
+      const [, site_id] = url.match(/^\/program\-tv\/(.*)$/i)
 
       channels.push({
         lang: 'pl',
@@ -79,32 +63,11 @@ module.exports = {
   }
 }
 
-async function loadProgramDetails(url) {
-  const html = await axios
-    .get(url)
-    .then(r => r.data)
-    .catch(console.error)
-  if (!html) return
-
-  const $ = cheerio.load(html)
-
-  return {
-    image: $('meta[property="og:image"]').attr('content')
-  }
-}
-
-function parseProgramUrl($item) {
-  const href = $item('.titles > a').attr('href')
-  const url = new URL(href, 'https://programtv.onet.pl')
-
-  return url.href
-}
-
 function parseStart($item, date) {
   const timeString = $item('.hours > .hour').text()
   const dateString = `${date.format('MM/DD/YYYY')} ${timeString}`
 
-  return dayjs(dateString, 'MM/DD/YYYY HH:mm').tz('Europe/Warsaw', true).utc()
+  return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH:mm', { zone: 'Europe/Warsaw' }).toUTC()
 }
 
 function parseCategory($item) {

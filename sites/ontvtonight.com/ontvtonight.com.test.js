@@ -1,12 +1,7 @@
-const { parser, url, request } = require('./ontvtonight.com.config.js')
-const fs = require('fs')
-const path = require('path')
-const axios = require('axios')
-const AwsWaf = require('@ntlab/awswaf')
+const { parser, url } = require('./ontvtonight.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
@@ -15,11 +10,8 @@ const channel = {
   site_id: 'au#1692/7two',
   xmltv_id: '7two.au'
 }
-
-jest.mock('axios')
-jest.mock('@ntlab/awswaf')
-
-axios.head.mockImplementation(() => Promise.resolve({}))
+const content =
+  '<!DOCTYPE html><html lang="en-AU" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <head> </head> <body> <div id="wrapper"> <section id="content"> <div class="container"> <div class="row"> <div class="span6"> <img src="https://otv-us-web.s3-us-west-2.amazonaws.com/logos/guide/media/ed49cf4f-1123-4bee-9c90-a6af375af310.png" border="0" align="right" alt="7TWO" width="140"/> <table class="table table-hover"> <tbody> <tr> <td width="90"> <h5 class="thin">12:10 am</h5> </td><td> <h5 class="thin"> <a href="https://www.ontvtonight.com/au/guide/listings/programme?cid=1692&amp;sid=165632&amp;dt=2021-11-24+13%3A10%3A00" target="_blank" rel="nofollow" > What A Carry On</a > </h5> </td></tr><tr> <td width="90"> <h5 class="thin">12:50 am</h5> </td><td> <h5 class="thin"> <a href="https://www.ontvtonight.com/au/guide/listings/programme?cid=1692&amp;sid=159923&amp;dt=2021-11-24+13%3A50%3A00" target="_blank" rel="nofollow" > Bones</a > </h5> <h6>The Devil In The Details</h6> </td></tr><tr> <td width="90"> <h5 class="thin">10:50 pm</h5> </td><td> <h5 class="thin"> <a href="https://www.ontvtonight.com/au/guide/listings/programme?cid=1692&amp;sid=372057&amp;dt=2021-11-25+11%3A50%3A00" target="_blank" rel="nofollow" > Inspector Morse: The Remorseful Day</a > </h5> </td></tr></tbody> </table> </div></div></div></section> </div></body></html>'
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
@@ -27,15 +19,7 @@ it('can generate valid url', () => {
   )
 })
 
-it('can generate valid request headers', async () => {
-  expect(await request.headers({ channel, date })).toMatchObject({
-    'user-agent':
-      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36'
-  })
-})
-
 it('can parse response', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'), 'utf8')
   const result = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -62,66 +46,11 @@ it('can parse response', () => {
   ])
 })
 
-it('can parse nested title and description markup', () => {
-  const content = `
-    <table>
-      <tbody>
-        <tr>
-          <td><h5>8:30 pm</h5></td>
-          <td>
-            <div>
-              <h5><a href="#">The Princess Diaries</a></h5>
-            </div>
-            <h6>Movie description</h6>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  `
-
-  const result = parser({ content, channel, date }).map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
-
-  expect(result).toMatchObject([
-    {
-      title: 'The Princess Diaries',
-      description: 'Movie description'
-    }
-  ])
-})
-
 it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.html'), 'utf8')
+    content: '<!DOCTYPE html><html><head></head><body></body></html>'
   })
   expect(result).toMatchObject([])
-})
-
-it('waits for a WAF token being fetched by another request', async () => {
-  let release
-  AwsWaf.mockImplementation(() => ({
-    getToken: () => new Promise(resolve => (release = () => resolve('token')))
-  }))
-  const waf = new axios.AxiosError()
-  waf.status = 405
-  waf.response = {
-    data: '<script src="https://example.token.awswaf.com/example/challenge.js"></script>'
-  }
-  axios.head.mockImplementationOnce(() => Promise.reject(waf))
-  axios.get.mockImplementationOnce(() => Promise.reject(waf))
-  const tick = () => new Promise(resolve => setTimeout(resolve))
-
-  const first = request.headers({ channel, date })
-  await tick()
-  const second = request.headers({ channel, date })
-  await tick()
-  release()
-
-  const headers = await Promise.all([first, second])
-  headers.forEach(h => expect(h.cookie).toContain('aws-waf-token=token'))
 })

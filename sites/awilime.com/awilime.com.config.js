@@ -1,22 +1,12 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-dayjs.extend(utc)
-dayjs.extend(timezone)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'awilime.com',
   days: 2,
   url({ channel, date }) {
     return `https://www.awilime.com/tv/napi_musor/${channel.site_id}/${date.format('YYYY_MM_DD')}`
-  },
-  request: {
-    headers: {
-      'User-Agent':
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
-    }
   },
   parser({ content, date }) {
     const programs = []
@@ -29,7 +19,7 @@ module.exports = {
       if (prev) {
         prev.stop = start
       }
-      const stop = start.add(30, 'minute')
+      const stop = start.plus({ minute: 30 })
 
       programs.push({
         title: parseTitle($item),
@@ -44,12 +34,7 @@ module.exports = {
   },
   async channels() {
     const html = await axios
-      .get('https://www.awilime.com/tv/napi_musor', {
-        headers: {
-          'User-Agent':
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
-        }
-      })
+      .get('https://www.awilime.com/tv/napi_musor')
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(html)
@@ -91,7 +76,7 @@ function parseStart($item, date) {
   if (!time || !/^\d/.test(time)) return null
   time = `${date.format('YYYY-MM-DD')} ${time}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Europe/Budapest').utc()
+  return DateTime.fromFormat(time, 'yyyy-MM-dd HH:mm', { zone: 'Europe/Budapest' }).toUTC()
 }
 
 function parseItems(content) {

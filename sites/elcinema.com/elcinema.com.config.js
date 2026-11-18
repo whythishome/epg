@@ -9,15 +9,9 @@ dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
 dayjs.extend(utc)
 
-const headers = {
-  'User-Agent':
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 OPR/115.0.0.0'
-}
-
 module.exports = {
   site: 'elcinema.com',
   days: 2,
-  request: { headers },
   url({ channel }) {
     const lang = channel.lang === 'en' ? 'en/' : '/'
 
@@ -44,26 +38,19 @@ module.exports = {
   },
   async channels({ lang }) {
     const axios = require('axios')
-    let data
-    try {
-      const res = await axios.get(`https://elcinema.com/${lang}/tvguide/`, {
-        headers: headers
-      })
-      data = res && res.data ? res.data : ''
-    } catch (err) {
-      console.log(err)
-      return []
-    }
+    const data = await axios
+      .get(`https://elcinema.com/${lang}/tvguide/`)
+      .then(r => r.data)
+      .catch(console.log)
 
     const $ = cheerio.load(data)
 
     return $('.tv-line')
-      .map((_, el) => {
+      .map((i, el) => {
         const link = $(el).find('.channel > div > div.hide-for-small-only > a')
         const name = $(link).text()
-        const href = $(link).attr('href') || ''
-        const match = href.match(/\/(\d+)\/$/)
-        const site_id = match ? match[1] : null
+        const href = $(link).attr('href')
+        const [, site_id] = href.match(/\/(\d+)\/$/)
 
         return {
           lang,

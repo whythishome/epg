@@ -1,10 +1,7 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 const cheerio = require('cheerio')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-dayjs.extend(utc)
-dayjs.extend(timezone)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'bein.com',
@@ -27,7 +24,7 @@ module.exports = {
   parser: function ({ content, channel, date }) {
     let programs = []
     const items = parseItems(content, channel)
-    date = dayjs(date.valueOf()).subtract(1, 'day')
+    date = DateTime.fromMillis(date.valueOf()).minus({ days: 1 })
     items.forEach(item => {
       const $item = cheerio.load(item)
       const title = parseTitle($item)
@@ -37,14 +34,14 @@ module.exports = {
       let start = parseTime($item, date)
       if (prev) {
         if (start < prev.start) {
-          start = start.add(1, 'day')
-          date = date.add(1, 'day')
+          start = start.plus({ days: 1 })
+          date = date.plus({ days: 1 })
         }
         prev.stop = start
       }
       let stop = parseTime($item, start)
       if (stop < start) {
-        stop = stop.add(1, 'day')
+        stop = stop.plus({ days: 1 })
       }
       programs.push({
         title,
@@ -74,17 +71,11 @@ module.exports = {
         const id = $(el).attr('id')
         if (!id || !/^channels_\d+/.test(id)) return
         const [, channelId] = id.split('_')
-        let name = channelId
-        const href = $(el).find('a').attr('href')
-        if (href) {
-          const [, , , channelSlug] = href.split('/')
-          name = channelSlug
-        }
 
         channels.push({
           lang,
           site_id: `${category}#${channelId}`,
-          name
+          name: channelId
         })
       })
     }
@@ -106,9 +97,9 @@ function parseTime($item, date) {
     .text()
     .match(/^(\d{2}:\d{2})/) || [null, null]
   if (!time) return null
-  time = `${date.format('YYYY-MM-DD')} ${time}`
+  time = `${date.toFormat('yyyy-MM-dd')} ${time}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Asia/Qatar').utc()
+  return DateTime.fromFormat(time, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Qatar' }).toUTC()
 }
 
 function parseItems(content, channel) {

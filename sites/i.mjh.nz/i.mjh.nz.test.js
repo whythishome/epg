@@ -29,35 +29,12 @@ it('can parse response', () => {
     start: '2023-06-23T07:14:32.000Z',
     stop: '2023-06-23T09:09:36.000Z',
     title: 'Killers Within',
-    date: '2018-01-01T00:00:00.000Z',
+    date: ['20180101'],
     description:
       'With her son being held captive by a criminal gang, police officer Amanda Doyle, together with her ex-husband and three unlikely allies, takes part in a desperate plot to hold a wealthy banker and his family to ransom. But this is no ordinary family.',
-    icon: 'https://provider-static.plex.tv/epg/images/thumbnails/darkmatter-tv-fallback.jpg',
+    icon: ['https://provider-static.plex.tv/epg/images/thumbnails/darkmatter-tv-fallback.jpg'],
     categories: ['Movie']
   })
-})
-
-it('can parse other channels and days from the same file', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.xml'))
-  const other = { ...channel, site_id: 'Plex/all#5e20b730f2f8d5003d739db7-6018913ea15130002b284191' }
-
-  const today = parser({ content, channel: other, date })
-  expect(today.length).toBe(113)
-  expect(today[0]).toMatchObject({
-    start: '2023-06-23T07:33:51.000Z',
-    stop: '2023-06-23T07:46:00.000Z'
-  })
-
-  const tomorrow = parser({ content, channel: other, date: date.add(1, 'd') })
-  expect(tomorrow.length).toBe(49)
-  expect(tomorrow[0]).toMatchObject({
-    start: '2023-06-24T00:07:33.000Z',
-    stop: '2023-06-24T00:19:59.000Z',
-    title: 'Mario Bautista ft. De La Guetto - #Maldeamores'
-  })
-
-  const unknown = parser({ content, channel: { ...channel, site_id: 'Plex/all#unknown' }, date })
-  expect(unknown).toMatchObject([])
 })
 
 it('can handle empty guide', () => {

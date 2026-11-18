@@ -1,10 +1,6 @@
 const cheerio = require('cheerio')
 const iconv = require('iconv-lite')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-dayjs.extend(utc)
-dayjs.extend(timezone)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'm.tv.sms.cz',
@@ -23,12 +19,12 @@ module.exports = {
       let start = parseStart($item, date)
       if (prev) {
         if (start < prev.start) {
-          start = start.add(1, 'day')
-          date = date.add(1, 'day')
+          start = start.plus({ days: 1 })
+          date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.add(1, 'hour')
+      const stop = start.plus({ hours: 1 })
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
@@ -42,7 +38,7 @@ module.exports = {
   async channels() {
     const axios = require('axios')
     const data = await axios
-      .get('https://m.tv.sms.cz/?zmen_stanice=true')
+      .get(`https://m.tv.sms.cz/?zmen_stanice=true`)
       .then(r => r.data)
       .catch(console.log)
 
@@ -69,7 +65,7 @@ function parseStart($item, date) {
   const timeString = $item('div > span').text().trim()
   const dateString = `${date.format('MM/DD/YYYY')} ${timeString}`
 
-  return dayjs.tz(dateString, 'MM/DD/YYYY HH.mm', 'Europe/Prague').utc()
+  return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH.mm', { zone: 'Europe/Prague' }).toUTC()
 }
 
 function parseDescription($item) {

@@ -1,17 +1,13 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-dayjs.extend(utc)
-dayjs.extend(timezone)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'tvgids.nl',
   days: 2,
   url: function ({ date, channel }) {
     const path =
-      dayjs().utc().day() === dayjs(date).utc().day()
+      DateTime.utc().day === DateTime.fromMillis(date.valueOf()).day
         ? ''
         : `${date.format('DD-MM-YYYY')}/`
 
@@ -27,12 +23,12 @@ module.exports = {
       let start = parseStart($item, date)
       if (prev) {
         if (start < prev.start) {
-          start = start.add(1, 'day')
-          date = date.add(1, 'day')
+          start = start.plus({ days: 1 })
+          date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.add(30, 'minute')
+      const stop = start.plus({ minutes: 30 })
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
@@ -79,7 +75,9 @@ function parseImage($item) {
 function parseStart($item, date) {
   const time = $item('.program__starttime').clone().children().remove().end().text().trim()
 
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'Europe/Amsterdam').utc()
+  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
+    zone: 'Europe/Amsterdam'
+  }).toUTC()
 }
 
 function parseItems(content) {

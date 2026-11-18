@@ -1,10 +1,6 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-dayjs.extend(utc)
-dayjs.extend(timezone)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'clickthecity.com',
@@ -19,7 +15,10 @@ module.exports = {
     },
     data({ date }) {
       const params = new URLSearchParams()
-      params.append('optDate', dayjs(date.valueOf()).tz('Asia/Manila').format('YYYY-MM-DD'))
+      params.append(
+        'optDate',
+        DateTime.fromMillis(date.valueOf()).setZone('Asia/Manila').toFormat('yyyy-MM-dd')
+      )
       params.append('optTime', '00:00:00')
 
       return params
@@ -34,7 +33,7 @@ module.exports = {
       let stop = parseStop($item, date)
       if (!start || !stop) return
       if (start > stop) {
-        stop = stop.add(1, 'day')
+        stop = stop.plus({ days: 1 })
       }
 
       programs.push({
@@ -76,18 +75,18 @@ function parseStart($item, date) {
   const url = $item('td.cPrg > a').attr('href') || ''
   let [, time] = url.match(/starttime=(\d{1,2}%3A\d{2}\+(AM|PM))/) || [null, null]
   if (!time) return null
-  time = `${date.format('YYYY-MM-DD')} ${decodeURIComponent(time).replace(/\+/g, ' ')}`
+  time = `${date.format('YYYY-MM-DD')} ${time.replace('%3A', ':').replace('+', ' ')}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD h:mm A', 'Asia/Manila').utc()
+  return DateTime.fromFormat(time, 'yyyy-MM-dd h:mm a', { zone: 'Asia/Manila' }).toUTC()
 }
 
 function parseStop($item, date) {
   const url = $item('td.cPrg > a').attr('href') || ''
   let [, time] = url.match(/endtime=(\d{1,2}%3A\d{2}\+(AM|PM))/) || [null, null]
   if (!time) return null
-  time = `${date.format('YYYY-MM-DD')} ${decodeURIComponent(time).replace(/\+/g, ' ')}`
+  time = `${date.format('YYYY-MM-DD')} ${time.replace('%3A', ':').replace('+', ' ')}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD h:mm A', 'Asia/Manila').utc()
+  return DateTime.fromFormat(time, 'yyyy-MM-dd h:mm a', { zone: 'Asia/Manila' }).toUTC()
 }
 
 function parseItems(content) {

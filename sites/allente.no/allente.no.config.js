@@ -1,68 +1,65 @@
 const dayjs = require('dayjs')
 
-const eventIds = []
-
 module.exports = {
   site: 'allente.no',
   days: 2,
   request: {
     cache: {
-      ttl: 24 * 60 * 60 * 1000 // 1 day
+      ttl: 60 * 60 * 1000 // 1 hour
     }
   },
   url({ date }) {
-    return `https://www.allente.no/api/epg/refetch-epg-data?Start=${date.format('YYYY-MM-DD')}`
+    return `https://cs-vcb.allente.no/epg/events?date=${date.format('YYYY-MM-DD')}`
   },
   parser({ content, channel }) {
-    const programs = []
-    if (typeof content === 'string' || Buffer.isBuffer(content)) {
-      content = JSON.parse(content)
-    }
-    if (Array.isArray(content?.channels)) {
-      content.channels
-        .filter(item => item.id === channel.site_id)
-        .forEach(item => {
-          if (Array.isArray(item.programs)) {
-            item.programs
-              // make program unique across days
-              .filter(event => !eventIds.includes(event.id))
-              .forEach(event => {
-                eventIds.push(event.id)
-                programs.push({
-                  title: event.title,
-                  description: event.shortDescription,
-                  category: event.genres,
-                  image: event.splashImageUri,
-                  season: event.seasonNumber ? event.seasonNumber : null,
-                  episode: event.episodeNumber ? event.episodeNumber : null,
-                  year: event.releaseYear ? event.releaseYear.toString() : null,
-                  start: dayjs(event.eventStart),
-                  stop: dayjs(event.eventEnd)
-                })
-              })
-          }
-        })
-    }
+    let programs = []
+    const items = parseItems(content, channel)
+    items.forEach(item => {
+      if (!item.details) return
+      const start = dayjs(item.time)
+      const stop = start.add(item.details.duration, 'm')
+      programs.push({
+        title: item.title,
+        category: item.details.categories,
+        description: item.details.description,
+        image: item.details.image,
+        season: parseSeason(item),
+        episode: parseEpisode(item),
+        start,
+        stop
+      })
+    })
 
     return programs
   },
   async channels() {
-    const channels = []
     const axios = require('axios')
-    const res = await axios.get(`https://www.allente.no/api/epg/refetch-epg-data?Start=${dayjs().format('YYYY-MM-DD')}`)
-      .then(res => res.data)
-      .catch(console.error)
+    const data = await axios
+      .get(`https://cs-vcb.allente.no/epg/events?date=${dayjs().format('YYYY-MM-DD')}`)
+      .then(r => r.data)
+      .catch(console.log)
 
-    if (Array.isArray(res.channels)) {
-      channels.push(...res.channels
-        .map(item => ({
-            lang: 'no',
-            site_id: item.id,
-            name: item.name
-          })
-        ))
-    }
-
-    return channels
+    return data.channels.map(item => {
+      return {
+        lang: 'no',
+        site_id: item.id,
+        name: item.name
+      }
+    })
   }
+}
+
+function parseItems(content, channel) {
+  const data = JSON.parse(content)
+  if (!data || !Array.isArray(data.channels)) return []
+  const channelData = data.channels.find(i => i.id === channel.site_id)
+
+  return channelData && Array.isArray(channelData.events) ? channelData.events : []
+}
+
+function parseSeason(item) {
+  return item.details.season || null
+}
+function parseEpisode(item) {
+  return item.details.episode || null
 }

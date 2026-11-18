@@ -1,6 +1,4 @@
 const { parser, url } = require('./arianatelevision.com.config.js')
-const fs = require('fs')
-const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -18,7 +16,8 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'), 'utf8')
+  const content =
+    '<!DOCTYPE html><html><head></head><body><textarea data-jtrt-table-id="508" id="jtrt_table_settings_508" cols="30" rows="10">[[["Start","Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","",""],["7:00","City Report","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","",""],["7:30","ICC T20 Highlights","Sport ","Sport ","Sport ","Sport ","Sport ","Sport ","",""],["15:00","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","",""],["6:30","Quran and Hadis ","Falah","Falah","Falah","Falah","Falah","Falah","",""],["","\\n","","","","","","","",""]]]</textarea></body></html>'
   const result = parser({ content, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -53,7 +52,8 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.html'), 'utf8')
+    content:
+      '<!DOCTYPE html><html><head></head><body><textarea data-jtrt-table-id="508" id="jtrt_table_settings_508" cols="30" rows="10"></textarea></body></html>'
   })
   expect(result).toMatchObject([])
 })

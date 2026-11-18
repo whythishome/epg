@@ -27,10 +27,10 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ lang }) {
     const axios = require('axios')
     const data = await axios
-      .get('https://telkussa.fi/API/Channels')
+      .get(`https://telkussa.fi/API/Channels`)
       .then(r => r.data)
       .catch(console.log)
 

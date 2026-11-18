@@ -1,81 +1,56 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-const HEADERS = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0',
-  'Referer': 'https://distro.tv/',
-  'Origin': 'https://distro.tv'
-}
-
-dayjs.extend(utc)
-dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'distro.tv',
-  days: 3,
-  request: {
-    headers: HEADERS,
-    timeout: 60000
+  days: 1,
+  url: function ({ date, channel }) {
+    return `https://tv.jsrdn.com/epg/query.php?range=now,24h&id=${channel.site_id}`
   },
-  url({ channel, date }) {
-    const diff = date.diff(dayjs.utc().startOf('d'), 'd')
-    let range
-
-    if (diff <= 0) {
-      range = 'now,24h'
-    } else {
-      const start = diff * 24
-      const end = (diff + 1) * 24
-      range = `${start}h,${end}h`
-    }
-
-    return `https://tv.jsrdn.com/epg/query.php?range=${range}&id=${channel.site_id},`
-  },
-  parser({ content, channel }) {
-    if (!content || !channel) return []
-    let programs
-    try {
-      const data = JSON.parse(content)
-      if (!data.epg || !data.epg[channel.site_id] || !Array.isArray(data.epg[channel.site_id].slots)) {
-        return []
-      }
-      programs = data.epg[channel.site_id].slots.map(program => ({
-        title: program.title,
-        description: program.description || null,
-        icon: program.img_thumbh || null,
-        start: dayjs.utc(program.start, 'YYYY-MM-DD HH:mm:ss'),
-        stop: dayjs.utc(program.end, 'YYYY-MM-DD HH:mm:ss')
-      }))
-    } catch {
-      return []
-    }
-
-    return programs.filter(p => p.title && p.start.isValid() && p.stop.isValid())
-  },
-  async channels() {
-    const { data } = await axios.get('https://tv.jsrdn.com/tv_v5/getfeed.php?type=live&geo=QQ', {
-      headers: HEADERS
-    })
-
-    const channels = []
-    if (data && data.shows) {
-      Object.values(data.shows).forEach(show => {
-        const episode = show.seasons?.[0]?.episodes?.[0]
-        if (episode && episode.id) {
-          channels.push({
-            lang: 'en',
-            // lang: show.language || 'en',
-            site_id: episode.id.toString(),
-            name: show.title,
-            // logo: show.img_logo,
-            // url: episode.content?.url || null
-          })
-        }
+  parser: function ({ content, channel }) {
+    let programs = []
+    const items = parseItems(content, channel)
+    const slots = items.epg[channel.site_id].slots
+    slots.forEach(item => {
+      programs.push({
+        title: item.title,
+        description: item.description,
+        start: parseStart(item),
+        stop: parseStop(item)
       })
-    }
-
+    })
+    return programs
+  },  
+  async channels() {
+    const response = await axios
+      .get(
+        'https://tv.jsrdn.com/tv_v5/getfeed.php?type=live',
+      )
+      .catch(console.log)
+    console.log(response.data.env)
+    const data = Object.values(response.data.shows);
+    let channels = []
+    data.forEach(item => {
+      channels.push({
+        lang: 'en',
+        site_id: item.seasons[0].episodes[0].id,
+        name: item.seasons[0].episodes[0].title,
+        logo: item.img_logo
+      })
+    })
     return channels
   }
+}
+
+function parseStart(item) {
+  return dayjs(item.start)
+}
+
+function parseStop(item) {
+  return dayjs(item.end)
+}
+
+function parseItems(content, channel) {
+  const data = JSON.parse(content)
+  return data ? data : []
 }

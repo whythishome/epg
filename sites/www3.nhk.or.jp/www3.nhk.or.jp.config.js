@@ -7,10 +7,9 @@ module.exports = {
   delay: 5000,
 
   url: function ({ date }) {
-    return `https://masterpl.hls.nhkworld.jp/epg/w/${date
-      .toISOString()
-      .slice(0, 10)
-      .replace(/-/g, '')}.json`
+    return `https://nwapi.nhk.jp/nhkworld/epg/v7b/world/s${date.unix() * 1000}-e${
+      date.add(1, 'd').unix() * 1000
+    }.json`
   },
 
   request: {
@@ -27,20 +26,21 @@ module.exports = {
     return context.channel.logo
   },
 
-  async parser(context) {
+  parser: function (context) {
     const programs = []
+
     const items = parseItems(context.content)
 
-    for (let item of items) {
+    items.forEach(item => {
       programs.push({
         title: item.title,
-        sub_title: item.episodeTitle,
-        start: dayjs(item.startTime, 'YYYY-MM-DDTHH:mm:ssZ'),
-        stop: dayjs(item.endTime, 'YYYY-MM-DDTHH:mm:ssZ'),
+        start: parseStart(item),
+        stop: parseStop(item),
         description: item.description,
-        image: item.episodeThumbnailURL ? item.episodeThumbnailURL : item.thumbnail
+        image: parseImage(item),
+        sub_title: item.subtitle
       })
-    }
+    })
 
     return programs
   }
@@ -49,8 +49,20 @@ module.exports = {
 function parseItems(content) {
   if (content != '') {
     const data = JSON.parse(content)
-    return !data || !data.data || !Array.isArray(data.data) ? [] : data.data
+    return !data || !data.channel || !Array.isArray(data.channel.item) ? [] : data.channel.item
   } else {
     return []
   }
+}
+
+function parseStart(item) {
+  return dayjs.unix(parseInt(item.pubDate) / 1000)
+}
+
+function parseStop(item) {
+  return dayjs.unix(parseInt(item.endDate) / 1000)
+}
+
+function parseImage(item) {
+  return 'https://www.nhk.or.jp' + item.thumbnail
 }

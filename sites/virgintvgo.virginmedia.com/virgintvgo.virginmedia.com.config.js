@@ -103,7 +103,8 @@ module.exports = {
             return {
               lang: 'en',
               site_id: item.id,
-              name: item.name
+              name: item.name,
+              logo: item.logo.focused
             }
           })
       )

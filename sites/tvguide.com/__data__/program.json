@@ -1,73 +1,86 @@
 {
   "data": {
     "item": {
-      "id": 9000058285,
-      "name": "Secrets of the Zoo: North Carolina",
+      "id": 6060613824,
+      "name": "CBS Sunday Morning",
+      "parentId": 1030037352,
+      "description": "The Backseat Lovers perform on the \"Saturday Sessions\"; and Daisy Ryan guests on \"The Dish.\" Also: comedian Fortune Feimster.",
       "isSportsEvent": false,
-      "tvRating": "TV-14",
-      "categoryId": 5,
+      "rating": null,
+      "tvRating": "TV-PG",
+      "episodeTitle": "10-30-2022",
+      "releaseYear": 2022,
+      "seoUrl": null,
+      "categoryId": 4,
       "subCategoryId": 0,
-      "episodeNumber": 1,
-      "mcoId": 1000990897,
-      "title": "Secrets of the Zoo: North Carolina",
+      "episodeAirDate": "/Date(1667088000000)/",
+      "episodeNumber": 248,
+      "seasonNumber": 40,
+      "mcoId": 1030037352,
+      "title": "CBS Sunday Morning",
       "type": "show",
-      "slug": "secrets-of-the-zoo-north-carolina",
+      "slug": "cbs-sunday-morning",
       "typeId": 1,
       "images": [
         {
-          "id": "2-e5b17322185dd95f066a2de47efd8a12",
-          "provider": "2",
+          "id": "1-10744155154",
+          "provider": "Tivo",
           "imageType": {
             "typeId": 1,
             "typeName": "showcard",
-            "providerTypeName": "showcard"
+            "providerTypeName": "Vertical Showcard (3:4)"
           },
           "bucketType": "catalog",
-          "bucketPath": "/provider/2/13/2-e5b17322185dd95f066a2de47efd8a12.jpg",
+          "bucketPath": "/provider/1/1/1-10744155154.jpg",
           "filename": "",
-          "width": 3840,
-          "height": 2160
+          "width": 2160,
+          "height": 2880
         },
         {
-          "id": "2-59b2fd193bc035d4f2d4d3f2a68629d3",
-          "provider": "2",
+          "id": "1-10744155148",
+          "provider": "Tivo",
           "imageType": {
-            "typeId": 2,
-            "typeName": "poster art",
-            "providerTypeName": "poster art"
+            "typeId": 5,
+            "typeName": "key art",
+            "providerTypeName": "Key Art"
           },
           "bucketType": "catalog",
-          "bucketPath": "/provider/2/2/2-59b2fd193bc035d4f2d4d3f2a68629d3.jpg",
+          "bucketPath": "/provider/1/5/1-10744155148.jpg",
           "filename": "",
-          "width": 2000,
-          "height": 3000
+          "width": 3000,
+          "height": 1688
         }
       ],
       "genres": [
         {
-          "id": 14,
-          "name": "Reality",
+          "id": 19,
+          "name": "Talk & Interview",
           "genres": [
-            "Reality-TV"
+            "interview",
+            "talk"
+          ]
+        },
+        {
+          "id": 99,
+          "name": "Other",
+          "genres": [
+            "newsmagazine",
+            "profile"
           ]
         }
       ],
-      "metacriticSummary": null,
-      "video": null,
-      "parentId": 1000990897,
-      "description": "Chimps living at the North Carolina Zoo, a zoo located in the center of North Carolina that serves as the world's largest natural habitat zoo, as well as one of two state-supported zoos, are cared for",
-      "rating": null,
-      "episodeTitle": "Chimp Off the Old Block",
-      "releaseYear": 2020,
-      "seoUrl": null,
-      "episodeAirDate": "/Date(1604102400000)/",
-      "seasonNumber": 1,
-      "duration": null
+      "duration": null,
+      "metacriticSummary": {
+        "url": null,
+        "score": 0,
+        "reviewCount": 0
+      },
+      "video": null
     }
   },
   "links": {
     "self": {
-      "href": "https://backend.tvguide.com/tvschedules/tvguide/programdetails/9000058285/web"
+      "href": "https://cmg-prod.apigee.net/v1/xapi/tvschedules/tvguide/programdetails/6060613824/web"
     }
   },
   "meta": {

@@ -1,87 +1,98 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 
+dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'tvplus.com.tr',
   days: 2,
-  url: 'https://izmaottvsc14.tvplus.com.tr:33207/EPG/JSON/PlayBillList',
+  url: 'https://izmottvsc23.tvplus.com.tr:33207/EPG/JSON/PlayBillList',
   request: {
     method: 'POST',
     async headers() {
       const response = await axios
-        .post('https://izmaottvsc14.tvplus.com.tr:33207/EPG/JSON/Authenticate', {
-          terminaltype: 'webtv',
-          terminalvendor:
-            '5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
-          osversion: 'Win32',
+        .post('https://izmottvsc23.tvplus.com.tr:33207/EPG/JSON/Authenticate', {
+          terminaltype: 'WEBTV_WIDEVINE',
           userType: '3',
-          utcEnable: '1',
-          timezone: 'Europe/Istanbul'
+          timezone: 'UTC'
         })
-        .catch(console.error)
+        .catch(console.log)
+      const cookie = Array.isArray(response.headers['set-cookie'])
+        ? response.headers['set-cookie'].join('; ')
+        : ''
 
-      return {
-        cookie: response.headers['set-cookie'].join(';')
-      }
+      return { cookie }
     },
-    data({ channel, date }) {
+    data({ date, channel }) {
       return {
         type: '2',
         channelid: channel.site_id,
         begintime: date.format('YYYYMMDDHHmmss'),
-        endtime: date.add(1, 'd').format('YYYYMMDDHHmmss'),
-        isFillProgram: 1
+        endtime: date.add(1, 'd').format('YYYYMMDDHHmmss')
       }
-    },
-    cache: {
-      ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  parser({ content }) {
-    const programs = []
-
+  parser: function ({ content }) {
+    let programs = []
     const items = parseItems(content)
-
-    items.forEach(schedule => {
+    items.forEach(item => {
+      const start = parseStart(item)
+      const stop = parseStop(item)
       programs.push({
-        title: schedule.name,
-        description: schedule.introduce,
-        category: schedule.genres,
-        icon: parseIcon(schedule),
-        image: parseImage(schedule),
-        start: parseTime(schedule.starttime),
-        stop: parseTime(schedule.endtime)
+        title: item.name,
+        category: item.genres,
+        description: item.introduce,
+        image: parseImage(item),
+        start: start.toJSON(),
+        stop: stop.toJSON()
       })
     })
 
     return programs
+  },
+  async channels() {
+    const cheerio = require('cheerio')
+
+    const channels = []
+    const data = await axios
+      .get(`https://tvplus.com.tr/canli-tv/yayin-akisi`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(data)
+    $('.channelListItem').each((i, el) => {
+      const name = $(el).find('.channelName').text()
+      const url = $(el).find('.channelLink').attr('href')
+      const [, site_id] = url.match(/\-\-(\d+)$/)
+
+      channels.push({
+        lang: 'tr',
+        name,
+        site_id
+      })
+    })
+
+    return channels
   }
 }
 
-function parseTime(time) {
-  return dayjs(time, 'YYYY-MM-DD HH:mm:ss [UTC]Z')
+function parseImage(item) {
+  return item.pictures && item.pictures.length ? item.pictures[0].href : null
 }
 
-function parseImage(schedule) {
-  return schedule?.picture?.still || null
+function parseStart(item) {
+  return dayjs.utc(item.starttime, 'YYYYMMDDHHmmss')
 }
 
-function parseIcon(schedule) {
-  if (typeof schedule?.picture?.icon !== 'string') return null
-
-  return schedule.picture.icon.split(',')[0]
+function parseStop(item) {
+  return dayjs.utc(item.endtime, 'YYYYMMDDHHmmss')
 }
 
 function parseItems(content) {
-  try {
-    const data = JSON.parse(content)
-    if (!data || !Array.isArray(data.playbilllist)) return []
+  const data = JSON.parse(content)
 
-    return data.playbilllist
-  } catch {
-    return []
-  }
+  return data.playbilllist || []
 }

@@ -1,5 +1,3 @@
-const axios = require('axios')
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
@@ -9,12 +7,8 @@ module.exports = {
   delay: 1000,
   site: 'tv.trueid.net',
   days: 1,
-  buildId: undefined,
-  async url({ channel }) {
-    if (module.exports.buildId === undefined) {
-      module.exports.buildId = await module.exports.fetchBuildId()
-    }
-    return `https://tv.trueid.net/_next/data/${module.exports.buildId}/th-${channel.lang}.json?channelSlug=${channel.site_id}&path=${channel.site_id}`
+  url({ channel }) {
+    return `https://tv.trueid.net/_next/data/1380644e0f1fb6b14c82894a0c682d147e015c9d/th-${channel.lang}.json?channelSlug=${channel.site_id}&path=${channel.site_id}`
   },
   parser({ content, channel }) {
     const programs = []
@@ -30,46 +24,30 @@ module.exports = {
 
     return programs
   },
-  async channels({ lang = 'en' }) {
-    if (module.exports.buildId === undefined) {
-      module.exports.buildId = await module.exports.fetchBuildId()
-    }
+  async channels({ token, lang = en }) {
+    const axios = require('axios')
+    const ACCESS_TOKEN = token
+      ? token
+      : 'MTM4MDY0NGUwZjFmYjZiMTRjODI4OTRhMGM2ODJkMTQ3ZTAxNWM5ZDoxZmI2YjE0YzgyODk0YTBjNjgyZDE0N2UwMTVjOWQ='
 
     const data = await axios
-      .get(`https://tv.trueid.net/_next/data/${module.exports.buildId}/th-${lang}.json`)
-      .then(r => r.data?.pageProps)
-      .catch(console.error)
-
-    if (!data?.channelList) {
-      return []
-    }
-
-    return data.channelList
-      .filter(i => i.content_type === 'livetv')
-      .map(item => {
-        return {
-          lang,
-          site_id: item.slug,
-          name: item.title,
-          logo: item.thumb
+      .get(`https://tv.trueid.net/api/channel/getChannelListByAllCate?lang=${lang}&country=th`, {
+        headers: {
+          authorization: `Basic ${ACCESS_TOKEN}`
         }
       })
-  },
-  // Since the website uses Next.js, each time the developers deploy a new version, a new build ID is generated.
-  // This permits us to always fetch the proper build ID before making requests.
-  async fetchBuildId() {
-    const data = await axios
-      .get('https://tv.trueid.net/th-en')
       .then(r => r.data)
       .catch(console.error)
 
-    if (data) {
-      const $ = cheerio.load(data)
-      const nextData = JSON.parse($('#__NEXT_DATA__').text())
-      return nextData?.buildId || null
-    } else {
-      return null
-    }
+    return data.data.channelsList
+      .find(i => i.catSlug === 'TrueID : All')
+      .channels.map(item => {
+        return {
+          lang,
+          site_id: item.slug,
+          name: item.title
+        }
+      })
   }
 }
 

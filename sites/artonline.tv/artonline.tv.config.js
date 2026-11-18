@@ -1,3 +1,5 @@
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const timezone = require('dayjs/plugin/timezone')
 const utc = require('dayjs/plugin/utc')
@@ -11,9 +13,7 @@ module.exports = {
   site: 'artonline.tv',
   days: 2,
   url: function ({ channel }) {
-    const [, site_id] = channel.site_id.split('#')
-
-    return `https://www.artonline.tv/Home/Tvlist${site_id}`
+    return `https://www.artonline.tv/Home/Tvlist${channel.site_id}`
   },
   request: {
     method: 'POST',
@@ -32,7 +32,6 @@ module.exports = {
     const programs = []
     if (!content) return programs
     const items = JSON.parse(content)
-    if (!Array.isArray(items)) return programs
     items.forEach(item => {
       const image = parseImage(item)
       const start = parseStart(item)
@@ -59,9 +58,9 @@ function parseStart(item) {
 }
 
 function parseDuration(item) {
-  const [, HH, mm, ss] = item.duration.match(/(\d+):(\d+)(?::(\d+))?/)
+  const [, HH, mm, ss] = item.duration.match(/(\d+):(\d+):(\d+)/)
 
-  return parseInt(HH) * 3600 + parseInt(mm) * 60 + parseInt(ss || 0)
+  return parseInt(HH) * 3600 + parseInt(mm) * 60 + parseInt(ss)
 }
 
 function parseImage(item) {

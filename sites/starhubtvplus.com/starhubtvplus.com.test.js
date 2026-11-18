@@ -15,7 +15,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://waf-starhub-metadata-api-p001.sh-ifs.com/v3.1/epg/schedules?locale=en_US&locale_default=en_US&device=1&in_channel_id=d258444e-b66b-4cbe-88db-e09f31ab8a1f&gt_end=1733270400&lt_start=1733356800&limit=100&page=1'
+    'https://waf-starhub-metadata-api-p001.ifs.vubiquity.com/v3.1/epg/schedules?locale=en_US&locale_default=en_US&device=1&in_channel_id=d258444e-b66b-4cbe-88db-e09f31ab8a1f&gt_end=1733270400&lt_start=1733356800&limit=100&page=1'
   )
 })
 
@@ -33,8 +33,8 @@ it('can parse response', async () => {
     {
       start: '2024-12-03T17:25:00.000Z',
       stop: '2024-12-03T18:20:00.000Z',
-      title: 'Hudson & Rex (Season 5)',
-      subTitle: 'Northern Rexposure',
+      title: 'Northern Rexposure',
+      subTitle: 'Hudson & Rex (Season 5)',
       description:
         "When Jesse's sister contacts him for help, he, Sarah and Rex head to Northern Ontario and find themselves in the middle of a deadly situation.",
       category: ['Drama'],

@@ -77,8 +77,8 @@ function parseItems(content) {
   let data
   try {
     data = JSON.parse(content)
-  } catch {
-    return []
+  } catch (error) {
+    console.log(error.message)
   }
   if (!data || !Array.isArray(data)) return []
 

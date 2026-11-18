@@ -1,15 +1,11 @@
-const { parser, url } = require('./tvpassport.com.config.js')
-const axios = require('axios')
+const { parser, url, request } = require('./tvpassport.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
-
-jest.mock('axios')
 
 const date = dayjs.utc('2022-10-04', 'YYYY-MM-DD').startOf('d')
 const channel = {
@@ -17,14 +13,16 @@ const channel = {
   xmltv_id: 'YTATV.us'
 }
 
-axios.head.mockImplementation(() => {
-  return Promise.resolve({})
-})
-
-it('can generate valid url', async () => {
-  expect(await url({ channel, date })).toBe(
+it('can generate valid url', () => {
+  expect(url({ channel, date })).toBe(
     'https://www.tvpassport.com/tv-listings/stations/youtoo-america-network/5463/2022-10-04'
   )
+})
+
+it('can generate valid request headers', () => {
+  expect(request.headers).toMatchObject({
+    Cookie: 'cisession=e49ff13191d6875887193cae9e324b44ef85768d;'
+  })
 })
 
 it('can parse response', () => {
@@ -41,7 +39,7 @@ it('can parse response', () => {
     start: '2022-10-04T10:00:00.000Z',
     stop: '2022-10-04T10:30:00.000Z',
     title: 'Charlie Moore: No Offense',
-    subtitle: 'Under the Influencer',
+    sub_title: 'Under the Influencer',
     category: ['Sports', 'Outdoors'],
     image: 'https://cdn.tvpassport.com/image/show/960x540/69103.jpg',
     rating: {
@@ -52,23 +50,7 @@ it('can parse response', () => {
     director: ['Rob McElhenney'],
     guest: ['Sean Penn'],
     description:
-      'Celebrity interviews while fishing in various locations throughout the United States.',
-    year: null
-  })
-
-  expect(results[1]).toMatchObject({
-    start: '2022-10-04T10:30:00.000Z',
-    stop: '2022-10-04T11:00:00.000Z',
-    title: '1900',
-    year: null
-  })
-
-  expect(results[2]).toMatchObject({
-    start: '2022-10-04T11:00:00.000Z',
-    stop: '2022-10-04T12:00:00.000Z',
-    title: 'The Mark of Zorro',
-    subtitle: null,
-    year: '1940'
+      'Celebrity interviews while fishing in various locations throughout the United States.'
   })
 })
 

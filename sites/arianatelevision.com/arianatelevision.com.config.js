@@ -1,9 +1,5 @@
 const cheerio = require('cheerio')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-dayjs.extend(utc)
-dayjs.extend(timezone)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'arianatelevision.com',
@@ -17,12 +13,12 @@ module.exports = {
       let start = parseStart(item, date)
       if (prev) {
         if (start < prev.start) {
-          start = start.add(1, 'day')
-          date = date.add(1, 'day')
+          start = start.plus({ days: 1 })
+          date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.add(30, 'minute')
+      const stop = start.plus({ minutes: 30 })
       programs.push({
         title: item.title,
         start,
@@ -37,7 +33,7 @@ module.exports = {
 function parseStart(item, date) {
   const time = `${date.format('YYYY-MM-DD')} ${item.start}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD H:mm', 'Asia/Kabul').utc()
+  return DateTime.fromFormat(time, 'yyyy-MM-dd H:mm', { zone: 'Asia/Kabul' }).toUTC()
 }
 
 function parseItems(content, date) {

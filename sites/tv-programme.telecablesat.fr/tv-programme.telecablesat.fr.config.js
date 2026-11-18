@@ -1,10 +1,6 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-dayjs.extend(utc)
-dayjs.extend(timezone)
+const { DateTime } = require('luxon')
 
 const API_ENDPOINT = 'https://tv-programme.telecablesat.fr/chaine'
 const headers = {
@@ -45,12 +41,12 @@ module.exports = {
       let start = parseStart($item, date)
       if (prev) {
         if (start < prev.start) {
-          start = start.add(1, 'day')
-          date = date.add(1, 'day')
+          start = start.plus({ days: 1 })
+          date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.add(1, 'hour')
+      const stop = start.plus({ hours: 1 })
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
@@ -91,7 +87,9 @@ function parseStart($item, date) {
   const timeString = $item('.schedule-hour').text()
   if (!timeString) return null
 
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${timeString}`, 'YYYY-MM-DD HH:mm', 'Europe/Paris').utc()
+  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${timeString}`, 'yyyy-MM-dd HH:mm', {
+    zone: 'Europe/Paris'
+  }).toUTC()
 }
 
 function parseImage($item) {

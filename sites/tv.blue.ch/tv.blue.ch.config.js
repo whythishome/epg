@@ -20,12 +20,10 @@ module.exports = {
     items.forEach(item => {
       const title = parseTitle(item)
       if (title === 'Sendepause') return
-      const image = parseImage(item)
       programs.push({
         title,
         description: parseDescription(item),
-        image,
-        icon: image,
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })

@@ -19,7 +19,7 @@ module.exports = {
     )}.json`
   },
   parser({ content, channel }) {
-    const programs = []
+    let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
       const start = dayjs.tz(item.startDateTime, 'Asia/Singapore')
@@ -36,29 +36,25 @@ module.exports = {
     return programs
   },
   async channels() {
-    const channels = {}
     const axios = require('axios')
     const cheerio = require('cheerio')
 
     const data = await axios
-      .get('https://www.singtel.com/personal/products-services/tv/tv-programme-guide')
+      .get(`https://www.singtel.com/personal/products-services/tv/tv-programme-guide`)
       .then(r => r.data)
       .catch(console.log)
 
     const $ = cheerio.load(data)
-    const datamodel = JSON.parse($('ux-tv-channel-epg').attr('datamodel'))
+    let datamodel = $('ux-tv-channel-epg').attr('datamodel')
+    datamodel = JSON.parse(datamodel)
 
-    datamodel?.tvChannelLists.forEach(item => {
-      if (channels[item.epgChannelId] === undefined) {
-        channels[item.epgChannelId] = {
-          lang: 'en',
-          site_id: item.epgChannelId,
-          name: item.title.trim()
-        }
+    return datamodel.tvChannelLists.map(item => {
+      return {
+        lang: 'en',
+        site_id: item.epgChannelId,
+        name: item.title.trim()
       }
     })
-
-    return Object.values(channels)
   }
 }
 
@@ -66,7 +62,7 @@ function parseItems(content, channel) {
   try {
     const data = JSON.parse(content)
     return data && data[channel.site_id] ? data[channel.site_id] : []
-  } catch {
+  } catch (err) {
     return []
   }
 }

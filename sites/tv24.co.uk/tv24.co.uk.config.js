@@ -40,33 +40,35 @@ module.exports = {
   },
   async channels() {
     let html = await axios
-      .get('https://tv24.co.uk/x/settings/addremove', {
+      .get('https://tv24.co.uk/x/settings/addremove')
+      .then(r => r.data)
+      .catch(console.log)
+    let $ = cheerio.load(html)
+    const nums = $('li')
+      .toArray()
+      .map(item => $(item).data('channel'))
+    html = await axios
+      .get('https://tv24.co.uk', {
         headers: {
-          Cookie: 'selectedPostcode=-; selectedProvider=1000193'
+          Cookie: `selectedChannels=${nums.join(',')}`
         }
       })
       .then(r => r.data)
       .catch(console.log)
-    let $ = cheerio.load(html)
+    $ = cheerio.load(html)
+    const items = $('li.c').toArray()
 
-    let channels = []
-    $('li')
-      .toArray()
-      .forEach(item => {
-        const link = $(item).find('img').attr('src')
-        if (!link || link.includes('ic_channel_default')) return
-        const [, filename] = link.match(/channels\/(.*)\./)
-        const site_id = filename.replace('-l', '')
-        const name = $(item).find('h3').text().trim()
+    return items.map(item => {
+      const name = $(item).find('h3').text().trim()
+      const link = $(item).find('.channel').attr('href')
+      const [, site_id] = link.match(/\/channel\/(.*)/) || [null, null]
 
-        channels.push({
-          lang: 'en',
-          site_id,
-          name
-        })
-      })
-
-    return channels
+      return {
+        lang: 'en',
+        site_id,
+        name
+      }
+    })
   }
 }
 
