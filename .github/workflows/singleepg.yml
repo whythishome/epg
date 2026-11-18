@@ -6,23 +6,21 @@ on:
 jobs:
   run_script:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       PROXY_URL_1: ${{ secrets.PROXY_URL_1 }}
       PROXY_URL_2: ${{ secrets.PROXY_URL_2 }}
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+      uses: actions/checkout@v4
 
     - name: Set up Node
       uses: actions/setup-node@v4
       with:
-           node-version: 18
+        node-version: 22
+        cache: 'npm'
 
     - name: npm grab epg
       run: |
@@ -66,5 +64,5 @@ jobs:
         # git add -f guides/sports/all.xml.gz
         # git add -f guides/sports/fixturecalendar.com.xml.gz
         # git add -f guides/tvguide.com.xml.gz
-        git commit -m "Update xml"
+        git diff --staged --quiet || git commit -m "Update xml"
         git push
