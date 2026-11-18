@@ -1,77 +1,70 @@
-name: update
+name: Daily Updates
+
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
-permissions:
-  contents: read
+    - cron: '0 */24 * * *' # Daily schedule
+  workflow_dispatch:
+
 jobs:
-  main:
+  run_script:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      PROXY_URL_1: ${{ secrets.PROXY_URL_1 }}
+      PROXY_URL_2: ${{ secrets.PROXY_URL_2 }}
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: tibdex/github-app-token@v1.8.2
-        if: ${{ !env.ACT }}
-        id: create-app-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: actions/checkout@v4
-        if: ${{ !env.ACT }}
-        with:
-          token: ${{ steps.create-app-token.outputs.token }}
-      - name: setup git
-        run: |
-          git config user.name "iptv-bot[bot]"
-          git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: 'npm'
-      - name: install dependencies
-        run: npm install
-      - name: check *.channels.xml
-        run: npm run channels:lint
-      - name: update sites.md
-        run: npm run sites:update
-      - run: git status
-      - name: commit changes to sites.md
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        run: |
-          FILE=SITES.md
-          CHANGED=$(git diff ${FILE})
-          if [ -n "${CHANGED}" ]; then
-            git add ${FILE}
-            git commit -m "[Bot] Update ${FILE}" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}) workflow." --no-verify
-            git push
-          fi
-      - name: load workers
-        run: npm run workers:load
-      - name: update guides.md
-        run: npm run guides:update
-      - run: git status
-      - name: commit changes to guides.md
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        run: |
-          FILE=GUIDES.md
-          CHANGED=$(git diff ${FILE})
-          if [ -n "${CHANGED}" ]; then
-            git add ${FILE}
-            git commit -m "[Bot] Update ${FILE}" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}) workflow." --no-verify
-            git push
-          fi
-      - name: generate .api/guides.json
-        run: npm run guides:export
-      - run: git status
-      - name: move .api/guides.json to iptv-org/api
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          repository-name: iptv-org/api
-          branch: gh-pages
-          folder: .api
-          token: ${{ steps.create-app-token.outputs.token }}
-          git-config-name: iptv-bot[bot]
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Deploy to iptv-org/api'
-          clean: false
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: 'npm'
+
+    - name: npm grab epg
+      run: |
+          npm install
+          npm run grab -- --sites=dishtv.in --lang=en --maxConnections=10 --gzip --output=guides/dishtv.in_en.xml
+          npm run grab -- --sites=dishtv.in --lang=hi --maxConnections=10 --gzip --output=guides/dishtv.in_hi.xml
+          npm run grab -- --sitess=airtelxstream.in --maxConnections=10 --gzip --output=guides/airtelxstream.in.xml
+          npm run grab -- --sites=distro.tv --maxConnections=10 --gzip --output=guides/distro.tv.xml
+          npm run grab -- --sites=nowplayer.now.com --maxConnections=10 --lang=en --gzip --output=guides/nowplayer.now.com.xml
+          npm run grab -- --sites=foxtel.com.au --gzip --output=guides/foxtel.com.au.xml
+          npm run grab -- --sites=starhubtvplus.com --gzip --output=guides/starhubtvplus.com.xml
+          npm run grab -- --sites=sky.com --maxConnections=10 --gzip --output=guides/sky.com.xml
+          npm run grab -- --channels=sites/beinsports.com/beinsports.com_au-en.channels.xml --gzip --output=guides/beinsports.com_au-en.xml
+          npm run grab -- --channels=sites/sports/uk.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/uk.xml
+          npm run grab -- --channels=sites/sports/in.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/in.xml
+          npm run grab -- --channels=sites/sports/au.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/au.xml
+          npm run grab -- --channels=sites/sports/all.channels.xml --days=7 --maxConnections=10 --gzip --output=guides/sports/all.xml
+          npm run grab -- --sites=player.ee.co.uk --maxConnections=10 --gzip --output=guides/player.ee.co.uk.xml
+          npm run grab -- --sites=virgintvgo.virginmedia.com --maxConnections=10 --gzip --output=guides/virgintvgo.virginmedia.com.xml
+          npm run grab -- --sites=fixturecalendar.com --gzip --output=guides/sports/fixturecalendar.com.xml
+          npm run grab -- --sites=tvguide.com --gzip --maxConnections=2 --output=guides/tvguide.com.xml
+          
+    - name: Commit changes
+      run: |
+        git config --local user.email "your-email@example.com"
+        git config --local user.name "Your Name"
+        git add -f guides/dishtv.in_en.xml.gz
+        git add -f guides/dishtv.in_hi.xml.gz
+        git add -f guides/airtelxstream.in.xml.gz
+        git add -f guides/distro.tv.xml.gz
+        git add -f guides/nowplayer.now.com.xml.gz
+        git add -f guides/foxtel.com.au.xml.gz
+        git add -f guides/beinsports.com_au-en.xml.gz
+        git add -f guides/starhubtvplus.com.xml.gz
+        git add -f guides/sky.com.xml.gz
+        git add -f guides/player.ee.co.uk.xml.gz
+        git add -f guides/virgintvgo.virginmedia.com.xml.gz
+        git add -f guides/sports/uk.xml.gz
+        git add -f guides/sports/in.xml.gz
+        git add -f guides/sports/au.xml.gz
+        git add -f guides/sports/all.xml.gz
+        git add -f guides/sports/fixturecalendar.com.xml.gz
+        git add -f guides/tvguide.com.xml.gz
+        git diff --staged --quiet || git commit -m "Update xml"
+        git push
