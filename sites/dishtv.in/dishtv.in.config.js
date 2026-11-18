@@ -31,19 +31,20 @@ module.exports = {
     }
   },
   parser: ({ channel, content }) => {
+    const lang = channel.lang
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
-      const title =
-        lang === 'hi' && item.programlanguage !== 'English' && item.regional?.hindi?.title
-          ? item.regional.hindi.title
-          : item.title
+      const title =
+        lang === 'hi' && item.programlanguage !== 'English' && item.regional?.hindi?.title
+          ? item.regional.hindi.title
+          : item.title
 
-      const description =
-        lang === 'hi' && item.programlanguage !== 'English' && item.regional?.hindi?.desc
-          ? `${item.regional.hindi.desc}${item['episode-num'] ? ` E${item['episode-num']}` : ''}`
-          : `${item.desc}${item['episode-num'] ? ` E${item['episode-num']}` : ''}`
-      
+      const description =
+        lang === 'hi' && item.programlanguage !== 'English' && item.regional?.hindi?.desc
+          ? `${item.regional.hindi.desc}${item['episode-num'] ? ` E${item['episode-num']}` : ''}`
+          : `${item.desc}${item['episode-num'] ? ` E${item['episode-num']}` : ''}`
+
       programs.push({
         title,
         description,
