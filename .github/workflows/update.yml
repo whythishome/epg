@@ -29,7 +29,7 @@ jobs:
           npm install
           npm run grab -- --sites=dishtv.in --lang=en --maxConnections=10 --gzip --output=guides/dishtv.in_en.xml
           npm run grab -- --sites=dishtv.in --lang=hi --maxConnections=10 --gzip --output=guides/dishtv.in_hi.xml
-          npm run grab -- --sitess=airtelxstream.in --maxConnections=10 --gzip --output=guides/airtelxstream.in.xml
+          npm run grab -- --sites=airtelxstream.in --maxConnections=10 --gzip --output=guides/airtelxstream.in.xml
           npm run grab -- --sites=distro.tv --maxConnections=10 --gzip --output=guides/distro.tv.xml
           npm run grab -- --sites=nowplayer.now.com --maxConnections=10 --lang=en --gzip --output=guides/nowplayer.now.com.xml
           npm run grab -- --sites=foxtel.com.au --gzip --output=guides/foxtel.com.au.xml
