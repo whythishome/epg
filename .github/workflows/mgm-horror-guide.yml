@@ -1,0 +1,242 @@
+name: MGM Presents Horror Guide
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mgm-horror-guide
+  cancel-in-progress: false
+
+jobs:
+  build-guide:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build 14-day MGM Horror XMLTV guide
+        env:
+          PLEX_TOKEN: ${{ secrets.PLEX_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import sys
+          import time
+          import urllib.parse
+          import urllib.request
+          import xml.etree.ElementTree as ET
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+
+          CHANNEL_KEY = "6abd4e58a9d133322be5f940"
+          CHANNEL_ID = "mgm-presents-horror"
+          CHANNEL_NAME = "MGM Presents: Horror"
+          OUTPUT = Path("guides/mgm-horror.xml")
+          DAYS = 14
+
+          token = os.environ.get("PLEX_TOKEN", "").strip()
+          if not token:
+              sys.exit(
+                  "Missing PLEX_TOKEN repository secret. "
+                  "Add it under Settings > Secrets and variables > Actions."
+              )
+
+          def xmltv_time(timestamp):
+              dt = datetime.fromtimestamp(
+                  int(timestamp), timezone.utc
+              )
+              return dt.strftime("%Y%m%d%H%M%S +0000")
+
+          def add_text(parent, tag, value):
+              if value:
+                  ET.SubElement(parent, tag).text = str(value)
+
+          programs = {}
+
+          today = datetime.now(timezone.utc).date()
+
+          for day_offset in range(DAYS):
+              date = today + timedelta(days=day_offset)
+
+              params = urllib.parse.urlencode({
+                  "channelGridKey": CHANNEL_KEY,
+                  "date": date.isoformat(),
+                  "x-plex-provider-version": "7.0.0",
+              })
+
+              url = "https://epg.provider.plex.tv/grid?" + params
+              request = urllib.request.Request(
+                  url,
+                  headers={
+                      "X-Plex-Token": token,
+                      "X-Plex-Language": "en",
+                      "Accept": "application/xml",
+                      "User-Agent": "festy-epg-mgm-horror/1.0",
+                  },
+              )
+
+              print(f"Fetching schedule for {date.isoformat()}")
+
+              try:
+                  with urllib.request.urlopen(
+                      request, timeout=45
+                  ) as response:
+                      payload = response.read()
+              except Exception as exc:
+                  sys.exit(
+                      f"Failed to fetch {date.isoformat()}: "
+                      f"{type(exc).__name__}: {exc}"
+                  )
+
+              try:
+                  root = ET.fromstring(payload)
+              except ET.ParseError as exc:
+                  sys.exit(
+                      f"Plex returned invalid XML for "
+                      f"{date.isoformat()}: {exc}"
+                  )
+
+              day_count = 0
+
+              for video in root.iter("Video"):
+                  title = video.get("title", "").strip()
+                  if not title:
+                      continue
+
+                  summary = video.get("summary", "").strip()
+                  kind = video.get("type", "")
+                  series = video.get("grandparentTitle", "").strip()
+                  season = video.get("parentIndex", "")
+                  episode = video.get("index", "")
+                  year = video.get("year", "")
+
+                  for media in video.findall("Media"):
+                      begins = media.get("beginsAt")
+                      ends = media.get("endsAt")
+
+                      if not begins or not ends:
+                          continue
+
+                      try:
+                          start = int(begins)
+                          stop = int(ends)
+                      except ValueError:
+                          continue
+
+                      if stop <= start:
+                          continue
+
+                      # Keep only programmes in the requested 14-day window.
+                      window_start = int(datetime.combine(
+                          today, datetime.min.time(),
+                          tzinfo=timezone.utc
+                      ).timestamp())
+                      window_end = window_start + DAYS * 86400
+
+                      if start >= window_end or stop <= window_start:
+                          continue
+
+                      key = (start, stop, title, series)
+                      if key in programs:
+                          continue
+
+                      programs[key] = {
+                          "title": title,
+                          "summary": summary,
+                          "type": kind,
+                          "series": series,
+                          "season": season,
+                          "episode": episode,
+                          "year": year,
+                          "start": start,
+                          "stop": stop,
+                      }
+                      day_count += 1
+
+              print(f"  Found {day_count} new listings")
+
+              # Be polite to the provider.
+              time.sleep(1)
+
+          if not programs:
+              sys.exit(
+                  "No programmes were returned. "
+                  "The channel key, authentication, or endpoint "
+                  "may need checking. No guide was written."
+              )
+
+          tv = ET.Element("tv", {
+              "source-info-name": "Plex EPG",
+              "generator-info-name": "festy-epg MGM Horror workflow",
+          })
+
+          channel = ET.SubElement(tv, "channel", {"id": CHANNEL_ID})
+          add_text(channel, "display-name", CHANNEL_NAME)
+
+          for item in sorted(programs.values(),
+                             key=lambda p: (p["start"], p["stop"])):
+              programme = ET.SubElement(tv, "programme", {
+                  "start": xmltv_time(item["start"]),
+                  "stop": xmltv_time(item["stop"]),
+                  "channel": CHANNEL_ID,
+              })
+
+              # Movies use their movie title. Episodes use the series
+              # as the main title and the episode title as sub-title.
+              if item["type"] == "episode" and item["series"]:
+                  add_text(programme, "title", item["series"])
+                  add_text(programme, "sub-title", item["title"])
+
+                  if item["season"] and item["episode"]:
+                      try:
+                          season_number = int(item["season"])
+                          episode_number = int(item["episode"])
+                          ET.SubElement(
+                              programme, "episode-num",
+                              {"system": "xmltv_ns"}
+                          ).text = (
+                              f"{season_number - 1}."
+                              f"{episode_number - 1}."
+                          )
+                      except ValueError:
+                          pass
+              else:
+                  add_text(programme, "title", item["title"])
+
+              if item["summary"]:
+                  add_text(programme, "desc", item["summary"])
+
+              if item["year"]:
+                  add_text(programme, "date", item["year"])
+
+          ET.indent(tv, space="  ")
+          OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+          ET.ElementTree(tv).write(
+              OUTPUT,
+              encoding="utf-8",
+              xml_declaration=True,
+          )
+
+          print(
+              f"Created {OUTPUT} with "
+              f"{len(programs)} programme listings."
+          )
+          PY
+
+      - name: Commit updated guide
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add guides/mgm-horror.xml
+          if git diff --cached --quiet; then
+            echo "Guide has not changed."
+          else
+            git commit -m "Update temporary MGM Horror guide"
+            git push
+          fi
