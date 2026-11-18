@@ -30,13 +30,23 @@ module.exports = {
       }
     }
   },
-  parser: ({ content }) => {
+  parser: ({ channel, content }) => {
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
+      const title =
+        lang === 'hi' && item.programlanguage !== 'English' && item.regional?.hindi?.title
+          ? item.regional.hindi.title
+          : item.title
+
+      const description =
+        lang === 'hi' && item.programlanguage !== 'English' && item.regional?.hindi?.desc
+          ? `${item.regional.hindi.desc}${item['episode-num'] ? ` E${item['episode-num']}` : ''}`
+          : `${item.desc}${item['episode-num'] ? ` E${item['episode-num']}` : ''}`
+      
       programs.push({
-        title: parseTitle(item),
-        description: parseDescription(item),
+        title,
+        description,
         category: parseCategory(item),
         actors: item.credits.actors,
         directors: item.credits.directors,
@@ -52,7 +62,7 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ lang }) {
     await fetchToken()
 
     const totalPages = await fetchPages()
@@ -83,9 +93,10 @@ module.exports = {
       if (!data) continue
       data.programDetailsByChannel.forEach(channel => {
         channels.push({
-          lang: 'en',
+          lang,
           site_id: channel.channelid,
-          name: channel.channelname
+          name: channel.channelname,
+          logo: channel.channelimage
         })
       })
     }
