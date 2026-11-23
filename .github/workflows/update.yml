@@ -2,7 +2,7 @@ name: Daily Updates
 
 on:
   schedule:
-    - cron: '0 */24 * * *' # Daily schedule
+    - cron: '15 2 * * *' # Daily schedule at 00:00 UTC
   workflow_dispatch:
 
 jobs:
