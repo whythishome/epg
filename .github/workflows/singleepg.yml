@@ -25,8 +25,8 @@ jobs:
     - name: npm grab epg
       run: |
           npm ci
-          # npm run grab -- --sites=dishtv.in --lang=en --maxConnections=10 --gzip --output=guides/dishtv.in_en.xml
-          # npm run grab -- --sites=dishtv.in --lang=hi --maxConnections=10 --gzip --output=guides/dishtv.in_hi.xml
+          npm run grab -- --sites=dishtv.in --lang=en --maxConnections=10 --gzip --output=guides/dishtv.in_en.xml
+          npm run grab -- --sites=dishtv.in --lang=hi --maxConnections=10 --gzip --output=guides/dishtv.in_hi.xml
           npm run grab -- --sites=airtelxstream.in --maxConnections=10 --gzip --output=guides/airtelxstream.in.xml
           # npm run grab -- --sites=watch.tataplay.com --gzip --output=guides/watch.tataplay.com.xml
           # npm run grab -- --sites=distro.tv --maxConnections=10 --gzip --output=guides/distro.tv.xml
@@ -48,8 +48,8 @@ jobs:
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        # git add -f guides/dishtv.in_en.xml.gz
-        # git add -f guides/dishtv.in_hi.xml.gz
+        git add -f guides/dishtv.in_en.xml.gz
+        git add -f guides/dishtv.in_hi.xml.gz
         git add -f guides/airtelxstream.in.xml.gz
         # git add -f guides/watch.tataplay.com.xml.gz
         # git add -f guides/distro.tv.xml.gz
